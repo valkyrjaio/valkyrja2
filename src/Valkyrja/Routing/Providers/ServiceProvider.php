@@ -41,6 +41,15 @@ use Valkyrja\Routing\Url;
  */
 class ServiceProvider extends Provider
 {
+    protected static Router|null     $router;
+    protected static Annotator|null  $annotator;
+    protected static Attributes|null $attributes;
+    protected static Collector|null  $collector;
+    protected static Collection|null $collection;
+    protected static Matcher|null    $matcher;
+    protected static Processor|null  $processor;
+    protected static Url|null        $url;
+
     /**
      * @inheritDoc
      */
@@ -53,7 +62,7 @@ class ServiceProvider extends Provider
             Collection::class => 'publishCollection',
             Matcher::class    => 'publishMatcher',
             Url::class        => 'publishUrl',
-            Attributes::class => 'publishRouteAttributes',
+            Attributes::class => 'publishAttributes',
             Processor::class  => 'publishProcessor',
         ];
     }
@@ -80,25 +89,31 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Router
      */
-    public static function publishRouter(Container $container): void
+    public static function publishRouter(Container $container): Router
     {
+        if (isset(self::$router)) {
+            return self::$router;
+        }
+
         $config = $container->getSingleton(Config::class);
 
         $container->setSingleton(
             Router::class,
-            new \Valkyrja\Routing\Dispatchers\Router(
-                $container->getSingleton(Collection::class),
+            self::$router = new \Valkyrja\Routing\Dispatchers\Router(
+                self::publishCollection($container),
                 $container->getSingleton(Container::class),
                 $container->getSingleton(Dispatcher::class),
                 $container->getSingleton(Events::class),
-                $container->getSingleton(Matcher::class),
+                self::publishMatcher($container),
                 $container->getSingleton(ResponseFactory::class),
                 $config['routing'],
                 $config['app']['debug']
             )
         );
+
+        return self::$router;
     }
 
     /**
@@ -106,19 +121,25 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Annotator
      */
-    public static function publishAnnotator(Container $container): void
+    public static function publishAnnotator(Container $container): Annotator
     {
+        if (isset(self::$annotator)) {
+            return self::$annotator;
+        }
+
         $container->setSingleton(
             Annotator::class,
-            new \Valkyrja\Routing\Annotators\Annotator(
+            self::$annotator = new \Valkyrja\Routing\Annotators\Annotator(
                 $container->getSingleton(AnnotationAnnotator::class),
                 $container->getSingleton(Filter::class),
                 $container->getSingleton(Reflector::class),
-                $container->getSingleton(Processor::class)
+                self::publishProcessor($container)
             )
         );
+
+        return self::$annotator;
     }
 
     /**
@@ -126,17 +147,23 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Collector
      */
-    public static function publishCollector(Container $container): void
+    public static function publishCollector(Container $container): Collector
     {
+        if (isset(self::$collector)) {
+            return self::$collector;
+        }
+
         $container->setSingleton(
             Collector::class,
-            new \Valkyrja\Routing\Collectors\Collector(
-                $container->getSingleton(Collection::class),
-                $container->getSingleton(Processor::class)
+            self::$collector = new \Valkyrja\Routing\Collectors\Collector(
+                self::publishCollection($container),
+                self::publishProcessor($container)
             )
         );
+
+        return self::$collector;
     }
 
     /**
@@ -144,21 +171,27 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Collection
      */
-    public static function publishCollection(Container $container): void
+    public static function publishCollection(Container $container): Collection
     {
+        if (isset(self::$collection)) {
+            return self::$collection;
+        }
+
         $config = $container->getSingleton(Config::class);
 
         $container->setSingleton(
             Collection::class,
-            $collection = new CacheableCollection(
+            self::$collection = $collection = new CacheableCollection(
                 $container,
                 $config['routing']
             )
         );
 
         $collection->setup();
+
+        return self::$collection;
     }
 
     /**
@@ -166,17 +199,23 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Matcher
      */
-    public static function publishMatcher(Container $container): void
+    public static function publishMatcher(Container $container): Matcher
     {
+        if (isset(self::$matcher)) {
+            return self::$matcher;
+        }
+
         $container->setSingleton(
             Matcher::class,
-            new EntityCapableMatcher(
+            self::$matcher = new EntityCapableMatcher(
                 $container,
-                $container->getSingleton(Collection::class)
+                self::publishCollection($container)
             )
         );
+
+        return self::$matcher;
     }
 
     /**
@@ -184,20 +223,26 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Url
      */
-    public static function publishUrl(Container $container): void
+    public static function publishUrl(Container $container): Url
     {
+        if (isset(self::$url)) {
+            return self::$url;
+        }
+
         $config = $container->getSingleton(Config::class);
 
         $container->setSingleton(
             Url::class,
-            new \Valkyrja\Routing\Urls\Url(
+            self::$url = new \Valkyrja\Routing\Urls\Url(
                 $container->getSingleton(Request::class),
-                $container->getSingleton(Router::class),
+                self::publishRouter($container),
                 $config['routing']
             )
         );
+
+        return self::$url;
     }
 
     /**
@@ -205,18 +250,24 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Attributes
      */
-    public static function publishRouteAttributes(Container $container): void
+    public static function publishAttributes(Container $container): Attributes
     {
+        if (isset(self::$attributes)) {
+            return self::$attributes;
+        }
+
         $container->setSingleton(
             Attributes::class,
-            new Attributes\Attributes(
+            self::$attributes = new Attributes\Attributes(
                 $container->getSingleton(\Valkyrja\Attribute\Attributes::class),
                 $container->getSingleton(Reflector::class),
-                $container->getSingleton(Processor::class)
+                self::publishProcessor($container)
             )
         );
+
+        return self::$attributes;
     }
 
     /**
@@ -224,15 +275,21 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Processor
      */
-    public static function publishProcessor(Container $container): void
+    public static function publishProcessor(Container $container): Processor
     {
+        if (isset(self::$processor)) {
+            return self::$processor;
+        }
+
         $container->setSingleton(
             Processor::class,
-            new \Valkyrja\Routing\Processors\Processor(
+            self::$processor = new \Valkyrja\Routing\Processors\Processor(
                 $container->getSingleton(Dispatcher::class)
             )
         );
+
+        return self::$processor;
     }
 }

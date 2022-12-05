@@ -37,6 +37,15 @@ use Valkyrja\View\View;
  */
 class ServiceProvider extends Provider
 {
+    /** @var View|null */
+    protected static View|null $view;
+
+    /** @var Factory|null */
+    protected static Factory|null $factory;
+
+    /** @var \Valkyrja\View\Config\Config|array|null */
+    protected static \Valkyrja\View\Config\Config|array|null $config;
+
     /**
      * @inheritDoc
      */
@@ -76,10 +85,14 @@ class ServiceProvider extends Provider
      *
      * @throws InvalidConfigPath
      *
-     * @return void
+     * @return View
      */
-    public static function publishView(Container $container): void
+    public static function publishView(Container $container): View
     {
+        if (isset(self::$view)) {
+            return self::$view;
+        }
+
         /** @var Config|array $config */
         $config = $container->getSingleton(Config::class);
         /** @var \Valkyrja\View\Config\Config|array{
@@ -90,16 +103,18 @@ class ServiceProvider extends Provider
          *     disks: array<string, array>
          * } $viewConfig
          */
-        $viewConfig = $config['view'];
+        self::$config = $viewConfig = $config['view'];
 
         $container->setSingleton(
             View::class,
-            new \Valkyrja\View\Managers\View(
+            self::$view = new \Valkyrja\View\Managers\View(
                 $container,
-                $container->getSingleton(Factory::class),
+                self::publishFactory($container),
                 $viewConfig
             )
         );
+
+        return self::$view;
     }
 
     /**
@@ -107,14 +122,20 @@ class ServiceProvider extends Provider
      *
      * @param Container $container The container
      *
-     * @return void
+     * @return Factory
      */
-    public static function publishFactory(Container $container): void
+    public static function publishFactory(Container $container): Factory
     {
+        if (isset(self::$factory)) {
+            return self::$factory;
+        }
+
         $container->setSingleton(
             Factory::class,
-            new ContainerFactory($container)
+            self::$factory = new ContainerFactory($container)
         );
+
+        return self::$factory;
     }
 
     /**
@@ -143,8 +164,6 @@ class ServiceProvider extends Provider
      */
     public static function publishPhpEngine(Container $container): void
     {
-        /** @var Config|array $config */
-        $config = $container->getSingleton(Config::class);
         /** @var \Valkyrja\View\Config\Config|array{
          *     dir: string,
          *     engine: string,
@@ -153,7 +172,7 @@ class ServiceProvider extends Provider
          *     disks: array{php?: array{fileExtension: string}}
          * } $viewConfig
          */
-        $viewConfig = $config['view'];
+        $viewConfig = self::$config ?? $container->getSingleton(Config::class)['view'];
 
         $container->setSingleton(
             PhpEngine::class,
