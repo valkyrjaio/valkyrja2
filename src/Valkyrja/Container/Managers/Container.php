@@ -90,6 +90,20 @@ class Container implements Contract
         protected Config|array $config,
         protected bool $debug = false
     ) {
+        $cache = $config['cache'];
+
+        if ($cache !== null) {
+            return;
+        }
+
+        self::$aliases        = $cache['aliases'];
+        self::$provided       = $cache['provided'];
+        self::$providedMethod = $cache['providedMethod'];
+        self::$services       = $cache['services'];
+        self::$singletons     = $cache['singletons'];
+
+        // Register service providers
+        $this->registerProviders($config);
     }
 
     /**
@@ -451,5 +465,20 @@ class Container implements Contract
         }
 
         return $made;
+    }
+
+    /**
+     * Register service providers.
+     *
+     * @param Config|array $config The config
+     *
+     * @return void
+     */
+    protected function registerProviders(Config|array $config): void
+    {
+        // Iterate through all the providers
+        foreach ($config['providers'] as $provider) {
+            $this->register($provider);
+        }
     }
 }
