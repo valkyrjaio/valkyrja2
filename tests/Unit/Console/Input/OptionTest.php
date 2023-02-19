@@ -26,43 +26,31 @@ class OptionTest extends TestCase
 {
     /**
      * The class to test with.
-     *
-     * @var Option
      */
     protected Option $class;
 
     /**
      * The name.
-     *
-     * @var string
      */
     protected string $name = 'Test Name';
 
     /**
      * The description.
-     *
-     * @var string
      */
     protected string $description = 'Test Description';
 
     /**
      * The shortcut.
-     *
-     * @var string
      */
     protected string $shortcut = 'S';
 
     /**
      * The default value.
-     *
-     * @var string
      */
     protected string $default = 'Default Value';
 
     /**
      * Get the class to test with.
-     *
-     * @return Option
      */
     protected function getClass(): Option
     {
@@ -77,8 +65,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the construction of a new Option instance.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {
@@ -87,8 +73,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the getName getter method.
-     *
-     * @return void
      */
     public function testGetName(): void
     {
@@ -97,8 +81,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the getShortcut getter method.
-     *
-     * @return void
      */
     public function testGetShortcut(): void
     {
@@ -107,8 +89,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the getDescription getter method.
-     *
-     * @return void
      */
     public function testGetDescription(): void
     {
@@ -117,8 +97,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the getDefault getter method.
-     *
-     * @return void
      */
     public function testGetDefault(): void
     {
@@ -127,8 +105,6 @@ class OptionTest extends TestCase
 
     /**
      * Test the getMode getter method.
-     *
-     * @return void
      */
     public function testGetMode(): void
     {

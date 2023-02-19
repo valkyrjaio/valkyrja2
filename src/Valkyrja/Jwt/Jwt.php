@@ -26,8 +26,6 @@ interface Jwt extends Manager
 {
     /**
      * @inheritDoc
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
@@ -35,8 +33,6 @@ interface Jwt extends Manager
      * Encode a payload array into a JWT string.
      *
      * @param array $payload The payload
-     *
-     * @return string
      */
     public function encode(array $payload): string;
 
@@ -44,8 +40,6 @@ interface Jwt extends Manager
      * Decode a JWT string into a payload array.
      *
      * @param string $jwt The JWT string
-     *
-     * @return array
      */
     public function decode(string $jwt): array;
 }

@@ -389,8 +389,6 @@ class Auth implements Contract
 
     /**
      * Try authenticating.
-     *
-     * @return void
      */
     protected function tryAuthenticating(): void
     {

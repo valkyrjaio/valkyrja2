@@ -58,8 +58,6 @@ interface Response extends Message
      *                                  suggested in the HTTP specification.
      *
      * @throws InvalidArgumentException For invalid status code arguments.
-     *
-     * @return static
      */
     public function withStatus(int $code, string $reasonPhrase = null): static;
 
@@ -92,8 +90,6 @@ interface Response extends Message
      * @param Cookie $cookie The cookie model
      *
      * @throws InvalidArgumentException for invalid header names or values.
-     *
-     * @return static
      */
     public function withCookie(Cookie $cookie): static;
 
@@ -110,36 +106,26 @@ interface Response extends Message
      * @param Cookie $cookie The cookie model
      *
      * @throws InvalidArgumentException for invalid header names or values.
-     *
-     * @return static
      */
     public function withoutCookie(Cookie $cookie): static;
 
     /**
      * Send the response HTTP line header.
-     *
-     * @return static
      */
     public function sendHttpLine(): static;
 
     /**
      * Send the response headers.
-     *
-     * @return static
      */
     public function sendHeaders(): static;
 
     /**
      * Send the response body.
-     *
-     * @return static
      */
     public function sendBody(): static;
 
     /**
      * Send the response.
-     *
-     * @return static
      */
     public function send(): static;
 }

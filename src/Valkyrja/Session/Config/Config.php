@@ -48,8 +48,6 @@ class Config extends Model
 
     /**
      * The sessions.
-     *
-     * @var array
      */
     public array $sessions;
 }

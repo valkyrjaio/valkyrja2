@@ -34,8 +34,6 @@ interface Driver extends Contract
      *
      * @throws InvalidArgumentException When $value is neither a string or numeric
      * @throws JsonException            If a malformed message is provided
-     *
-     * @return bool
      */
     public function determineKeyValueMatch(string $key, mixed $value, string $message): bool;
 
@@ -43,8 +41,6 @@ interface Driver extends Contract
      * Send a message.
      *
      * @param Message $message The message to send
-     *
-     * @return void
      */
     public function send(Message $message): void;
 }

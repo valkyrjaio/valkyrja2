@@ -25,8 +25,6 @@ class Listener extends Dispatch implements Contract
 {
     /**
      * The event to listen to.
-     *
-     * @var string
      */
     protected string $event;
 

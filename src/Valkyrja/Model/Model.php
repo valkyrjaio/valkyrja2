@@ -26,8 +26,6 @@ interface Model extends JsonSerializable
      * Set properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return static
      */
     public static function fromArray(array $properties): static;
 
@@ -45,8 +43,6 @@ interface Model extends JsonSerializable
      *
      * @param string $name  The property to set
      * @param mixed  $value The value to set
-     *
-     * @return void
      */
     public function __set(string $name, mixed $value): void;
 
@@ -54,8 +50,6 @@ interface Model extends JsonSerializable
      * Check if a property is set.
      *
      * @param string $name The property to check
-     *
-     * @return bool
      */
     public function __isset(string $name): bool;
 
@@ -63,8 +57,6 @@ interface Model extends JsonSerializable
      * Determine whether the model has a property.
      *
      * @param string $property The property
-     *
-     * @return bool
      */
     public function hasProperty(string $property): bool;
 
@@ -72,8 +64,6 @@ interface Model extends JsonSerializable
      * Set properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return void
      */
     public function updateProperties(array $properties): void;
 
@@ -81,8 +71,6 @@ interface Model extends JsonSerializable
      * Get a new model with new properties.
      *
      * @param array $properties The properties to modify
-     *
-     * @return static
      */
     public function withProperties(array $properties): static;
 
@@ -90,15 +78,11 @@ interface Model extends JsonSerializable
      * Get model as an array.
      *
      * @param string ...$properties [optional] An array of properties to return
-     *
-     * @return array
      */
     public function asArray(string ...$properties): array;
 
     /**
      * Get model as an array including only changed properties.
-     *
-     * @return array
      */
     public function asChangedArray(): array;
 
@@ -106,29 +90,21 @@ interface Model extends JsonSerializable
      * Get an original property value by name.
      *
      * @param string $name The original property to get
-     *
-     * @return mixed
      */
     public function getOriginalPropertyValue(string $name): mixed;
 
     /**
      * Get all original properties.
-     *
-     * @return array
      */
     public function asOriginalArray(): array;
 
     /**
      * Serialize properties for json_encode.
-     *
-     * @return array
      */
     public function jsonSerialize(): array;
 
     /**
      * To string.
-     *
-     * @return string
      */
     public function __toString(): string;
 }

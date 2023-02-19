@@ -24,29 +24,21 @@ trait Cacheable
 {
     /**
      * The cache from a Cacheable::getCacheable().
-     *
-     * @var Config|null
      */
     public ?Config $cache = null;
 
     /**
      * The file path.
-     *
-     * @var string
      */
     public string $filePath;
 
     /**
      * The cache file path.
-     *
-     * @var string
      */
     public string $cacheFilePath;
 
     /**
      * The flag to enable cache.
-     *
-     * @var bool
      */
     public bool $useCache;
 }

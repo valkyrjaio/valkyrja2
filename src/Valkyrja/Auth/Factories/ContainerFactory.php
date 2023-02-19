@@ -37,8 +37,6 @@ class ContainerFactory implements Contract
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     protected Container $container;
 

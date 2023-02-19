@@ -59,8 +59,6 @@ class ServiceProvider extends Provider
      * Publish the crypt service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCrypt(Container $container): void
     {
@@ -79,8 +77,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -94,8 +90,6 @@ class ServiceProvider extends Provider
      * Publish the default driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -116,8 +110,6 @@ class ServiceProvider extends Provider
      * Publish the adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {

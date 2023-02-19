@@ -29,23 +29,16 @@ class Annotator implements Contract
 {
     /**
      * The filter.
-     *
-     * @var Filter
      */
     protected Filter $filter;
 
     /**
      * The reflector.
-     *
-     * @var Reflector
      */
     protected Reflector $reflector;
 
     /**
      * ContainerAnnotator constructor.
-     *
-     * @param Filter    $filter
-     * @param Reflector $reflector
      */
     public function __construct(Filter $filter, Reflector $reflector)
     {
@@ -90,8 +83,6 @@ class Annotator implements Contract
      * @param class-string ...$classes The classes
      *
      * @throws ReflectionException
-     *
-     * @return array
      */
     protected function getAllClassesAnnotationsByType(string $type, string ...$classes): array
     {
@@ -114,11 +105,7 @@ class Annotator implements Contract
     /**
      * Set the properties for a service annotation.
      *
-     * @param Annotation $annotation
-     *
      * @throws ReflectionException
-     *
-     * @return void
      */
     protected function setServiceProperties(Annotation $annotation): void
     {

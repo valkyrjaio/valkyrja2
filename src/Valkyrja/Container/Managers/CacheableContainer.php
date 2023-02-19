@@ -163,8 +163,6 @@ class CacheableContainer extends Container
      * Setup service providers.
      *
      * @param ContainerConfig|array $config
-     *
-     * @return void
      */
     protected function setupServiceProviders(Config|array $config): void
     {
@@ -193,8 +191,6 @@ class CacheableContainer extends Container
 
     /**
      * Get the cache model.
-     *
-     * @return Cache
      */
     protected function getCacheModel(): Cache
     {

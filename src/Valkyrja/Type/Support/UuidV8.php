@@ -37,8 +37,6 @@ abstract class UuidV8 extends Uuid
      * Generate a v8 UUID.
      *
      * @throws Exception
-     *
-     * @return string
      */
     abstract public static function generate(): string;
 

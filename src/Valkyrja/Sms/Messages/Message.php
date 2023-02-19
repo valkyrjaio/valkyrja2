@@ -24,29 +24,21 @@ class Message implements Contract
 {
     /**
      * The message to.
-     *
-     * @var string
      */
     protected string $to;
 
     /**
      * The message from.
-     *
-     * @var string
      */
     protected string $from;
 
     /**
      * The message text.
-     *
-     * @var string
      */
     protected string $text;
 
     /**
      * Whether the text is unicode.
-     *
-     * @var bool
      */
     protected bool $isUnicode = true;
 

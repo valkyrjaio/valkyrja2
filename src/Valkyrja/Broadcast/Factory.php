@@ -29,8 +29,6 @@ interface Factory extends Contract
      *
      * @param class-string<Driver>  $name    The driver
      * @param class-string<Adapter> $adapter The adapter
-     *
-     * @return Driver
      */
     public function createDriver(string $name, string $adapter, array $config): Driver;
 
@@ -38,8 +36,6 @@ interface Factory extends Contract
      * @inheritDoc
      *
      * @param class-string<Adapter> $name The adapter
-     *
-     * @return Adapter
      */
     public function createAdapter(string $name, array $config): Adapter;
 
@@ -47,8 +43,6 @@ interface Factory extends Contract
      * @inheritDoc
      *
      * @param class-string<Message> $name The message
-     *
-     * @return Message
      */
     public function createMessage(string $name, array $config, array $data = []): Message;
 }

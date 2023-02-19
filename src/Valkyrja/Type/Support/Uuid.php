@@ -46,11 +46,7 @@ class Uuid extends Uid
      * Version 1 UUIDs are time-based based. It can take an optional
      * node identifier based on mac address or a unique string id.
      *
-     * @param string|null $node
-     *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v1(string $node = null): string
     {
@@ -60,12 +56,7 @@ class Uuid extends Uid
     /**
      * Generate a v3 UUID.
      *
-     * @param string $namespace
-     * @param string $name
-     *
      * @throws RuntimeException
-     *
-     * @return string
      */
     final public static function v3(string $namespace, string $name): string
     {
@@ -76,8 +67,6 @@ class Uuid extends Uid
      * Generate a v4 UUID.
      *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v4(): string
     {
@@ -87,12 +76,7 @@ class Uuid extends Uid
     /**
      * Generate a v5 UUID.
      *
-     * @param string $namespace
-     * @param string $name
-     *
      * @throws RuntimeException
-     *
-     * @return string
      */
     final public static function v5(string $namespace, string $name): string
     {
@@ -102,11 +86,7 @@ class Uuid extends Uid
     /**
      * Generate a v6 UUID.
      *
-     * @param string|null $node
-     *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v6(string $node = null): string
     {
@@ -115,10 +95,6 @@ class Uuid extends Uid
 
     /**
      * Convert a UUID to bits.
-     *
-     * @param string $uuid
-     *
-     * @return string
      */
     protected static function convertToBits(string $uuid): string
     {

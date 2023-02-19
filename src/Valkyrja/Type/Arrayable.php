@@ -22,29 +22,21 @@ interface Arrayable
 {
     /**
      * Get the object's named properties as an array.
-     *
-     * @return array
      */
     public static function names(): array;
 
     /**
      * Get the object's values as an array.
-     *
-     * @return array
      */
     public static function values(): array;
 
     /**
      * Get the object as an array.
-     *
-     * @return array
      */
     public static function asArray(): array;
 
     /**
      * Get the object as a reversed array.
-     *
-     * @return array
      */
     public static function asReverseArray(): array;
 }

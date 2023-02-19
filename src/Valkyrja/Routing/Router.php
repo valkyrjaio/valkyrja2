@@ -28,38 +28,26 @@ interface Router extends MiddlewareAware
 {
     /**
      * Get the config.
-     *
-     * @return Config|array
      */
     public function getConfig(): Config|array;
 
     /**
      * Whether to run in debug.
-     *
-     * @return bool
      */
     public function debug(): bool;
 
     /**
      * Get the route collection.
-     *
-     * @return Collection
      */
     public function getCollection(): Collection;
 
     /**
      * Get the route matcher.
-     *
-     * @return Matcher
      */
     public function getMatcher(): Matcher;
 
     /**
      * Set a single route.
-     *
-     * @param Route $route
-     *
-     * @return void
      */
     public function addRoute(Route $route): void;
 
@@ -76,8 +64,6 @@ interface Router extends MiddlewareAware
      * @param string $name The name of the route to get
      *
      * @throws InvalidRouteName
-     *
-     * @return Route
      */
     public function getRoute(string $name): Route;
 
@@ -85,8 +71,6 @@ interface Router extends MiddlewareAware
      * Determine whether a route name exists.
      *
      * @param string $name The name of the route
-     *
-     * @return bool
      */
     public function hasRoute(string $name): bool;
 
@@ -96,8 +80,6 @@ interface Router extends MiddlewareAware
      * @param Request $request The request
      *
      * @throws HttpException
-     *
-     * @return Route
      */
     public function getRouteFromRequest(Request $request): Route;
 
@@ -105,8 +87,6 @@ interface Router extends MiddlewareAware
      * Dispatch the route and find a match.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function dispatch(Request $request): Response;
 }

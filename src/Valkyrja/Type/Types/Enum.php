@@ -36,22 +36,16 @@ abstract class Enum
 {
     /**
      * The allowable enum values.
-     *
-     * @var array|null
      */
     protected static ?array $VALUES = null;
 
     /**
      * The enum cache to avoid more than one reflection class per enum.
-     *
-     * @var array
      */
     protected static array $cache = [];
 
     /**
      * The value of this enum.
-     *
-     * @var string
      */
     protected string $value;
 
@@ -71,8 +65,6 @@ abstract class Enum
      * Check if the set value on this enum is a valid value for the enum.
      *
      * @param mixed $value The value to check
-     *
-     * @return bool
      */
     public static function isValid(mixed $value): bool
     {
@@ -106,8 +98,6 @@ abstract class Enum
 
     /**
      * Get the valid values for this enum.
-     *
-     * @return array
      */
     public static function getValidValues(): array
     {
@@ -133,8 +123,6 @@ abstract class Enum
 
     /**
      * Get the enum value.
-     *
-     * @return mixed
      */
     public function getValue(): mixed
     {
@@ -147,8 +135,6 @@ abstract class Enum
      * @param mixed $value The value to set
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     public function setValue(mixed $value): void
     {
@@ -163,8 +149,6 @@ abstract class Enum
 
     /**
      * Get the value of the enum.
-     *
-     * @return string
      */
     public function __toString(): string
     {
@@ -179,8 +163,6 @@ abstract class Enum
      *
      * @throws RuntimeException
      *
-     * @return static
-     *
      * @example `Enum::VALUE();` equivalent to `new Enum(Enum::VALUE);`
      */
     public static function __callStatic(string $method, array $args = []): static
@@ -190,8 +172,6 @@ abstract class Enum
 
     /**
      * Get the reflection valid values.
-     *
-     * @return array
      */
     protected static function reflectionValidValues(): array
     {

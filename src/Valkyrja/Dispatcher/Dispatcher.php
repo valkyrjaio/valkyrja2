@@ -25,8 +25,6 @@ interface Dispatcher
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments The arguments
-     *
-     * @return mixed
      */
     public function dispatchClassMethod(Dispatch $dispatch, array $arguments = null): mixed;
 
@@ -34,8 +32,6 @@ interface Dispatcher
      * Dispatch a class property.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return mixed
      */
     public function dispatchClassProperty(Dispatch $dispatch): mixed;
 
@@ -44,8 +40,6 @@ interface Dispatcher
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments The arguments
-     *
-     * @return mixed
      */
     public function dispatchClass(Dispatch $dispatch, array $arguments = null): mixed;
 
@@ -54,8 +48,6 @@ interface Dispatcher
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments The arguments
-     *
-     * @return mixed
      */
     public function dispatchFunction(Dispatch $dispatch, array $arguments = null): mixed;
 
@@ -64,8 +56,6 @@ interface Dispatcher
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments The arguments
-     *
-     * @return mixed
      */
     public function dispatchClosure(Dispatch $dispatch, array $arguments = null): mixed;
 
@@ -74,8 +64,6 @@ interface Dispatcher
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments The arguments
-     *
-     * @return mixed
      */
     public function dispatch(Dispatch $dispatch, array $arguments = null): mixed;
 }

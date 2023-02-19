@@ -44,8 +44,6 @@ class Parser implements Contract
 {
     /**
      * Parser constructor.
-     *
-     * @param Config|array $config
      */
     public function __construct(
         protected Config|array $config
@@ -188,8 +186,6 @@ class Parser implements Contract
      *
      * @throws InvalidAnnotationKeyArgument
      * @throws JsonException
-     *
-     * @return void
      */
     protected function setAnnotation(array $matches, int $index, array &$annotations): void
     {
@@ -223,8 +219,6 @@ class Parser implements Contract
      *
      * @param array $matches The matches
      * @param int   $index   The index
-     *
-     * @return array
      */
     protected function getParts(array $matches, int $index): array
     {
@@ -244,8 +238,6 @@ class Parser implements Contract
      * Clean the parts.
      *
      * @param array $parts The parts
-     *
-     * @return array
      */
     protected function cleanParts(array $parts): array
     {
@@ -273,8 +265,6 @@ class Parser implements Contract
      * Clean a part from asterisks and new lines.
      *
      * @param string|null $match The match
-     *
-     * @return string|null
      */
     protected function cleanPart(string $match = null): ?string
     {
@@ -289,8 +279,6 @@ class Parser implements Contract
      * Determine if a property's value.
      *
      * @param mixed $value The value to check
-     *
-     * @return mixed
      */
     protected function determinePropertyValue(mixed $value): mixed
     {
@@ -317,8 +305,6 @@ class Parser implements Contract
      * Determine an array property's values.
      *
      * @param mixed $value The value to check
-     *
-     * @return array
      */
     protected function determineArrayPropertyValue(array $value): array
     {
@@ -335,8 +321,6 @@ class Parser implements Contract
      * Determine if a value is a defined static.
      *
      * @param mixed $value The value to check
-     *
-     * @return mixed
      */
     protected function determineStaticPropertyValue(mixed $value): mixed
     {

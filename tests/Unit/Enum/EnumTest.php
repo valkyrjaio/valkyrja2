@@ -31,8 +31,6 @@ class EnumTest extends TestCase
 {
     /**
      * Ensure the set value method exists in the Enum abstract class.
-     *
-     * @return void
      */
     public function testSetValueExists(): void
     {
@@ -41,8 +39,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the set value method.
-     *
-     * @return void
      */
     public function testSetValue(): void
     {
@@ -54,8 +50,6 @@ class EnumTest extends TestCase
 
     /**
      * Get an enum to test with.
-     *
-     * @return \Valkyrja\Type\Types\Enum
      */
     protected function getEnum(): Enum
     {
@@ -64,8 +58,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the set value method with an invalid value.
-     *
-     * @return void
      */
     public function testSetValueInvalid(): void
     {
@@ -78,8 +70,6 @@ class EnumTest extends TestCase
 
     /**
      * Ensure the get value method exists in the Enum abstract class.
-     *
-     * @return void
      */
     public function testGetValueExists(): void
     {
@@ -88,8 +78,6 @@ class EnumTest extends TestCase
 
     /**
      * Ensure the get value method functions correctly.
-     *
-     * @return void
      */
     public function testGetValue(): void
     {
@@ -98,8 +86,6 @@ class EnumTest extends TestCase
 
     /**
      * Ensure the is valid method exists in the Enum abstract class.
-     *
-     * @return void
      */
     public function testIsValidExists(): void
     {
@@ -108,8 +94,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the is valid method with a valid value.
-     *
-     * @return void
      */
     public function testIsValid(): void
     {
@@ -118,8 +102,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the is valid method with an invalid enum value.
-     *
-     * @return void
      */
     public function testNotValid(): void
     {
@@ -128,8 +110,6 @@ class EnumTest extends TestCase
 
     /**
      * Ensure the valid values method exists in the Enum abstract class.
-     *
-     * @return void
      */
     public function testValidValuesExists(): void
     {
@@ -138,8 +118,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the valid values of an enum.
-     *
-     * @return void
      */
     public function testValidValues(): void
     {
@@ -154,8 +132,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the valid values through use of the reflection class.
-     *
-     * @return void
      */
     public function testValidValuesReflection(): void
     {
@@ -173,8 +149,6 @@ class EnumTest extends TestCase
 
     /**
      * Get an enum with no default values set to test with.
-     *
-     * @return \Valkyrja\Type\Types\Enum
      */
     protected function getEnumEmpty(): Enum
     {
@@ -183,8 +157,6 @@ class EnumTest extends TestCase
 
     /**
      * Test setting an invalid enum value after creating an enum with a valid value.
-     *
-     * @return void
      */
     public function testSetInvalidEnumValue(): void
     {
@@ -199,8 +171,6 @@ class EnumTest extends TestCase
 
     /**
      * Ensure the to string method exists in the Enum abstract class.
-     *
-     * @return void
      */
     public function testToStringExists(): void
     {
@@ -209,8 +179,6 @@ class EnumTest extends TestCase
 
     /**
      * Test the enum __toString capability.
-     *
-     * @return void
      */
     public function testToString(): void
     {

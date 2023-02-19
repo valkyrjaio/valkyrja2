@@ -51,8 +51,6 @@ class ServiceProvider extends Provider
      * Publish the dispatcher service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDispatcher(Container $container): void
     {
@@ -68,8 +66,6 @@ class ServiceProvider extends Provider
      * Publish the validator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishValidator(Container $container): void
     {

@@ -50,15 +50,11 @@ class Kernel implements Contract
 
     /**
      * The request.
-     *
-     * @var Request
      */
     protected Request $request;
 
     /**
      * The errors template directory.
-     *
-     * @var string
      */
     protected string $errorsTemplateDir = 'errors';
 
@@ -165,8 +161,6 @@ class Kernel implements Contract
      * Dispatch the request via the router.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     protected function dispatchRouter(Request $request): Response
     {
@@ -193,8 +187,6 @@ class Kernel implements Contract
      * @param Throwable $exception The exception
      *
      * @throws Throwable
-     *
-     * @return Response
      */
     protected function getExceptionResponse(Throwable $exception): Response
     {
@@ -222,8 +214,6 @@ class Kernel implements Contract
      * Get an http exception response.
      *
      * @param HttpException $exception The http exception
-     *
-     * @return Response
      */
     protected function getHttpExceptionResponse(HttpException $exception): Response
     {
@@ -250,8 +240,6 @@ class Kernel implements Contract
 
     /**
      * Get the response factory.
-     *
-     * @return ResponseFactory
      */
     protected function getResponseFactory(): ResponseFactory
     {
@@ -260,10 +248,6 @@ class Kernel implements Contract
 
     /**
      * Log an error.
-     *
-     * @param Throwable $exception
-     *
-     * @return void
      */
     protected function logException(Throwable $exception): void
     {
@@ -280,8 +264,6 @@ class Kernel implements Contract
      *
      * @param Request  $request  The request
      * @param Response $response The response
-     *
-     * @return void
      */
     protected function terminateRoute(Request $request, Response $response): void
     {
@@ -301,8 +283,6 @@ class Kernel implements Contract
 
     /**
      * Finish a session if it is active.
-     *
-     * @return void
      */
     protected function finishSession(): void
     {
@@ -313,8 +293,6 @@ class Kernel implements Contract
 
     /**
      * Finish the request.
-     *
-     * @return void
      */
     protected function finishRequest(): void
     {
@@ -336,8 +314,6 @@ class Kernel implements Contract
      *
      * @param int  $targetLevel The target output buffering level
      * @param bool $flush       Whether to flush or clean the buffers
-     *
-     * @return void
      */
     protected function closeOutputBuffers(int $targetLevel, bool $flush): void
     {

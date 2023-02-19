@@ -27,8 +27,6 @@ interface Logger extends Manager
 {
     /**
      * @inheritDoc
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
@@ -37,8 +35,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function debug(string $message, array $context = []): void;
 
@@ -47,8 +43,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function info(string $message, array $context = []): void;
 
@@ -57,8 +51,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function notice(string $message, array $context = []): void;
 
@@ -67,8 +59,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function warning(string $message, array $context = []): void;
 
@@ -77,8 +67,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function error(string $message, array $context = []): void;
 
@@ -87,8 +75,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function critical(string $message, array $context = []): void;
 
@@ -97,8 +83,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function alert(string $message, array $context = []): void;
 
@@ -107,8 +91,6 @@ interface Logger extends Manager
      *
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function emergency(string $message, array $context = []): void;
 
@@ -118,8 +100,6 @@ interface Logger extends Manager
      * @param string $level   The log level
      * @param string $message The message
      * @param array  $context [optional] The context
-     *
-     * @return void
      */
     public function log(string $level, string $message, array $context = []): void;
 
@@ -129,8 +109,6 @@ interface Logger extends Manager
      * @param Throwable $exception The exception
      * @param string    $message   The message
      * @param array     $context   [optional] The context
-     *
-     * @return void
      */
     public function exception(Throwable $exception, string $message, array $context = []): void;
 }

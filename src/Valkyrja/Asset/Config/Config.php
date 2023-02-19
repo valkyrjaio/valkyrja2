@@ -37,8 +37,6 @@ class Config extends Model
 
     /**
      * The default bundle.
-     *
-     * @var string
      */
     public string $default;
 
@@ -51,8 +49,6 @@ class Config extends Model
 
     /**
      * The bundles.
-     *
-     * @var array
      */
     public array $bundles;
 }

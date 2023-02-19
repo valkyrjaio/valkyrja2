@@ -24,15 +24,11 @@ class EdDsaKey extends Model
 {
     /**
      * The private key.
-     *
-     * @var string
      */
     public string $privateKey;
 
     /**
      * The public key.
-     *
-     * @var string
      */
     public string $publicKey;
 }

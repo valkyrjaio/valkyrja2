@@ -22,8 +22,6 @@ interface Annotator
 {
     /**
      * Get the parser.
-     *
-     * @return Parser
      */
     public function getParser(): Parser;
 
@@ -31,8 +29,6 @@ interface Annotator
      * Set the parser.
      *
      * @param Parser $parser The parser
-     *
-     * @return void
      */
     public function setParser(Parser $parser): void;
 

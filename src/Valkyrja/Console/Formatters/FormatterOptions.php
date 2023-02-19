@@ -66,8 +66,6 @@ trait FormatterOptions
      * Set an option by its number value.
      *
      * @param int $option The option
-     *
-     * @return void
      */
     abstract protected function setOptionNum(int $option): void;
 }

@@ -24,8 +24,6 @@ trait Provides
 {
     /**
      * Whether this provider is deferred.
-     *
-     * @return bool
      */
     public static function deferred(): bool
     {
@@ -63,8 +61,6 @@ trait Provides
      * Publish the provider.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publish(Container $container): void
     {

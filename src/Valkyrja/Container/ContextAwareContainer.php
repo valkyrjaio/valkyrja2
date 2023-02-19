@@ -25,15 +25,11 @@ interface ContextAwareContainer extends Container
      *
      * @param class-string|string $context The context class or function name
      * @param string|null         $member  [optional] The context method name
-     *
-     * @return static
      */
     public function withContext(string $context, string $member = null): static;
 
     /**
      * Get a container instance with no context.
-     *
-     * @return static
      */
     public function withoutContext(): static;
 }

@@ -51,8 +51,6 @@ class Vlid extends Ulid
      * @param bool                   $lowerCase [optional] Whether to return as lower case
      *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v1(DateTimeInterface $dateTime = null, bool $lowerCase = false): string
     {
@@ -66,8 +64,6 @@ class Vlid extends Ulid
      * @param bool                   $lowerCase [optional] Whether to return as lower case
      *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v2(DateTimeInterface $dateTime = null, bool $lowerCase = false): string
     {
@@ -81,8 +77,6 @@ class Vlid extends Ulid
      * @param bool                   $lowerCase [optional] Whether to return as lower case
      *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v3(DateTimeInterface $dateTime = null, bool $lowerCase = false): string
     {
@@ -96,8 +90,6 @@ class Vlid extends Ulid
      * @param bool                   $lowerCase [optional] Whether to return as lower case
      *
      * @throws Exception
-     *
-     * @return string
      */
     final public static function v4(DateTimeInterface $dateTime = null, bool $lowerCase = false): string
     {
@@ -124,8 +116,6 @@ class Vlid extends Ulid
      * Format a time with random bytes.
      *
      * @param string $time The time
-     *
-     * @return string
      */
     protected static function formatTimeWithRandomBytes(string $time): string
     {

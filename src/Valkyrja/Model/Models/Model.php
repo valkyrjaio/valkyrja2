@@ -41,22 +41,16 @@ abstract class Model implements Contract
 
     /**
      * Whether to set the original properties on creation via static::fromArray().
-     *
-     * @var bool
      */
     protected static bool $shouldSetOriginalProperties = true;
 
     /**
      * The original properties.
-     *
-     * @var array
      */
     private array $__originalProperties = [];
 
     /**
      * Whether the original properties have been set.
-     *
-     * @var bool
      */
     private bool $__originalPropertiesSet = false;
 
@@ -74,8 +68,6 @@ abstract class Model implements Contract
 
     /**
      * Whether to set the original properties array.
-     *
-     * @return bool
      */
     protected static function shouldSetOriginalProperties(): bool
     {
@@ -132,8 +124,6 @@ abstract class Model implements Contract
      * Determine whether the model has a property.
      *
      * @param string $property The property
-     *
-     * @return bool
      */
     public function hasProperty(string $property): bool
     {
@@ -240,8 +230,6 @@ abstract class Model implements Contract
      * Set properties from an array of properties.
      *
      * @param array $properties The properties to set
-     *
-     * @return void
      */
     protected function __setProperties(array $properties): void
     {
@@ -258,8 +246,6 @@ abstract class Model implements Contract
 
     /**
      * Set that original properties have been set.
-     *
-     * @return void
      */
     protected function __originalPropertiesSet(): void
     {
@@ -271,8 +257,6 @@ abstract class Model implements Contract
      *
      * @param string $property The property
      * @param string $type     The type (get|set|isset)
-     *
-     * @return string
      */
     protected function __getPropertyTypeMethodName(string $property, string $type): string
     {
@@ -284,8 +268,6 @@ abstract class Model implements Contract
      * Determine if a property type method exists.
      *
      * @param string $methodName The method name
-     *
-     * @return bool
      */
     protected function __doesPropertyTypeMethodExist(string $methodName): bool
     {
@@ -298,8 +280,6 @@ abstract class Model implements Contract
      *
      * @param string $name  The property name
      * @param mixed  $value The value
-     *
-     * @return void
      */
     protected function __setOriginalProperty(string $name, mixed $value): void
     {
@@ -310,8 +290,6 @@ abstract class Model implements Contract
 
     /**
      * Get all properties.
-     *
-     * @return array
      */
     protected function __allProperties(): array
     {
@@ -322,8 +300,6 @@ abstract class Model implements Contract
      * Remove internal model properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return void
      */
     protected function __removeInternalProperties(array &$properties): void
     {
@@ -335,8 +311,6 @@ abstract class Model implements Contract
      *
      * @param array $properties     The properties
      * @param array $onlyProperties A list of properties to return
-     *
-     * @return array
      */
     protected function __checkOnlyProperties(array $properties, array $onlyProperties): array
     {
@@ -352,8 +326,6 @@ abstract class Model implements Contract
      *
      * @param array $allProperties All the properties returnable
      * @param array $properties    The properties we wish to return
-     *
-     * @return array
      */
     protected function __onlyProperties(array $allProperties, array $properties): array
     {
@@ -376,8 +348,6 @@ abstract class Model implements Contract
      * Get the changed properties given an array of properties.
      *
      * @param array $properties The properties to check the original properties against
-     *
-     * @return array
      */
     protected function __getChangedProperties(array $properties): array
     {
@@ -404,8 +374,6 @@ abstract class Model implements Contract
      *
      * @param array  $properties The properties
      * @param string $method     The method name
-     *
-     * @return void
      */
     protected function __setPropertyValues(array &$properties, string $method): void
     {
@@ -418,8 +386,6 @@ abstract class Model implements Contract
      * Get a property's value for jsonSerialize.
      *
      * @param string $property The property
-     *
-     * @return mixed
      */
     protected function __getJsonPropertyValue(string $property): mixed
     {

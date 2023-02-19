@@ -25,8 +25,6 @@ class Integer
      *
      * @param int $subject The subject
      * @param int $min     [optional] The minimum value
-     *
-     * @return bool
      */
     public static function greaterThan(int $subject, int $min): bool
     {
@@ -38,8 +36,6 @@ class Integer
      *
      * @param int $subject The subject
      * @param int $max     [optional] The minimum value
-     *
-     * @return bool
      */
     public static function lessThan(int $subject, int $max): bool
     {
@@ -51,8 +47,6 @@ class Integer
      *
      * @param int $subject The subject
      * @param int $value   The value the subject should be divisible by
-     *
-     * @return bool
      */
     public static function divisible(int $subject, int $value): bool
     {

@@ -36,22 +36,16 @@ trait StreamHelpers
 
     /**
      * Returns whether or not the stream is seekable.
-     *
-     * @return bool
      */
     abstract public function isSeekable(): bool;
 
     /**
      * Returns whether or not the stream is readable.
-     *
-     * @return bool
      */
     abstract public function isReadable(): bool;
 
     /**
      * Returns whether or not the stream is writable.
-     *
-     * @return bool
      */
     abstract public function isWritable(): bool;
 
@@ -62,8 +56,6 @@ trait StreamHelpers
      * @param string|null $mode   [optional] The mode
      *
      * @throws InvalidStream
-     *
-     * @return void
      */
     protected function setStream(string $stream, string $mode = null): void
     {
@@ -87,8 +79,6 @@ trait StreamHelpers
 
     /**
      * Is the stream valid.
-     *
-     * @return bool
      */
     protected function isInValidStream(): bool
     {
@@ -97,8 +87,6 @@ trait StreamHelpers
 
     /**
      * Verify the stream.
-     *
-     * @return void
      */
     protected function verifyStream(): void
     {
@@ -126,10 +114,6 @@ trait StreamHelpers
 
     /**
      * Is mode writable.
-     *
-     * @param string $mode
-     *
-     * @return bool
      */
     protected function isModeWriteable(string $mode): bool
     {
@@ -142,8 +126,6 @@ trait StreamHelpers
 
     /**
      * Verify the stream is writable.
-     *
-     * @return void
      */
     protected function verifyWritable(): void
     {
@@ -156,10 +138,6 @@ trait StreamHelpers
 
     /**
      * Verify the write result.
-     *
-     * @param int|false $result
-     *
-     * @return void
      */
     protected function verifyWriteResult(int|false $result): void
     {
@@ -172,8 +150,6 @@ trait StreamHelpers
 
     /**
      * Verify the stream is seekable.
-     *
-     * @return void
      */
     protected function verifySeekable(): void
     {
@@ -186,10 +162,6 @@ trait StreamHelpers
 
     /**
      * Verify the seek result.
-     *
-     * @param int $result
-     *
-     * @return void
      */
     protected function verifySeekResult(int $result): void
     {
@@ -202,10 +174,6 @@ trait StreamHelpers
 
     /**
      * Is mode readable.
-     *
-     * @param string $mode
-     *
-     * @return bool
      */
     protected function isModeReadable(string $mode): bool
     {
@@ -215,8 +183,6 @@ trait StreamHelpers
 
     /**
      * Verify the stream is readable.
-     *
-     * @return void
      */
     protected function verifyReadable(): void
     {
@@ -229,10 +195,6 @@ trait StreamHelpers
 
     /**
      * Verify the read result.
-     *
-     * @param string|false $result
-     *
-     * @return void
      */
     protected function verifyReadResult(string|false $result): void
     {

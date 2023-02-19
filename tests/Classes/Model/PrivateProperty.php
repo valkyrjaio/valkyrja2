@@ -24,27 +24,16 @@ trait PrivateProperty
 {
     private string $private;
 
-    /**
-     * @return string
-     */
     protected function getPrivate(): string
     {
         return $this->private;
     }
 
-    /**
-     * @return bool
-     */
     protected function issetPrivate(): bool
     {
         return isset($this->private);
     }
 
-    /**
-     * @param string $private
-     *
-     * @return void
-     */
     protected function setPrivate(string $private): void
     {
         $this->private = $private;

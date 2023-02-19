@@ -32,15 +32,11 @@ class CommandTest extends TestCase
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +47,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getPath method's default value.
-     *
-     * @return void
      */
     public function testGetPathDefault(): void
     {
@@ -61,8 +55,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getPath method.
-     *
-     * @return void
      */
     public function testGetPath(): void
     {
@@ -73,8 +65,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setPath method.
-     *
-     * @return void
      */
     public function testSetPath(): void
     {
@@ -85,8 +75,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getRegex method's default value.
-     *
-     * @return void
      */
     public function testGetRegexDefault(): void
     {
@@ -95,8 +83,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getRegex method.
-     *
-     * @return void
      */
     public function testGetRegex(): void
     {
@@ -107,8 +93,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setRegex method with null value.
-     *
-     * @return void
      */
     public function testSetRegexNull(): void
     {
@@ -119,8 +103,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setRegex method.
-     *
-     * @return void
      */
     public function testSetRegex(): void
     {
@@ -131,8 +113,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getParams method's default value.
-     *
-     * @return void
      */
     public function testGetParamsDefault(): void
     {
@@ -141,8 +121,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getParams method.
-     *
-     * @return void
      */
     public function testGetParams(): void
     {
@@ -153,8 +131,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setParams method with null value.
-     *
-     * @return void
      */
     public function testSetParamsNull(): void
     {
@@ -165,8 +141,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setParams method.
-     *
-     * @return void
      */
     public function testSetParams(): void
     {
@@ -177,8 +151,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getSegments method's default value.
-     *
-     * @return void
      */
     public function testGetSegmentsDefault(): void
     {
@@ -187,8 +159,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getSegments method.
-     *
-     * @return void
      */
     public function testGetSegments(): void
     {
@@ -199,8 +169,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setSegments method with null value.
-     *
-     * @return void
      */
     public function testSetSegmentsNull(): void
     {
@@ -211,8 +179,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setSegments method.
-     *
-     * @return void
      */
     public function testSetSegments(): void
     {
@@ -223,8 +189,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getDescription method's default value.
-     *
-     * @return void
      */
     public function testGetDescriptionDefault(): void
     {
@@ -233,8 +197,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the getDescription method.
-     *
-     * @return void
      */
     public function testGetDescription(): void
     {
@@ -245,8 +207,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setDescription method with null value.
-     *
-     * @return void
      */
     public function testSetDescriptionNull(): void
     {
@@ -257,8 +217,6 @@ class CommandTest extends TestCase
 
     /**
      * Test the setDescription method.
-     *
-     * @return void
      */
     public function testSetDescription(): void
     {

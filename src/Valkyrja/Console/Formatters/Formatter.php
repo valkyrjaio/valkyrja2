@@ -34,15 +34,11 @@ class Formatter implements Contract
 
     /**
      * The foreground color.
-     *
-     * @var int|null
      */
     protected ?int $foreground = null;
 
     /**
      * The background color.
-     *
-     * @var int|null
      */
     protected ?int $background = null;
 
@@ -163,8 +159,6 @@ class Formatter implements Contract
      *
      * @param FormatBackground|FormatForeground $color      The color
      * @param bool                              $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     protected function setColor(FormatBackground|FormatForeground $color, bool $background = null): void
     {
@@ -181,8 +175,6 @@ class Formatter implements Contract
      * Set an option by its number value.
      *
      * @param int $option The option
-     *
-     * @return void
      */
     protected function setOptionNum(int $option): void
     {

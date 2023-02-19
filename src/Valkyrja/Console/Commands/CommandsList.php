@@ -100,8 +100,6 @@ class CommandsList extends Commander
      * @param int         $longestLength The longest length
      * @param string|null $namespace     [optional] The namespace to show commands
      *                                   for
-     *
-     * @return void
      */
     protected function filterCommands(array &$commands, int &$longestLength, string $namespace = null): void
     {
@@ -157,8 +155,6 @@ class CommandsList extends Commander
      *
      * @param Command $command         The current command
      * @param string  $previousSection The previous section
-     *
-     * @return void
      */
     protected function commandSection(Command $command, string &$previousSection): void
     {
@@ -179,8 +175,6 @@ class CommandsList extends Commander
      * Sort commands by name.
      *
      * @param array $commands The commands
-     *
-     * @return void
      */
     protected function sortCommands(array &$commands): void
     {

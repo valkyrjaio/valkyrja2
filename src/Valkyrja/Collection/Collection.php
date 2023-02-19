@@ -28,8 +28,6 @@ interface Collection
      * Set the collection.
      *
      * @param array $collection The collection
-     *
-     * @return static
      */
     public function setAll(array $collection): static;
 
@@ -37,8 +35,6 @@ interface Collection
      * Determine if a value exists in the collection.
      *
      * @param mixed $value The value
-     *
-     * @return bool
      */
     public function exists(mixed $value): bool;
 
@@ -51,22 +47,16 @@ interface Collection
 
     /**
      * Get all the keys in the collection.
-     *
-     * @return array
      */
     public function keys(): array;
 
     /**
      * Get the total count of items in the collection.
-     *
-     * @return int
      */
     public function count(): int;
 
     /**
      * Determine if the collection is empty.
-     *
-     * @return bool
      */
     public function isEmpty(): bool;
 
@@ -94,8 +84,6 @@ interface Collection
      *
      * @param string|int $key     The key to get
      * @param mixed      $default [optional] The default value
-     *
-     * @return mixed
      */
     public function get(string|int $key, mixed $default = null): mixed;
 
@@ -103,8 +91,6 @@ interface Collection
      * Determine if an item is in the collection.
      *
      * @param string|int $key The key
-     *
-     * @return bool
      */
     public function has(string|int $key): bool;
 
@@ -113,8 +99,6 @@ interface Collection
      *
      * @param string|int $key   The key
      * @param mixed      $value The value
-     *
-     * @return static
      */
     public function set(string|int $key, mixed $value): static;
 
@@ -122,8 +106,6 @@ interface Collection
      * Determine if an item is in the collection.
      *
      * @param string|int $key The key
-     *
-     * @return bool
      */
     public function __isset(string|int $key): bool;
 
@@ -131,8 +113,6 @@ interface Collection
      * Remove an item from the collection.
      *
      * @param string|int $key The key
-     *
-     * @return void
      */
     public function __unset(string|int $key): void;
 
@@ -140,8 +120,6 @@ interface Collection
      * Remove an item from the collection.
      *
      * @param string|int $key The key
-     *
-     * @return static
      */
     public function remove(string|int $key): static;
 
@@ -149,8 +127,6 @@ interface Collection
      * Convert the collection to a string.
      *
      * @throws JsonException
-     *
-     * @return string
      */
     public function __toString(): string;
 }

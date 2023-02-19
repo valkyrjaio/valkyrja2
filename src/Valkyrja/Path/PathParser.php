@@ -24,8 +24,6 @@ interface PathParser
      * Parse a path and get its parts.
      *
      * @param string $path The path
-     *
-     * @return array
      */
     public function parse(string $path): array;
 }

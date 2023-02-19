@@ -29,29 +29,21 @@ abstract class Middleware
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     private static Container $container;
 
     /**
      * The response factory.
-     *
-     * @var ResponseFactory
      */
     private static ResponseFactory $responseFactory;
 
     /**
      * The router.
-     *
-     * @var Router
      */
     private static Router $router;
 
     /**
      * The matched route.
-     *
-     * @var Route
      */
     public static Route $route;
 
@@ -59,8 +51,6 @@ abstract class Middleware
      * Middleware handler for before a request is dispatched.
      *
      * @param Request $request The request
-     *
-     * @return Request|Response
      */
     public static function before(Request $request): Request|Response
     {
@@ -74,8 +64,6 @@ abstract class Middleware
      *
      * @param Request  $request  The request
      * @param Response $response The response
-     *
-     * @return Response
      */
     public static function after(Request $request, Response $response): Response
     {
@@ -89,8 +77,6 @@ abstract class Middleware
      *
      * @param Request  $request  The request
      * @param Response $response The response
-     *
-     * @return void
      */
     public static function terminate(Request $request, Response $response): void
     {
@@ -99,8 +85,6 @@ abstract class Middleware
 
     /**
      * Get the container service.
-     *
-     * @return Container
      */
     protected static function getContainer(): Container
     {
@@ -109,8 +93,6 @@ abstract class Middleware
 
     /**
      * Get the response factory service.
-     *
-     * @return ResponseFactory
      */
     protected static function getResponseFactory(): ResponseFactory
     {
@@ -119,8 +101,6 @@ abstract class Middleware
 
     /**
      * Get the router service.
-     *
-     * @return Router
      */
     protected static function getRouter(): Router
     {
@@ -133,8 +113,6 @@ abstract class Middleware
      *  NOTE: This will only be instantiated and available to middlewares' before methods that are set to a route, and
      *  not to global middleware that run on every request. It will be available for all middlewares' after and
      *  terminate assuming a route was matched
-     *
-     * @return Route|null
      */
     protected static function getRoute(): ?Route
     {

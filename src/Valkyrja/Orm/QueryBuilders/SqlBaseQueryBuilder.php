@@ -29,15 +29,11 @@ abstract class SqlBaseQueryBuilder implements Contract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
     /**
      * The table upon which the statement executes.
-     *
-     * @var string
      */
     protected string $table;
 
@@ -50,8 +46,6 @@ abstract class SqlBaseQueryBuilder implements Contract
 
     /**
      * SqlBaseQueryBuilder constructor.
-     *
-     * @param Adapter $adapter
      */
     public function __construct(Adapter $adapter)
     {

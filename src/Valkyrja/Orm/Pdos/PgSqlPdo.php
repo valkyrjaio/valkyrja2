@@ -24,8 +24,6 @@ class PgSqlPdo extends Pdo
 {
     /**
      * The default options.
-     *
-     * @var array
      */
     protected static array $defaultOptions = [
         BasePDO::ATTR_PERSISTENT        => true,

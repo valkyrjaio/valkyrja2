@@ -29,8 +29,6 @@ interface Auth
 {
     /**
      * Set the config.
-     *
-     * @return Config|array
      */
     public function getConfig(): Config|array;
 
@@ -38,8 +36,6 @@ interface Auth
      * Get an adapter by name.
      *
      * @param class-string<Adapter>|null $name [optional] The adapter name
-     *
-     * @return Adapter
      */
     public function getAdapter(string $name = null): Adapter;
 
@@ -48,8 +44,6 @@ interface Auth
      *
      * @param class-string<User>|null    $user    [optional] The user
      * @param class-string<Adapter>|null $adapter [optional] The adapter
-     *
-     * @return Repository
      */
     public function getRepository(string $user = null, string $adapter = null): Repository;
 
@@ -59,8 +53,6 @@ interface Auth
      * @param class-string<Gate>|null    $name    [optional] The name
      * @param class-string<User>|null    $user    [optional] The user
      * @param class-string<Adapter>|null $adapter [optional] The adapter
-     *
-     * @return Gate
      */
     public function getGate(string $name = null, string $user = null, string $adapter = null): Gate;
 
@@ -70,15 +62,11 @@ interface Auth
      * @param class-string<Policy>|null  $name    [optional] The policy name
      * @param class-string<User>|null    $user    [optional] The user
      * @param class-string<Adapter>|null $adapter [optional] The adapter
-     *
-     * @return Policy
      */
     public function getPolicy(string $name = null, string $user = null, string $adapter = null): Policy;
 
     /**
      * Get the factory.
-     *
-     * @return Factory
      */
     public function getFactory(): Factory;
 
@@ -90,8 +78,6 @@ interface Auth
      * @param class-string<Adapter>|null $adapter [optional] The adapter
      *
      * @throws CryptException
-     *
-     * @return Request
      */
     public function requestWithAuthToken(Request $request, string $user = null, string $adapter = null): Request;
 
@@ -99,22 +85,16 @@ interface Auth
      * Get a request without auth token header.
      *
      * @param Request $request The request
-     *
-     * @return Request
      */
     public function requestWithoutAuthToken(Request $request): Request;
 
     /**
      * Determine if a user is authenticated.
-     *
-     * @return bool
      */
     public function isAuthenticated(): bool;
 
     /**
      * Get the authenticated user.
-     *
-     * @return User
      */
     public function getUser(): User;
 
@@ -122,15 +102,11 @@ interface Auth
      * Set the authenticated user.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function setUser(User $user): static;
 
     /**
      * Get the authenticated users.
-     *
-     * @return AuthenticatedUsers
      */
     public function getUsers(): AuthenticatedUsers;
 
@@ -138,8 +114,6 @@ interface Auth
      * Set the authenticated users.
      *
      * @param AuthenticatedUsers $users The users
-     *
-     * @return static
      */
     public function setUsers(AuthenticatedUsers $users): static;
 
@@ -149,8 +123,6 @@ interface Auth
      * @param User $user The user
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticate(User $user): static;
 
@@ -158,8 +130,6 @@ interface Auth
      * Authenticate a user from an active session.
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticateFromSession(): static;
 
@@ -169,8 +139,6 @@ interface Auth
      * @param Request $request The request
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticateFromRequest(Request $request): static;
 
@@ -178,22 +146,16 @@ interface Auth
      * Un-authenticate any active users.
      *
      * @param User|null $user [optional] The user to un-authenticate
-     *
-     * @return static
      */
     public function unAuthenticate(User $user = null): static;
 
     /**
      * Set the authenticated user in the session.
-     *
-     * @return static
      */
     public function setSession(): static;
 
     /**
      * Unset the authenticated user from the session.
-     *
-     * @return static
      */
     public function unsetSession(): static;
 
@@ -203,8 +165,6 @@ interface Auth
      * @param User $user The user
      *
      * @throws InvalidRegistrationException
-     *
-     * @return static
      */
     public function register(User $user): static;
 
@@ -212,8 +172,6 @@ interface Auth
      * Forgot password.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function forgot(User $user): static;
 
@@ -222,8 +180,6 @@ interface Auth
      *
      * @param string $resetToken The reset token
      * @param string $password   The password
-     *
-     * @return static
      */
     public function reset(string $resetToken, string $password): static;
 
@@ -231,8 +187,6 @@ interface Auth
      * Lock a user.
      *
      * @param LockableUser $user The user
-     *
-     * @return static
      */
     public function lock(LockableUser $user): static;
 
@@ -240,8 +194,6 @@ interface Auth
      * Unlock a user.
      *
      * @param LockableUser $user The user
-     *
-     * @return static
      */
     public function unlock(LockableUser $user): static;
 
@@ -251,15 +203,11 @@ interface Auth
      * @param string $password The password
      *
      * @throws InvalidPasswordConfirmationException
-     *
-     * @return static
      */
     public function confirmPassword(string $password): static;
 
     /**
      * Determine if a re-authentication needs to occur.
-     *
-     * @return bool
      */
     public function isReAuthenticationRequired(): bool;
 }

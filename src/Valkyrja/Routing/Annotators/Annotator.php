@@ -38,10 +38,6 @@ class Annotator implements Contract
 {
     /**
      * ContainerAnnotator constructor.
-     *
-     * @param AnnotationAnnotator $annotator
-     * @param Filter              $filter
-     * @param Reflector           $reflector
      */
     public function __construct(
         protected AnnotationAnnotator $annotator,
@@ -123,12 +119,8 @@ class Annotator implements Contract
     /**
      * Set the route properties from arguments.
      *
-     * @param Route $route
-     *
      * @throws InvalidRoutePath
      * @throws ReflectionException
-     *
-     * @return void
      */
     protected function setRouteProperties(Route $route): void
     {
@@ -153,8 +145,6 @@ class Annotator implements Contract
      * Get class annotations.
      *
      * @param class-string $class The class
-     *
-     * @return array
      */
     protected function getClassAnnotations(string $class): array
     {
@@ -170,8 +160,6 @@ class Annotator implements Contract
      * @param Route $route The route annotation
      *
      * @throws InvalidArgumentException
-     *
-     * @return RouteContract
      */
     protected function getRouteFromAnnotation(Route $route): RouteContract
     {
@@ -184,11 +172,6 @@ class Annotator implements Contract
 
     /**
      * Get a new route with controller route additions.
-     *
-     * @param Route $controllerRoute
-     * @param Route $route
-     *
-     * @return Route
      */
     protected function getControllerBuiltRoute(Route $controllerRoute, Route $route): Route
     {
@@ -238,8 +221,6 @@ class Annotator implements Contract
      * Get a parsed path.
      *
      * @param string $path The path
-     *
-     * @return string
      */
     protected function getParsedPath(string $path): string
     {
@@ -262,8 +243,6 @@ class Annotator implements Contract
      * Get class member annotations.
      *
      * @param class-string $class The class
-     *
-     * @return array
      */
     protected function getClassMemberAnnotations(string $class): array
     {

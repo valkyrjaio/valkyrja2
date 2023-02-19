@@ -131,8 +131,6 @@ class CacheableConsole extends Console
      * Setup command providers.
      *
      * @param ConsoleConfig|array $config
-     *
-     * @return void
      */
     protected function setupCommandProviders(Config|array $config): void
     {

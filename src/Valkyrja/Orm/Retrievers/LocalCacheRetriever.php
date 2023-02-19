@@ -27,8 +27,6 @@ class LocalCacheRetriever extends Retriever
 {
     /**
      * Local cache for results in case same query is made multiple times within the same session.
-     *
-     * @var array
      */
     protected static array $localCache = [];
 
@@ -83,8 +81,6 @@ class LocalCacheRetriever extends Retriever
      * Get the cache key.
      *
      * @throws JsonException
-     *
-     * @return string
      */
     protected function getCacheKey(): string
     {

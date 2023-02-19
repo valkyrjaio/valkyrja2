@@ -27,15 +27,11 @@ abstract class FirebaseAdapter implements Contract
 {
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 
     /**
      * The algorithm.
-     *
-     * @var string
      */
     protected string $algorithm;
 
@@ -85,8 +81,6 @@ abstract class FirebaseAdapter implements Contract
 
     /**
      * Get the decode key.
-     *
-     * @return Key
      */
     protected function getKey(): Key
     {
@@ -95,15 +89,11 @@ abstract class FirebaseAdapter implements Contract
 
     /**
      * Set the encode key.
-     *
-     * @return void
      */
     abstract protected function setEncodeKey(): void;
 
     /**
      * Set the decode key.
-     *
-     * @return void
      */
     abstract protected function setDecodeKey(): void;
 }

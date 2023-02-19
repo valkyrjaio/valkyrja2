@@ -28,15 +28,11 @@ class MailgunAdapter implements Contract
 {
     /**
      * The Mailgun service.
-     *
-     * @var Mailgun
      */
     protected Mailgun $mailgun;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 
@@ -91,8 +87,6 @@ class MailgunAdapter implements Contract
      * @param BatchMessage $mailgunMessage The mailgun batch message
      * @param string       $method         The method to call
      * @param array        $recipients     The recipients
-     *
-     * @return void
      */
     protected function setRecipients(BatchMessage $mailgunMessage, string $method, array $recipients): void
     {
@@ -106,8 +100,6 @@ class MailgunAdapter implements Contract
      *
      * @param BatchMessage $mailgunMessage The mailgun batch message
      * @param array        $attachments    The attachments
-     *
-     * @return void
      */
     protected function addAttachments(BatchMessage $mailgunMessage, array $attachments): void
     {

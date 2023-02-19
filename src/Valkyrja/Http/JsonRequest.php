@@ -35,8 +35,6 @@ interface JsonRequest extends Request
      * Retrieve only the specified request body params.
      *
      * @param string[] $names The param names to retrieve
-     *
-     * @return array
      */
     public function onlyParsedJson(array $names): array;
 
@@ -44,8 +42,6 @@ interface JsonRequest extends Request
      * Retrieve all request body params except the ones specified.
      *
      * @param string[] $names The param names to not retrieve
-     *
-     * @return array
      */
     public function exceptParsedJson(array $names): array;
 
@@ -55,8 +51,6 @@ interface JsonRequest extends Request
      *
      * @param string     $name    The json param name to retrieve
      * @param mixed|null $default [optional] Default value to return if the param does not exist
-     *
-     * @return mixed
      */
     public function getParsedJsonParam(string $name, mixed $default = null): mixed;
 
@@ -64,8 +58,6 @@ interface JsonRequest extends Request
      * Determine if a specific json param exists.
      *
      * @param string $name The json param name to check for
-     *
-     * @return bool
      */
     public function hasParsedJsonParam(string $name): bool;
 }

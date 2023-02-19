@@ -22,22 +22,16 @@ interface LockableUser extends User
 {
     /**
      * Get the max number login attempts before locking.
-     *
-     * @return int
      */
     public static function getMaxLoginAttempts(): int;
 
     /**
      * Get the login attempts field.
-     *
-     * @return string
      */
     public static function getLoginAttemptsField(): string;
 
     /**
      * Get the locked flag field.
-     *
-     * @return string
      */
     public static function getIsLockedField(): string;
 }

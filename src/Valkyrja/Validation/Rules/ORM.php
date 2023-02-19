@@ -27,23 +27,16 @@ class ORM
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     protected Container $container;
 
     /**
      * The ORM manager.
-     *
-     * @var ORMManager
      */
     protected ORMManager $orm;
 
     /**
      * ORM constructor.
-     *
-     * @param Container  $container
-     * @param ORMManager $orm
      */
     public function __construct(Container $container, ORMManager $orm)
     {
@@ -57,8 +50,6 @@ class ORM
      * @param mixed                $subject The subject
      * @param class-string<Entity> $entity  The entity to check for uniqueness
      * @param string|null          $field   The field to ensure is unique
-     *
-     * @return void
      */
     public function ormUnique(mixed $subject, string $entity, string $field = null): void
     {
@@ -80,8 +71,6 @@ class ORM
      * @param mixed                $subject The subject
      * @param class-string<Entity> $entity  The entity to check for uniqueness
      * @param string|null          $field   The field to ensure is unique
-     *
-     * @return void
      */
     public function ormExists(mixed $subject, string $entity, string $field = null): void
     {

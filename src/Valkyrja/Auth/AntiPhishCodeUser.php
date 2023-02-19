@@ -22,15 +22,11 @@ interface AntiPhishCodeUser extends User
 {
     /**
      * Get the anti-phishing code field.
-     *
-     * @return string
      */
     public static function getAntiPhishCodeField(): string;
 
     /**
      * Get the date when the anti-phishing code was modified field.
-     *
-     * @return string
      */
     public static function getDateAntiPhishCodeModifiedField(): string;
 }

@@ -34,8 +34,6 @@ class ContainerMessageFactory extends ContainerFactory implements MessageFactory
 {
     /**
      * The default driver class.
-     *
-     * @var string
      */
     protected static string $defaultMessageClass;
 
@@ -43,8 +41,6 @@ class ContainerMessageFactory extends ContainerFactory implements MessageFactory
      * @inheritDoc
      *
      * @param class-string<Message> $name The message
-     *
-     * @return Message
      */
     public function createMessage(string $name, array $config, array $data = []): Message
     {
@@ -63,8 +59,6 @@ class ContainerMessageFactory extends ContainerFactory implements MessageFactory
      * Get the default message class.
      *
      * @param string $name The message
-     *
-     * @return string
      */
     protected function getMessageDefaultClass(string $name): string
     {

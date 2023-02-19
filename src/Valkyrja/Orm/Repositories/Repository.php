@@ -40,29 +40,21 @@ class Repository implements Contract
 {
     /**
      * The connection driver.
-     *
-     * @var Driver
      */
     protected Driver $driver;
 
     /**
      * The entity manager.
-     *
-     * @var Orm
      */
     protected Orm $orm;
 
     /**
      * The persister.
-     *
-     * @var Persister
      */
     protected Persister $persister;
 
     /**
      * The retriever.
-     *
-     * @var Retriever
      */
     protected Retriever $retriever;
 
@@ -82,8 +74,6 @@ class Repository implements Contract
 
     /**
      * Whether to get relations.
-     *
-     * @var bool
      */
     protected bool $getRelations = false;
 
@@ -372,8 +362,6 @@ class Repository implements Contract
      * @param Entity $entity The entity
      *
      * @throws InvalidEntityException
-     *
-     * @return void
      */
     protected function validateEntity(Entity $entity): void
     {

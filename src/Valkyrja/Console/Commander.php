@@ -22,50 +22,36 @@ interface Commander
 {
     /**
      * Get the command.
-     *
-     * @return string
      */
     public static function getCommand(): string;
 
     /**
      * Get the command path.
-     *
-     * @return string
      */
     public static function getPath(): string;
 
     /**
      * Get the short description.
-     *
-     * @return string
      */
     public static function getShortDescription(): string;
 
     /**
      * Get the description.
-     *
-     * @return string
      */
     public static function getDescription(): string;
 
     /**
      * Help docs for this command.
-     *
-     * @return int
      */
     public function help(): int;
 
     /**
      * The run handler.
-     *
-     * @return int
      */
     public function run(): int;
 
     /**
      * Get the command version.
-     *
-     * @return int
      */
     public function version(): int;
 }

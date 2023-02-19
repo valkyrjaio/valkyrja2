@@ -27,8 +27,6 @@ interface Console extends ProvidersAware
      * Add a new command.
      *
      * @param Command $command The command
-     *
-     * @return void
      */
     public function addCommand(Command $command): void;
 
@@ -36,8 +34,6 @@ interface Console extends ProvidersAware
      * Get a command by name.
      *
      * @param string $name The command name
-     *
-     * @return Command|null
      */
     public function getCommand(string $name): ?Command;
 
@@ -45,8 +41,6 @@ interface Console extends ProvidersAware
      * Determine whether a command exists.
      *
      * @param string $name The command
-     *
-     * @return bool
      */
     public function hasCommand(string $name): bool;
 
@@ -54,8 +48,6 @@ interface Console extends ProvidersAware
      * Remove a command.
      *
      * @param string $name The command
-     *
-     * @return void
      */
     public function removeCommand(string $name): void;
 
@@ -65,8 +57,6 @@ interface Console extends ProvidersAware
      * @param Input $input The input
      *
      * @throws CommandNotFound
-     *
-     * @return Command
      */
     public function inputCommand(Input $input): Command;
 
@@ -76,8 +66,6 @@ interface Console extends ProvidersAware
      * @param string $path The command name
      *
      * @throws CommandNotFound
-     *
-     * @return Command
      */
     public function matchCommand(string $path): Command;
 
@@ -88,8 +76,6 @@ interface Console extends ProvidersAware
      * @param Output $output The output
      *
      * @throws CommandNotFound
-     *
-     * @return int
      */
     public function dispatch(Input $input, Output $output): int;
 
@@ -97,8 +83,6 @@ interface Console extends ProvidersAware
      * Dispatch a command.
      *
      * @param Command $command The command
-     *
-     * @return int
      */
     public function dispatchCommand(Command $command): int;
 
@@ -113,8 +97,6 @@ interface Console extends ProvidersAware
      * Set the commands.
      *
      * @param Command ...$commands The commands
-     *
-     * @return void
      */
     public function set(Command ...$commands): void;
 

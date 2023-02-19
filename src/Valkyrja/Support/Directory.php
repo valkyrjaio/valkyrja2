@@ -36,8 +36,6 @@ class Directory
 
     /**
      * Various paths for the application.
-     *
-     * @var string
      */
     public static string $APP_PATH               = 'app';
     public static string $BOOTSTRAP_PATH         = 'bootstrap';
@@ -59,8 +57,6 @@ class Directory
      * Get the app directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function appPath(string $path = null): string
     {
@@ -71,8 +67,6 @@ class Directory
      * Get the base directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function basePath(string $path = null): string
     {
@@ -83,8 +77,6 @@ class Directory
      * Construct a path with the directory separator prepended.
      *
      * @param string|null $path The path
-     *
-     * @return string
      */
     public static function path(string $path = null): string
     {
@@ -97,8 +89,6 @@ class Directory
      * Get the bootstrap directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function bootstrapPath(string $path = null): string
     {
@@ -109,8 +99,6 @@ class Directory
      * Get the commands config directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function commandsPath(string $path = null): string
     {
@@ -121,8 +109,6 @@ class Directory
      * Get the events config directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function eventsPath(string $path = null): string
     {
@@ -133,8 +119,6 @@ class Directory
      * Get the routes config directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function routesPath(string $path = null): string
     {
@@ -145,8 +129,6 @@ class Directory
      * Get the services config directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function servicesPath(string $path = null): string
     {
@@ -157,8 +139,6 @@ class Directory
      * Get the config directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function configPath(string $path = null): string
     {
@@ -169,8 +149,6 @@ class Directory
      * Get the env directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function envPath(string $path = null): string
     {
@@ -181,8 +159,6 @@ class Directory
      * Get the public directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function publicPath(string $path = null): string
     {
@@ -193,8 +169,6 @@ class Directory
      * Get the resources directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function resourcesPath(string $path = null): string
     {
@@ -205,8 +179,6 @@ class Directory
      * Get the storage directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function storagePath(string $path = null): string
     {
@@ -217,8 +189,6 @@ class Directory
      * Get the framework storage directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function frameworkStoragePath(string $path = null): string
     {
@@ -229,8 +199,6 @@ class Directory
      * Get the cache directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function cachePath(string $path = null): string
     {
@@ -241,8 +209,6 @@ class Directory
      * Get the tests directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function testsPath(string $path = null): string
     {
@@ -253,8 +219,6 @@ class Directory
      * Get the vendor directory for the application.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     public static function vendorPath(string $path = null): string
     {
@@ -266,8 +230,6 @@ class Directory
      *  if it does then it is already an absolute path and shouldn't be prepended with the base path).
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     protected static function __basePath(string $path = null): string
     {

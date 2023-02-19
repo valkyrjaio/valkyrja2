@@ -76,8 +76,6 @@ class PathGenerator implements Contract
      * @param array $replacements The replacements array
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function parseData(
         array $segments,
@@ -127,8 +125,6 @@ class PathGenerator implements Contract
      * @param string $regex The regex
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function validateDatum(string $key, mixed $datum, string $regex): void
     {
@@ -148,11 +144,6 @@ class PathGenerator implements Contract
 
     /**
      * Find a segment with a param key.
-     *
-     * @param array  $segments
-     * @param string $param
-     *
-     * @return string
      */
     protected function findParamSegment(array $segments, string $param): string
     {

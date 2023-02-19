@@ -31,8 +31,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
 {
     /**
      * The broadcast message param value.
-     *
-     * @var string
      */
     protected static string $broadcastMessageParamName = 'broadcast_message';
 
@@ -75,8 +73,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
      * Get the broadcast message from the request.
      *
      * @param Request $request The request
-     *
-     * @return string|null
      */
     protected static function getBroadCastMessageFromRequest(Request $request): ?string
     {
@@ -91,8 +87,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
      * Get the response to send when a broadcast message is not found in the request.
      *
      * @param ResponseFactory $responseFactory The response factory
-     *
-     * @return Response
      */
     protected static function getNoBroadcastMessageResponse(ResponseFactory $responseFactory): Response
     {
@@ -103,8 +97,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
      * Get the response to send when a user is not logged in.
      *
      * @param ResponseFactory $responseFactory The response factory
-     *
-     * @return Response
      */
     protected static function getNoAuthUserResponse(ResponseFactory $responseFactory): Response
     {
@@ -119,8 +111,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
      * @param string    $broadcastMessage The broadcast messages
      *
      * @throws JsonException
-     *
-     * @return bool
      */
     protected static function determineCanRead(User $user, Broadcast $broadcaster, string $broadcastMessage): bool
     {
@@ -137,8 +127,6 @@ class VerifyAuthBroadcastMiddleware extends Middleware
      * Get the response to send when a broadcast message cannot be read by the logged in user.
      *
      * @param ResponseFactory $responseFactory The response factory
-     *
-     * @return Response
      */
     protected static function getCannotReadResponse(ResponseFactory $responseFactory): Response
     {

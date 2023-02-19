@@ -24,15 +24,11 @@ trait DatedFields
 
     /**
      * The date created date.
-     *
-     * @var string
      */
     public string $date_created;
 
     /**
      * The date modified date.
-     *
-     * @var string
      */
     public string $date_modified;
 }

@@ -101,8 +101,6 @@ class JsonResponse extends Response implements Contract
      * Verify a callback.
      *
      * @param string $callback The callback
-     *
-     * @return void
      */
     protected function verifyCallback(string $callback): void
     {

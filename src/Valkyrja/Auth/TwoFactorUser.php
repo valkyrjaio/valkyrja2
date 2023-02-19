@@ -22,15 +22,11 @@ interface TwoFactorUser extends User
 {
     /**
      * Get the two factor code field.
-     *
-     * @return string
      */
     public static function getTwoFactorCodeField(): string;
 
     /**
      * Get the date the two factor code was generated field.
-     *
-     * @return string
      */
     public static function getDateTwoFactorCodeGeneratedField(): string;
 }

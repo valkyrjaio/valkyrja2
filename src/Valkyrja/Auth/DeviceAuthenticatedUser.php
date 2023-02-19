@@ -22,8 +22,6 @@ interface DeviceAuthenticatedUser extends User
 {
     /**
      * Get the device id field.
-     *
-     * @return string
      */
     public static function getDeviceIdField(): string;
 }

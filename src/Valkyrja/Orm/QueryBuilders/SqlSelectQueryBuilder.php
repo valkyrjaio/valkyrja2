@@ -33,36 +33,26 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * The columns for use in a select statement.
-     *
-     * @var array
      */
     protected array $columns = [];
 
     /**
      * Order by conditions for the query statement.
-     *
-     * @var array
      */
     protected array $orderBy = [];
 
     /**
      * Group by conditions for the query statement.
-     *
-     * @var array
      */
     protected array $groupBy = [];
 
     /**
      * Limit condition for the query statement.
-     *
-     * @var int|null
      */
     protected ?int $limit = null;
 
     /**
      * Offset condition for the query statement.
-     *
-     * @var int|null
      */
     protected ?int $offset = null;
 
@@ -150,8 +140,6 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * Get the GROUP BY part of a query statement.
-     *
-     * @return string
      */
     protected function getGroupByQuery(): string
     {
@@ -162,8 +150,6 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * Get the ORDER BY part of a query statement.
-     *
-     * @return string
      */
     protected function getOrderByQuery(): string
     {
@@ -174,8 +160,6 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * Get the LIMIT part of a query statement.
-     *
-     * @return string
      */
     protected function getLimitQuery(): string
     {
@@ -186,8 +170,6 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * Get the OFFSET part of a query statement.
-     *
-     * @return string
      */
     protected function getOffsetQuery(): string
     {
@@ -198,8 +180,6 @@ class SqlSelectQueryBuilder extends SqlBaseQueryBuilder implements Contract
 
     /**
      * Determine whether this is a count statement.
-     *
-     * @return bool
      */
     protected function isCount(): bool
     {

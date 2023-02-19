@@ -51,8 +51,6 @@ abstract class MessageManager extends Manager implements Contract
 
     /**
      * The default message.
-     *
-     * @var string
      */
     protected string $defaultMessage;
 

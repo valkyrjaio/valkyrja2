@@ -25,8 +25,6 @@ enum Scheme
 
     /**
      * Get the text representation of the scheme.
-     *
-     * @return string
      */
     public function text(): string
     {

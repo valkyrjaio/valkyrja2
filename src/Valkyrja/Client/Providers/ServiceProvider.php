@@ -68,8 +68,6 @@ class ServiceProvider extends Provider
      * Publish the client service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishClient(Container $container): void
     {
@@ -88,8 +86,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -103,8 +99,6 @@ class ServiceProvider extends Provider
      * Publish a driver.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -123,8 +117,6 @@ class ServiceProvider extends Provider
      * Publish a guzzle adapter.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishGuzzleAdapter(Container $container): void
     {
@@ -149,8 +141,6 @@ class ServiceProvider extends Provider
      * Publish a log adapter.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -176,8 +166,6 @@ class ServiceProvider extends Provider
      * Publish an adapter.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {

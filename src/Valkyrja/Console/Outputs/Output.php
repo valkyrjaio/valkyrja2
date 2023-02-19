@@ -34,15 +34,11 @@ class Output implements Contract
 {
     /**
      * Whether to use quiet console.
-     *
-     * @var bool
      */
     private static bool $quiet = false;
 
     /**
      * The formatter.
-     *
-     * @var Formatter
      */
     protected Formatter $formatter;
 
@@ -108,11 +104,6 @@ class Output implements Contract
 
     /**
      * Write a message out to the console.
-     *
-     * @param string $message
-     * @param bool   $newLine
-     *
-     * @return void
      */
     protected function writeOut(string $message, bool $newLine): void
     {

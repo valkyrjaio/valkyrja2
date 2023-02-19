@@ -80,8 +80,6 @@ class EntityCapableMatcher extends Matcher
      * @param Parameter            $parameter  The parameter
      * @param class-string<Entity> $entityName The entity class name
      * @param mixed                $match      The match value
-     *
-     * @return Entity|null
      */
     protected function getEntity(Parameter $parameter, string $entityName, mixed $match): ?Entity
     {
@@ -114,8 +112,6 @@ class EntityCapableMatcher extends Matcher
      *
      * @param Parameter $parameter The parameter
      * @param mixed     $match     The match
-     *
-     * @return never
      */
     protected function handleEntityNotFound(Parameter $parameter, mixed $match): never
     {

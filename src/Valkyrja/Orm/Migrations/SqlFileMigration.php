@@ -45,8 +45,6 @@ abstract class SqlFileMigration extends TransactionalMigration
      * Execute sql.
      *
      * @param string $sqlFilePath The sql file path
-     *
-     * @return void
      */
     protected function executeSql(string $sqlFilePath): void
     {
@@ -69,8 +67,6 @@ abstract class SqlFileMigration extends TransactionalMigration
      * Do on run failure.
      *
      * @param Exception $exception The exception
-     *
-     * @return void
      */
     protected function runFailure(Exception $exception): void
     {
@@ -78,15 +74,11 @@ abstract class SqlFileMigration extends TransactionalMigration
 
     /**
      * Get the run sql file path.
-     *
-     * @return string
      */
     abstract protected function getRunMigrationFilePath(): string;
 
     /**
      * Get the rollback sql file path.
-     *
-     * @return string
      */
     abstract protected function getRollbackMigrationFilePath(): string;
 }

@@ -72,8 +72,6 @@ class ServiceProvider extends Provider
      * Publish the session service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishSession(Container $container): void
     {
@@ -92,8 +90,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -107,8 +103,6 @@ class ServiceProvider extends Provider
      * Publish a driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -129,8 +123,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -151,8 +143,6 @@ class ServiceProvider extends Provider
      * Publish a cache adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCacheAdapter(Container $container): void
     {
@@ -176,8 +166,6 @@ class ServiceProvider extends Provider
      * Publish a log adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -201,8 +189,6 @@ class ServiceProvider extends Provider
      * Publish the cookie adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCookieAdapter(Container $container): void
     {

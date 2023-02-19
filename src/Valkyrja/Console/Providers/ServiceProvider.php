@@ -71,8 +71,6 @@ class ServiceProvider extends Provider
      * Publish the annotator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAnnotator(Container $container): void
     {
@@ -89,8 +87,6 @@ class ServiceProvider extends Provider
      * Publish the console service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishConsole(Container $container): void
     {
@@ -116,8 +112,6 @@ class ServiceProvider extends Provider
      * Publish the formatter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFormatter(Container $container): void
     {
@@ -131,8 +125,6 @@ class ServiceProvider extends Provider
      * Publish the input service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishInput(Container $container): void
     {
@@ -151,8 +143,6 @@ class ServiceProvider extends Provider
      * Publish the kernel service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishKernel(Container $container): void
     {
@@ -170,8 +160,6 @@ class ServiceProvider extends Provider
      * Publish the output service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishOutput(Container $container): void
     {

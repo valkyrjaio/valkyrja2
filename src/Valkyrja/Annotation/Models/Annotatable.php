@@ -22,8 +22,6 @@ trait Annotatable
 {
     /**
      * The type.
-     *
-     * @var string|null
      */
     public ?string $type;
 
@@ -37,8 +35,6 @@ trait Annotatable
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function setType(string $type = null): static
     {

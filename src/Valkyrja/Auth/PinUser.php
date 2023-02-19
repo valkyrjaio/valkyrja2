@@ -22,15 +22,11 @@ interface PinUser extends User
 {
     /**
      * Get the pin field.
-     *
-     * @return string
      */
     public static function getPinField(): string;
 
     /**
      * Get the date pin was modified field.
-     *
-     * @return string
      */
     public static function getDatePinModifiedField(): string;
 }

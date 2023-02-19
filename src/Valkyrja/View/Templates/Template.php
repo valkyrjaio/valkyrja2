@@ -31,22 +31,16 @@ class Template implements Contract
 {
     /**
      * The engine.
-     *
-     * @var Engine
      */
     protected Engine $engine;
 
     /**
      * The template name.
-     *
-     * @var string
      */
     protected string $name;
 
     /**
      * The layout template.
-     *
-     * @var string|null
      */
     protected ?string $layout = null;
 
@@ -73,15 +67,11 @@ class Template implements Contract
 
     /**
      * Whether to track layout changes.
-     *
-     * @var bool
      */
     protected bool $trackLayoutChanges = false;
 
     /**
      * Whether a layout change has occurred.
-     *
-     * @var bool
      */
     protected bool $hasLayoutChanged = false;
 
@@ -262,8 +252,6 @@ class Template implements Contract
      * @param string $name         The file name
      * @param array  $variables    [optional] The variables to set
      * @param bool   $renderLayout [optional] Whether to render the layout
-     *
-     * @return string
      */
     protected function renderFile(string $name, array $variables = [], bool $renderLayout = false): string
     {
@@ -289,8 +277,6 @@ class Template implements Contract
      *
      * @param string $layout    The layout
      * @param array  $variables [optional] The variables to set
-     *
-     * @return string
      */
     protected function renderLayout(string $layout, array $variables = []): string
     {
@@ -313,8 +299,6 @@ class Template implements Contract
      *
      * @param string $path      The path to render
      * @param array  $variables [optional] The variables to set
-     *
-     * @return string
      */
     protected function renderTemplate(string $path, array $variables = []): string
     {

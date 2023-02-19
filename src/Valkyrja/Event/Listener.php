@@ -33,8 +33,6 @@ interface Listener extends Dispatch
      * Set the event.
      *
      * @param class-string<Event>|string $event The event
-     *
-     * @return static
      */
     public function setEvent(string $event): static;
 }

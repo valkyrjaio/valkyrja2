@@ -27,8 +27,6 @@ interface Adapter extends Contract
      * Determine whether a path exists.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function exists(string $path): bool;
 
@@ -46,8 +44,6 @@ interface Adapter extends Contract
      *
      * @param string $path     The path
      * @param string $contents The contents
-     *
-     * @return bool
      */
     public function write(string $path, string $contents): bool;
 
@@ -56,8 +52,6 @@ interface Adapter extends Contract
      *
      * @param string   $path     The path
      * @param resource $resource The resource
-     *
-     * @return bool
      */
     public function writeStream(string $path, $resource): bool;
 
@@ -66,8 +60,6 @@ interface Adapter extends Contract
      *
      * @param string $path     The path
      * @param string $contents The contents
-     *
-     * @return bool
      */
     public function update(string $path, string $contents): bool;
 
@@ -76,8 +68,6 @@ interface Adapter extends Contract
      *
      * @param string   $path     The path
      * @param resource $resource The resource
-     *
-     * @return bool
      */
     public function updateStream(string $path, $resource): bool;
 
@@ -86,8 +76,6 @@ interface Adapter extends Contract
      *
      * @param string $path     The path
      * @param string $contents The contents
-     *
-     * @return bool
      */
     public function put(string $path, string $contents): bool;
 
@@ -96,8 +84,6 @@ interface Adapter extends Contract
      *
      * @param string   $path     The path
      * @param resource $resource The resource
-     *
-     * @return bool
      */
     public function putStream(string $path, $resource): bool;
 
@@ -106,8 +92,6 @@ interface Adapter extends Contract
      *
      * @param string $path    The existing path
      * @param string $newPath The new path
-     *
-     * @return bool
      */
     public function rename(string $path, string $newPath): bool;
 
@@ -116,8 +100,6 @@ interface Adapter extends Contract
      *
      * @param string $path    The existing path
      * @param string $newPath The new path
-     *
-     * @return bool
      */
     public function copy(string $path, string $newPath): bool;
 
@@ -125,8 +107,6 @@ interface Adapter extends Contract
      * Delete a file.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function delete(string $path): bool;
 
@@ -181,8 +161,6 @@ interface Adapter extends Contract
      *
      * @param string     $path       The path
      * @param Visibility $visibility The visibility
-     *
-     * @return bool
      */
     public function setVisibility(string $path, Visibility $visibility): bool;
 
@@ -190,8 +168,6 @@ interface Adapter extends Contract
      * Set a file's visibility to public.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function setVisibilityPublic(string $path): bool;
 
@@ -199,8 +175,6 @@ interface Adapter extends Contract
      * Set a file's visibility to private.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function setVisibilityPrivate(string $path): bool;
 
@@ -208,8 +182,6 @@ interface Adapter extends Contract
      * Create a new directory.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function createDir(string $path): bool;
 
@@ -217,8 +189,6 @@ interface Adapter extends Contract
      * Delete a directory.
      *
      * @param string $path The path
-     *
-     * @return bool
      */
     public function deleteDir(string $path): bool;
 
@@ -227,8 +197,6 @@ interface Adapter extends Contract
      *
      * @param string|null $directory [optional] The directory
      * @param bool        $recursive [optional] Whether to recurse through the directory
-     *
-     * @return array
      */
     public function listContents(string $directory = null, bool $recursive = false): array;
 }

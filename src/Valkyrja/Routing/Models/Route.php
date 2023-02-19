@@ -31,29 +31,21 @@ class Route extends Dispatch implements Contract
 {
     /**
      * The path for this route.
-     *
-     * @var string
      */
     protected string $path = '';
 
     /**
      * The redirect path for this route.
-     *
-     * @var string|null
      */
     protected ?string $to;
 
     /**
      * The redirect status code for this route.
-     *
-     * @var int|null
      */
     protected ?int $code;
 
     /**
      * The request methods for this route.
-     *
-     * @var array
      */
     protected array $methods = [
         RequestMethod::GET,
@@ -62,8 +54,6 @@ class Route extends Dispatch implements Contract
 
     /**
      * The regex for dynamic routes.
-     *
-     * @var string|null
      */
     protected ?string $regex;
 
@@ -76,29 +66,21 @@ class Route extends Dispatch implements Contract
 
     /**
      * The middleware for this route.
-     *
-     * @var array|null
      */
     protected ?array $middleware;
 
     /**
      * Whether the route is dynamic.
-     *
-     * @var bool
      */
     protected bool $dynamic = false;
 
     /**
      * Whether the route is secure.
-     *
-     * @var bool
      */
     protected bool $secure = false;
 
     /**
      * Whether the route is a redirect.
-     *
-     * @var bool
      */
     protected bool $redirect = false;
 
@@ -386,8 +368,6 @@ class Route extends Dispatch implements Contract
      * Set the parameters.
      *
      * @param Parameter[] $parameters The parameters
-     *
-     * @return void
      */
     protected function __setParameters(Parameter ...$parameters): void
     {

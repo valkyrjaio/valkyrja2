@@ -29,8 +29,6 @@ interface ExceptionHandler
      *
      * @param int  $errorReportingLevel [optional] The error reporting level
      * @param bool $displayErrors       [optional] Whether to display errors
-     *
-     * @return void
      */
     public static function enable(int $errorReportingLevel = E_ALL, bool $displayErrors = false): void;
 
@@ -38,8 +36,6 @@ interface ExceptionHandler
      * Get trace code for a throwable/exception.
      *
      * @param Throwable $exception The exception/throwable
-     *
-     * @return string
      */
     public static function getTraceCode(Throwable $exception): string;
 }

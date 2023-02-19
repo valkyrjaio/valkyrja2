@@ -25,8 +25,6 @@ trait Provides
 {
     /**
      * Whether this provider is deferred.
-     *
-     * @return bool
      */
     public static function deferred(): bool
     {
@@ -55,8 +53,6 @@ trait Provides
 
     /**
      * Get the provided command.
-     *
-     * @return array
      */
     public static function provides(): array
     {
@@ -69,8 +65,6 @@ trait Provides
      * Publish the command.
      *
      * @param Console $console The application
-     *
-     * @return void
      */
     public static function publish(Console $console): void
     {
@@ -88,8 +82,6 @@ trait Provides
 
     /**
      * Get the command names.
-     *
-     * @return array
      */
     public static function commands(): array
     {
@@ -100,29 +92,21 @@ trait Provides
 
     /**
      * Get the command.
-     *
-     * @return string
      */
     abstract public static function getCommand(): string;
 
     /**
      * Get the command path.
-     *
-     * @return string
      */
     abstract public static function getPath(): string;
 
     /**
      * Get the short description.
-     *
-     * @return string
      */
     abstract public static function getShortDescription(): string;
 
     /**
      * The run handler.
-     *
-     * @return int
      */
     abstract public function run(): int;
 }

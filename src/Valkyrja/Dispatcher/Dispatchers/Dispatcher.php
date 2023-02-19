@@ -202,8 +202,6 @@ class Dispatcher implements Contract
      *
      * @param Dispatch   $dispatch  The dispatch
      * @param array|null $arguments [optional] The arguments
-     *
-     * @return array|null
      */
     protected function getArguments(Dispatch $dispatch, array $arguments = null): ?array
     {
@@ -232,8 +230,6 @@ class Dispatcher implements Contract
      * Get a dispatch's dependencies.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return array|null
      */
     protected function getDependencies(Dispatch $dispatch): ?array
     {
@@ -272,8 +268,6 @@ class Dispatcher implements Contract
      * Get argument value.
      *
      * @param mixed $argument The argument
-     *
-     * @return mixed
      */
     protected function getArgumentValue(mixed $argument): mixed
     {

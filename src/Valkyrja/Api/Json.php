@@ -24,8 +24,6 @@ interface Json extends Model
 {
     /**
      * Get the message.
-     *
-     * @return string|null
      */
     public function getMessage(): ?string;
 
@@ -33,8 +31,6 @@ interface Json extends Model
      * Set the message.
      *
      * @param string|null $message [optional] The message
-     *
-     * @return static
      */
     public function setMessage(string $message = null): static;
 
@@ -49,8 +45,6 @@ interface Json extends Model
      * Set the errors.
      *
      * @param string[] $errors The errors
-     *
-     * @return static
      */
     public function setErrors(array $errors): static;
 
@@ -58,8 +52,6 @@ interface Json extends Model
      * Set an error.
      *
      * @param string $error The error
-     *
-     * @return static
      */
     public function setError(string $error): static;
 
@@ -74,8 +66,6 @@ interface Json extends Model
      * Set the warnings.
      *
      * @param string[] $warnings The warnings
-     *
-     * @return static
      */
     public function setWarnings(array $warnings): static;
 
@@ -83,56 +73,36 @@ interface Json extends Model
      * Set an warning.
      *
      * @param string $warning The warning
-     *
-     * @return static
      */
     public function setWarning(string $warning): static;
 
     /**
      * Get the data.
-     *
-     * @return array|null
      */
     public function getData(): ?array;
 
     /**
      * Set the data.
-     *
-     * @param array|null $data
-     *
-     * @return static
      */
     public function setData(array $data = null): static;
 
     /**
      * Get the status code.
-     *
-     * @return int
      */
     public function getStatusCode(): int;
 
     /**
      * Set the status code.
-     *
-     * @param int $statusCode
-     *
-     * @return static
      */
     public function setStatusCode(int $statusCode): static;
 
     /**
      * Get the status.
-     *
-     * @return string
      */
     public function getStatus(): string;
 
     /**
      * Set the status.
-     *
-     * @param string $status
-     *
-     * @return static
      */
     public function setStatus(string $status): static;
 }

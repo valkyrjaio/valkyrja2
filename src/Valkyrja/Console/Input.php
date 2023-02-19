@@ -24,43 +24,31 @@ interface Input
 {
     /**
      * Get the arguments.
-     *
-     * @return array
      */
     public function getArguments(): array;
 
     /**
      * Get the short options.
-     *
-     * @return array
      */
     public function getShortOptions(): array;
 
     /**
      * Get the arguments.
-     *
-     * @return array
      */
     public function getLongOptions(): array;
 
     /**
      * Get the arguments.
-     *
-     * @return array
      */
     public function getOptions(): array;
 
     /**
      * Get the arguments as a string.
-     *
-     * @return string
      */
     public function getStringArguments(): string;
 
     /**
      * Get the input arguments.
-     *
-     * @return array
      */
     public function getInputArguments(): array;
 
@@ -68,8 +56,6 @@ interface Input
      * Get an argument.
      *
      * @param string $argument The argument
-     *
-     * @return string|null
      */
     public function getArgument(string $argument): ?string;
 
@@ -77,8 +63,6 @@ interface Input
      * Determine if an argument exists.
      *
      * @param string $argument The argument
-     *
-     * @return bool
      */
     public function hasArgument(string $argument): bool;
 
@@ -86,8 +70,6 @@ interface Input
      * Get a short option.
      *
      * @param string $option The option
-     *
-     * @return string|null
      */
     public function getShortOption(string $option): ?string;
 
@@ -95,8 +77,6 @@ interface Input
      * Determine if a short option exists.
      *
      * @param string $option The short option
-     *
-     * @return bool
      */
     public function hasShortOption(string $option): bool;
 
@@ -104,8 +84,6 @@ interface Input
      * Get a long option.
      *
      * @param string $option The option
-     *
-     * @return string|null
      */
     public function getLongOption(string $option): ?string;
 
@@ -113,8 +91,6 @@ interface Input
      * Determine if a long option exists.
      *
      * @param string $option The option
-     *
-     * @return bool
      */
     public function hasLongOption(string $option): bool;
 
@@ -122,8 +98,6 @@ interface Input
      * Get an option (short or long).
      *
      * @param string $option The option
-     *
-     * @return string|null
      */
     public function getOption(string $option): ?string;
 
@@ -131,8 +105,6 @@ interface Input
      * Check if an option exists (long or short).
      *
      * @param string $option The option
-     *
-     * @return bool
      */
     public function hasOption(string $option): bool;
 

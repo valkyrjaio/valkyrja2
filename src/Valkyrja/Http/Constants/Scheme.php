@@ -28,8 +28,6 @@ final class Scheme
      * Determine if a scheme is valid.
      *
      * @param string $scheme The scheme
-     *
-     * @return bool
      */
     public static function isValid(string $scheme): bool
     {

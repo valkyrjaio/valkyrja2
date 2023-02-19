@@ -33,15 +33,11 @@ interface Parser
      * Filter a string of arguments into an key => value array.
      *
      * @param string|null $arguments The arguments
-     *
-     * @return array|null
      */
     public function getPropertiesAsArray(string $arguments = null): ?array;
 
     /**
      * Get the annotations regex.
-     *
-     * @return string
      */
     public function getRegex(): string;
 
@@ -56,8 +52,6 @@ interface Parser
      * Get an annotation model from the annotations map.
      *
      * @param string $annotationType The annotation type
-     *
-     * @return Annotation
      */
     public function getAnnotationFromMap(string $annotationType): Annotation;
 }

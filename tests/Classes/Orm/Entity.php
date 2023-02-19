@@ -24,15 +24,11 @@ class Entity extends AbstractEntity
 {
     /**
      * A property to test with.
-     *
-     * @var string|null
      */
     public ?string $property = null;
 
     /**
      * A property to test with using getter/setter.
-     *
-     * @var string|null
      */
     protected ?string $prop = null;
 
@@ -48,8 +44,6 @@ class Entity extends AbstractEntity
 
     /**
      * Determine if the prop is set.
-     *
-     * @return bool
      */
     public function issetProp(): bool
     {
@@ -60,8 +54,6 @@ class Entity extends AbstractEntity
      * Set the prop.
      *
      * @param string $prop The prop
-     *
-     * @return Entity
      */
     public function setProp(string $prop): Entity
     {

@@ -26,8 +26,6 @@ interface Collector
      * Get a router with a path context to group routes with.
      *
      * @param string $path The path
-     *
-     * @return static
      */
     public function withPath(string $path): static;
 
@@ -35,8 +33,6 @@ interface Collector
      * Get a router with a controller context to group routes with.
      *
      * @param string $controller The controller
-     *
-     * @return static
      */
     public function withController(string $controller): static;
 
@@ -44,8 +40,6 @@ interface Collector
      * Get a router with a name context to group routes with.
      *
      * @param string $name The name
-     *
-     * @return static
      */
     public function withName(string $name): static;
 
@@ -53,8 +47,6 @@ interface Collector
      * Get a router with middleware context to group routes with.
      *
      * @param array $middleware The middleware
-     *
-     * @return static
      */
     public function withMiddleware(array $middleware): static;
 
@@ -62,8 +54,6 @@ interface Collector
      * Get a router with a secure context to group routes with.
      *
      * @param bool $secure [optional] Whether to be secure
-     *
-     * @return static
      */
     public function withSecure(bool $secure = true): static;
 
@@ -71,8 +61,6 @@ interface Collector
      * Group routes together.
      *
      * @param Closure $group The group
-     *
-     * @return static
      */
     public function group(Closure $group): static;
 
@@ -91,8 +79,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function get(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -111,8 +97,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function post(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -131,8 +115,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function put(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -151,8 +133,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function patch(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -171,8 +151,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function delete(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -191,8 +169,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function head(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -211,8 +187,6 @@ interface Collector
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     public function any(string $path, Closure|string $handler, string $name = null, bool $setDependencies = false): Route;
 
@@ -226,8 +200,6 @@ interface Collector
      * @param string      $to      The path to redirect to
      * @param array|null  $methods [optional] The request methods
      * @param string|null $name    [optional] The name of the route
-     *
-     * @return Route
      */
     public function redirect(string $path, string $to, array $methods = null, string $name = null): Route;
 }

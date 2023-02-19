@@ -38,9 +38,6 @@ class CacheableCollection extends Collection
 
     /**
      * CacheableCollection constructor.
-     *
-     * @param Container           $container
-     * @param RoutingConfig|array $config
      */
     public function __construct(
         protected Container $container,

@@ -39,15 +39,11 @@ class Config extends Model
 
     /**
      * The dir.
-     *
-     * @var string
      */
     public string $dir;
 
     /**
      * The default engine.
-     *
-     * @var string
      */
     public string $engine;
 

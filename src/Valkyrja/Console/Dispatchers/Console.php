@@ -75,13 +75,6 @@ class Console implements Contract
 
     /**
      * Console constructor.
-     *
-     * @param Container    $container
-     * @param Dispatcher   $dispatcher
-     * @param Events       $events
-     * @param PathParser   $pathParser
-     * @param Config|array $config
-     * @param bool         $debug
      */
     public function __construct(
         protected Container $container,
@@ -104,8 +97,6 @@ class Console implements Contract
      * @throws InvalidMethodException
      * @throws InvalidPropertyException
      * @throws InvalidClosureException
-     *
-     * @return void
      */
     public function addCommand(Command $command): void
     {
@@ -290,8 +281,6 @@ class Console implements Contract
      *
      * @param Command $command       The command
      * @param array   $parsedCommand The parsed command
-     *
-     * @return void
      */
     protected function addParsedCommand(Command $command, array $parsedCommand): void
     {

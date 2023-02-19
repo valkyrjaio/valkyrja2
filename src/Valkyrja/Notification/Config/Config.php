@@ -35,8 +35,6 @@ class Config extends Model
 
     /**
      * The notifications.
-     *
-     * @var array
      */
     public array $notifications;
 }

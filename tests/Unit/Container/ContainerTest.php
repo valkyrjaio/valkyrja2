@@ -34,8 +34,6 @@ class ContainerTest extends TestCase
 
     /**
      * The class to test with.
-     *
-     * @var Container
      */
     protected Container $container;
 

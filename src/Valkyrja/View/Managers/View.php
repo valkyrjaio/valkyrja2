@@ -43,22 +43,16 @@ class View implements Contract
 
     /**
      * The body content template.
-     *
-     * @var string
      */
     protected string $template = 'index';
 
     /**
      * The fully qualified template path.
-     *
-     * @var string
      */
     protected string $templatePath;
 
     /**
      * The view variables.
-     *
-     * @var array
      */
     protected array $variables = [];
 
@@ -71,8 +65,6 @@ class View implements Contract
 
     /**
      * The default engine.
-     *
-     * @var string
      */
     protected string $engine;
 

@@ -26,8 +26,6 @@ interface Factory
      * @param Engine               $engine    The engine to use
      * @param string               $name      The template name
      * @param array<string, mixed> $variables [optional] The variables
-     *
-     * @return Template
      */
     public function getTemplate(Engine $engine, string $name, array $variables = []): Template;
 
@@ -35,8 +33,6 @@ interface Factory
      * Get an engine.
      *
      * @param class-string<Engine> $name The name
-     *
-     * @return Engine
      */
     public function getEngine(string $name): Engine;
 }

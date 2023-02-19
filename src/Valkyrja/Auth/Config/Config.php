@@ -44,92 +44,66 @@ class Config extends Model
 
     /**
      * The default adapter.
-     *
-     * @var string
      */
     public string $adapter;
 
     /**
      * The default user entity.
-     *
-     * @var string
      */
     public string $userEntity;
 
     /**
      * The default repository to use for all entities.
-     *
-     * @var string
      */
     public string $repository;
 
     /**
      * The default gate to use for authorization checks.
-     *
-     * @var string
      */
     public string $gate;
 
     /**
      * The default policy to use for authorization checks.
-     *
-     * @var string
      */
     public string $policy;
 
     /**
      * Whether to always authenticate a user (regardless if a session exists).
-     *
-     * @var bool
      */
     public bool $alwaysAuthenticate;
 
     /**
      * Whether to always keep a user fresh by querying the data store.
-     *
-     * @var bool
      */
     public bool $keepUserFresh;
 
     /**
      * The authenticate route name.
-     *
-     * @var string
      */
     public string $authenticateRoute;
 
     /**
      * The authenticate url.
-     *
-     * @var string|null
      */
     public ?string $authenticateUrl;
 
     /**
      * The not authenticated route name.
-     *
-     * @var string
      */
     public string $notAuthenticateRoute;
 
     /**
      * The not authenticated url.
-     *
-     * @var string|null
      */
     public ?string $notAuthenticateUrl;
 
     /**
      * The password confirm route name.
-     *
-     * @var string
      */
     public string $passwordConfirmRoute;
 
     /**
      * Whether to authenticate using a session.
-     *
-     * @var bool
      */
     public bool $useSession;
 }

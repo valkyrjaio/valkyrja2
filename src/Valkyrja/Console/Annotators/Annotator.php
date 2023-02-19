@@ -31,23 +31,16 @@ class Annotator implements Contract
 {
     /**
      * The filter.
-     *
-     * @var Filter
      */
     protected Filter $filter;
 
     /**
      * The reflector.
-     *
-     * @var Reflector
      */
     protected Reflector $reflector;
 
     /**
      * ContainerAnnotator constructor.
-     *
-     * @param Filter    $filter
-     * @param Reflector $reflector
      */
     public function __construct(Filter $filter, Reflector $reflector)
     {
@@ -87,11 +80,7 @@ class Annotator implements Contract
     /**
      * Set the properties for a command annotation.
      *
-     * @param Annotation $annotation
-     *
      * @throws ReflectionException
-     *
-     * @return void
      */
     protected function setCommandProperties(Annotation $annotation): void
     {
@@ -122,8 +111,6 @@ class Annotator implements Contract
      * Get a command from a command annotation.
      *
      * @param Command $command The command annotation
-     *
-     * @return CommandContract
      */
     protected function getCommandFromAnnotation(Command $command): CommandContract
     {

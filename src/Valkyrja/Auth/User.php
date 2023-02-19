@@ -38,29 +38,21 @@ interface User extends Entity
 
     /**
      * Get the user session id.
-     *
-     * @return string
      */
     public static function getUserSessionId(): string;
 
     /**
      * Get the username field.
-     *
-     * @return string
      */
     public static function getUsernameField(): string;
 
     /**
      * Get the hashed password field.
-     *
-     * @return string
      */
     public static function getPasswordField(): string;
 
     /**
      * Get the reset token field.
-     *
-     * @return string
      */
     public static function getResetTokenField(): string;
 

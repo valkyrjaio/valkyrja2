@@ -46,8 +46,6 @@ class Reflector implements Contract
 
     /**
      * Cached reflection classes.
-     *
-     * @var array
      */
     protected static array $reflections = [];
 

@@ -36,8 +36,6 @@ interface Validator
      * @throws InvalidMethodException
      * @throws InvalidPropertyException
      * @throws InvalidClosureException
-     *
-     * @return void
      */
     public function dispatch(Dispatch $dispatch): void;
 
@@ -47,8 +45,6 @@ interface Validator
      * @param Dispatch $dispatch The dispatch
      *
      * @throws InvalidMethodException
-     *
-     * @return void
      */
     public function classMethod(Dispatch $dispatch): void;
 
@@ -58,8 +54,6 @@ interface Validator
      * @param Dispatch $dispatch The dispatch
      *
      * @throws InvalidPropertyException
-     *
-     * @return void
      */
     public function classProperty(Dispatch $dispatch): void;
 
@@ -69,8 +63,6 @@ interface Validator
      * @param Dispatch $dispatch The dispatch
      *
      * @throws InvalidFunctionException
-     *
-     * @return void
      */
     public function func(Dispatch $dispatch): void;
 }

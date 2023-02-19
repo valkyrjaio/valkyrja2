@@ -43,8 +43,6 @@ class Context extends Service
      * Set the service.
      *
      * @param class-string<\Valkyrja\Container\Service>|null $service The service
-     *
-     * @return static
      */
     public function setService(string $service = null): static
     {

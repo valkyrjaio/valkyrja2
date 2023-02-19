@@ -35,8 +35,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      * </code>
      *
      * @param array|null $columns [optional] The columns to return. Defaults to *.
-     *
-     * @return static
      */
     public function columns(array $columns = null): static;
 
@@ -49,8 +47,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      * @param string|null $operator [optional] The operator
      * @param string|null $type     [optional] The type of join
      * @param bool|null   $isWhere  [optional] Whether this is a where join
-     *
-     * @return static
      */
     public function join(
         string $table,
@@ -71,10 +67,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->where('column', '=', ':column')
      *          ->groupBy('column');
      * </code>
-     *
-     * @param string $column
-     *
-     * @return static
      */
     public function groupBy(string $column): static;
 
@@ -89,10 +81,7 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->orderBy('column');
      * </code>
      *
-     * @param string      $column
-     * @param string|null $type   [optional]
-     *
-     * @return static
+     * @param string|null $type [optional]
      */
     public function orderBy(string $column, string $type = null): static;
 
@@ -106,10 +95,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->where('column', '=', ':column')
      *          ->orderByAsc('column');
      * </code>
-     *
-     * @param string $column
-     *
-     * @return static
      */
     public function orderByAsc(string $column): static;
 
@@ -123,10 +108,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->where('column', '=', ':column')
      *          ->orderByDesc('column');
      * </code>
-     *
-     * @param string $column
-     *
-     * @return static
      */
     public function orderByDesc(string $column): static;
 
@@ -140,10 +121,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->where('column', '=', ':column')
      *          ->limit(1);
      * </code>
-     *
-     * @param int $limit
-     *
-     * @return static
      */
     public function limit(int $limit): static;
 
@@ -157,10 +134,6 @@ interface SelectQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->where('column', '=', ':column')
      *          ->offset(1);
      * </code>
-     *
-     * @param int $offset
-     *
-     * @return static
      */
     public function offset(int $offset): static;
 }

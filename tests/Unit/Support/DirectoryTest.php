@@ -25,22 +25,16 @@ class DirectoryTest extends TestCase
 {
     /**
      * The base path.
-     *
-     * @var string
      */
     protected string $basePath = '/base/path';
 
     /**
      * The sub path.
-     *
-     * @var string
      */
     protected string $subPath = '/sub/path';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +45,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the basePath directory helper method.
-     *
-     * @return void
      */
     public function testBasePath(): void
     {
@@ -61,8 +53,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the basePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testBasePathSubPath(): void
     {
@@ -73,8 +63,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the appPath directory helper method.
-     *
-     * @return void
      */
     public function testAppPath(): void
     {
@@ -85,8 +73,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the appPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testAppPathSubPath(): void
     {
@@ -97,8 +83,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the cachePath directory helper method.
-     *
-     * @return void
      */
     public function testCachePath(): void
     {
@@ -115,8 +99,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the cachePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testCachePathSubPath(): void
     {
@@ -134,8 +116,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the configPath directory helper method.
-     *
-     * @return void
      */
     public function testConfigPath(): void
     {
@@ -146,8 +126,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the configPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testConfigPathSubPath(): void
     {
@@ -158,8 +136,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the publicPath directory helper method.
-     *
-     * @return void
      */
     public function testPublicPath(): void
     {
@@ -170,8 +146,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the publicPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testPublicPathSubPath(): void
     {
@@ -182,8 +156,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the resourcesPath directory helper method.
-     *
-     * @return void
      */
     public function testResourcesPath(): void
     {
@@ -194,8 +166,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the resourcesPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testResourcesPathSubPath(): void
     {
@@ -206,8 +176,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the storagePath directory helper method.
-     *
-     * @return void
      */
     public function testStoragePath(): void
     {
@@ -218,8 +186,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the storagePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testStoragePathSubPath(): void
     {
@@ -230,8 +196,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the testsPath directory helper method.
-     *
-     * @return void
      */
     public function testTestsPath(): void
     {
@@ -242,8 +206,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the testsPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testTestsPathSubPath(): void
     {
@@ -254,8 +216,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the vendorPath directory helper method.
-     *
-     * @return void
      */
     public function testVendorPath(): void
     {
@@ -266,8 +226,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the vendorPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testVendorPathSubPath(): void
     {
@@ -278,8 +236,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the path helper.
-     *
-     * @return void
      */
     public function testPath(): void
     {
@@ -288,8 +244,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the path helper with a path that has no forward slash.
-     *
-     * @return void
      */
     public function testPathNoForwardSlash(): void
     {
@@ -298,8 +252,6 @@ class DirectoryTest extends TestCase
 
     /**
      * Test the path helper with a null input value.
-     *
-     * @return void
      */
     public function testPathNull(): void
     {

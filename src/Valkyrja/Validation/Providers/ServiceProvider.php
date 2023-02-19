@@ -57,8 +57,6 @@ class ServiceProvider extends Provider
      * Publish the validator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishValidator(Container $container): void
     {
@@ -77,8 +75,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -94,8 +90,6 @@ class ServiceProvider extends Provider
      * Publish the ORM rules service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishOrmRules(Container $container): void
     {

@@ -22,8 +22,6 @@ interface Table
 {
     /**
      * Create the table.
-     *
-     * @return static
      */
     public function create(): static;
 
@@ -31,15 +29,11 @@ interface Table
      * Rename the table.
      *
      * @param string $name The new name
-     *
-     * @return static
      */
     public function rename(string $name): static;
 
     /**
      * Drop the table.
-     *
-     * @return static
      */
     public function drop(): static;
 
@@ -47,22 +41,16 @@ interface Table
      * Set the name of the table.
      *
      * @param string $name The table name
-     *
-     * @return static
      */
     public function setName(string $name): static;
 
     /**
      * Do only if the table doesn't already exist.
-     *
-     * @return static
      */
     public function ifNotExists(): static;
 
     /**
      * Do only if the table exists.
-     *
-     * @return static
      */
     public function ifExists(): static;
 
@@ -70,8 +58,6 @@ interface Table
      * Create a new column.
      *
      * @param string $name The column name
-     *
-     * @return Column
      */
     public function createColumn(string $name): Column;
 
@@ -79,8 +65,6 @@ interface Table
      * Change an existing column.
      *
      * @param string $name The column name
-     *
-     * @return Column
      */
     public function changeColumn(string $name): Column;
 
@@ -88,8 +72,6 @@ interface Table
      * Drop an existing column.
      *
      * @param string $name The column name
-     *
-     * @return Column
      */
     public function dropColumn(string $name): Column;
 
@@ -97,8 +79,6 @@ interface Table
      * Create a new index.
      *
      * @param string $name The index name
-     *
-     * @return Index
      */
     public function createIndex(string $name): Index;
 
@@ -106,8 +86,6 @@ interface Table
      * Change an existing index.
      *
      * @param string $name The index name
-     *
-     * @return Index
      */
     public function changeIndex(string $name): Index;
 
@@ -115,8 +93,6 @@ interface Table
      * Drop an existing index.
      *
      * @param string $name The index name
-     *
-     * @return Index
      */
     public function dropIndex(string $name): Index;
 
@@ -124,8 +100,6 @@ interface Table
      * Create a new constraint.
      *
      * @param string $name The constraint name
-     *
-     * @return Constraint
      */
     public function createConstraint(string $name): Constraint;
 
@@ -133,8 +107,6 @@ interface Table
      * Change an existing constraint.
      *
      * @param string $name The constraint name
-     *
-     * @return Constraint
      */
     public function changeConstraint(string $name): Constraint;
 
@@ -142,15 +114,11 @@ interface Table
      * Drop an existing constraint.
      *
      * @param string $name The constraint name
-     *
-     * @return Constraint
      */
     public function dropConstraint(string $name): Constraint;
 
     /**
      * Get the built query string.
-     *
-     * @return string
      */
     public function getQueryString(): string;
 }

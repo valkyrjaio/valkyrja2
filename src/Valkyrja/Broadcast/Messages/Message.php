@@ -24,29 +24,21 @@ class Message implements Contract
 {
     /**
      * The channel to broadcast to.
-     *
-     * @var string
      */
     protected string $channel;
 
     /**
      * The event to broadcast to.
-     *
-     * @var string
      */
     protected string $event;
 
     /**
      * The message to broadcast.
-     *
-     * @var string
      */
     protected string $message;
 
     /**
      * The data to broadcast.
-     *
-     * @var array|null
      */
     protected ?array $data = null;
 

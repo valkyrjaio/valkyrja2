@@ -27,8 +27,6 @@ interface Factory
      *
      * @param class-string<Adapter> $name   The adapter
      * @param Config|array          $config The config
-     *
-     * @return Adapter
      */
     public function createAdapter(string $name, Config|array $config): Adapter;
 
@@ -39,8 +37,6 @@ interface Factory
      * @param class-string<Repository> $name    The name
      * @param class-string<User>       $user    The user
      * @param Config|array             $config  The config
-     *
-     * @return Repository
      */
     public function createRepository(Adapter $adapter, string $name, string $user, Config|array $config): Repository;
 
@@ -49,8 +45,6 @@ interface Factory
      *
      * @param Repository         $repository The repository
      * @param class-string<Gate> $name       The name
-     *
-     * @return Gate
      */
     public function createGate(Repository $repository, string $name): Gate;
 
@@ -59,8 +53,6 @@ interface Factory
      *
      * @param Repository           $repository The repository
      * @param class-string<Policy> $name       The name
-     *
-     * @return Policy
      */
     public function createPolicy(Repository $repository, string $name): Policy;
 }

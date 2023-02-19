@@ -41,22 +41,16 @@ trait MessageTrait
 
     /**
      * Original header names.
-     *
-     * @var array
      */
     protected array $headerNames = [];
 
     /**
      * The protocol.
-     *
-     * @var string
      */
     protected string $protocol = '1.1';
 
     /**
      * The stream.
-     *
-     * @var Stream
      */
     protected Stream $stream;
 
@@ -70,8 +64,6 @@ trait MessageTrait
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withProtocolVersion(string $version): static
     {
@@ -132,8 +124,6 @@ trait MessageTrait
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withHeader(string $name, string ...$values): static
     {
@@ -158,8 +148,6 @@ trait MessageTrait
      * @inheritDoc
      *
      * @param string ...$value Header value(s).
-     *
-     * @return static
      */
     public function withAddedHeader(string $name, string ...$values): static
     {
@@ -180,8 +168,6 @@ trait MessageTrait
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withoutHeader(string $name): static
     {
@@ -208,8 +194,6 @@ trait MessageTrait
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withBody(Stream $body): static
     {
@@ -224,8 +208,6 @@ trait MessageTrait
      * Set the body.
      *
      * @param Stream $body The body
-     *
-     * @return void
      */
     protected function setBody(Stream $body): void
     {
@@ -238,8 +220,6 @@ trait MessageTrait
      * @param array<string, string|array> $originalHeaders The original headers
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function setHeaders(array $originalHeaders): void
     {
@@ -265,8 +245,6 @@ trait MessageTrait
      * @param string $version The version
      *
      * @throws InvalidProtocolVersion
-     *
-     * @return void
      */
     protected function validateProtocolVersion(string $version): void
     {
@@ -307,8 +285,6 @@ trait MessageTrait
      * @param string     $value    The value to set
      * @param array|null $headers  [optional] The headers
      * @param bool       $override [optional] Whether to override any existing value
-     *
-     * @return array
      */
     protected function injectHeader(string $header, string $value, array $headers = null, bool $override = false): array
     {

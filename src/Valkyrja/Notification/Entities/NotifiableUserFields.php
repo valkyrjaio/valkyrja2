@@ -22,22 +22,16 @@ trait NotifiableUserFields
 {
     /**
      * The name.
-     *
-     * @var string
      */
     public string $name;
 
     /**
      * The phone number.
-     *
-     * @var string
      */
     public string $phone_number;
 
     /**
      * The secret id.
-     *
-     * @var string
      */
     public string $secret_id;
 }

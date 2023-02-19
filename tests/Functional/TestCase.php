@@ -31,8 +31,6 @@ class TestCase extends PHPUnitTestCase
 {
     /**
      * The application.
-     *
-     * @var Valkyrja
      */
     protected Valkyrja $app;
 
@@ -40,8 +38,6 @@ class TestCase extends PHPUnitTestCase
      * Setup functional tests.
      *
      * @throws JsonException
-     *
-     * @return void
      */
     public function setUp(): void
     {

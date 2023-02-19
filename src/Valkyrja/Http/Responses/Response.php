@@ -39,8 +39,6 @@ class Response implements Contract
 
     /**
      * The status phrase.
-     *
-     * @var string
      */
     protected string $statusPhrase;
 
@@ -184,8 +182,6 @@ class Response implements Contract
      * @param int $code The code
      *
      * @throws InvalidStatusCode
-     *
-     * @return int
      */
     protected function validateStatusCode(int $code): int
     {

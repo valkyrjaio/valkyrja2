@@ -27,8 +27,6 @@ class NexmoAdapter implements Contract
 {
     /**
      * The Nexmo client.
-     *
-     * @var Nexmo
      */
     protected Nexmo $nexmo;
 

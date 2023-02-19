@@ -25,8 +25,6 @@ class ProviderClass extends Provider
 {
     /**
      * The items provided by this provider.
-     *
-     * @return array
      */
     public static function provides(): array
     {

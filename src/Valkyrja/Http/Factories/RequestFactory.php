@@ -40,8 +40,6 @@ abstract class RequestFactory
      * @param array|null            $cookies [optional] $_COOKIE superglobal
      * @param array|null            $files   [optional] $_FILES superglobal
      * @param class-string<Request> $class   [optional] The request class to return
-     *
-     * @return Request
      */
     public static function fromGlobals(
         array $server = null,
@@ -86,8 +84,6 @@ abstract class RequestFactory
      * @param array|null $body    [optional] $_POST superglobal
      * @param array|null $cookies [optional] $_COOKIE superglobal
      * @param array|null $files   [optional] $_FILES superglobal
-     *
-     * @return Request
      */
     public static function jsonFromGlobals(
         array $server = null,
@@ -102,11 +98,7 @@ abstract class RequestFactory
     /**
      * Return HTTP protocol version (X.Y).
      *
-     * @param array $server
-     *
      * @throws UnexpectedValueException
-     *
-     * @return string
      */
     protected static function getProtocolVersionFromServer(array $server): string
     {

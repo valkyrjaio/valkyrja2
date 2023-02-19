@@ -32,15 +32,11 @@ class DispatchTest extends TestCase
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +47,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getId method's default value.
-     *
-     * @return void
      */
     public function testGetIdDefault(): void
     {
@@ -61,8 +55,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getId method.
-     *
-     * @return void
      */
     public function testGetId(): void
     {
@@ -73,8 +65,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setId method with null value.
-     *
-     * @return void
      */
     public function testSetIdNull(): void
     {
@@ -85,8 +75,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setId method.
-     *
-     * @return void
      */
     public function testSetId(): void
     {
@@ -97,8 +85,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getName method's default value.
-     *
-     * @return void
      */
     public function testGetNameDefault(): void
     {
@@ -107,8 +93,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getName method.
-     *
-     * @return void
      */
     public function testGetName(): void
     {
@@ -119,8 +103,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setName method with null value.
-     *
-     * @return void
      */
     public function testSetNameNull(): void
     {
@@ -131,8 +113,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setName method.
-     *
-     * @return void
      */
     public function testSetName(): void
     {
@@ -143,8 +123,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getClass method's default value.
-     *
-     * @return void
      */
     public function testGetClassDefault(): void
     {
@@ -153,8 +131,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getClass method.
-     *
-     * @return void
      */
     public function testGetClass(): void
     {
@@ -165,8 +141,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setClass method with null value.
-     *
-     * @return void
      */
     public function testSetClassNull(): void
     {
@@ -177,8 +151,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setClass method.
-     *
-     * @return void
      */
     public function testSetClass(): void
     {
@@ -189,8 +161,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getProperty method's default value.
-     *
-     * @return void
      */
     public function testGetPropertyDefault(): void
     {
@@ -199,8 +169,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getProperty method.
-     *
-     * @return void
      */
     public function testGetProperty(): void
     {
@@ -211,8 +179,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setProperty method with null value.
-     *
-     * @return void
      */
     public function testSetPropertyNull(): void
     {
@@ -223,8 +189,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setProperty method.
-     *
-     * @return void
      */
     public function testSetProperty(): void
     {
@@ -235,8 +199,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getMethod method's default value.
-     *
-     * @return void
      */
     public function testGetMethodDefault(): void
     {
@@ -245,8 +207,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getMethod method.
-     *
-     * @return void
      */
     public function testGetMethod(): void
     {
@@ -257,8 +217,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setMethod method with null value.
-     *
-     * @return void
      */
     public function testSetMethodNull(): void
     {
@@ -269,8 +227,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setMethod method.
-     *
-     * @return void
      */
     public function testSetMethod(): void
     {
@@ -281,8 +237,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the isStatic method's default value.
-     *
-     * @return void
      */
     public function testIsStaticDefault(): void
     {
@@ -291,8 +245,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the isStatic method.
-     *
-     * @return void
      */
     public function testIsStatic(): void
     {
@@ -303,8 +255,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setStatic method.
-     *
-     * @return void
      */
     public function testSetStatic(): void
     {
@@ -315,8 +265,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getFunction method's default value.
-     *
-     * @return void
      */
     public function testGetFunctionDefault(): void
     {
@@ -325,8 +273,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getFunction method.
-     *
-     * @return void
      */
     public function testGetFunction(): void
     {
@@ -337,8 +283,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setFunction method with null value.
-     *
-     * @return void
      */
     public function testSetFunctionNull(): void
     {
@@ -349,8 +293,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setFunction method.
-     *
-     * @return void
      */
     public function testSetFunction(): void
     {
@@ -361,8 +303,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getClosure method's default value.
-     *
-     * @return void
      */
     public function testGetClosureDefault(): void
     {
@@ -371,8 +311,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getClosure method.
-     *
-     * @return void
      */
     public function testGetClosure(): void
     {
@@ -385,8 +323,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setClosure method with null value.
-     *
-     * @return void
      */
     public function testSetClosureNull(): void
     {
@@ -397,8 +333,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setClosure method.
-     *
-     * @return void
      */
     public function testSetClosure(): void
     {
@@ -412,8 +346,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getMatches method's default value.
-     *
-     * @return void
      */
     public function testGetMatchesDefault(): void
     {
@@ -422,8 +354,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getMatches method.
-     *
-     * @return void
      */
     public function testGetMatches(): void
     {
@@ -434,8 +364,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setMatches method with null value.
-     *
-     * @return void
      */
     public function testSetMatchesNull(): void
     {
@@ -446,8 +374,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setMatches method.
-     *
-     * @return void
      */
     public function testSetMatches(): void
     {
@@ -458,8 +384,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getDependencies method's default value.
-     *
-     * @return void
      */
     public function testGetDependenciesDefault(): void
     {
@@ -468,8 +392,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getDependencies method.
-     *
-     * @return void
      */
     public function testGetDependencies(): void
     {
@@ -480,8 +402,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setDependencies method with null value.
-     *
-     * @return void
      */
     public function testSetDependenciesNull(): void
     {
@@ -492,8 +412,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setDependencies method.
-     *
-     * @return void
      */
     public function testSetDependencies(): void
     {
@@ -504,8 +422,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getArguments method's default value.
-     *
-     * @return void
      */
     public function testGetArgumentsDefault(): void
     {
@@ -514,8 +430,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the getArguments method.
-     *
-     * @return void
      */
     public function testGetArguments(): void
     {
@@ -526,8 +440,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setArguments method with null value.
-     *
-     * @return void
      */
     public function testSetArgumentsNull(): void
     {
@@ -538,8 +450,6 @@ class DispatchTest extends TestCase
 
     /**
      * Test the setArguments method.
-     *
-     * @return void
      */
     public function testSetArguments(): void
     {

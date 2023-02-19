@@ -31,8 +31,6 @@ class Uri implements Contract
 
     /**
      * The URI as a string.
-     *
-     * @var string|null
      */
     private ?string $uriString = null;
 

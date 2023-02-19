@@ -72,15 +72,11 @@ class HelpersTest extends TestCase
 {
     /**
      * The sub path.
-     *
-     * @var string
      */
     protected string $subPath = '/sub/path';
 
     /**
      * Test the app() static helper method.
-     *
-     * @return void
      */
     public function testApp(): void
     {
@@ -89,8 +85,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the container() helper method.
-     *
-     * @return void
      */
     public function testContainer(): void
     {
@@ -99,8 +93,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the events() helper method.
-     *
-     * @return void
      */
     public function testEvents(): void
     {
@@ -109,8 +101,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the env() helper method.
-     *
-     * @return void
      */
     public function testEnv(): void
     {
@@ -119,8 +109,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the config() helper method.
-     *
-     * @return void
      */
     public function testConfig(): void
     {
@@ -129,8 +117,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the abort() helper method.
-     *
-     * @return void
      */
     public function testAbort(): void
     {
@@ -143,8 +129,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the redirectTo() helper method.
-     *
-     * @return void
      */
     public function testRedirectTo(): void
     {
@@ -157,8 +141,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the annotations() helper method.
-     *
-     * @return void
      */
     public function testAnnotations(): void
     {
@@ -167,8 +149,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the client() helper method.
-     *
-     * @return void
      */
     public function testClient(): void
     {
@@ -177,8 +157,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the console() helper method.
-     *
-     * @return void
      */
     public function testConsole(): void
     {
@@ -187,8 +165,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the consoleKernel() helper method.
-     *
-     * @return void
      */
     public function testConsoleKernel(): void
     {
@@ -197,8 +173,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the filesystem() helper method.
-     *
-     * @return void
      */
     public function testFilesystem(): void
     {
@@ -207,8 +181,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the input() helper method.
-     *
-     * @return void
      */
     public function testInput(): void
     {
@@ -217,8 +189,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the kernel() helper method.
-     *
-     * @return void
      */
     public function testKernel(): void
     {
@@ -227,8 +197,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the logger() helper method.
-     *
-     * @return void
      */
     public function testLogger(): void
     {
@@ -237,8 +205,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the output() helper method.
-     *
-     * @return void
      */
     public function testOutput(): void
     {
@@ -247,8 +213,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the request() helper method.
-     *
-     * @return void
      */
     public function testRequest(): void
     {
@@ -257,8 +221,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the router() helper method.
-     *
-     * @return void
      */
     public function testRouter(): void
     {
@@ -267,8 +229,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the route() helper method.
-     *
-     * @return void
      */
     public function testRoute(): void
     {
@@ -277,8 +237,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the routeUrl() helper method.
-     *
-     * @return void
      */
     public function testRouteUrl(): void
     {
@@ -287,8 +245,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the response() helper method.
-     *
-     * @return void
      */
     public function testResponse(): void
     {
@@ -297,8 +253,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the response() helper method with arguments.
-     *
-     * @return void
      */
     public function testResponseWithArgs(): void
     {
@@ -307,8 +261,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the json() helper method.
-     *
-     * @return void
      */
     public function testJson(): void
     {
@@ -317,8 +269,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the json() helper method with arguments.
-     *
-     * @return void
      */
     public function testJsonWithArgs(): void
     {
@@ -327,8 +277,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the redirect() helper method.
-     *
-     * @return void
      */
     public function testRedirect(): void
     {
@@ -337,8 +285,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the redirect() helper method with arguments.
-     *
-     * @return void
      */
     public function testRedirectWithArgs(): void
     {
@@ -347,8 +293,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the redirectRoute() helper method.
-     *
-     * @return void
      */
     public function testRedirectRoute(): void
     {
@@ -357,8 +301,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the responseBuilder() helper method.
-     *
-     * @return void
      */
     public function testResponseBuilder(): void
     {
@@ -367,8 +309,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the session() helper method.
-     *
-     * @return void
      */
     public function testSession(): void
     {
@@ -377,8 +317,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the view() helper method.
-     *
-     * @return void
      */
     public function testView(): void
     {
@@ -387,8 +325,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the basePath directory helper method.
-     *
-     * @return void
      */
     public function testBasePath(): void
     {
@@ -397,8 +333,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the basePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testBasePathSubPath(): void
     {
@@ -409,8 +343,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the appPath directory helper method.
-     *
-     * @return void
      */
     public function testAppPath(): void
     {
@@ -421,8 +353,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the appPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testAppPathSubPath(): void
     {
@@ -433,8 +363,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the cachePath directory helper method.
-     *
-     * @return void
      */
     public function testCachePath(): void
     {
@@ -451,8 +379,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the cachePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testCachePathSubPath(): void
     {
@@ -470,8 +396,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the configPath directory helper method.
-     *
-     * @return void
      */
     public function testConfigPath(): void
     {
@@ -482,8 +406,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the configPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testConfigPathSubPath(): void
     {
@@ -494,8 +416,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the publicPath directory helper method.
-     *
-     * @return void
      */
     public function testPublicPath(): void
     {
@@ -506,8 +426,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the publicPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testPublicPathSubPath(): void
     {
@@ -518,8 +436,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the resourcesPath directory helper method.
-     *
-     * @return void
      */
     public function testResourcesPath(): void
     {
@@ -530,8 +446,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the resourcesPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testResourcesPathSubPath(): void
     {
@@ -543,8 +457,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the storagePath directory helper method.
-     *
-     * @return void
      */
     public function testStoragePath(): void
     {
@@ -555,8 +467,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the storagePath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testStoragePathSubPath(): void
     {
@@ -567,8 +477,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the testsPath directory helper method.
-     *
-     * @return void
      */
     public function testTestsPath(): void
     {
@@ -579,8 +487,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the testsPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testTestsPathSubPath(): void
     {
@@ -591,8 +497,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the vendorPath directory helper method.
-     *
-     * @return void
      */
     public function testVendorPath(): void
     {
@@ -603,8 +507,6 @@ class HelpersTest extends TestCase
 
     /**
      * Test the vendorPath directory helper method with a sub path.
-     *
-     * @return void
      */
     public function testVendorPathSubPath(): void
     {

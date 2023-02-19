@@ -25,8 +25,6 @@ class Driver implements Contract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
@@ -42,8 +40,6 @@ class Driver implements Contract
 
     /**
      * Get the adapter.
-     *
-     * @return Adapter
      */
     public function getAdapter(): Adapter
     {

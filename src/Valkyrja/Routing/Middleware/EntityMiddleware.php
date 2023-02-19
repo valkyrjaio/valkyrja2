@@ -32,8 +32,6 @@ class EntityMiddleware extends Middleware
 {
     /**
      * The orm.
-     *
-     * @var Orm
      */
     protected static Orm $orm;
 
@@ -53,8 +51,6 @@ class EntityMiddleware extends Middleware
      * Get the ORM repository for a given entity.
      *
      * @param class-string<Entity> $entity The entity class name
-     *
-     * @return Repository
      */
     protected static function getOrmRepository(string $entity): Repository
     {
@@ -63,8 +59,6 @@ class EntityMiddleware extends Middleware
 
     /**
      * Get the ORM service.
-     *
-     * @return Orm
      */
     protected static function getOrm(): Orm
     {
@@ -76,8 +70,6 @@ class EntityMiddleware extends Middleware
      *
      * @param Route $route   The route
      * @param array $matches The matches
-     *
-     * @return void
      */
     protected static function checkParamsForEntities(Route $route, array $matches): void
     {
@@ -103,8 +95,6 @@ class EntityMiddleware extends Middleware
      * @param Parameter $parameter    The parameter
      * @param array     $dependencies The route dependencies
      * @param array     $matches      The matches
-     *
-     * @return void
      */
     protected static function checkParameterForEntity(int $index, Parameter $parameter, array &$dependencies, array &$matches): void
     {
@@ -123,8 +113,6 @@ class EntityMiddleware extends Middleware
      * @param class-string<Entity> $entityName   The entity class name
      * @param array                $dependencies The dependencies
      * @param mixed                $value        The value
-     *
-     * @return void
      */
     protected static function findAndSetEntityFromParameter(int $index, Parameter $parameter, string $entityName, array &$dependencies, mixed &$value): void
     {
@@ -158,8 +146,6 @@ class EntityMiddleware extends Middleware
      * @param Parameter            $parameter  The parameter
      * @param class-string<Entity> $entityName The entity class name
      * @param mixed                $value      The value
-     *
-     * @return Entity|null
      */
     protected static function findEntityFromParameter(Parameter $parameter, string $entityName, mixed $value): ?Entity
     {
@@ -191,8 +177,6 @@ class EntityMiddleware extends Middleware
      *
      * @param string $entity The entity not found
      * @param mixed  $value  [optional] The value used to check for the entity
-     *
-     * @return void
      */
     protected static function entityNotFound(string $entity, mixed $value): void
     {

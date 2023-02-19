@@ -37,15 +37,11 @@ class PhpEngine implements Engine
 {
     /**
      * The template directory.
-     *
-     * @var string
      */
     protected string $dir;
 
     /**
      * The file extension.
-     *
-     * @var string
      */
     protected string $fileExtension;
 
@@ -111,8 +107,6 @@ class PhpEngine implements Engine
      *
      * @param string $path      The file path
      * @param array  $variables [optional] The variables
-     *
-     * @return string
      */
     protected function renderFullPath(string $path, array $variables = []): string
     {
@@ -127,8 +121,6 @@ class PhpEngine implements Engine
      *
      * @param string $path      The file path
      * @param array  $variables [optional] The variables
-     *
-     * @return void
      */
     protected function requirePath(string $path, array $variables = []): void
     {
@@ -149,8 +141,6 @@ class PhpEngine implements Engine
      * @param string $template The template
      *
      * @throws InvalidConfigPath
-     *
-     * @return string
      */
     protected function getFullPath(string $template): string
     {
@@ -187,8 +177,6 @@ class PhpEngine implements Engine
      * Get the template directory.
      *
      * @param string|null $path [optional] The path to append
-     *
-     * @return string
      */
     protected function getDir(string $path = null): string
     {

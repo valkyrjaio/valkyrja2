@@ -37,8 +37,6 @@ abstract class ValidateRequest
 
     /**
      * Validate the request.
-     *
-     * @return bool
      */
     public function validate(): bool
     {
@@ -49,8 +47,6 @@ abstract class ValidateRequest
 
     /**
      * Get the request.
-     *
-     * @return Request
      */
     public function getRequest(): Request
     {
@@ -59,8 +55,6 @@ abstract class ValidateRequest
 
     /**
      * Get the validator.
-     *
-     * @return Validator
      */
     public function getValidator(): Validator
     {
@@ -95,8 +89,6 @@ abstract class ValidateRequest
      *          ],
      *      ]
      * </code>
-     *
-     * @return array
      */
     abstract protected function getRules(): array;
 }

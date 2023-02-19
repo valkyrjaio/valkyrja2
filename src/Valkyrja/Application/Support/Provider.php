@@ -26,8 +26,6 @@ abstract class Provider
      * Publish the provider.
      *
      * @param Application $app The application
-     *
-     * @return void
      */
     abstract public static function publish(Application $app): void;
 }

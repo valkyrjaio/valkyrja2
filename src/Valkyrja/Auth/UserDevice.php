@@ -24,8 +24,6 @@ interface UserDevice extends Entity
 {
     /**
      * Get the user id field.
-     *
-     * @return string
      */
     public static function getUserIdField(): string;
 }

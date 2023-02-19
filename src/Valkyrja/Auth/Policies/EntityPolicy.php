@@ -26,15 +26,11 @@ abstract class EntityPolicy extends Policy implements Contract
 {
     /**
      * The entity class name.
-     *
-     * @var string
      */
     protected static string $entityClassName;
 
     /**
      * The entity.
-     *
-     * @var Entity
      */
     protected Entity $entity;
 

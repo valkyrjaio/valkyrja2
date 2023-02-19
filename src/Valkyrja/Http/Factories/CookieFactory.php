@@ -29,10 +29,6 @@ abstract class CookieFactory
      * Parse a cookie header according to RFC 6265.
      * PHP will replace special characters in cookie names, which results in other cookies not being available due to
      * overwriting. Thus, the server request should take the cookies from the request header instead.
-     *
-     * @param string $cookieHeader
-     *
-     * @return array
      */
     public static function parseCookieHeader(string $cookieHeader): array
     {

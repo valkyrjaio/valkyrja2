@@ -24,8 +24,6 @@ class InvalidDispatcherClass
 {
     /**
      * The application.
-     *
-     * @var Application
      */
     protected Application $app;
 

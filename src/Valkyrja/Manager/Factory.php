@@ -29,8 +29,6 @@ interface Factory
      * @param class-string<Driver>  $name    The driver
      * @param class-string<Adapter> $adapter The adapter
      * @param array                 $config  The config
-     *
-     * @return Driver
      */
     public function createDriver(string $name, string $adapter, array $config): Driver;
 
@@ -39,8 +37,6 @@ interface Factory
      *
      * @param class-string<Adapter> $name   The adapter
      * @param array                 $config The config
-     *
-     * @return Adapter
      */
     public function createAdapter(string $name, array $config): Adapter;
 }

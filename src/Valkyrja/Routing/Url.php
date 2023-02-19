@@ -26,8 +26,6 @@ interface Url
      * @param string     $name     The name of the route to get
      * @param array|null $data     [optional] The route data if dynamic
      * @param bool       $absolute [optional] Whether this url should be absolute
-     *
-     * @return string
      */
     public function getUrl(string $name, array $data = null, bool $absolute = null): string;
 
@@ -47,8 +45,6 @@ interface Url
      * Determine if a uri is internal.
      *
      * @param string $uri The uri to check
-     *
-     * @return bool
      */
     public function isInternalUri(string $uri): bool;
 }

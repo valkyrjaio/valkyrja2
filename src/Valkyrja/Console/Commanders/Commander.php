@@ -112,8 +112,6 @@ abstract class Commander implements Contract
      * The usage message and description.
      *
      * @param string|null $message [optional] The usage to use instead of default
-     *
-     * @return void
      */
     protected function usageMessage(string $message = null): void
     {
@@ -128,8 +126,6 @@ abstract class Commander implements Contract
      * The arguments section.
      *
      * @param Argument ...$arguments The argument
-     *
-     * @return void
      */
     protected function argumentsSection(Argument ...$arguments): void
     {
@@ -159,8 +155,6 @@ abstract class Commander implements Contract
      * The options section.
      *
      * @param Option ...$options The options
-     *
-     * @return void
      */
     protected function optionsSection(Option ...$options): void
     {
@@ -188,8 +182,6 @@ abstract class Commander implements Contract
 
     /**
      * Get the usage path.
-     *
-     * @return string
      */
     protected function usagePath(): string
     {
@@ -213,10 +205,6 @@ abstract class Commander implements Contract
 
     /**
      * The section message.
-     *
-     * @param string $sectionName
-     *
-     * @return void
      */
     protected function sectionTitleMessage(string $sectionName): void
     {
@@ -237,8 +225,6 @@ abstract class Commander implements Contract
 
     /**
      * The sections divider.
-     *
-     * @return void
      */
     protected function sectionDivider(): void
     {
@@ -251,8 +237,6 @@ abstract class Commander implements Contract
      * @param string   $name          The name
      * @param string   $description   The description
      * @param int|null $longestLength The longest item length
-     *
-     * @return void
      */
     protected function sectionMessage(string $name, string $description, int $longestLength = null): void
     {
@@ -283,8 +267,6 @@ abstract class Commander implements Contract
      * Get an options name for the options section.
      *
      * @param Option $option The option
-     *
-     * @return string
      */
     protected function getOptionName(Option $option): string
     {
@@ -303,8 +285,6 @@ abstract class Commander implements Contract
 
     /**
      * The application message.
-     *
-     * @return void
      */
     protected function applicationMessage(): void
     {

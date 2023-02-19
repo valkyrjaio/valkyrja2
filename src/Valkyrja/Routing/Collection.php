@@ -24,8 +24,6 @@ interface Collection
      * Add a route.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     public function add(Route $route): void;
 
@@ -46,8 +44,6 @@ interface Collection
      *
      * @param string      $path   The path
      * @param string|null $method [optional] The request method
-     *
-     * @return bool
      */
     public function isset(string $path, string $method = null): bool;
 
@@ -82,8 +78,6 @@ interface Collection
      *
      * @param string      $path   The path
      * @param string|null $method [optional] The request method
-     *
-     * @return bool
      */
     public function hasStatic(string $path, string $method = null): bool;
 
@@ -113,15 +107,11 @@ interface Collection
      *
      * @param string      $regex  The regex
      * @param string|null $method [optional] The request method
-     *
-     * @return bool
      */
     public function hasDynamic(string $regex, string $method = null): bool;
 
     /**
      * Get the dynamic routes in this collection.
-     *
-     * @param string|null $method
      *
      * @return array<string, Route>|array<string, array<string, Route>>
      */
@@ -142,8 +132,6 @@ interface Collection
      * Determine if a named route exists.
      *
      * @param string $name The name
-     *
-     * @return bool
      */
     public function hasNamed(string $name): bool;
 

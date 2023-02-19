@@ -38,26 +38,19 @@ interface WhereQueryBuilder
      *          ->where('column2', '=', ':column2');
      * </code>
      *
-     * @param string      $column
      * @param string|null $operator [optional]
      * @param mixed|null  $value    [optional]
      * @param bool        $setType  [optional]
-     *
-     * @return static
      */
     public function where(string $column, string $operator = null, mixed $value = null, bool $setType = true): static;
 
     /**
      * Start a where clause in parentheses.
-     *
-     * @return static
      */
     public function startWhereGroup(): static;
 
     /**
      * End a where clause in parentheses.
-     *
-     * @return static
      */
     public function endWhereGroup(): static;
 
@@ -65,8 +58,6 @@ interface WhereQueryBuilder
      * Add a where type.
      *
      * @param WhereType $type The type
-     *
-     * @return static
      */
     public function whereType(WhereType $type = WhereType::AND): static;
 }

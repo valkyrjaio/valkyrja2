@@ -32,8 +32,6 @@ class JwtRepository extends TokenizedRepository implements Contract
 {
     /**
      * The Jwt.
-     *
-     * @var Jwt
      */
     protected Jwt $jwt;
 

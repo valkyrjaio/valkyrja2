@@ -56,8 +56,6 @@ class ServiceProvider extends Provider
      * Publish the annotator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAnnotator(Container $container): void
     {
@@ -74,8 +72,6 @@ class ServiceProvider extends Provider
      * Publish the filter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFilter(Container $container): void
     {
@@ -91,8 +87,6 @@ class ServiceProvider extends Provider
      * Publish the parser service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishParser(Container $container): void
     {

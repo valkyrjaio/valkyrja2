@@ -25,22 +25,16 @@ class ServiceContextTest extends TestCase
 {
     /**
      * The class to test with.
-     *
-     * @var Context
      */
     protected Context $class;
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +45,6 @@ class ServiceContextTest extends TestCase
 
     /**
      * Test the getService method's default value.
-     *
-     * @return void
      */
     public function testGetServiceDefault(): void
     {
@@ -61,8 +53,6 @@ class ServiceContextTest extends TestCase
 
     /**
      * Test the getService method.
-     *
-     * @return void
      */
     public function testGetService(): void
     {
@@ -73,8 +63,6 @@ class ServiceContextTest extends TestCase
 
     /**
      * Test the setService method.
-     *
-     * @return void
      */
     public function testSetService(): void
     {

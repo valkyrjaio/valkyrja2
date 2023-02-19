@@ -31,23 +31,16 @@ class Tagger implements Contract
 {
     /**
      * The cache store.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
     /**
      * The tags.
-     *
-     * @var array
      */
     protected array $tags;
 
     /**
      * Tag constructor.
-     *
-     * @param Adapter $store
-     * @param string  ...$tags
      */
     public function __construct(Adapter $store, string ...$tags)
     {
@@ -272,11 +265,7 @@ class Tagger implements Contract
     /**
      * Get a tag.
      *
-     * @param string $tag
-     *
      * @throws JsonException
-     *
-     * @return array
      */
     protected function getKeys(string $tag): array
     {
@@ -292,12 +281,7 @@ class Tagger implements Contract
     /**
      * Put a tag.
      *
-     * @param string $tag
-     * @param array  $keys
-     *
      * @throws JsonException
-     *
-     * @return void
      */
     protected function putKeys(string $tag, array $keys): void
     {

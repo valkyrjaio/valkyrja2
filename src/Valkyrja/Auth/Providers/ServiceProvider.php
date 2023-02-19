@@ -88,8 +88,6 @@ class ServiceProvider extends Provider
      * Publish the auth service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAuth(Container $container): void
     {
@@ -109,8 +107,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -126,8 +122,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -148,8 +142,6 @@ class ServiceProvider extends Provider
      * Publish the orm adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishOrmAdapter(Container $container): void
     {
@@ -173,8 +165,6 @@ class ServiceProvider extends Provider
      * Publish a gate service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishGate(Container $container): void
     {
@@ -196,8 +186,6 @@ class ServiceProvider extends Provider
      * Publish a policy service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPolicy(Container $container): void
     {
@@ -218,8 +206,6 @@ class ServiceProvider extends Provider
      * Publish an entity policy service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishEntityPolicy(Container $container): void
     {
@@ -241,8 +227,6 @@ class ServiceProvider extends Provider
      * Publish an entity route policy service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishEntityRoutePolicy(Container $container): void
     {
@@ -264,8 +248,6 @@ class ServiceProvider extends Provider
      * Publish a repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRepository(Container $container): void
     {
@@ -289,8 +271,6 @@ class ServiceProvider extends Provider
      * Publish the crypt tokenized repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCryptTokenizedRepository(Container $container): void
     {
@@ -315,8 +295,6 @@ class ServiceProvider extends Provider
      * Publish the JWT crypt tokenized repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishJWTCryptRepository(Container $container): void
     {
@@ -342,8 +320,6 @@ class ServiceProvider extends Provider
      * Publish the JWT tokenized repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishJWTRepository(Container $container): void
     {

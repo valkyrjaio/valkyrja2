@@ -36,8 +36,6 @@ class Processor implements Contract
 {
     /**
      * Processor constructor.
-     *
-     * @param Validator $validator
      */
     public function __construct(
         protected Validator $validator,
@@ -50,8 +48,6 @@ class Processor implements Contract
      * @param Route $route The route
      *
      * @throws InvalidRoutePath
-     *
-     * @return void
      */
     public function route(Route $route): void
     {
@@ -82,8 +78,6 @@ class Processor implements Contract
      * Verify a route.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     protected function verifyRoute(Route $route): void
     {
@@ -98,8 +92,6 @@ class Processor implements Contract
      * @param Route $route The route
      *
      * @throws InvalidRoutePath
-     *
-     * @return string
      */
     protected function modifyRegex(Route $route): string
     {
@@ -134,8 +126,6 @@ class Processor implements Contract
      *
      * @param Route     $route     The route
      * @param Parameter $parameter The parameter
-     *
-     * @return void
      */
     protected function processParameterEntity(Route $route, Parameter $parameter): void
     {
@@ -159,8 +149,6 @@ class Processor implements Contract
      *
      * @param Route                $route      The route
      * @param class-string<Entity> $entityName The entity class name
-     *
-     * @return void
      */
     protected function removeEntityFromDependencies(Route $route, string $entityName): void
     {
@@ -185,8 +173,6 @@ class Processor implements Contract
      * Validate the parameter enum.
      *
      * @param Parameter $parameter The parameter
-     *
-     * @return void
      */
     protected function processParameterEnum(Parameter $parameter): void
     {
@@ -207,8 +193,6 @@ class Processor implements Contract
      *
      * @param Parameter $parameter The parameter
      * @param string    $regex     The regex
-     *
-     * @return void
      */
     protected function processParameterInRegex(Parameter $parameter, string $regex): void
     {
@@ -227,8 +211,6 @@ class Processor implements Contract
      * @param string    $regex     The regex
      *
      * @throws InvalidRoutePath
-     *
-     * @return string
      */
     protected function replaceParameterNameInRegex(Route $route, Parameter $parameter, string $regex): string
     {

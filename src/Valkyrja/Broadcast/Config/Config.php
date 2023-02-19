@@ -61,8 +61,6 @@ class Config extends Model
 
     /**
      * The adapters.
-     *
-     * @var array
      */
     public array $broadcasters;
 

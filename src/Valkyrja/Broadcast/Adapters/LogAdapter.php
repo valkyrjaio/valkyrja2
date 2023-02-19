@@ -27,15 +27,11 @@ class LogAdapter extends NullAdapter
 {
     /**
      * The logger.
-     *
-     * @var Logger
      */
     protected Logger $log;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

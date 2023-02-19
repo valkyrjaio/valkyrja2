@@ -27,8 +27,6 @@ trait Cacheable
 {
     /**
      * Has setup already completed? Used to avoid duplicate setup.
-     *
-     * @var bool
      */
     protected static bool $setup = false;
 
@@ -37,8 +35,6 @@ trait Cacheable
      *
      * @param bool $force    [optional] Whether to force setup
      * @param bool $useCache [optional] Whether to use cache
-     *
-     * @return void
      */
     public function setup(bool $force = false, bool $useCache = true): void
     {
@@ -78,8 +74,6 @@ trait Cacheable
 
     /**
      * Get the config.
-     *
-     * @return Config|array
      */
     abstract protected function getConfig(): Config|array;
 
@@ -87,8 +81,6 @@ trait Cacheable
      * Before setup.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function beforeSetup(Config|array $config): void;
 
@@ -96,8 +88,6 @@ trait Cacheable
      * Setup from cache.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function setupFromCache(Config|array $config): void;
 
@@ -105,17 +95,11 @@ trait Cacheable
      * Set not cached.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function setupNotCached(Config|array $config): void;
 
     /**
      * Set annotations.
-     *
-     * @param Config|array $config
-     *
-     * @return void
      */
     protected function setupFromAnnotations(Config|array $config): void
     {
@@ -130,8 +114,6 @@ trait Cacheable
      * Set annotations.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function setupAnnotations(Config|array $config): void;
 
@@ -139,8 +121,6 @@ trait Cacheable
      * Set attributes.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     protected function setupFromAttributes(Config|array $config): void
     {
@@ -155,8 +135,6 @@ trait Cacheable
      * Set attributes.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function setupAttributes(Config|array $config): void;
 
@@ -164,8 +142,6 @@ trait Cacheable
      * Require the file path specified in the config.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     protected function requireFilePath(Config|array $config): void
     {
@@ -176,8 +152,6 @@ trait Cacheable
      * After setup.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     abstract protected function afterSetup(Config|array $config): void;
 }

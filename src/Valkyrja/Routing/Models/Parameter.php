@@ -68,8 +68,6 @@ class Parameter extends Model
 
     /**
      * Get the name.
-     *
-     * @return string
      */
     public function getName(): string
     {
@@ -80,8 +78,6 @@ class Parameter extends Model
      * Set the name.
      *
      * @param string $name The name
-     *
-     * @return static
      */
     public function setName(string $name): static
     {
@@ -92,8 +88,6 @@ class Parameter extends Model
 
     /**
      * Get the regex.
-     *
-     * @return string
      */
     public function getRegex(): string
     {
@@ -104,8 +98,6 @@ class Parameter extends Model
      * Set the regex.
      *
      * @param string $regex The regex
-     *
-     * @return static
      */
     public function setRegex(string $regex): static
     {
@@ -116,8 +108,6 @@ class Parameter extends Model
 
     /**
      * Get the type.
-     *
-     * @return CastType|null
      */
     public function getType(): ?CastType
     {
@@ -128,8 +118,6 @@ class Parameter extends Model
      * Set the type.
      *
      * @param CastType|string|null $type The type
-     *
-     * @return static
      */
     public function setType(CastType|string $type = null): static
     {
@@ -154,8 +142,6 @@ class Parameter extends Model
      * Set the entity class name.
      *
      * @param class-string<Entity>|null $entity The entity class name
-     *
-     * @return static
      */
     public function setEntity(string $entity = null): static
     {
@@ -166,8 +152,6 @@ class Parameter extends Model
 
     /**
      * Get the entity column associated with the parameter value.
-     *
-     * @return string|null
      */
     public function getEntityColumn(): ?string
     {
@@ -178,8 +162,6 @@ class Parameter extends Model
      * Set the entity column associated with the parameter value.
      *
      * @param string|null $entityColumn The entity column associated with the parameter value
-     *
-     * @return static
      */
     public function setEntityColumn(string $entityColumn = null): static
     {
@@ -202,8 +184,6 @@ class Parameter extends Model
      * Set the entity relationships.
      *
      * @param string[]|null $entityRelationships The entity relationships
-     *
-     * @return static
      */
     public function setEntityRelationships(array $entityRelationships = null): static
     {
@@ -226,8 +206,6 @@ class Parameter extends Model
      * Set the enum class name.
      *
      * @param class-string<BackedEnum>|null $enum The enum class name
-     *
-     * @return static
      */
     public function setEnum(string $enum = null): static
     {
@@ -242,8 +220,6 @@ class Parameter extends Model
 
     /**
      * Get whether this parameter is optional.
-     *
-     * @return bool
      */
     public function isOptional(): bool
     {
@@ -254,8 +230,6 @@ class Parameter extends Model
      * Set whether this parameter is optional.
      *
      * @param bool $isOptional Whether this parameter is optional
-     *
-     * @return static
      */
     public function setIsOptional(bool $isOptional): static
     {
@@ -266,8 +240,6 @@ class Parameter extends Model
 
     /**
      * Get whether this parameter should be captured.
-     *
-     * @return bool
      */
     public function shouldCapture(): bool
     {
@@ -278,8 +250,6 @@ class Parameter extends Model
      * Set whether this parameter should be captured.
      *
      * @param bool $shouldCapture Whether this parameter should be captured
-     *
-     * @return static
      */
     public function setShouldCapture(bool $shouldCapture): static
     {
@@ -290,8 +260,6 @@ class Parameter extends Model
 
     /**
      * Get the default value.
-     *
-     * @return mixed
      */
     public function getDefault(): mixed
     {

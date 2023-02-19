@@ -33,15 +33,11 @@ class Request extends SimpleRequest implements Contract
 {
     /**
      * The attributes.
-     *
-     * @var array
      */
     protected array $attributes = [];
 
     /**
      * The files.
-     *
-     * @var array
      */
     protected array $files = [];
 
@@ -331,8 +327,6 @@ class Request extends SimpleRequest implements Contract
      *
      * @param array    $params The params to sort through
      * @param string[] $names  The query param names to retrieve
-     *
-     * @return array
      */
     protected function onlyParams(array $params, array $names): array
     {
@@ -352,8 +346,6 @@ class Request extends SimpleRequest implements Contract
      *
      * @param array    $params The params to sort through
      * @param string[] $names  The query param names to not retrieve
-     *
-     * @return array
      */
     protected function exceptParams(array $params, array $names): array
     {

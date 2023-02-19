@@ -39,11 +39,7 @@ class UuidV6 extends Uuid
     /**
      * Generate a v6 UUID.
      *
-     * @param string|null $node
-     *
      * @throws Exception
-     *
-     * @return string
      */
     public static function generate(string $node = null): string
     {

@@ -24,8 +24,6 @@ abstract class EntityRoutePolicy extends EntityPolicy implements Contract
 {
     /**
      * The entity param number.
-     *
-     * @var int
      */
     protected static int $entityParamNumber = 0;
 

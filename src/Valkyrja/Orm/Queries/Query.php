@@ -33,22 +33,16 @@ class Query implements QueryContract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
     /**
      * The statement.
-     *
-     * @var Statement
      */
     protected Statement $statement;
 
     /**
      * The table to query on.
-     *
-     * @var string|null
      */
     protected ?string $table = null;
 
@@ -61,8 +55,6 @@ class Query implements QueryContract
 
     /**
      * Query constructor.
-     *
-     * @param Adapter $adapter
      */
     public function __construct(Adapter $adapter)
     {

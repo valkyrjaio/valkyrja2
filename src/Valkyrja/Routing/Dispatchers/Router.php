@@ -46,15 +46,6 @@ class Router implements Contract
 
     /**
      * Router constructor.
-     *
-     * @param Collection      $collection
-     * @param Container       $container
-     * @param Dispatcher      $dispatcher
-     * @param Events          $events
-     * @param Matcher         $matcher
-     * @param ResponseFactory $responseFactory
-     * @param Config|array    $config
-     * @param bool            $debug
      */
     public function __construct(
         protected Collection $collection,
@@ -206,8 +197,6 @@ class Router implements Contract
      * Determine if a route is a redirect.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     protected function determineRedirectRoute(Route $route): void
     {
@@ -223,8 +212,6 @@ class Router implements Contract
      *
      * @param Request $request The request
      * @param Route   $route   The route
-     *
-     * @return void
      */
     protected function determineIsSecureRoute(Request $request, Route $route): void
     {
@@ -239,8 +226,6 @@ class Router implements Contract
      * Get a response from a dispatch.
      *
      * @param mixed $dispatch The dispatch
-     *
-     * @return Response
      */
     protected function getResponseFromDispatch(mixed $dispatch): Response
     {
@@ -269,8 +254,6 @@ class Router implements Contract
      * @param Request  $request  The request
      * @param Response $response The response
      * @param Route    $route    The route
-     *
-     * @return Response
      */
     protected function routeResponseMiddleware(Request $request, Response $response, Route $route): Response
     {

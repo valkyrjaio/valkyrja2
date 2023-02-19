@@ -25,15 +25,11 @@ class HttpRedirectExceptionTest extends TestCase
 {
     /**
      * The exception.
-     *
-     * @var HttpRedirectException
      */
     protected HttpRedirectException $exception;
 
     /**
      * Get the exception.
-     *
-     * @return HttpRedirectException
      */
     protected function getException(): HttpRedirectException
     {
@@ -42,8 +38,6 @@ class HttpRedirectExceptionTest extends TestCase
 
     /**
      * Test the construction of a new HttpRedirectException instance.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {
@@ -52,8 +46,6 @@ class HttpRedirectExceptionTest extends TestCase
 
     /**
      * Test the getUri method.
-     *
-     * @return void
      */
     public function testGetUri(): void
     {

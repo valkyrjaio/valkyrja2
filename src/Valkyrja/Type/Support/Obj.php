@@ -37,8 +37,6 @@ class Obj
      * @param object $subject The subject object
      *
      * @throws JsonException
-     *
-     * @return string
      */
     public static function toString(object $subject): string
     {
@@ -51,8 +49,6 @@ class Obj
      * @param string $subject The subject object as a string
      *
      * @throws JsonException
-     *
-     * @return object
      */
     public static function fromString(string $subject): object
     {
@@ -77,8 +73,6 @@ class Obj
      * @param object $subject          The subject object
      * @param bool   $includeProtected [optional] Whether to include protected members
      * @param bool   $includePrivate   [optional] Whether to include private members
-     *
-     * @return array
      */
     public static function getAllProperties(
         object $subject,
@@ -125,8 +119,6 @@ class Obj
      * @param object $subject The subject object
      *
      * @throws JsonException
-     *
-     * @return array
      */
     public static function toDeepArray(object $subject): array
     {

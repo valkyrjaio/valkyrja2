@@ -24,8 +24,6 @@ interface Policy
      * Before authorization check.
      *
      * @param string $action The action to check if authorized for
-     *
-     * @return bool|null
      */
     public function before(string &$action): ?bool;
 
@@ -34,8 +32,6 @@ interface Policy
      *
      * @param bool   $isAuthorized Whether the action is authorized
      * @param string $action       The action to check if authorized for
-     *
-     * @return bool|null
      */
     public function after(bool $isAuthorized, string $action): ?bool;
 
@@ -43,8 +39,6 @@ interface Policy
      * Check if the authenticated user is authorized.
      *
      * @param string $action The action to check if authorized for
-     *
-     * @return bool
      */
     public function isAuthorized(string $action): bool;
 }

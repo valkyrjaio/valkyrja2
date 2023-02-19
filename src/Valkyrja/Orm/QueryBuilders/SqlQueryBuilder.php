@@ -36,43 +36,31 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * The type of statement to build.
-     *
-     * @var string
      */
     protected string $type;
 
     /**
      * The columns for use in a select statement.
-     *
-     * @var array
      */
     protected array $columns = [];
 
     /**
      * Order by conditions for the query statement.
-     *
-     * @var array
      */
     protected array $orderBy = [];
 
     /**
      * Group by conditions for the query statement.
-     *
-     * @var array
      */
     protected array $groupBy = [];
 
     /**
      * Limit condition for the query statement.
-     *
-     * @var int|null
      */
     protected ?int $limit = null;
 
     /**
      * Offset condition for the query statement.
-     *
-     * @var int|null
      */
     protected ?int $offset = null;
 
@@ -204,8 +192,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get a SELECT query.
-     *
-     * @return string
      */
     protected function getSelectQuery(): string
     {
@@ -222,8 +208,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get an INSERT query.
-     *
-     * @return string
      */
     protected function getInsertQuery(): string
     {
@@ -238,8 +222,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get an UPDATE query.
-     *
-     * @return string
      */
     protected function getUpdateQuery(): string
     {
@@ -252,8 +234,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get an DELETE query.
-     *
-     * @return string
      */
     protected function getDeleteQuery(): string
     {
@@ -266,8 +246,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get the GROUP BY part of a query statement.
-     *
-     * @return string
      */
     protected function getGroupByQuery(): string
     {
@@ -278,8 +256,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get the ORDER BY part of a query statement.
-     *
-     * @return string
      */
     protected function getOrderByQuery(): string
     {
@@ -290,8 +266,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get the LIMIT part of a query statement.
-     *
-     * @return string
      */
     protected function getLimitQuery(): string
     {
@@ -302,8 +276,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Get the OFFSET part of a query statement.
-     *
-     * @return string
      */
     protected function getOffsetQuery(): string
     {
@@ -314,8 +286,6 @@ class SqlQueryBuilder extends SqlBaseQueryBuilder implements QueryBuilder
 
     /**
      * Determine whether this is a count statement.
-     *
-     * @return bool
      */
     protected function isCount(): bool
     {

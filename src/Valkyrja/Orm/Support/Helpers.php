@@ -30,8 +30,6 @@ class Helpers
      *
      * @param string $table  The table
      * @param string $column The column
-     *
-     * @return string
      */
     public static function getTableColumn(string $table, string $column): string
     {
@@ -42,8 +40,6 @@ class Helpers
      * Get a column for a value bind.
      *
      * @param string $column The column
-     *
-     * @return string
      */
     public static function getColumnForValueBind(string $column): string
     {
@@ -63,8 +59,6 @@ class Helpers
      * Get the formatted date.
      *
      * @param string $format [optional] The format
-     *
-     * @return string
      */
     public static function getFormattedDate(string $format = DateFormat::DEFAULT): string
     {

@@ -24,8 +24,6 @@ abstract class Pdo extends BasePDO
 {
     /**
      * The default options.
-     *
-     * @var array
      */
     protected static array $defaultOptions = [
         BasePDO::ATTR_CASE              => BasePDO::CASE_NATURAL,
@@ -69,8 +67,6 @@ abstract class Pdo extends BasePDO
      * @param array  $config  The config
      * @param string $name    The dsn part name
      * @param mixed  $default [optional] The default value
-     *
-     * @return string
      */
     protected function getDsnPart(array $config, string $name, mixed $default = null): string
     {

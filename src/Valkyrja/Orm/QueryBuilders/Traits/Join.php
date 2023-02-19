@@ -28,15 +28,11 @@ trait Join
 {
     /**
      * Joins for the query statement.
-     *
-     * @var array
      */
     protected array $joins = [];
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function join(
         string $table,
@@ -62,8 +58,6 @@ trait Join
 
     /**
      * Get the JOINs of a query statement.
-     *
-     * @return string
      */
     protected function getJoinQuery(): string
     {

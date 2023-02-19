@@ -154,8 +154,6 @@ final class StatusCode
      * Determine if a status code is valid.
      *
      * @param int $code The code
-     *
-     * @return bool
      */
     public static function isValid(int $code): bool
     {

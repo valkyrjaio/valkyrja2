@@ -36,8 +36,6 @@ interface Reflector
      * @param class-string $class The class
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionClass
      */
     public function getClassReflection(string $class): ReflectionClass;
 
@@ -48,8 +46,6 @@ interface Reflector
      * @param non-empty-string $const The constant
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionClassConstant
      */
     public function getClassConstReflection(string $class, string $const): ReflectionClassConstant;
 
@@ -60,8 +56,6 @@ interface Reflector
      * @param non-empty-string $property The property
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionProperty
      */
     public function getPropertyReflection(string $class, string $property): ReflectionProperty;
 
@@ -72,8 +66,6 @@ interface Reflector
      * @param non-empty-string $method The method
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionMethod
      */
     public function getMethodReflection(string $class, string $method): ReflectionMethod;
 
@@ -83,8 +75,6 @@ interface Reflector
      * @param callable-string $function The function
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionFunction
      */
     public function getFunctionReflection(string $function): ReflectionFunction;
 
@@ -94,8 +84,6 @@ interface Reflector
      * @param Closure $closure The closure
      *
      * @throws ReflectionException
-     *
-     * @return ReflectionFunction
      */
     public function getClosureReflection(Closure $closure): ReflectionFunction;
 

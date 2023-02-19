@@ -65,7 +65,6 @@ class Validator implements Contract
     /**
      * Validator constructor.
      *
-     * @param Factory $factory
      * @param Config|array{
      *     rule: class-string,
      *     rulesMap: array<string, class-string>
@@ -153,8 +152,6 @@ class Validator implements Contract
      * Validate a rule set.
      *
      * @param array<string, array{subject: string, rules: array<string, array{arguments: array, message: string}>}> $ruleSet The rule set
-     *
-     * @return void
      */
     protected function validateRuleSet(array $ruleSet): void
     {
@@ -169,8 +166,6 @@ class Validator implements Contract
      * @param string                                                  $subjectName The subject name
      * @param mixed                                                   $subject     The subject
      * @param array<string, array{arguments: array, message: string}> $rules       The rules
-     *
-     * @return void
      */
     protected function validateSubject(string $subjectName, mixed $subject, array $rules = []): void
     {
@@ -202,8 +197,6 @@ class Validator implements Contract
      * @param string                                   $name        The rule name
      * @param mixed                                    $subject     The subject
      * @param array{arguments: array, message: string} $rule        The rule
-     *
-     * @return void
      */
     protected function validateRule(string $subjectName, string $name, mixed $subject, array $rule): void
     {

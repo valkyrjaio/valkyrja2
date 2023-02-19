@@ -42,36 +42,26 @@ class CacheRepository extends Repository implements Contract
 {
     /**
      * Store type.
-     *
-     * @var string
      */
     protected static string $storeType = 'store';
 
     /**
      * Forget type.
-     *
-     * @var string
      */
     protected static string $forgetType = 'forget';
 
     /**
      * The cache.
-     *
-     * @var Cache
      */
     protected Cache $cache;
 
     /**
      * The cache store.
-     *
-     * @var CacheDriver
      */
     protected CacheDriver $store;
 
     /**
      * The id of a findOne (to tag if null returned).
-     *
-     * @var int|string|null
      */
     protected int|string|null $id;
 
@@ -292,8 +282,6 @@ class CacheRepository extends Repository implements Contract
      * Get cache key.
      *
      * @throws JsonException
-     *
-     * @return string
      */
     protected function getCacheKey(): string
     {
@@ -306,11 +294,7 @@ class CacheRepository extends Repository implements Contract
     /**
      * Defer or cache.
      *
-     * @param string $type
-     * @param Entity $entity
-     * @param bool   $defer  [optional]
-     *
-     * @return void
+     * @param bool $defer [optional]
      */
     protected function deferOrCache(string $type, Entity $entity, bool $defer = true): void
     {
@@ -325,11 +309,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Set a deferred entity.
-     *
-     * @param string $type
-     * @param Entity $entity
-     *
-     * @return void
      */
     protected function setDeferredEntity(string $type, Entity $entity): void
     {
@@ -343,10 +322,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Forget entity in cache.
-     *
-     * @param Entity $entity
-     *
-     * @return void
      */
     protected function forgetEntity(Entity $entity): void
     {
@@ -357,10 +332,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Get entity cache key.
-     *
-     * @param Entity $entity
-     *
-     * @return string
      */
     protected function getEntityCacheKey(Entity $entity): string
     {
@@ -369,8 +340,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Clear deferred entities.
-     *
-     * @return void
      */
     protected function clearDeferred(): void
     {
@@ -380,8 +349,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Persist entities to be saved.
-     *
-     * @return void
      */
     protected function persistSave(): void
     {
@@ -394,8 +361,6 @@ class CacheRepository extends Repository implements Contract
 
     /**
      * Persist entities to be deleted.
-     *
-     * @return void
      */
     protected function persistDelete(): void
     {
@@ -409,10 +374,7 @@ class CacheRepository extends Repository implements Contract
     /**
      * Cache results.
      *
-     * @param string                   $cacheKey
      * @param int|Entity|Entity[]|null $results
-     *
-     * @return void
      */
     protected function cacheResults(string $cacheKey, Entity|array|int|null $results): void
     {

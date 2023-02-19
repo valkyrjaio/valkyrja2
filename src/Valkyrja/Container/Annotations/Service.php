@@ -28,22 +28,16 @@ class Service extends Dispatch implements Annotation
 
     /**
      * Whether this service is a singleton.
-     *
-     * @var bool
      */
     public bool $singleton = false;
 
     /**
      * Default arguments.
-     *
-     * @var array|null
      */
     public ?array $defaults;
 
     /**
      * Get whether this is a singleton.
-     *
-     * @return bool
      */
     public function isSingleton(): bool
     {
@@ -54,8 +48,6 @@ class Service extends Dispatch implements Annotation
      * Set whether this is a singleton.
      *
      * @param bool $singleton Whether this is a singleton
-     *
-     * @return static
      */
     public function setSingleton(bool $singleton = true): static
     {
@@ -66,8 +58,6 @@ class Service extends Dispatch implements Annotation
 
     /**
      * Get defaults.
-     *
-     * @return array|null
      */
     public function getDefaults(): ?array
     {
@@ -77,9 +67,7 @@ class Service extends Dispatch implements Annotation
     /**
      * Set defaults.
      *
-     * @param array|null $defaults The defaults.
-     *
-     * @return static
+     * @param array|null $defaults the defaults
      */
     public function setDefaults(array $defaults = null): static
     {

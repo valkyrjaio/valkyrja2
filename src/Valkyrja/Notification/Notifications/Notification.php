@@ -28,64 +28,43 @@ abstract class Notification implements Contract
     /**
      * The broadcast adapter to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $broadcastAdapter = null;
 
     /**
      * The broadcast message to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $broadcastMessage = null;
 
-    /**
-     * @var bool
-     */
     protected static bool $shouldSendBroadcast = true;
 
     /**
      * The mail adapter to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $mailAdapter = null;
 
     /**
      * The mail message to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $mailMessage = null;
 
-    /**
-     * @var bool
-     */
     protected static bool $shouldSendMail = true;
 
     /**
      * The SMS adapter to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $smsAdapter = null;
 
     /**
      * The SMS message to use for this notification.
      *  Null ensures the default from config is used.
-     *
-     * @var string|null
      */
     protected static ?string $smsMessage = null;
 
-    /**
-     * @var bool
-     */
     protected static bool $shouldSendSms = true;
 
     /**

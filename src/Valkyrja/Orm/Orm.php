@@ -25,8 +25,6 @@ interface Orm
      *
      * @param string|null                $name    The connection name
      * @param class-string<Adapter>|null $adapter The adapter
-     *
-     * @return Driver
      */
     public function useConnection(string $name = null, string $adapter = null): Driver;
 
@@ -35,8 +33,6 @@ interface Orm
      *
      * @param class-string<Adapter> $name   The adapter class name
      * @param array                 $config The config
-     *
-     * @return Adapter
      */
     public function createAdapter(string $name, array $config): Adapter;
 
@@ -45,8 +41,6 @@ interface Orm
      *
      * @param Adapter                    $adapter The adapter
      * @param class-string<QueryBuilder> $name    The query builder class name
-     *
-     * @return QueryBuilder
      */
     public function createQueryBuilder(Adapter $adapter, string $name): QueryBuilder;
 
@@ -55,8 +49,6 @@ interface Orm
      *
      * @param Adapter             $adapter The adapter
      * @param class-string<Query> $name    The query class name
-     *
-     * @return Query
      */
     public function createQuery(Adapter $adapter, string $name): Query;
 
@@ -65,8 +57,6 @@ interface Orm
      *
      * @param Adapter                 $adapter The adapter
      * @param class-string<Retriever> $name    The retriever class name
-     *
-     * @return Retriever
      */
     public function createRetriever(Adapter $adapter, string $name): Retriever;
 
@@ -75,8 +65,6 @@ interface Orm
      *
      * @param Adapter                 $adapter The adapter
      * @param class-string<Persister> $name    The persister class name
-     *
-     * @return Persister
      */
     public function createPersister(Adapter $adapter, string $name): Persister;
 
@@ -92,8 +80,6 @@ interface Orm
     /**
      * Get a repository from an entity class.
      *
-     * @param Entity $entity
-     *
      * @return Repository<Entity>
      */
     public function getRepositoryFromClass(Entity $entity): Repository;
@@ -104,8 +90,6 @@ interface Orm
      * @param Adapter                 $adapter The adapter
      * @param class-string<Statement> $name    The statement class name
      * @param array                   $data    [optional] Additional data required for the statement
-     *
-     * @return Statement
      */
     public function createStatement(Adapter $adapter, string $name, array $data = []): Statement;
 
@@ -114,43 +98,31 @@ interface Orm
      *
      * @param class-string<Migration> $name The migration class name
      * @param array                   $data [optional] Additional data required for the migration
-     *
-     * @return Migration
      */
     public function createMigration(string $name, array $data = []): Migration;
 
     /**
      * Initiate a transaction.
-     *
-     * @return bool
      */
     public function beginTransaction(): bool;
 
     /**
      * In a transaction.
-     *
-     * @return bool
      */
     public function inTransaction(): bool;
 
     /**
      * Ensure a transaction is in progress.
-     *
-     * @return void
      */
     public function ensureTransaction(): void;
 
     /**
      * Persist all entities.
-     *
-     * @return bool
      */
     public function persist(): bool;
 
     /**
      * Rollback the previous transaction.
-     *
-     * @return bool
      */
     public function rollback(): bool;
 
@@ -159,8 +131,6 @@ interface Orm
      *
      * @param string|null $table   [optional] The table last inserted into
      * @param string|null $idField [optional] The id field of the table last inserted into
-     *
-     * @return string
      */
     public function lastInsertId(string $table = null, string $idField = null): string;
 
@@ -172,8 +142,6 @@ interface Orm
      * </code>
      *
      * @param class-string<Entity> $entity
-     *
-     * @return Retriever
      */
     public function find(string $entity): Retriever;
 
@@ -185,9 +153,6 @@ interface Orm
      * </code>
      *
      * @param class-string<Entity> $entity
-     * @param int|string           $id
-     *
-     * @return Retriever
      */
     public function findOne(string $entity, int|string $id): Retriever;
 
@@ -202,8 +167,6 @@ interface Orm
      * </code>
      *
      * @param class-string<Entity> $entity
-     *
-     * @return Retriever
      */
     public function count(string $entity): Retriever;
 
@@ -214,10 +177,7 @@ interface Orm
      *      $entityManager->create(new Entity(), true | false)
      * </code>
      *
-     * @param Entity $entity
-     * @param bool   $defer  [optional]
-     *
-     * @return void
+     * @param bool $defer [optional]
      */
     public function create(Entity $entity, bool $defer = true): void;
 
@@ -228,10 +188,7 @@ interface Orm
      *      $entityManager->save(new Entity(), true | false)
      * </code>
      *
-     * @param Entity $entity
-     * @param bool   $defer  [optional]
-     *
-     * @return void
+     * @param bool $defer [optional]
      */
     public function save(Entity $entity, bool $defer = true): void;
 
@@ -242,10 +199,7 @@ interface Orm
      *      $entityManager->delete(new Entity(), true | false)
      * </code>
      *
-     * @param Entity $entity
-     * @param bool   $defer  [optional]
-     *
-     * @return void
+     * @param bool $defer [optional]
      */
     public function delete(Entity $entity, bool $defer = true): void;
 
@@ -256,10 +210,7 @@ interface Orm
      *      $entityManager->softDelete(new SoftDeleteEntity(), true | false)
      * </code>
      *
-     * @param SoftDeleteEntity $entity
-     * @param bool             $defer  [optional]
-     *
-     * @return void
+     * @param bool $defer [optional]
      */
     public function softDelete(SoftDeleteEntity $entity, bool $defer = true): void;
 
@@ -271,8 +222,6 @@ interface Orm
      * </code>
      *
      * @param Entity|null $entity [optional] The entity instance to remove.
-     *
-     * @return void
      */
     public function clear(Entity $entity = null): void;
 }

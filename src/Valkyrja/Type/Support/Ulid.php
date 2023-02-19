@@ -43,15 +43,11 @@ class Ulid extends Uid
 
     /**
      * The previously used time string.
-     *
-     * @var string
      */
     protected static string $time = '';
 
     /**
      * The previously used random array item.
-     *
-     * @var array
      */
     protected static array $randomBytes = [];
 
@@ -62,8 +58,6 @@ class Ulid extends Uid
      * @param bool                   $lowerCase [optional] Whether to return as lower case
      *
      * @throws Exception
-     *
-     * @return string
      */
     public static function generate(DateTimeInterface $dateTime = null, bool $lowerCase = false): string
     {
@@ -109,8 +103,6 @@ class Ulid extends Uid
      * @param DateTimeInterface|null $dateTime [optional] The date time to use when generating the ULID
      *
      * @throws Exception
-     *
-     * @return string
      */
     public static function generateLowerCase(DateTimeInterface $dateTime = null): string
     {
@@ -121,8 +113,6 @@ class Ulid extends Uid
      * Get a time to generate a ULID with.
      *
      * @param DateTimeInterface|null $dateTime [optional] The date time to use when generating the ULID
-     *
-     * @return string
      */
     protected static function getTime(DateTimeInterface $dateTime = null): string
     {
@@ -142,8 +132,6 @@ class Ulid extends Uid
      * Get the time from micro time.
      *
      * @param string $time The micro time
-     *
-     * @return string
      */
     protected static function getTimeFromMicroTime(string $time): string
     {
@@ -154,8 +142,6 @@ class Ulid extends Uid
      * Get the time from a datetime.
      *
      * @param DateTimeInterface $dateTime The date time to use when generating the ULID
-     *
-     * @return string
      */
     protected static function getTimeFromDateTime(DateTimeInterface $dateTime): string
     {
@@ -167,8 +153,6 @@ class Ulid extends Uid
      *
      * @param string                 $time     The time to check
      * @param DateTimeInterface|null $dateTime [optional] The date time to use when generating the ULID
-     *
-     * @return bool
      */
     protected static function doesTimeMatch(string $time, DateTimeInterface $dateTime = null): bool
     {
@@ -179,8 +163,6 @@ class Ulid extends Uid
      * Determine if the entire array's worth of random bytes are at max.
      * - Can occur if a lot of ids were generated for the same time
      * - Or if somehow all the random bytes were at max, somehow...
-     *
-     * @return bool
      */
     protected static function areAllRandomBytesMax(): bool
     {
@@ -191,8 +173,6 @@ class Ulid extends Uid
      * Increase the time.
      *
      * @param string $time The time
-     *
-     * @return string
      */
     protected static function increaseTime(string $time): string
     {
@@ -201,8 +181,6 @@ class Ulid extends Uid
 
     /**
      * Update the random bytes.
-     *
-     * @return void
      */
     protected static function updateRandomBytes(): void
     {
@@ -222,8 +200,6 @@ class Ulid extends Uid
      * @param string $time The time to use
      *
      * @throws Exception
-     *
-     * @return void
      */
     protected static function randomize(string $time): void
     {
@@ -241,8 +217,6 @@ class Ulid extends Uid
      * Generate a randomized bytes array.
      *
      * @throws Exception
-     *
-     * @return array
      */
     protected static function generateRandomBytes(): array
     {
@@ -253,8 +227,6 @@ class Ulid extends Uid
      * Process the randomized byte parts.
      *
      * @param array $randomBytes The random byte parts
-     *
-     * @return void
      */
     protected static function processRandomizedByteParts(array &$randomBytes): void
     {
@@ -271,8 +243,6 @@ class Ulid extends Uid
      *
      * @param array $randomBytes The random byte parts
      * @param int   $index       The index to process
-     *
-     * @return void
      */
     protected static function processRandomizedBytePart(array &$randomBytes, int $index): void
     {
@@ -283,8 +253,6 @@ class Ulid extends Uid
      * Unset random byte parts.
      *
      * @param array $randomBytes The random byte parts
-     *
-     * @return void
      */
     protected static function unsetRandomByteParts(array &$randomBytes): void
     {
@@ -295,8 +263,6 @@ class Ulid extends Uid
      * Format a time with random bytes.
      *
      * @param string $time The time
-     *
-     * @return string
      */
     protected static function formatTimeWithRandomBytes(string $time): string
     {
@@ -321,8 +287,6 @@ class Ulid extends Uid
      * Convert a random byte part.
      *
      * @param int $index The index to process
-     *
-     * @return string
      */
     protected static function convertRandomBytesPart(int $index): string
     {

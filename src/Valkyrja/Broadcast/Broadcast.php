@@ -26,15 +26,11 @@ interface Broadcast extends Manager
 {
     /**
      * @inheritDoc
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
     /**
      * @inheritDoc
-     *
-     * @return Message
      */
     public function createMessage(string $name = null, array $data = []): Message;
 }

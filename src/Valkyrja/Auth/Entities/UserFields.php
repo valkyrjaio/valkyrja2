@@ -22,22 +22,16 @@ trait UserFields
 {
     /**
      * The username.
-     *
-     * @var string
      */
     public string $username;
 
     /**
      * The password.
-     *
-     * @var string
      */
     protected string $password;
 
     /**
      * The password reset token.
-     *
-     * @var string|null
      */
     protected ?string $reset_token = null;
 }

@@ -25,8 +25,6 @@ class NullAdapter implements Contract
 {
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

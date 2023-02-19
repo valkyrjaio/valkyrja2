@@ -26,8 +26,6 @@ class HttpRedirectException extends HttpException
 {
     /**
      * The uri to redirect to for this exception.
-     *
-     * @var string
      */
     protected string $uri = '/';
 
@@ -60,8 +58,6 @@ class HttpRedirectException extends HttpException
 
     /**
      * Get the uri to redirect to for this exception.
-     *
-     * @return string
      */
     public function getUri(): string
     {

@@ -75,8 +75,6 @@ class ServiceProvider extends Provider
      * @param Container $container The container
      *
      * @throws InvalidConfigPath
-     *
-     * @return void
      */
     public static function publishView(Container $container): void
     {
@@ -106,8 +104,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -121,8 +117,6 @@ class ServiceProvider extends Provider
      * Publish the template service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishTemplate(Container $container): void
     {
@@ -138,8 +132,6 @@ class ServiceProvider extends Provider
      * Publish the PHP engine service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPhpEngine(Container $container): void
     {
@@ -165,8 +157,6 @@ class ServiceProvider extends Provider
      * Publish the Orka engine service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishOrkaEngine(Container $container): void
     {
@@ -196,8 +186,6 @@ class ServiceProvider extends Provider
      * Publish the Twig engine service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishTwigEngine(Container $container): void
     {
@@ -215,8 +203,6 @@ class ServiceProvider extends Provider
      * @param Container $container The container
      *
      * @throws LoaderError
-     *
-     * @return void
      */
     public static function publishTwigEnvironment(Container $container): void
     {

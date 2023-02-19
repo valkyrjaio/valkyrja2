@@ -24,8 +24,6 @@ interface Message extends Contract
 {
     /**
      * Get the phone number to send to.
-     *
-     * @return string
      */
     public function getTo(): string;
 
@@ -33,15 +31,11 @@ interface Message extends Contract
      * Set who to send to.
      *
      * @param string $to The to
-     *
-     * @return static
      */
     public function setTo(string $to): static;
 
     /**
      * Get the phone number to set as sent from.
-     *
-     * @return string
      */
     public function getFrom(): string;
 
@@ -49,15 +43,11 @@ interface Message extends Contract
      * Set the from.
      *
      * @param string $from The from
-     *
-     * @return static
      */
     public function setFrom(string $from): static;
 
     /**
      * Get the text.
-     *
-     * @return string
      */
     public function getText(): string;
 
@@ -65,15 +55,11 @@ interface Message extends Contract
      * Set the text.
      *
      * @param string $text The text
-     *
-     * @return static
      */
     public function setText(string $text): static;
 
     /**
      * Get whether the text is unicode.
-     *
-     * @return bool
      */
     public function isUnicode(): bool;
 
@@ -81,8 +67,6 @@ interface Message extends Contract
      * Set whether the text is unicode.
      *
      * @param bool $isUnicode [optional] Whether the text is unicode
-     *
-     * @return static
      */
     public function setIsUnicode(bool $isUnicode = true): static;
 }

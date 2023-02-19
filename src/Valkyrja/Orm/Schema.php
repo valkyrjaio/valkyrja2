@@ -24,8 +24,6 @@ interface Schema
      * Create a new table.
      *
      * @param string $name The table name
-     *
-     * @return Table
      */
     public function createTable(string $name): Table;
 
@@ -33,8 +31,6 @@ interface Schema
      * Get an existing table.
      *
      * @param string $name The table name
-     *
-     * @return Table
      */
     public function getTable(string $name): Table;
 
@@ -43,8 +39,6 @@ interface Schema
      *
      * @param string $name    The table name
      * @param string $newName The table's new name
-     *
-     * @return Table
      */
     public function renameTable(string $name, string $newName): Table;
 
@@ -52,15 +46,11 @@ interface Schema
      * Drop a table.
      *
      * @param string $name The table name
-     *
-     * @return Table
      */
     public function dropTable(string $name): Table;
 
     /**
      * Get the built query string.
-     *
-     * @return string
      */
     public function getQueryString(): string;
 
@@ -68,22 +58,16 @@ interface Schema
      * Execute a table query.
      *
      * @param Table $table The table to execute
-     *
-     * @return bool
      */
     public function execute(Table $table): bool;
 
     /**
      * Execute all pending table queries.
-     *
-     * @return bool
      */
     public function executeAll(): bool;
 
     /**
      * Get the error if one occurred.
-     *
-     * @return string
      */
     public function getError(): string;
 }

@@ -24,29 +24,21 @@ class Cache extends Model
 {
     /**
      * The base64 encoded serialized commands.
-     *
-     * @var string
      */
     public string $commands;
 
     /**
      * The command paths.
-     *
-     * @var array
      */
     public array $paths;
 
     /**
      * The named commands.
-     *
-     * @var array
      */
     public array $namedCommands;
 
     /**
      * The provided commands.
-     *
-     * @var array
      */
     public array $provided;
 }

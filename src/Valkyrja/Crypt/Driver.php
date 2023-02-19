@@ -25,10 +25,6 @@ interface Driver extends Contract
 {
     /**
      * Determine if an encrypted message is valid.
-     *
-     * @param string $encrypted
-     *
-     * @return bool
      */
     public function isValidEncryptedMessage(string $encrypted): bool;
 
@@ -39,8 +35,6 @@ interface Driver extends Contract
      * @param string|null $key     The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return string
      */
     public function encrypt(string $message, string $key = null): string;
 
@@ -51,8 +45,6 @@ interface Driver extends Contract
      * @param string|null $key   The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return string
      */
     public function encryptArray(array $array, string $key = null): string;
 
@@ -63,8 +55,6 @@ interface Driver extends Contract
      * @param string|null $key    The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return string
      */
     public function encryptObject(object $object, string $key = null): string;
 
@@ -75,8 +65,6 @@ interface Driver extends Contract
      * @param string|null $key       The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return string
      */
     public function decrypt(string $encrypted, string $key = null): string;
 
@@ -87,8 +75,6 @@ interface Driver extends Contract
      * @param string|null $key       The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return array
      */
     public function decryptArray(string $encrypted, string $key = null): array;
 
@@ -99,8 +85,6 @@ interface Driver extends Contract
      * @param string|null $key       The encryption key
      *
      * @throws CryptException On any failure
-     *
-     * @return object
      */
     public function decryptObject(string $encrypted, string $key = null): object;
 }

@@ -30,8 +30,6 @@ class CacheAdapter extends PHPAdapter
 {
     /**
      * The cache.
-     *
-     * @var Cache
      */
     protected Cache $cache;
 
@@ -129,8 +127,6 @@ class CacheAdapter extends PHPAdapter
 
     /**
      * Get the cache session id.
-     *
-     * @return string
      */
     protected function getCacheSessionId(): string
     {
@@ -141,8 +137,6 @@ class CacheAdapter extends PHPAdapter
      * Update the cache session.
      *
      * @throws JsonException
-     *
-     * @return void
      */
     protected function updateCacheSession(): void
     {

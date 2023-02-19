@@ -26,15 +26,11 @@ class PsrAdapter implements Contract
 {
     /**
      * The logger.
-     *
-     * @var LoggerInterface
      */
     protected LoggerInterface $logger;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 
@@ -143,8 +139,6 @@ class PsrAdapter implements Contract
      * Get exception trace code.
      *
      * @param Throwable $exception The exception
-     *
-     * @return string
      */
     protected function getExceptionTraceCode(Throwable $exception): string
     {

@@ -41,8 +41,6 @@ abstract class GatedMiddleware extends AuthorizedMiddleware
 
     /**
      * The action to check for.
-     *
-     * @var string|null
      */
     protected static ?string $action = null;
 
@@ -60,8 +58,6 @@ abstract class GatedMiddleware extends AuthorizedMiddleware
 
     /**
      * The gate.
-     *
-     * @return string|null
      */
     protected static function getGate(): ?string
     {
@@ -72,8 +68,6 @@ abstract class GatedMiddleware extends AuthorizedMiddleware
      * Get the action.
      *
      * @param Request $request The request
-     *
-     * @return string
      */
     protected static function getAction(Request $request): string
     {
@@ -85,8 +79,6 @@ abstract class GatedMiddleware extends AuthorizedMiddleware
 
     /**
      * The policy.
-     *
-     * @return string|null
      */
     protected static function getPolicy(): ?string
     {

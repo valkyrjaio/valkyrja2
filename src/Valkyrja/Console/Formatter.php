@@ -28,8 +28,6 @@ interface Formatter
      * Set the foreground.
      *
      * @param FormatForeground|null $foreground The foreground color
-     *
-     * @return void
      */
     public function setForeground(FormatForeground $foreground = null): void;
 
@@ -37,8 +35,6 @@ interface Formatter
      * Set the background.
      *
      * @param FormatBackground|null $background The background
-     *
-     * @return void
      */
     public function setBackground(FormatBackground $background = null): void;
 
@@ -46,8 +42,6 @@ interface Formatter
      * Set foreground or background to black.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function black(bool $background = null): void;
 
@@ -55,8 +49,6 @@ interface Formatter
      * Set foreground or background to red.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function red(bool $background = null): void;
 
@@ -64,8 +56,6 @@ interface Formatter
      * Set foreground or background to green.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function green(bool $background = null): void;
 
@@ -73,8 +63,6 @@ interface Formatter
      * Set foreground or background to yellow.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function yellow(bool $background = null): void;
 
@@ -82,8 +70,6 @@ interface Formatter
      * Set foreground or background to blue.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function blue(bool $background = null): void;
 
@@ -91,8 +77,6 @@ interface Formatter
      * Set foreground or background to magenta.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function magenta(bool $background = null): void;
 
@@ -100,8 +84,6 @@ interface Formatter
      * Set foreground or background to cyan.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function cyan(bool $background = null): void;
 
@@ -109,8 +91,6 @@ interface Formatter
      * Set foreground or background to white.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function white(bool $background = null): void;
 
@@ -118,8 +98,6 @@ interface Formatter
      * Set foreground or background to default.
      *
      * @param bool $background [optional] Whether this is to set the background
-     *
-     * @return void
      */
     public function resetColor(bool $background = null): void;
 
@@ -127,8 +105,6 @@ interface Formatter
      * Set an option.
      *
      * @param FormatOption $option The option
-     *
-     * @return void
      */
     public function setOption(FormatOption $option): void;
 
@@ -136,8 +112,6 @@ interface Formatter
      * Determine whether an option has been set.
      *
      * @param FormatOption $option The option
-     *
-     * @return bool
      */
     public function hasOption(FormatOption $option): bool;
 
@@ -145,8 +119,6 @@ interface Formatter
      * Remove an option.
      *
      * @param FormatOption $option The option
-     *
-     * @return void
      */
     public function removeOption(FormatOption $option): void;
 
@@ -154,50 +126,36 @@ interface Formatter
      * Set options.
      *
      * @param FormatOption ...$options The options
-     *
-     * @return void
      */
     public function setOptions(FormatOption ...$options): void;
 
     /**
      * Set the bold option.
-     *
-     * @return void
      */
     public function bold(): void;
 
     /**
      * Set the underscore option.
-     *
-     * @return void
      */
     public function underscore(): void;
 
     /**
      * Set the blink option.
-     *
-     * @return void
      */
     public function blink(): void;
 
     /**
      * Set the reverse option.
-     *
-     * @return void
      */
     public function reverse(): void;
 
     /**
      * Set the conceal option.
-     *
-     * @return void
      */
     public function conceal(): void;
 
     /**
      * Reset the options.
-     *
-     * @return void
      */
     public function resetOptions(): void;
 
@@ -205,8 +163,6 @@ interface Formatter
      * Format a message.
      *
      * @param string $message The message
-     *
-     * @return string
      */
     public function format(string $message): string;
 }

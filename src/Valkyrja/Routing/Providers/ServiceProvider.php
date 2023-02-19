@@ -79,8 +79,6 @@ class ServiceProvider extends Provider
      * Publish the router service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRouter(Container $container): void
     {
@@ -105,8 +103,6 @@ class ServiceProvider extends Provider
      * Publish the annotator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAnnotator(Container $container): void
     {
@@ -125,8 +121,6 @@ class ServiceProvider extends Provider
      * Publish the collector service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCollector(Container $container): void
     {
@@ -143,8 +137,6 @@ class ServiceProvider extends Provider
      * Publish the collection service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCollection(Container $container): void
     {
@@ -165,8 +157,6 @@ class ServiceProvider extends Provider
      * Publish the matcher service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMatcher(Container $container): void
     {
@@ -182,8 +172,6 @@ class ServiceProvider extends Provider
      * Publish the url service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishUrl(Container $container): void
     {
@@ -203,8 +191,6 @@ class ServiceProvider extends Provider
      * Publish the route attributes service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRouteAttributes(Container $container): void
     {
@@ -222,8 +208,6 @@ class ServiceProvider extends Provider
      * Publish the processor service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishProcessor(Container $container): void
     {

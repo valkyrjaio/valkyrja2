@@ -22,8 +22,6 @@ interface Index
 {
     /**
      * Create the index.
-     *
-     * @return static
      */
     public function create(): static;
 
@@ -31,15 +29,11 @@ interface Index
      * Rename the index.
      *
      * @param string $name The new name
-     *
-     * @return static
      */
     public function rename(string $name): static;
 
     /**
      * Drop the index.
-     *
-     * @return static
      */
     public function drop(): static;
 
@@ -47,8 +41,6 @@ interface Index
      * Set the name of the index.
      *
      * @param string $name The index name
-     *
-     * @return static
      */
     public function setName(string $name): static;
 
@@ -56,29 +48,21 @@ interface Index
      * Add a column to the index.
      *
      * @param string $name The index name
-     *
-     * @return static
      */
     public function addColumn(string $name): static;
 
     /**
      * Set this as a unique index.
-     *
-     * @return static
      */
     public function isUnique(): static;
 
     /**
      * Do only if the table doesn't already exist.
-     *
-     * @return static
      */
     public function ifNotExists(): static;
 
     /**
      * Do only if the table exists.
-     *
-     * @return static
      */
     public function ifExists(): static;
 }

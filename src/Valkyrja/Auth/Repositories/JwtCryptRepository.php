@@ -32,8 +32,6 @@ class JwtCryptRepository extends CryptTokenizedRepository implements Contract
 {
     /**
      * The Jwt service.
-     *
-     * @var Jwt
      */
     protected Jwt $jwt;
 

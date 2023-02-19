@@ -35,8 +35,6 @@ class Config extends Model
 
     /**
      * The patterns.
-     *
-     * @var array
      */
     public array $patterns;
 }

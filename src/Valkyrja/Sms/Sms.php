@@ -26,15 +26,11 @@ interface Sms extends Manager
 {
     /**
      * @inheritDoc
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
     /**
      * @inheritDoc
-     *
-     * @return Message
      */
     public function createMessage(string $name = null, array $data = []): Message;
 
@@ -42,8 +38,6 @@ interface Sms extends Manager
      * Send a message.
      *
      * @param Message $message The message to send
-     *
-     * @return void
      */
     public function send(Message $message): void;
 }

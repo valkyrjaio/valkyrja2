@@ -62,169 +62,121 @@ class Config extends Model
 
     /**
      * The annotation module config.
-     *
-     * @var Annotation
      */
     public Annotation $annotation;
 
     /**
      * The api module config.
-     *
-     * @var Api
      */
     public Api $api;
 
     /**
      * The application module config.
-     *
-     * @var App
      */
     public App $app;
 
     /**
      * The asset module config.
-     *
-     * @var Asset
      */
     public Asset $asset;
 
     /**
      * The auth module config.
-     *
-     * @var Auth
      */
     public Auth $auth;
 
     /**
      * The broadcast module config.
-     *
-     * @var Broadcast
      */
     public Broadcast $broadcast;
 
     /**
      * The cache module config.
-     *
-     * @var Cache
      */
     public Cache $cache;
 
     /**
      * The client module config.
-     *
-     * @var Client
      */
     public Client $client;
 
     /**
      * The console module config.
-     *
-     * @var Console
      */
     public Console $console;
 
     /**
      * The container module config.
-     *
-     * @var Container
      */
     public Container $container;
 
     /**
      * The crypt module config.
-     *
-     * @var Crypt
      */
     public Crypt $crypt;
 
     /**
      * The event module config.
-     *
-     * @var Event
      */
     public Event $event;
 
     /**
      * The filesystem module config.
-     *
-     * @var Filesystem
      */
     public Filesystem $filesystem;
 
     /**
      * The Jwt module config.
-     *
-     * @var Jwt
      */
     public Jwt $jwt;
 
     /**
      * The logging module config.
-     *
-     * @var Log
      */
     public Log $log;
 
     /**
      * The mail module config.
-     *
-     * @var Mail
      */
     public Mail $mail;
 
     /**
      * The notification module config.
-     *
-     * @var Notification
      */
     public Notification $notification;
 
     /**
      * The ORM module config.
-     *
-     * @var ORM
      */
     public ORM $orm;
 
     /**
      * The path module config.
-     *
-     * @var Path
      */
     public Path $path;
 
     /**
      * The routing module config.
-     *
-     * @var Routing
      */
     public Routing $routing;
 
     /**
      * The session module config.
-     *
-     * @var Session
      */
     public Session $session;
 
     /**
      * The SMS module config.
-     *
-     * @var SMS
      */
     public SMS $sms;
 
     /**
      * The validation module config.
-     *
-     * @var Validation
      */
     public Validation $validation;
 
     /**
      * The view module config.
-     *
-     * @var View
      */
     public View $view;
 
@@ -238,15 +190,11 @@ class Config extends Model
 
     /**
      * The cache file path.
-     *
-     * @var string
      */
     public string $cacheFilePath;
 
     /**
      * Whether to use cache.
-     *
-     * @var bool
      */
     public bool $useCache;
 }

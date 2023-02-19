@@ -24,22 +24,16 @@ class Config extends Model
 {
     /**
      * The default configuration.
-     *
-     * @var string
      */
     public string $default;
 
     /**
      * The default adapter.
-     *
-     * @var string
      */
     public string $adapter;
 
     /**
      * The default driver.
-     *
-     * @var string
      */
     public string $driver;
 

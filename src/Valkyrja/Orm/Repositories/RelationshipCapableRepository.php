@@ -32,8 +32,6 @@ trait RelationshipCapableRepository
 
     /**
      * Whether to get relations.
-     *
-     * @var bool
      */
     protected bool $getRelations = false;
 
@@ -75,8 +73,6 @@ trait RelationshipCapableRepository
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withRelationships(array $relationships = null): static
     {
@@ -88,8 +84,6 @@ trait RelationshipCapableRepository
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withAllRelationships(): static
     {
@@ -101,8 +95,6 @@ trait RelationshipCapableRepository
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withoutRelationships(): static
     {
@@ -127,8 +119,6 @@ trait RelationshipCapableRepository
 
     /**
      * Reset the relationship properties.
-     *
-     * @return void
      */
     protected function resetRelationships(): void
     {
@@ -140,8 +130,6 @@ trait RelationshipCapableRepository
      * Set relationships on the entities from results.
      *
      * @param Entity ...$entities The entities to add relationships to
-     *
-     * @return void
      */
     protected function setRelationshipsOnEntities(Entity ...$entities): void
     {
@@ -163,8 +151,6 @@ trait RelationshipCapableRepository
      *
      * @param array  $relationships The relationships to set
      * @param Entity $entity        The entity
-     *
-     * @return void
      */
     protected function setRelationshipsOnEntity(array $relationships, Entity $entity): void
     {
@@ -180,8 +166,6 @@ trait RelationshipCapableRepository
      *
      * @param Entity $entity       The entity
      * @param string $relationship The relationship to set
-     *
-     * @return void
      */
     protected function setRelationship(Entity $entity, string $relationship): void
     {

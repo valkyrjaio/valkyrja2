@@ -25,8 +25,6 @@ interface Asset
      *
      * @param string      $bundle  The bundle name
      * @param string|null $adapter [optional] The adapter to use
-     *
-     * @return Adapter
      */
     public function getBundle(string $bundle, string $adapter = null): Adapter;
 }

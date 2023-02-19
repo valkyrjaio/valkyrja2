@@ -45,8 +45,6 @@ abstract class ValidateRequestMiddleware extends Middleware
      *
      * @param Request   $request   The request
      * @param Validator $validator The validator
-     *
-     * @return Response
      */
     abstract protected static function getResponse(Request $request, Validator $validator): Response;
 
@@ -80,8 +78,6 @@ abstract class ValidateRequestMiddleware extends Middleware
      * </code>
      *
      * @param Request $request The request
-     *
-     * @return array
      */
     abstract protected static function getRules(Request $request): array;
 }

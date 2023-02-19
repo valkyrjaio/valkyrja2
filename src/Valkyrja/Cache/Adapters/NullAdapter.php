@@ -26,8 +26,6 @@ class NullAdapter implements Contract
 {
     /**
      * The prefix to use for all keys.
-     *
-     * @var string
      */
     protected string $prefix;
 
@@ -136,10 +134,6 @@ class NullAdapter implements Contract
 
     /**
      * Get key.
-     *
-     * @param string $key
-     *
-     * @return string
      */
     protected function getKey(string $key): string
     {

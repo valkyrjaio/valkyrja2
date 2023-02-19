@@ -37,8 +37,6 @@ class Config extends Model
 
     /**
      * Flag for whether annotations are enabled.
-     *
-     * @var bool
      */
     public bool $enabled;
 
@@ -51,8 +49,6 @@ class Config extends Model
      *         'Annotation' => Annotation::class,
      *      ]
      * </code>
-     *
-     * @var array
      */
     public array $map;
 
@@ -70,8 +66,6 @@ class Config extends Model
      *
      * @Annotation("name" : "Word::VALUE")
      * </code>
-     *
-     * @var array
      */
     public array $aliases;
 }

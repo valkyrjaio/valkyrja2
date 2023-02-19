@@ -25,8 +25,6 @@ trait TokenizableUserTrait
 {
     /**
      *  The token.
-     *
-     * @var string|null
      */
     protected static ?string $token = null;
 

@@ -22,8 +22,6 @@ trait VerifiableUserFields
 {
     /**
      * The flag to determine whether a user is verified.
-     *
-     * @var bool
      */
     public bool $verified = false;
 }

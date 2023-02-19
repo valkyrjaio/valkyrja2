@@ -41,22 +41,16 @@ abstract class AuthMiddleware extends Middleware
 {
     /**
      * The auth service.
-     *
-     * @var Auth
      */
     protected static Auth $auth;
 
     /**
      * The repository.
-     *
-     * @var Repository
      */
     protected static Repository $repository;
 
     /**
      * The config.
-     *
-     * @var Config|array
      */
     protected static Config|array $config;
 
@@ -76,22 +70,16 @@ abstract class AuthMiddleware extends Middleware
 
     /**
      * The error message to use.
-     *
-     * @var string
      */
     protected static string $errorMessage = 'Unauthorized';
 
     /**
      * Whether to force a JSON response on failure.
-     *
-     * @var bool
      */
     protected static bool $forceJson = false;
 
     /**
      * Get auth.
-     *
-     * @return Auth
      */
     protected static function getAuth(): Auth
     {
@@ -119,8 +107,6 @@ abstract class AuthMiddleware extends Middleware
 
     /**
      * Get the auth repository for the user entity specified (or default to the application default).
-     *
-     * @return Repository
      */
     protected static function getRepository(): Repository
     {
@@ -129,8 +115,6 @@ abstract class AuthMiddleware extends Middleware
 
     /**
      * Get the authenticated user.
-     *
-     * @return User
      */
     protected static function getUser(): User
     {
@@ -141,8 +125,6 @@ abstract class AuthMiddleware extends Middleware
      * Get the failed response.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     protected static function getFailedResponse(Request $request): Response
     {
@@ -155,8 +137,6 @@ abstract class AuthMiddleware extends Middleware
 
     /**
      * Get the failed JSON response.
-     *
-     * @return JsonResponse
      */
     protected static function getFailedJsonResponse(): JsonResponse
     {
@@ -176,8 +156,6 @@ abstract class AuthMiddleware extends Middleware
 
     /**
      * Get the failed non-JSON response.
-     *
-     * @return Response
      */
     protected static function getFailedRegularResponse(): Response
     {
@@ -202,8 +180,6 @@ abstract class AuthMiddleware extends Middleware
      *
      * @param Exception $exception  The exception
      * @param string    $logMessage [optional] The log message
-     *
-     * @return void
      */
     protected static function handleException(Exception $exception, string $logMessage = ''): void
     {

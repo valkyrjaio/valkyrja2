@@ -41,12 +41,7 @@ class UuidV5 extends Uuid
     /**
      * Generate a v5 UUID.
      *
-     * @param string $namespace
-     * @param string $name
-     *
      * @throws RuntimeException
-     *
-     * @return string
      */
     public static function generate(string $namespace, string $name): string
     {

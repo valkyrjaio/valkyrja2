@@ -24,36 +24,26 @@ class Option
 {
     /**
      * The name.
-     *
-     * @var string
      */
     protected string $name;
 
     /**
      * The shortcut.
-     *
-     * @var string|null
      */
     protected ?string $shortcut = null;
 
     /**
      * The description.
-     *
-     * @var string
      */
     protected string $description;
 
     /**
      * The default value.
-     *
-     * @var string|null
      */
     protected ?string $default = null;
 
     /**
      * The mode.
-     *
-     * @var OptionMode
      */
     protected OptionMode $mode;
 
@@ -82,8 +72,6 @@ class Option
 
     /**
      * Get the name.
-     *
-     * @return string
      */
     public function getName(): string
     {
@@ -92,8 +80,6 @@ class Option
 
     /**
      * Get the shortcut.
-     *
-     * @return string|null
      */
     public function getShortcut(): ?string
     {
@@ -102,8 +88,6 @@ class Option
 
     /**
      * Get the description.
-     *
-     * @return string
      */
     public function getDescription(): string
     {
@@ -112,8 +96,6 @@ class Option
 
     /**
      * The default value.
-     *
-     * @return string|null
      */
     public function getDefault(): ?string
     {
@@ -122,8 +104,6 @@ class Option
 
     /**
      * Get the mode.
-     *
-     * @return OptionMode
      */
     public function getMode(): OptionMode
     {

@@ -79,8 +79,6 @@ class ServiceProvider extends Provider
      * Publish the broadcaster service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishBroadcaster(Container $container): void
     {
@@ -99,8 +97,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -114,8 +110,6 @@ class ServiceProvider extends Provider
      * Publish a driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -136,8 +130,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -158,8 +150,6 @@ class ServiceProvider extends Provider
      * Publish a log adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -183,8 +173,6 @@ class ServiceProvider extends Provider
      * Publish a pusher adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPusherAdapter(Container $container): void
     {
@@ -206,8 +194,6 @@ class ServiceProvider extends Provider
      * Publish the crypt pusher adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCryptPusherAdapter(Container $container): void
     {
@@ -230,8 +216,6 @@ class ServiceProvider extends Provider
      * Publish the Pusher service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPusher(Container $container): void
     {
@@ -258,8 +242,6 @@ class ServiceProvider extends Provider
      * Publish a message service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMessage(Container $container): void
     {

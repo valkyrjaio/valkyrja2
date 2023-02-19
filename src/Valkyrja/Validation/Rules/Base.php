@@ -34,8 +34,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function required(mixed $subject): void
     {
@@ -51,8 +49,6 @@ class Base
      * @param mixed $value   The value
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function equals(mixed $subject, mixed $value): void
     {
@@ -67,8 +63,6 @@ class Base
      * @param string|null $subject [optional] The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function empty(string $subject = null): void
     {
@@ -83,8 +77,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function notEmpty(mixed $subject): void
     {
@@ -99,8 +91,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function alpha(mixed $subject): void
     {
@@ -115,8 +105,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function lowercase(mixed $subject): void
     {
@@ -131,8 +119,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function uppercase(mixed $subject): void
     {
@@ -148,8 +134,6 @@ class Base
      * @param int    $min     [optional] The minimum length
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function min(string $subject, int $min = 0): void
     {
@@ -165,8 +149,6 @@ class Base
      * @param int    $max     [optional] The maximum length
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function max(string $subject, int $max = 255): void
     {
@@ -182,8 +164,6 @@ class Base
      * @param string $needle  The needle the subject must start with
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function startsWith(string $subject, string $needle): void
     {
@@ -199,8 +179,6 @@ class Base
      * @param string $needle  The needle the subject must end with
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function endsWith(string $subject, string $needle): void
     {
@@ -216,8 +194,6 @@ class Base
      * @param string[]|int[] $needles The needles contained in the subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function contains(string $subject, string|int ...$needles): void
     {
@@ -235,8 +211,6 @@ class Base
      * @param string[]|int[] $needles The needles contained in the subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function containsAny(string $subject, string|int ...$needles): void
     {
@@ -257,8 +231,6 @@ class Base
      * @param string $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function email(string $subject): void
     {
@@ -273,8 +245,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function boolean(mixed $subject): void
     {
@@ -289,8 +259,6 @@ class Base
      * @param mixed $subject The subject
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function numeric(mixed $subject): void
     {
@@ -306,8 +274,6 @@ class Base
      * @param int $max     [optional] The value the subject must be less than
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function lessThan(int $subject, int $max = 0): void
     {
@@ -323,8 +289,6 @@ class Base
      * @param int $min     [optional] The value the subject must be greater than
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function greaterThan(int $subject, int $min = 0): void
     {
@@ -340,8 +304,6 @@ class Base
      * @param array $validValues The valid values
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function oneOf(mixed $subject, mixed ...$validValues): void
     {
@@ -357,8 +319,6 @@ class Base
      * @param string $regex   The regex
      *
      * @throws ValidationException
-     *
-     * @return void
      */
     public function regex(string $subject, string $regex): void
     {

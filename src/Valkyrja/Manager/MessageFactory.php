@@ -32,8 +32,6 @@ interface MessageFactory extends Factory
      * @param class-string<Message> $name   The message
      * @param array                 $config The config
      * @param array                 $data   [optional] The data
-     *
-     * @return Message
      */
     public function createMessage(string $name, array $config, array $data = []): Message;
 }

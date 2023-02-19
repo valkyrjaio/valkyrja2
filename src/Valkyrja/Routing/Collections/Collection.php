@@ -187,8 +187,6 @@ class Collection implements Contract
      * Set a route to its request methods.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     protected function setRouteToRequestMethods(Route $route): void
     {
@@ -202,8 +200,6 @@ class Collection implements Contract
      *
      * @param Route  $route         The route
      * @param string $requestMethod The request method
-     *
-     * @return void
      */
     protected function setRouteToRequestMethod(Route $route, string $requestMethod): void
     {
@@ -230,8 +226,6 @@ class Collection implements Contract
      * Set the route to the named.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     protected function setRouteToNamed(Route $route): void
     {
@@ -250,8 +244,6 @@ class Collection implements Contract
      * @param string|null $method [optional] The request method
      *
      * @throws JsonException
-     *
-     * @return Route|null
      */
     protected function getOfType(array $type, string $path, string $method = null): ?Route
     {
@@ -269,8 +261,6 @@ class Collection implements Contract
      * @param string $path The path
      *
      * @throws JsonException
-     *
-     * @return Route|null
      */
     protected function getAnyOfType(array $type, string $path): ?Route
     {
@@ -288,8 +278,6 @@ class Collection implements Contract
      * @param array       $type   The type [static|dynamic]
      * @param string      $path   The path
      * @param string|null $method [optional] The request method
-     *
-     * @return bool
      */
     protected function hasOfType(array $type, string $path, string $method = null): bool
     {
@@ -305,8 +293,6 @@ class Collection implements Contract
      *
      * @param array  $type The type [static|dynamic]
      * @param string $path The path
-     *
-     * @return bool
      */
     protected function hasAnyOfType(array $type, string $path): bool
     {
@@ -338,10 +324,6 @@ class Collection implements Contract
 
     /**
      * Ensure request methods are arrays of routes.
-     *
-     * @param array $methodsArray
-     *
-     * @return array
      */
     protected function ensureMethodRoutes(array $methodsArray): array
     {
@@ -356,8 +338,6 @@ class Collection implements Contract
      * Ensure an array is an array of routes.
      *
      * @param array $routesArray The routes array
-     *
-     * @return array
      */
     protected function ensureRoutes(array $routesArray): array
     {
@@ -374,8 +354,6 @@ class Collection implements Contract
      * Ensure a route, or null, is returned.
      *
      * @param Route|array|string|null $route The route
-     *
-     * @return Route|null
      */
     protected function ensureRoute(Route|array|string $route = null): ?Route
     {

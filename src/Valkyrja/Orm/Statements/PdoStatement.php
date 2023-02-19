@@ -29,15 +29,11 @@ class PdoStatement implements Contract
 {
     /**
      * The PDO Statement.
-     *
-     * @var Statement
      */
     protected Statement $statement;
 
     /**
      * PDOStatement constructor.
-     *
-     * @param Statement $statement
      */
     public function __construct(Statement $statement)
     {
@@ -138,10 +134,6 @@ class PdoStatement implements Contract
 
     /**
      * Get value type to bind with.
-     *
-     * @param mixed $value
-     *
-     * @return int
      */
     protected function getBindValueType(mixed $value): int
     {

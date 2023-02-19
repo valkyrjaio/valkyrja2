@@ -30,8 +30,6 @@ class ApiTokenizedRepository extends Repository implements \Valkyrja\Auth\Tokeni
 {
     /**
      * The token.
-     *
-     * @var string
      */
     protected string $token;
 

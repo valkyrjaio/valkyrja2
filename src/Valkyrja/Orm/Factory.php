@@ -25,8 +25,6 @@ interface Factory
      *
      * @param class-string<Adapter> $name   The adapter class name
      * @param array                 $config The config
-     *
-     * @return Adapter
      */
     public function createAdapter(string $name, array $config): Adapter;
 
@@ -36,8 +34,6 @@ interface Factory
      * @param Adapter              $adapter The adapter
      * @param class-string<Driver> $name    The driver class name
      * @param array                $config  The config
-     *
-     * @return Driver
      */
     public function createDriver(Adapter $adapter, string $name, array $config): Driver;
 
@@ -57,8 +53,6 @@ interface Factory
      *
      * @param Adapter                    $adapter The adapter
      * @param class-string<QueryBuilder> $name    The query builder class name
-     *
-     * @return QueryBuilder
      */
     public function createQueryBuilder(Adapter $adapter, string $name): QueryBuilder;
 
@@ -67,8 +61,6 @@ interface Factory
      *
      * @param Adapter                          $adapter The adapter
      * @param class-string<DeleteQueryBuilder> $name    The delete query builder class name
-     *
-     * @return DeleteQueryBuilder
      */
     public function createDeleteQueryBuilder(Adapter $adapter, string $name): DeleteQueryBuilder;
 
@@ -77,8 +69,6 @@ interface Factory
      *
      * @param Adapter                          $adapter The adapter
      * @param class-string<InsertQueryBuilder> $name    The insert query builder class name
-     *
-     * @return InsertQueryBuilder
      */
     public function createInsertQueryBuilder(Adapter $adapter, string $name): InsertQueryBuilder;
 
@@ -87,8 +77,6 @@ interface Factory
      *
      * @param Adapter                          $adapter The adapter
      * @param class-string<SelectQueryBuilder> $name    The select query builder class name
-     *
-     * @return SelectQueryBuilder
      */
     public function createSelectQueryBuilder(Adapter $adapter, string $name): SelectQueryBuilder;
 
@@ -97,8 +85,6 @@ interface Factory
      *
      * @param Adapter                          $adapter The adapter
      * @param class-string<UpdateQueryBuilder> $name    The update query builder class name
-     *
-     * @return UpdateQueryBuilder
      */
     public function createUpdateQueryBuilder(Adapter $adapter, string $name): UpdateQueryBuilder;
 
@@ -107,8 +93,6 @@ interface Factory
      *
      * @param Adapter             $adapter The adapter
      * @param class-string<Query> $name    The query class name
-     *
-     * @return Query
      */
     public function createQuery(Adapter $adapter, string $name): Query;
 
@@ -117,8 +101,6 @@ interface Factory
      *
      * @param Adapter                 $adapter The adapter
      * @param class-string<Persister> $name    The persister class name
-     *
-     * @return Persister
      */
     public function createPersister(Adapter $adapter, string $name): Persister;
 
@@ -127,8 +109,6 @@ interface Factory
      *
      * @param Adapter                 $adapter The adapter
      * @param class-string<Retriever> $name    The retriever class name
-     *
-     * @return Retriever
      */
     public function createRetriever(Adapter $adapter, string $name): Retriever;
 
@@ -138,8 +118,6 @@ interface Factory
      * @param Adapter                 $adapter The adapter
      * @param class-string<Statement> $name    The statement class name
      * @param array                   $data    [optional] Additional data required for the statement
-     *
-     * @return Statement
      */
     public function createStatement(Adapter $adapter, string $name, array $data = []): Statement;
 
@@ -148,8 +126,6 @@ interface Factory
      *
      * @param class-string<Migration> $name The migration class name
      * @param array                   $data [optional] Additional data required for the migration
-     *
-     * @return Migration
      */
     public function createMigration(string $name, array $data = []): Migration;
 }

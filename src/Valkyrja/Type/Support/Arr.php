@@ -37,8 +37,6 @@ class Arr
      * @param ArrayAccess|iterable $subject      The subject to search
      * @param string               $key          The dot notation to search for
      * @param mixed|null           $defaultValue The default value
-     *
-     * @return mixed
      */
     public static function getValueDotNotation(ArrayAccess|iterable $subject, string $key, mixed $defaultValue = null): mixed
     {
@@ -64,8 +62,6 @@ class Arr
      * @param array $subject The subject array
      *
      * @throws JsonException
-     *
-     * @return string
      */
     public static function toString(array $subject): string
     {
@@ -78,8 +74,6 @@ class Arr
      * @param string $subject The subject array as a string
      *
      * @throws JsonException
-     *
-     * @return array
      */
     public static function fromString(string $subject): array
     {
@@ -90,8 +84,6 @@ class Arr
      * Strip out null valued properties in an array.
      *
      * @param array $subject The subject array
-     *
-     * @return array
      */
     public static function newWithoutNull(array $subject): array
     {
@@ -104,8 +96,6 @@ class Arr
      * Strip out null valued properties in an array.
      *
      * @param array $subject The subject array
-     *
-     * @return array
      */
     public static function withoutNull(array &$subject): array
     {

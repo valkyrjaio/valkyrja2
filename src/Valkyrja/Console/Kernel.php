@@ -29,8 +29,6 @@ interface Kernel
      * @param Output $output The output
      *
      * @throws HttpException
-     *
-     * @return int
      */
     public function handle(Input $input, Output $output): int;
 
@@ -39,8 +37,6 @@ interface Kernel
      *
      * @param Input $input    The input
      * @param int   $exitCode The response
-     *
-     * @return void
      */
     public function terminate(Input $input, int $exitCode): void;
 
@@ -51,8 +47,6 @@ interface Kernel
      * @param Output|null $output The output
      *
      * @throws HttpException
-     *
-     * @return int
      */
     public function run(Input $input = null, Output $output = null): int;
 }

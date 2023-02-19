@@ -83,8 +83,6 @@ class CacheResponseMiddleware extends Middleware
 
     /**
      * Get the ttl.
-     *
-     * @return int
      */
     protected static function getTtl(): int
     {
@@ -93,10 +91,6 @@ class CacheResponseMiddleware extends Middleware
 
     /**
      * Get a hashed version of the request path.
-     *
-     * @param Request $request
-     *
-     * @return string
      */
     protected static function getHashedPath(Request $request): string
     {

@@ -32,8 +32,6 @@ class CryptTokenizedRepository extends TokenizedRepository implements Contract
 {
     /**
      * The crypt.
-     *
-     * @var Crypt
      */
     protected Crypt $crypt;
 

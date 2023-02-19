@@ -36,22 +36,16 @@ class Kernel implements Contract
 {
     /**
      * The console.
-     *
-     * @var Console
      */
     protected Console $console;
 
     /**
      * The container.
-     *
-     * @var Container
      */
     protected Container $container;
 
     /**
      * The events manager.
-     *
-     * @var Events
      */
     protected Events $events;
 
@@ -126,10 +120,6 @@ class Kernel implements Contract
 
     /**
      * Log an error.
-     *
-     * @param Throwable $exception
-     *
-     * @return void
      */
     protected function logException(Throwable $exception): void
     {

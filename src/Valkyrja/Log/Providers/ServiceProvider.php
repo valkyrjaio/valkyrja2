@@ -81,8 +81,6 @@ class ServiceProvider extends Provider
      * Bind the logger service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogger(Container $container): void
     {
@@ -101,8 +99,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -116,8 +112,6 @@ class ServiceProvider extends Provider
      * Publish the default driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -138,8 +132,6 @@ class ServiceProvider extends Provider
      * Bind the psr adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPsrAdapter(Container $container): void
     {
@@ -166,8 +158,6 @@ class ServiceProvider extends Provider
      * Bind an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -190,8 +180,6 @@ class ServiceProvider extends Provider
      * @param Container $container The container
      *
      * @throws Exception
-     *
-     * @return void
      */
     public static function publishLoggerInterface(Container $container): void
     {

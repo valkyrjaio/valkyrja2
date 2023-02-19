@@ -43,8 +43,6 @@ class UploadedFile implements Contract
 {
     /**
      * Whether the file has been moved yet.
-     *
-     * @var bool
      */
     protected bool $moved = false;
 
@@ -206,8 +204,6 @@ class UploadedFile implements Contract
      *
      * @throws InvalidStream
      * @throws RuntimeException
-     *
-     * @return void
      */
     protected function writeStream(string $path): void
     {

@@ -52,8 +52,6 @@ class ServiceProvider extends Provider
      * Publish the generator service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishGenerator(Container $container): void
     {
@@ -67,8 +65,6 @@ class ServiceProvider extends Provider
      * Publish the parser service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishParser(Container $container): void
     {

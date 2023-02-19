@@ -122,8 +122,6 @@ class GuzzleAdapter implements Contract
      * @param Request $request The request
      *
      * @throws GuzzleException
-     *
-     * @return ResponseInterface
      */
     protected function getGuzzleResponse(Request $request): ResponseInterface
     {
@@ -142,8 +140,6 @@ class GuzzleAdapter implements Contract
      *
      * @param Request $request  The request
      * @param array   &$options The options
-     *
-     * @return void
      */
     protected function setGuzzleHeaders(Request $request, array &$options): void
     {
@@ -161,8 +157,6 @@ class GuzzleAdapter implements Contract
      *
      * @param Request $request  The request
      * @param array   &$options The options
-     *
-     * @return void
      */
     protected function setGuzzleCookies(Request $request, array &$options): void
     {
@@ -187,8 +181,6 @@ class GuzzleAdapter implements Contract
      *
      * @param Request $request  The request
      * @param array   &$options The options
-     *
-     * @return void
      */
     protected function setGuzzleFormParams(Request $request, array &$options): void
     {
@@ -202,8 +194,6 @@ class GuzzleAdapter implements Contract
      *
      * @param Request $request  The request
      * @param array   &$options The options
-     *
-     * @return void
      */
     protected function setGuzzleBody(Request $request, array &$options): void
     {
@@ -219,8 +209,6 @@ class GuzzleAdapter implements Contract
      * Convert a Guzzle Response to Valkyrja Response.
      *
      * @param ResponseInterface $guzzleResponse The Guzzle Response
-     *
-     * @return Response
      */
     protected function fromPsr7(ResponseInterface $guzzleResponse): Response
     {

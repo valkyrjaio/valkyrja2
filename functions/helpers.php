@@ -65,8 +65,6 @@ use function var_dump;
 
 /**
  * Return the global $app variable.
- *
- * @return Application
  */
 function app(): Application
 {
@@ -82,8 +80,6 @@ function app(): Application
  * @param Response|null $response   [optional] The Response to send
  *
  * @throws HttpException
- *
- * @return never
  */
 function abort(
     int $statusCode = null,
@@ -100,8 +96,6 @@ function abort(
  * @param Response $response The Response to send
  *
  * @throws HttpException
- *
- * @return never
  */
 function abortResponse(Response $response): never
 {
@@ -110,8 +104,6 @@ function abortResponse(Response $response): never
 
 /**
  * Return the annotator instance from the container.
- *
- * @return Annotator
  */
 function annotator(): Annotator
 {
@@ -120,8 +112,6 @@ function annotator(): Annotator
 
 /**
  * Return the api instance from the container.
- *
- * @return Api
  */
 function api(): Api
 {
@@ -130,8 +120,6 @@ function api(): Api
 
 /**
  * Return the auth instance from the container.
- *
- * @return Auth
  */
 function auth(): Auth
 {
@@ -140,8 +128,6 @@ function auth(): Auth
 
 /**
  * Return the cache instance from the container.
- *
- * @return Cache
  */
 function cache(): Cache
 {
@@ -150,8 +136,6 @@ function cache(): Cache
 
 /**
  * Return the client instance from the container.
- *
- * @return Client
  */
 function client(): Client
 {
@@ -163,8 +147,6 @@ function client(): Client
  *
  * @param string|null $key     [optional] The key to get
  * @param mixed       $default [optional] The default value if the key is not found
- *
- * @return mixed
  */
 function config(string $key = null, mixed $default = null): mixed
 {
@@ -173,8 +155,6 @@ function config(string $key = null, mixed $default = null): mixed
 
 /**
  * Get console.
- *
- * @return Console
  */
 function console(): Console
 {
@@ -183,8 +163,6 @@ function console(): Console
 
 /**
  * Get container.
- *
- * @return Container
  */
 function container(): Container
 {
@@ -193,8 +171,6 @@ function container(): Container
 
 /**
  * Get dispatcher.
- *
- * @return Dispatcher
  */
 function dispatcher(): Dispatcher
 {
@@ -206,8 +182,6 @@ function dispatcher(): Dispatcher
  *
  * @param string|null $key     [optional] The variable to get
  * @param mixed       $default [optional] The default value to return
- *
- * @return mixed
  */
 function env(string $key = null, mixed $default = null): mixed
 {
@@ -219,8 +193,6 @@ function env(string $key = null, mixed $default = null): mixed
 
 /**
  * Get events.
- *
- * @return Events
  */
 function events(): Events
 {
@@ -229,8 +201,6 @@ function events(): Events
 
 /**
  * Get filesystem.
- *
- * @return Filesystem
  */
 function filesystem(): Filesystem
 {
@@ -239,8 +209,6 @@ function filesystem(): Filesystem
 
 /**
  * Get input.
- *
- * @return Input
  */
 function input(): Input
 {
@@ -249,8 +217,6 @@ function input(): Input
 
 /**
  * Get kernel.
- *
- * @return Kernel
  */
 function kernel(): Kernel
 {
@@ -259,8 +225,6 @@ function kernel(): Kernel
 
 /**
  * Get console kernel.
- *
- * @return ConsoleKernel
  */
 function consoleKernel(): ConsoleKernel
 {
@@ -269,8 +233,6 @@ function consoleKernel(): ConsoleKernel
 
 /**
  * Get the crypt.
- *
- * @return Crypt
  */
 function crypt(): Crypt
 {
@@ -279,8 +241,6 @@ function crypt(): Crypt
 
 /**
  * Get logger.
- *
- * @return Logger
  */
 function logger(): Logger
 {
@@ -289,8 +249,6 @@ function logger(): Logger
 
 /**
  * Get mail.
- *
- * @return Mail
  */
 function mail(): Mail
 {
@@ -301,8 +259,6 @@ function mail(): Mail
  * Get a new mail message.
  *
  * @param string|null $name [optional] The name
- *
- * @return MailMessage
  */
 function mailMessage(string $name = null): MailMessage
 {
@@ -311,8 +267,6 @@ function mailMessage(string $name = null): MailMessage
 
 /**
  * Get notification manager.
- *
- * @return Notifier
  */
 function notifier(): Notifier
 {
@@ -324,8 +278,6 @@ function notifier(): Notifier
  *
  * @param Notification   $notification The notification
  * @param NotifiableUser $user         The user
- *
- * @return void
  */
 function notifyUser(Notification $notification, NotifiableUser $user): void
 {
@@ -337,8 +289,6 @@ function notifyUser(Notification $notification, NotifiableUser $user): void
  *
  * @param Notification     $notification The notification
  * @param NotifiableUser[] $users        The users
- *
- * @return void
  */
 function notifyUsers(Notification $notification, NotifiableUser ...$users): void
 {
@@ -347,8 +297,6 @@ function notifyUsers(Notification $notification, NotifiableUser ...$users): void
 
 /**
  * Get path generator.
- *
- * @return PathGenerator
  */
 function pathGenerator(): PathGenerator
 {
@@ -357,8 +305,6 @@ function pathGenerator(): PathGenerator
 
 /**
  * Get path parser.
- *
- * @return PathParser
  */
 function pathParser(): PathParser
 {
@@ -367,8 +313,6 @@ function pathParser(): PathParser
 
 /**
  * Get the ORM manager.
- *
- * @return Orm
  */
 function orm(): Orm
 {
@@ -377,8 +321,6 @@ function orm(): Orm
 
 /**
  * Get output.
- *
- * @return Output
  */
 function output(): Output
 {
@@ -387,8 +329,6 @@ function output(): Output
 
 /**
  * Get reflector.
- *
- * @return Reflector
  */
 function reflector(): Reflector
 {
@@ -397,8 +337,6 @@ function reflector(): Reflector
 
 /**
  * Get request.
- *
- * @return Request
  */
 function request(): Request
 {
@@ -407,8 +345,6 @@ function request(): Request
 
 /**
  * Get router.
- *
- * @return Router
  */
 function router(): Router
 {
@@ -417,8 +353,6 @@ function router(): Router
 
 /**
  * Get route collector.
- *
- * @return Collector
  */
 function collector(): Collector
 {
@@ -427,8 +361,6 @@ function collector(): Collector
 
 /**
  * Get routing url service.
- *
- * @return Url
  */
 function url(): Url
 {
@@ -441,8 +373,6 @@ function url(): Url
  * @param string $name The name of the route to get
  *
  * @throws InvalidRouteName
- *
- * @return Route
  */
 function route(string $name): Route
 {
@@ -455,8 +385,6 @@ function route(string $name): Route
  * @param string     $name     The name of the route to get
  * @param array|null $data     [optional] The route data if dynamic
  * @param bool       $absolute [optional] Whether this url should be absolute
- *
- * @return string
  */
 function routeUrl(string $name, array $data = null, bool $absolute = null): string
 {
@@ -465,8 +393,6 @@ function routeUrl(string $name, array $data = null, bool $absolute = null): stri
 
 /**
  * Get the response builder.
- *
- * @return ResponseFactory
  */
 function responseFactory(): ResponseFactory
 {
@@ -479,8 +405,6 @@ function responseFactory(): ResponseFactory
  * @param string|null $content    [optional] The content to set
  * @param int|null    $statusCode [optional] The status code to set
  * @param array|null  $headers    [optional] The headers to set
- *
- * @return Response
  */
 function response(string $content = null, int $statusCode = null, array $headers = null): Response
 {
@@ -493,8 +417,6 @@ function response(string $content = null, int $statusCode = null, array $headers
  * @param array|null $data       [optional] An array of data
  * @param int|null   $statusCode [optional] The status code to set
  * @param array|null $headers    [optional] The headers to set
- *
- * @return JsonResponse
  */
 function json(array $data = null, int $statusCode = null, array $headers = null): JsonResponse
 {
@@ -507,8 +429,6 @@ function json(array $data = null, int $statusCode = null, array $headers = null)
  * @param string|null $uri        [optional] The URI to redirect to
  * @param int|null    $statusCode [optional] The response status code
  * @param array|null  $headers    [optional] An array of response headers
- *
- * @return RedirectResponse
  */
 function redirect(string $uri = null, int $statusCode = null, array $headers = null): RedirectResponse
 {
@@ -522,8 +442,6 @@ function redirect(string $uri = null, int $statusCode = null, array $headers = n
  * @param array|null $parameters [optional] Any parameters to set for dynamic routes
  * @param int|null   $statusCode [optional] The response status code
  * @param array|null $headers    [optional] An array of response headers
- *
- * @return RedirectResponse
  */
 function redirectRoute(
     string $route,
@@ -542,8 +460,6 @@ function redirectRoute(
  * @param array|null  $headers    [optional] An array of response headers
  *
  * @throws HttpRedirectException
- *
- * @return never
  */
 function redirectTo(
     string $uri = null,
@@ -555,8 +471,6 @@ function redirectTo(
 
 /**
  * Return the session.
- *
- * @return Session
  */
 function session(): Session
 {
@@ -565,8 +479,6 @@ function session(): Session
 
 /**
  * Get SMS.
- *
- * @return Sms
  */
 function sms(): Sms
 {
@@ -577,8 +489,6 @@ function sms(): Sms
  * Get a new SMS message.
  *
  * @param string|null $name [optional] The name
- *
- * @return SmsMessage
  */
 function smsMessage(string $name = null): SmsMessage
 {
@@ -587,8 +497,6 @@ function smsMessage(string $name = null): SmsMessage
 
 /**
  * Get validator.
- *
- * @return Validator
  */
 function validator(): Validator
 {
@@ -597,8 +505,6 @@ function validator(): Validator
 
 /**
  * Helper function to get a new view.
- *
- * @return View
  */
 function view(): View
 {
@@ -610,8 +516,6 @@ function view(): View
  *
  * @param string $template  [optional] The template to use
  * @param array  $variables [optional] The variables to use
- *
- * @return Template
  */
 function template(string $template, array $variables = []): Template
 {
@@ -622,8 +526,6 @@ function template(string $template, array $variables = []): Template
  * Dump the passed variables and die.
  *
  * @param mixed ...$args The arguments to dump
- *
- * @return never
  */
 function dd(...$args): never
 {
@@ -636,8 +538,6 @@ function dd(...$args): never
  * Helper function to get base path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function basePath(string $path = null): string
 {
@@ -648,8 +548,6 @@ function basePath(string $path = null): string
  * Helper function to get app path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function appPath(string $path = null): string
 {
@@ -660,8 +558,6 @@ function appPath(string $path = null): string
  * Helper function to get bootstrap path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function bootstrapPath(string $path = null): string
 {
@@ -672,8 +568,6 @@ function bootstrapPath(string $path = null): string
  * Helper function to get env path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function envPath(string $path = null): string
 {
@@ -684,8 +578,6 @@ function envPath(string $path = null): string
  * Helper function to get config path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function configPath(string $path = null): string
 {
@@ -696,8 +588,6 @@ function configPath(string $path = null): string
  * Helper function to get commands path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function commandsPath(string $path = null): string
 {
@@ -708,8 +598,6 @@ function commandsPath(string $path = null): string
  * Helper function to get events path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function eventsPath(string $path = null): string
 {
@@ -720,8 +608,6 @@ function eventsPath(string $path = null): string
  * Helper function to get routes path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function routesPath(string $path = null): string
 {
@@ -732,8 +618,6 @@ function routesPath(string $path = null): string
  * Helper function to get services path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function servicesPath(string $path = null): string
 {
@@ -744,8 +628,6 @@ function servicesPath(string $path = null): string
  * Helper function to get public path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function publicPath(string $path = null): string
 {
@@ -756,8 +638,6 @@ function publicPath(string $path = null): string
  * Helper function to get resources path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function resourcesPath(string $path = null): string
 {
@@ -768,8 +648,6 @@ function resourcesPath(string $path = null): string
  * Helper function to get storage path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function storagePath(string $path = null): string
 {
@@ -780,8 +658,6 @@ function storagePath(string $path = null): string
  * Helper function to get framework storage path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function frameworkStoragePath(string $path = null): string
 {
@@ -792,8 +668,6 @@ function frameworkStoragePath(string $path = null): string
  * Helper function to get cache path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function cachePath(string $path = null): string
 {
@@ -804,8 +678,6 @@ function cachePath(string $path = null): string
  * Helper function to get tests path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function testsPath(string $path = null): string
 {
@@ -816,8 +688,6 @@ function testsPath(string $path = null): string
  * Helper function to get vendor path.
  *
  * @param string|null $path [optional] The path to append
- *
- * @return string
  */
 function vendorPath(string $path = null): string
 {

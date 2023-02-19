@@ -24,8 +24,6 @@ class Helpers
      * Trim a path.
      *
      * @param string $path The path
-     *
-     * @return string
      */
     public static function trimPath(string $path): string
     {

@@ -28,15 +28,11 @@ class NullAdapter implements Contract
 {
     /**
      * The response factory.
-     *
-     * @var ResponseFactory
      */
     protected ResponseFactory $responseFactory;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

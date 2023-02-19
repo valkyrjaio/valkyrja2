@@ -33,8 +33,6 @@ interface Validator
 
     /**
      * Validate against set rules.
-     *
-     * @return bool
      */
     public function validate(): bool;
 
@@ -42,8 +40,6 @@ interface Validator
      * Validate a set of rules.
      *
      * @param array<string, array{subject: string, rules: array<string, array{arguments: array, message: string}>}> $rules The rules
-     *
-     * @return bool
      */
     public function validateRules(array $rules): bool;
 
@@ -90,8 +86,6 @@ interface Validator
      * </code>
      *
      * @param array<string, array{subject: string, rules: array<string, array{arguments: array, message: string}>}> $rules The rules
-     *
-     * @return void
      */
     public function setRules(array $rules): void;
 
@@ -104,8 +98,6 @@ interface Validator
 
     /**
      * Get the first error message thrown.
-     *
-     * @return string|null
      */
     public function getFirstErrorMessage(): ?string;
 }

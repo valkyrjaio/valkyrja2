@@ -32,15 +32,11 @@ class ListenerTest extends TestCase
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +47,6 @@ class ListenerTest extends TestCase
 
     /**
      * Test the getEvent method.
-     *
-     * @return void
      */
     public function testGetEvent(): void
     {
@@ -63,8 +57,6 @@ class ListenerTest extends TestCase
 
     /**
      * Test the setEvent method.
-     *
-     * @return void
      */
     public function testSetEvent(): void
     {

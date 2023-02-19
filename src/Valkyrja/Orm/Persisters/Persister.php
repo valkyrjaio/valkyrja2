@@ -40,8 +40,6 @@ class Persister implements Contract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
@@ -186,10 +184,6 @@ class Persister implements Contract
 
     /**
      * Get an id from an entity.
-     *
-     * @param Entity $entity
-     *
-     * @return int
      */
     protected function getIdFromEntity(Entity $entity): int
     {
@@ -200,8 +194,6 @@ class Persister implements Contract
      * Clear a single deferred entity.
      *
      * @param Entity $entity The entity instance to remove.
-     *
-     * @return void
      */
     protected function clearEntity(Entity $entity): void
     {
@@ -220,8 +212,6 @@ class Persister implements Contract
      * Modify an entity before creating it.
      *
      * @param Entity $entity The entity
-     *
-     * @return void
      */
     protected function modifyEntityBeforeCreate(Entity $entity): void
     {
@@ -234,8 +224,6 @@ class Persister implements Contract
      * Modify a dated entity before creating it.
      *
      * @param DatedEntity $entity The entity
-     *
-     * @return void
      */
     protected function modifyDatedEntityBeforeCreate(DatedEntity $entity): void
     {
@@ -249,8 +237,6 @@ class Persister implements Contract
      * Modify an entity before saving it.
      *
      * @param Entity $entity The entity
-     *
-     * @return void
      */
     protected function modifyEntityBeforeSave(Entity $entity): void
     {
@@ -263,8 +249,6 @@ class Persister implements Contract
      * Modify a dated entity before saving it.
      *
      * @param DatedEntity $entity The entity
-     *
-     * @return void
      */
     protected function modifyDatedEntityBeforeSave(DatedEntity $entity): void
     {
@@ -280,8 +264,6 @@ class Persister implements Contract
      *
      * @throws ExecuteException
      * @throws JsonException
-     *
-     * @return void
      */
     protected function persistEntityThroughTransaction(string $type, Entity $entity, array $properties = []): void
     {
@@ -302,8 +284,6 @@ class Persister implements Contract
      *
      * @throws ExecuteException
      * @throws JsonException
-     *
-     * @return void
      */
     protected function persistEntity(string $type, Entity $entity, array $properties = []): void
     {
@@ -327,8 +307,6 @@ class Persister implements Contract
      * @param string $type       The type of persist
      * @param Entity $entity     The entity to persist
      * @param array  $properties The properties to persist
-     *
-     * @return QueryBuilder
      */
     protected function getQueryBuilder(string $type, Entity $entity, array $properties): QueryBuilder
     {
@@ -357,8 +335,6 @@ class Persister implements Contract
      * @param array        $properties   The properties to persist
      *
      * @throws JsonException
-     *
-     * @return Query
      */
     protected function getQuery(
         QueryBuilder $queryBuilder,
@@ -380,8 +356,6 @@ class Persister implements Contract
 
     /**
      * Create a query builder to persist an entity.
-     *
-     * @return QueryBuilder
      */
     protected function createQueryBuilder(): QueryBuilder
     {
@@ -393,8 +367,6 @@ class Persister implements Contract
      *
      * @param QueryBuilder $queryBuilder The query builder
      * @param Entity       $entity       The entity
-     *
-     * @return void
      */
     protected function setTableInQueryBuilder(QueryBuilder $queryBuilder, Entity $entity): void
     {
@@ -406,8 +378,6 @@ class Persister implements Contract
      *
      * @param QueryBuilder $queryBuilder The query builder
      * @param string       $type         The type of persist
-     *
-     * @return void
      */
     protected function setTypeInQueryBuilder(QueryBuilder $queryBuilder, string $type): void
     {
@@ -420,8 +390,6 @@ class Persister implements Contract
      * @param QueryBuilder $queryBuilder The query builder
      * @param Entity       $entity       The entity to persist
      * @param string       $type         The type of persist
-     *
-     * @return void
      */
     protected function setIdFieldInQueryBuilder(QueryBuilder $queryBuilder, Entity $entity, string $type): void
     {
@@ -441,8 +409,6 @@ class Persister implements Contract
      * @param QueryBuilder $queryBuilder The query builder
      * @param array        $properties   The properties to persist
      * @param string       $type         The type of persist
-     *
-     * @return void
      */
     protected function setQueryBuilderProperties(QueryBuilder $queryBuilder, array $properties, string $type): void
     {
@@ -464,8 +430,6 @@ class Persister implements Contract
      * @param QueryBuilder $queryBuilder The query builder
      * @param string       $column       The column name
      * @param mixed        $value        The property value
-     *
-     * @return void
      */
     protected function setQueryBuilderProperty(QueryBuilder $queryBuilder, string $column, mixed $value): void
     {
@@ -477,8 +441,6 @@ class Persister implements Contract
      * Create a query to persist an entity given a query builder.
      *
      * @param QueryBuilder $queryBuilder The query builder
-     *
-     * @return Query
      */
     protected function createQueryFromQueryBuilder(QueryBuilder $queryBuilder): Query
     {
@@ -492,8 +454,6 @@ class Persister implements Contract
      * @param string     $type    The type of persist
      * @param string     $idField The id field
      * @param int|string $id      The id
-     *
-     * @return void
      */
     protected function bindIdValueInQuery(Query $query, string $type, string $idField, int|string $id): void
     {
@@ -515,8 +475,6 @@ class Persister implements Contract
      * @param string $type       The type of persist
      *
      * @throws JsonException
-     *
-     * @return void
      */
     protected function bindQueryProperties(Query $query, array $properties, string $type): void
     {
@@ -540,8 +498,6 @@ class Persister implements Contract
      * @param mixed  $value  The property value
      *
      * @throws JsonException
-     *
-     * @return void
      */
     protected function bindQueryProperty(Query $query, string $column, mixed $value): void
     {
@@ -561,8 +517,6 @@ class Persister implements Contract
      * @param Query $query The query
      *
      * @throws ExecuteException
-     *
-     * @return void
      */
     protected function executeQuery(Query $query): void
     {
@@ -578,8 +532,6 @@ class Persister implements Contract
      *
      * @param Entity $entity  The entity
      * @param string $idField The id field
-     *
-     * @return void
      */
     protected function setEntityIdFieldAfterPersist(Entity $entity, string $idField): void
     {
@@ -593,8 +545,6 @@ class Persister implements Contract
 
     /**
      * Clear deferred entities.
-     *
-     * @return void
      */
     protected function clearDeferred(): void
     {
@@ -611,8 +561,6 @@ class Persister implements Contract
      *
      * @throws ExecuteException
      * @throws JsonException
-     *
-     * @return void
      */
     protected function persistEntities(string $type, Entity ...$entities): void
     {

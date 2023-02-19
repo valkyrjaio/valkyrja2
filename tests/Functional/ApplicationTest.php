@@ -48,8 +48,6 @@ class ApplicationTest extends TestCase
 {
     /**
      * Test the Application construct.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {
@@ -58,8 +56,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the app() static helper method.
-     *
-     * @return void
      */
     public function testApp(): void
     {
@@ -68,8 +64,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the container() helper method.
-     *
-     * @return void
      */
     public function testContainer(): void
     {
@@ -78,8 +72,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the dispatcher() helper method.
-     *
-     * @return void
      */
     public function testDispatcher(): void
     {
@@ -88,8 +80,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the events() helper method.
-     *
-     * @return void
      */
     public function testEvents(): void
     {
@@ -98,8 +88,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the version() helper method.
-     *
-     * @return void
      */
     public function testVersion(): void
     {
@@ -108,8 +96,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the config() helper method.
-     *
-     * @return void
      */
     public function testConfig(): void
     {
@@ -118,8 +104,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the addConfig() helper method.
-     *
-     * @return void
      */
     public function testAddConfig(): void
     {
@@ -131,8 +115,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the env() helper method.
-     *
-     * @return void
      */
     public function testEnv(): void
     {
@@ -141,8 +123,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the env() helper method.
-     *
-     * @return void
      */
     public function testEnvValue(): void
     {
@@ -151,8 +131,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the getEnv() helper method.
-     *
-     * @return void
      */
     public function testGetEnv(): void
     {
@@ -161,8 +139,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the getEnv() helper method.
-     *
-     * @return void
      */
     public function testSetEnv(): void
     {
@@ -172,8 +148,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the environment() helper method.
-     *
-     * @return void
      */
     public function testEnvironment(): void
     {
@@ -182,8 +156,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the debug() helper method.
-     *
-     * @return void
      */
     public function testDebug(): void
     {
@@ -192,8 +164,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the annotations() helper method.
-     *
-     * @return void
      */
     public function testAnnotations(): void
     {
@@ -202,8 +172,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the client() helper method.
-     *
-     * @return void
      */
     public function testClient(): void
     {
@@ -212,8 +180,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the console() helper method.
-     *
-     * @return void
      */
     public function testConsole(): void
     {
@@ -222,8 +188,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the consoleKernel() helper method.
-     *
-     * @return void
      */
     public function testConsoleKernel(): void
     {
@@ -232,8 +196,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the filesystem() helper method.
-     *
-     * @return void
      */
     public function testFilesystem(): void
     {
@@ -242,8 +204,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the kernel() helper method.
-     *
-     * @return void
      */
     public function testKernel(): void
     {
@@ -252,8 +212,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the pathGenerator() helper method.
-     *
-     * @return void
      */
     public function testPathGenerator(): void
     {
@@ -262,8 +220,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the pathParser() helper method.
-     *
-     * @return void
      */
     public function testPathParser(): void
     {
@@ -272,8 +228,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the logger() helper method.
-     *
-     * @return void
      */
     public function testLogger(): void
     {
@@ -282,8 +236,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the router() helper method.
-     *
-     * @return void
      */
     public function testRouter(): void
     {
@@ -292,8 +244,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the responseBuilder() helper method.
-     *
-     * @return void
      */
     public function testResponseBuilder(): void
     {
@@ -302,8 +252,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the session() helper method.
-     *
-     * @return void
      */
     public function testSession(): void
     {
@@ -312,8 +260,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the view() helper method.
-     *
-     * @return void
      */
     public function testView(): void
     {
@@ -322,8 +268,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the application setup being called a second time without forcing.
-     *
-     * @return void
      */
     public function testSetupTwice(): void
     {
@@ -337,8 +281,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test the application setup with debug on.
-     *
-     * @return void
      */
     public function testDebugOn(): void
     {
@@ -352,8 +294,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test resetting the application with a config provider.
-     *
-     * @return void
      */
     public function testApplicationSetupWithConfigProvider(): void
     {
@@ -371,8 +311,6 @@ class ApplicationTest extends TestCase
 
     /**
      * Test resetting the application with a config provider.
-     *
-     * @return void
      */
     public function testApplicationSetupWithCachedConfig(): void
     {

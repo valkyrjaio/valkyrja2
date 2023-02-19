@@ -32,15 +32,11 @@ class AnnotatableTest extends TestCase
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +47,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getAnnotationType method's default value.
-     *
-     * @return void
      */
     public function testGetAnnotationTypeDefault(): void
     {
@@ -61,8 +55,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getAnnotationType method.
-     *
-     * @return void
      */
     public function testGetAnnotationType(): void
     {
@@ -73,8 +65,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setAnnotationType method with null value.
-     *
-     * @return void
      */
     public function testSetAnnotationTypeNull(): void
     {
@@ -83,8 +73,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setAnnotationType method.
-     *
-     * @return void
      */
     public function testSetAnnotationType(): void
     {
@@ -93,8 +81,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getId method's default value.
-     *
-     * @return void
      */
     public function testGetIdDefault(): void
     {
@@ -103,8 +89,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getId method.
-     *
-     * @return void
      */
     public function testGetId(): void
     {
@@ -115,8 +99,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setId method with null value.
-     *
-     * @return void
      */
     public function testSetIdNull(): void
     {
@@ -125,8 +107,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setId method.
-     *
-     * @return void
      */
     public function testSetId(): void
     {
@@ -135,8 +115,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getName method's default value.
-     *
-     * @return void
      */
     public function testGetNameDefault(): void
     {
@@ -145,8 +123,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getName method.
-     *
-     * @return void
      */
     public function testGetName(): void
     {
@@ -157,8 +133,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setName method with null value.
-     *
-     * @return void
      */
     public function testSetNameNull(): void
     {
@@ -167,8 +141,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setName method.
-     *
-     * @return void
      */
     public function testSetName(): void
     {
@@ -177,8 +149,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getClass method's default value.
-     *
-     * @return void
      */
     public function testGetClassDefault(): void
     {
@@ -187,8 +157,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getClass method.
-     *
-     * @return void
      */
     public function testGetClass(): void
     {
@@ -199,8 +167,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setClass method with null value.
-     *
-     * @return void
      */
     public function testSetClassNull(): void
     {
@@ -209,8 +175,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setClass method.
-     *
-     * @return void
      */
     public function testSetClass(): void
     {
@@ -219,8 +183,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getProperty method's default value.
-     *
-     * @return void
      */
     public function testGetPropertyDefault(): void
     {
@@ -229,8 +191,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getProperty method.
-     *
-     * @return void
      */
     public function testGetProperty(): void
     {
@@ -241,8 +201,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setProperty method with null value.
-     *
-     * @return void
      */
     public function testSetPropertyNull(): void
     {
@@ -251,8 +209,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setProperty method.
-     *
-     * @return void
      */
     public function testSetProperty(): void
     {
@@ -261,8 +217,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getMethod method's default value.
-     *
-     * @return void
      */
     public function testGetMethodDefault(): void
     {
@@ -271,8 +225,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getMethod method.
-     *
-     * @return void
      */
     public function testGetMethod(): void
     {
@@ -283,8 +235,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setMethod method with null value.
-     *
-     * @return void
      */
     public function testSetMethodNull(): void
     {
@@ -293,8 +243,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setMethod method.
-     *
-     * @return void
      */
     public function testSetMethod(): void
     {
@@ -303,8 +251,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the isStatic method's default value.
-     *
-     * @return void
      */
     public function testIsStaticDefault(): void
     {
@@ -313,8 +259,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the isStatic method.
-     *
-     * @return void
      */
     public function testIsStatic(): void
     {
@@ -325,8 +269,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setStatic method.
-     *
-     * @return void
      */
     public function testSetStatic(): void
     {
@@ -335,8 +277,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getFunction method's default value.
-     *
-     * @return void
      */
     public function testGetFunctionDefault(): void
     {
@@ -345,8 +285,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getFunction method.
-     *
-     * @return void
      */
     public function testGetFunction(): void
     {
@@ -357,8 +295,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setFunction method with null value.
-     *
-     * @return void
      */
     public function testSetFunctionNull(): void
     {
@@ -367,8 +303,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setFunction method.
-     *
-     * @return void
      */
     public function testSetFunction(): void
     {
@@ -377,8 +311,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getMatches method's default value.
-     *
-     * @return void
      */
     public function testGetMatchesDefault(): void
     {
@@ -387,8 +319,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getMatches method.
-     *
-     * @return void
      */
     public function testGetMatches(): void
     {
@@ -399,8 +329,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setMatches method with null value.
-     *
-     * @return void
      */
     public function testSetMatchesNull(): void
     {
@@ -409,8 +337,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setMatches method.
-     *
-     * @return void
      */
     public function testSetMatches(): void
     {
@@ -419,8 +345,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getArguments method's default value.
-     *
-     * @return void
      */
     public function testGetArgumentsDefault(): void
     {
@@ -429,8 +353,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getArguments method.
-     *
-     * @return void
      */
     public function testGetArguments(): void
     {
@@ -441,8 +363,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setArguments method with null value.
-     *
-     * @return void
      */
     public function testSetArgumentsNull(): void
     {
@@ -451,8 +371,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setArguments method.
-     *
-     * @return void
      */
     public function testSetArguments(): void
     {
@@ -461,8 +379,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getDependencies method's default value.
-     *
-     * @return void
      */
     public function testGetDependenciesDefault(): void
     {
@@ -471,8 +387,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the getDependencies method.
-     *
-     * @return void
      */
     public function testGetDependencies(): void
     {
@@ -483,8 +397,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setDependencies method with null value.
-     *
-     * @return void
      */
     public function testSetDependenciesNull(): void
     {
@@ -493,8 +405,6 @@ class AnnotatableTest extends TestCase
 
     /**
      * Test the setDependencies method.
-     *
-     * @return void
      */
     public function testSetDependencies(): void
     {

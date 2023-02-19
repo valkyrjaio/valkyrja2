@@ -41,7 +41,6 @@ return (new PhpCsFixer\Config())
             'no_unused_imports'                   => true,
             'combine_consecutive_unsets'          => true,
             'modernize_types_casting'             => true,
-            'no_superfluous_phpdoc_tags'          => false,
             'single_line_throw'                   => false,
             'strict_param'                        => true,
             'trailing_comma_in_multiline'         => true,

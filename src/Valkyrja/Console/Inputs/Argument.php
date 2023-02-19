@@ -24,20 +24,13 @@ class Argument
 {
     /**
      * The name.
-     *
-     * @var string
      */
     protected string $name;
 
-    /**
-     * @var string
-     */
     protected string $description;
 
     /**
      * The mode.
-     *
-     * @var ArgumentMode
      */
     protected ArgumentMode $mode;
 
@@ -57,8 +50,6 @@ class Argument
 
     /**
      * Get the name.
-     *
-     * @return string
      */
     public function getName(): string
     {
@@ -67,8 +58,6 @@ class Argument
 
     /**
      * Get the description.
-     *
-     * @return string
      */
     public function getDescription(): string
     {
@@ -77,8 +66,6 @@ class Argument
 
     /**
      * Get the mode.
-     *
-     * @return ArgumentMode
      */
     public function getMode(): ArgumentMode
     {

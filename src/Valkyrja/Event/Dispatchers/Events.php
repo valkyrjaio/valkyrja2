@@ -212,11 +212,7 @@ class Events implements Contract
     /**
      * Ensure events are arrays of listeners.
      *
-     * @param array $eventsArray
-     *
      * @throws JsonException
-     *
-     * @return array
      */
     protected function ensureEventListeners(array $eventsArray): array
     {
@@ -235,8 +231,6 @@ class Events implements Contract
      * @param array $listenersArray The listeners array
      *
      * @throws JsonException
-     *
-     * @return array
      */
     protected function ensureListeners(array $listenersArray): array
     {
@@ -253,8 +247,6 @@ class Events implements Contract
      * Ensure a listener, or null, is returned.
      *
      * @param Listener|array $listener The listener
-     *
-     * @return Listener
      */
     protected function ensureListener(Listener|array $listener): Listener
     {

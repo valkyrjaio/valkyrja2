@@ -70,8 +70,6 @@ class ServiceProvider extends Provider
      * Publish the filesystem service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFilesystem(Container $container): void
     {
@@ -90,8 +88,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -105,8 +101,6 @@ class ServiceProvider extends Provider
      * Publish a driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -127,8 +121,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -149,8 +141,6 @@ class ServiceProvider extends Provider
      * Publish a flysystem adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFlysystemAdapter(Container $container): void
     {
@@ -178,8 +168,6 @@ class ServiceProvider extends Provider
      * Publish the flysystem local adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFlysystemLocalAdapter(Container $container): void
     {
@@ -197,8 +185,6 @@ class ServiceProvider extends Provider
      * Publish the flysystem s3 adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFlysystemAwsS3Adapter(Container $container): void
     {

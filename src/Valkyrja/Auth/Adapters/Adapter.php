@@ -40,11 +40,6 @@ abstract class Adapter implements Contract
 
     /**
      * Determine if a password verifies against the user's password.
-     *
-     * @param User   $user
-     * @param string $password
-     *
-     * @return bool
      */
     public function verifyPassword(User $user, string $password): bool
     {
@@ -53,11 +48,6 @@ abstract class Adapter implements Contract
 
     /**
      * Update a user's password.
-     *
-     * @param User   $user
-     * @param string $password
-     *
-     * @return void
      */
     public function updatePassword(User $user, string $password): void
     {
@@ -72,11 +62,7 @@ abstract class Adapter implements Contract
     /**
      * Generate a reset token for a user.
      *
-     * @param User $user
-     *
      * @throws Exception
-     *
-     * @return void
      */
     public function updateResetToken(User $user): void
     {
@@ -87,10 +73,6 @@ abstract class Adapter implements Contract
 
     /**
      * Hash a plain password.
-     *
-     * @param string $password
-     *
-     * @return string
      */
     protected function hashPassword(string $password): string
     {

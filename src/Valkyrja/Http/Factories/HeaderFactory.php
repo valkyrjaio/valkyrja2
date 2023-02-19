@@ -30,10 +30,6 @@ abstract class HeaderFactory
 {
     /**
      * Marshal headers from $_SERVER.
-     *
-     * @param array $server
-     *
-     * @return array
      */
     public static function marshalHeaders(array $server): array
     {
@@ -73,12 +69,6 @@ abstract class HeaderFactory
      * Does a case-insensitive search for a matching header.
      * If found, it is returned as a string, using comma concatenation.
      * If not, the $default is returned.
-     *
-     * @param string     $header
-     * @param array      $headers
-     * @param mixed|null $default
-     *
-     * @return string
      */
     public static function getHeader(string $header, array $headers, mixed $default = null): string
     {

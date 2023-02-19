@@ -45,15 +45,10 @@ abstract class UriFactory
     /**
      * Marshal the URI from the $_SERVER array and headers.
      *
-     * @param array $server
-     * @param array $headers
-     *
      * @throws InvalidQuery
      * @throws InvalidPort
      * @throws InvalidPath
      * @throws InvalidScheme
-     *
-     * @return Uri
      */
     public static function marshalUriFromServer(array $server, array $headers): Uri
     {
@@ -116,12 +111,6 @@ abstract class UriFactory
      * Does a case-insensitive search for a matching header.
      * If found, it is returned as a string, using comma concatenation.
      * If not, the $default is returned.
-     *
-     * @param string     $header
-     * @param array      $headers
-     * @param mixed|null $default
-     *
-     * @return string
      */
     public static function getHeader(string $header, array $headers, mixed $default = null): string
     {
@@ -137,12 +126,6 @@ abstract class UriFactory
 
     /**
      * Marshal the host and port from HTTP headers and/or the PHP environment.
-     *
-     * @param stdClass $accumulator
-     * @param array    $server
-     * @param array    $headers
-     *
-     * @return void
      */
     public static function marshalHostAndPortFromHeaders(stdClass $accumulator, array $server, array $headers): void
     {
@@ -179,10 +162,6 @@ abstract class UriFactory
      *
      * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
      * @license   http://framework.zend.com/license/new-bsd New BSD License
-     *
-     * @param array $server
-     *
-     * @return string
      */
     public static function marshalRequestUri(array $server): string
     {
@@ -226,10 +205,6 @@ abstract class UriFactory
 
     /**
      * Strip the query string from a path.
-     *
-     * @param string $path
-     *
-     * @return string
      */
     public static function stripQueryString(string $path): string
     {
@@ -242,11 +217,6 @@ abstract class UriFactory
 
     /**
      * Marshal the host and port from the request header.
-     *
-     * @param stdClass     $accumulator
-     * @param string|array $host
-     *
-     * @return void
      */
     private static function marshalHostAndPortFromHeader(stdClass $accumulator, string|array $host): void
     {
@@ -266,11 +236,6 @@ abstract class UriFactory
 
     /**
      * Marshal host/port from misinterpreted IPv6 address.
-     *
-     * @param stdClass $accumulator
-     * @param array    $server
-     *
-     * @return void
      */
     private static function marshalIpv6HostAndPort(stdClass $accumulator, array $server): void
     {

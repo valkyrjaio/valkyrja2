@@ -25,8 +25,6 @@ class ServiceProviderTest extends TestCase
 {
     /**
      * Test the service provider.
-     *
-     * @return void
      */
     public function testServiceProvider(): void
     {

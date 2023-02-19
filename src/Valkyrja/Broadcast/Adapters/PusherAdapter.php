@@ -31,8 +31,6 @@ class PusherAdapter extends NullAdapter implements Contract
 {
     /**
      * The pusher service.
-     *
-     * @var Pusher
      */
     protected Pusher $pusher;
 
@@ -69,8 +67,6 @@ class PusherAdapter extends NullAdapter implements Contract
      * @param Message $message The message
      *
      * @throws JsonException On json decode failure
-     *
-     * @return string
      */
     protected function getMessageText(Message $message): string
     {
@@ -85,8 +81,6 @@ class PusherAdapter extends NullAdapter implements Contract
      * @param Message $message The message
      *
      * @throws JsonException On json decode failure
-     *
-     * @return void
      */
     protected function prepareMessage(Message $message): void
     {

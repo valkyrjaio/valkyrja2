@@ -38,8 +38,6 @@ class Config extends Model
 
     /**
      * The config.
-     *
-     * @var array
      */
     public array $crypts;
 }

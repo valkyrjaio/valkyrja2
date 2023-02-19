@@ -74,8 +74,6 @@ abstract class TransactionalMigration extends Migration
      * Do on run failure.
      *
      * @param Exception $exception The exception
-     *
-     * @return void
      */
     protected function runFailure(Exception $exception): void
     {
@@ -85,8 +83,6 @@ abstract class TransactionalMigration extends Migration
      * Do on rollback failure.
      *
      * @param Exception $exception The exception
-     *
-     * @return void
      */
     protected function rollbackFailure(Exception $exception): void
     {
@@ -94,15 +90,11 @@ abstract class TransactionalMigration extends Migration
 
     /**
      * Run the migration.
-     *
-     * @return void
      */
     abstract protected function runMigration(): void;
 
     /**
      * Rollback the migration.
-     *
-     * @return void
      */
     abstract protected function rollbackMigration(): void;
 }

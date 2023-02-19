@@ -28,17 +28,11 @@ interface Kernel extends MiddlewareAware
      * Handle a request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function handle(Request $request): Response;
 
     /**
      * Send the response.
-     *
-     * @param Response $response
-     *
-     * @return static
      */
     public function send(Response $response): static;
 
@@ -47,8 +41,6 @@ interface Kernel extends MiddlewareAware
      *
      * @param Request  $request  The request
      * @param Response $response The response
-     *
-     * @return void
      */
     public function terminate(Request $request, Response $response): void;
 
@@ -56,8 +48,6 @@ interface Kernel extends MiddlewareAware
      * Run the kernel.
      *
      * @param Request $request The request
-     *
-     * @return void
      */
     public function run(Request $request): void;
 }

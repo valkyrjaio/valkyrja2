@@ -28,8 +28,6 @@ class TwigEngine implements Engine
 {
     /**
      * The twig environment.
-     *
-     * @var Environment
      */
     protected Environment $twig;
 

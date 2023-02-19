@@ -32,10 +32,6 @@ abstract class ServerFactory
     /**
      * Marshal the $_SERVER array.
      * Pre-processes and returns the $_SERVER superglobal.
-     *
-     * @param array $server
-     *
-     * @return array
      */
     public static function normalizeServer(array $server): array
     {

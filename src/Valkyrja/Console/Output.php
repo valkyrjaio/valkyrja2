@@ -24,17 +24,11 @@ interface Output
 {
     /**
      * Get the formatter.
-     *
-     * @return Formatter
      */
     public function getFormatter(): Formatter;
 
     /**
      * Set the formatter.
-     *
-     * @param Formatter $formatter
-     *
-     * @return void
      */
     public function setFormatter(Formatter $formatter): void;
 
@@ -44,8 +38,6 @@ interface Output
      * @param array            $messages    The messages
      * @param bool             $newLine     [optional] Whether to use new lines between each message
      * @param OutputStyle|null $outputStyle [optional] The output style to use
-     *
-     * @return void
      */
     public function write(array $messages, bool $newLine = null, OutputStyle $outputStyle = null): void;
 
@@ -55,8 +47,6 @@ interface Output
      * @param string           $message     The message
      * @param bool             $newLine     [optional] Whether to use new lines between each message
      * @param OutputStyle|null $outputStyle [optional] The output style to use
-     *
-     * @return void
      */
     public function writeMessage(string $message, bool $newLine = null, OutputStyle $outputStyle = null): void;
 }

@@ -31,15 +31,11 @@ class Dispatch extends Model implements Contract
 
     /**
      * The id.
-     *
-     * @var string|null
      */
     protected ?string $id;
 
     /**
      * The name.
-     *
-     * @var string|null
      */
     protected ?string $name;
 
@@ -52,8 +48,6 @@ class Dispatch extends Model implements Contract
 
     /**
      * Whether this is a class dispatch.
-     *
-     * @var bool
      */
     protected bool $isClass;
 
@@ -66,8 +60,6 @@ class Dispatch extends Model implements Contract
 
     /**
      * Whether this is a class/property dispatch.
-     *
-     * @var bool
      */
     protected bool $isProperty;
 
@@ -80,15 +72,11 @@ class Dispatch extends Model implements Contract
 
     /**
      * Whether this is a class/method dispatch.
-     *
-     * @var bool
      */
     protected bool $isMethod;
 
     /**
      * Whether the property or method is static.
-     *
-     * @var bool
      */
     protected bool $static;
 
@@ -101,29 +89,21 @@ class Dispatch extends Model implements Contract
 
     /**
      * Whether this is a function dispatch.
-     *
-     * @var bool
      */
     protected bool $isFunction;
 
     /**
      * The matches.
-     *
-     * @var array|null
      */
     protected ?array $matches;
 
     /**
      * The closure.
-     *
-     * @var Closure|null
      */
     protected ?Closure $closure;
 
     /**
      * Whether this is a closure dispatch.
-     *
-     * @var bool
      */
     protected bool $isClosure;
 
@@ -136,8 +116,6 @@ class Dispatch extends Model implements Contract
 
     /**
      * The arguments.
-     *
-     * @var array|null
      */
     protected ?array $arguments;
 

@@ -25,15 +25,11 @@ class JsonData extends Model implements Contract
 {
     /**
      * The item.
-     *
-     * @var object|null
      */
     public ?object $item = null;
 
     /**
      * The item key.
-     *
-     * @var string
      */
     public string $itemKey = 'item';
 
@@ -46,36 +42,26 @@ class JsonData extends Model implements Contract
 
     /**
      * The items key.
-     *
-     * @var string
      */
     public string $itemsKey = 'items';
 
     /**
      * The total.
-     *
-     * @var int|null
      */
     public ?int $total = null;
 
     /**
      * The message.
-     *
-     * @var string|null
      */
     public ?string $message = null;
 
     /**
      * The messages.
-     *
-     * @var array|null
      */
     public ?array $messages = null;
 
     /**
      * The data.
-     *
-     * @var array|null
      */
     public ?array $data = null;
 

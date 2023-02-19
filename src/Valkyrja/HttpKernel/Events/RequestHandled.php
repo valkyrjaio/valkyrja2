@@ -25,23 +25,16 @@ class RequestHandled
 {
     /**
      * The request.
-     *
-     * @var Request
      */
     public Request $request;
 
     /**
      * The response.
-     *
-     * @var Response
      */
     public Response $response;
 
     /**
      * HttpKernelHandled constructor.
-     *
-     * @param Request  $request
-     * @param Response $response
      */
     public function __construct(Request $request, Response $response)
     {

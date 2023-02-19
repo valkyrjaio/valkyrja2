@@ -32,8 +32,6 @@ class Attributes implements Contract
 {
     /**
      * Default flags for the getAttributes() method.
-     *
-     * @var int
      */
     protected static int $defaultFlags = ReflectionAttribute::IS_INSTANCEOF;
 

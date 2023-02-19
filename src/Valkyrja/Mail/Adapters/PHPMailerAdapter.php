@@ -27,15 +27,11 @@ class PHPMailerAdapter implements Contract
 {
     /**
      * The PHP Mailer.
-     *
-     * @var PHPMailer
      */
     protected PHPMailer $phpMailer;
 
     /**
      * PHPMailerAdapter constructor.
-     *
-     * @param PHPMailer $phpMailer
      */
     public function __construct(PHPMailer $phpMailer)
     {
@@ -70,8 +66,6 @@ class PHPMailerAdapter implements Contract
      *
      * @param string $method     The phpMailer method to call
      * @param array  $recipients The recipients
-     *
-     * @return void
      */
     protected function addRecipients(string $method, array $recipients): void
     {
@@ -86,8 +80,6 @@ class PHPMailerAdapter implements Contract
      * @param array $attachments The attachments
      *
      * @throws Exception
-     *
-     * @return void
      */
     protected function addAttachments(array $attachments): void
     {
@@ -98,10 +90,6 @@ class PHPMailerAdapter implements Contract
 
     /**
      * Add plain body to PHP Mailer.
-     *
-     * @param string|null $plainBody
-     *
-     * @return void
      */
     protected function addPlainBody(string $plainBody = null): void
     {

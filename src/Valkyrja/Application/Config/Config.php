@@ -44,57 +44,41 @@ class Config extends Model
 
     /**
      * The environment name.
-     *
-     * @var string
      */
     public string $env;
 
     /**
      * Flag to enable debug.
-     *
-     * @var bool
      */
     public bool $debug;
 
     /**
      * The url.
-     *
-     * @var string
      */
     public string $url;
 
     /**
      * The timezone.
-     *
-     * @var string
      */
     public string $timezone;
 
     /**
      * The version.
-     *
-     * @var string
      */
     public string $version;
 
     /**
      * The key.
-     *
-     * @var string
      */
     public string $key;
 
     /**
      * The exception handler class.
-     *
-     * @var string
      */
     public string $exceptionHandler;
 
     /**
      * The http kernel class.
-     *
-     * @var string
      */
     public string $httpKernel;
 

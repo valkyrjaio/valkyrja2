@@ -66,22 +66,16 @@ class AttributesTest extends TestCase
 
     /**
      * The attributes service.
-     *
-     * @var Attributes
      */
     protected Attributes $attributes;
 
     /**
      * The class to test with.
-     *
-     * @var AttributedClass
      */
     protected AttributedClass $class;
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -95,8 +89,6 @@ class AttributesTest extends TestCase
      * Test the forClass() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForClass(): void
     {
@@ -116,8 +108,6 @@ class AttributesTest extends TestCase
      * Test the forClassMembers() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForClassMembers(): void
     {
@@ -136,8 +126,6 @@ class AttributesTest extends TestCase
      * Test the forClassMembers() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForClassAndMembers(): void
     {
@@ -157,8 +145,6 @@ class AttributesTest extends TestCase
      * Test the forConstant() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForConstant(): void
     {
@@ -183,8 +169,6 @@ class AttributesTest extends TestCase
      * Test the forConstants() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForConstants(): void
     {
@@ -199,8 +183,6 @@ class AttributesTest extends TestCase
      * Test the forProperty() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForProperty(): void
     {
@@ -225,8 +207,6 @@ class AttributesTest extends TestCase
      * Test the forProperties() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForProperties(): void
     {
@@ -241,8 +221,6 @@ class AttributesTest extends TestCase
      * Test the forMethod() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForMethod(): void
     {
@@ -267,8 +245,6 @@ class AttributesTest extends TestCase
      * Test the forMethods() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForMethods(): void
     {
@@ -283,8 +259,6 @@ class AttributesTest extends TestCase
      * Test the forFunction() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForFunction(): void
     {
@@ -311,8 +285,6 @@ class AttributesTest extends TestCase
      * Test the forFunction() method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testForClosure(): void
     {
@@ -357,8 +329,6 @@ class AttributesTest extends TestCase
      * Tests for the const member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForConst(Attribute|AttributeChild ...$attributes): void
     {
@@ -377,8 +347,6 @@ class AttributesTest extends TestCase
      * Tests for the protectedConst member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForProtectedConst(Attribute|AttributeChild ...$attributes): void
     {
@@ -397,8 +365,6 @@ class AttributesTest extends TestCase
      * Tests for the staticProperty member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForStaticProperty(Attribute|AttributeChild ...$attributes): void
     {
@@ -417,8 +383,6 @@ class AttributesTest extends TestCase
      * Tests for the property member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForProperty(Attribute|AttributeChild ...$attributes): void
     {
@@ -437,8 +401,6 @@ class AttributesTest extends TestCase
      * Tests for the staticMember() member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForStaticMethod(Attribute|AttributeChild ...$attributes): void
     {
@@ -457,8 +419,6 @@ class AttributesTest extends TestCase
      * Tests for the method() member.
      *
      * @param Attribute|AttributeChild ...$attributes The attributes
-     *
-     * @return void
      */
     protected function testsForMethod(Attribute|AttributeChild ...$attributes): void
     {
@@ -477,8 +437,6 @@ class AttributesTest extends TestCase
      * Base tests for all items.
      *
      * @param Attribute ...$attributes The attributes
-     *
-     * @return void
      */
     protected function baseTests(Attribute ...$attributes): void
     {
@@ -498,8 +456,6 @@ class AttributesTest extends TestCase
      * @param Attribute      $attribute1 The first attribute
      * @param Attribute      $attribute2 The second attribute
      * @param AttributeChild $attribute3 The third attribute
-     *
-     * @return void
      */
     protected function valueTests(
         int $value1,
@@ -522,8 +478,6 @@ class AttributesTest extends TestCase
      * @param AttributeChild $attribute The attribute
      * @param bool           $isStatic  Whether the member is static
      * @param string         $name      The name of the member
-     *
-     * @return void
      */
     protected function setTests(AttributeChild $attribute, bool $isStatic, string $name): void
     {

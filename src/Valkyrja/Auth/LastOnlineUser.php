@@ -22,8 +22,6 @@ interface LastOnlineUser extends User
 {
     /**
      * Get the date last online field.
-     *
-     * @return string
      */
     public static function getDateLastOnlineField(): string;
 }

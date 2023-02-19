@@ -26,29 +26,21 @@ class ArgumentTest extends TestCase
 {
     /**
      * The class to test with.
-     *
-     * @var Argument
      */
     protected Argument $class;
 
     /**
      * The name.
-     *
-     * @var string
      */
     protected string $name = 'Test Name';
 
     /**
      * The description.
-     *
-     * @var string
      */
     protected string $description = 'Test Description';
 
     /**
      * Get the class to test with.
-     *
-     * @return Argument
      */
     protected function getClass(): Argument
     {
@@ -57,8 +49,6 @@ class ArgumentTest extends TestCase
 
     /**
      * Test the construction of a new Argument instance.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {
@@ -67,8 +57,6 @@ class ArgumentTest extends TestCase
 
     /**
      * Test the getName getter method.
-     *
-     * @return void
      */
     public function testGetName(): void
     {
@@ -77,8 +65,6 @@ class ArgumentTest extends TestCase
 
     /**
      * Test the getDescription getter method.
-     *
-     * @return void
      */
     public function testGetDescription(): void
     {
@@ -87,8 +73,6 @@ class ArgumentTest extends TestCase
 
     /**
      * Test the getMode getter method.
-     *
-     * @return void
      */
     public function testGetMode(): void
     {

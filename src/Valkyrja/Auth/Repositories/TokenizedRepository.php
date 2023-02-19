@@ -39,8 +39,6 @@ abstract class TokenizedRepository extends Repository implements Contract
 {
     /**
      * The token.
-     *
-     * @var string
      */
     protected string $token;
 
@@ -130,8 +128,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Get the user token.
      *
      * @throws TokenizationException
-     *
-     * @return string
      */
     public function getToken(): string
     {
@@ -156,8 +152,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * @param AuthenticatedUsers $users The users
      *
      * @throws TokenizationException
-     *
-     * @return string
      */
     protected function tryTokenizingUsers(AuthenticatedUsers $users): string
     {
@@ -190,8 +184,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Ensure required fields for tokenization.
      *
      * @param AuthenticatedUsers $users The users
-     *
-     * @return void
      */
     protected function ensureRequiredFieldsForTokenization(AuthenticatedUsers $users): void
     {
@@ -214,8 +206,6 @@ abstract class TokenizedRepository extends Repository implements Contract
 
     /**
      * Get the user token from session.
-     *
-     * @return string|null
      */
     protected function getTokenFromSession(): ?string
     {
@@ -226,8 +216,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Get the token from a request.
      *
      * @param Request $request The request
-     *
-     * @return string
      */
     protected function getTokenFromRequest(Request $request): string
     {
@@ -246,8 +234,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * @param string|null $token [optional] The token to store
      *
      * @throws TokenizationException
-     *
-     * @return static
      */
     protected function storeToken(string $token = null): static
     {
@@ -262,8 +248,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * @param string $token The token
      *
      * @throws Throwable
-     *
-     * @return User
      */
     protected function getUserFromToken(string $token): User
     {
@@ -292,8 +276,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * @param string $token The token
      *
      * @throws TokenizationException
-     *
-     * @return AuthenticatedUsers
      */
     protected function tryUnTokenizingUsers(string $token): AuthenticatedUsers
     {
@@ -306,8 +288,6 @@ abstract class TokenizedRepository extends Repository implements Contract
 
     /**
      * Get a fresh token.
-     *
-     * @return string
      */
     protected function getFreshToken(): string
     {
@@ -326,8 +306,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Set the user token.
      *
      * @throws TokenizationException
-     *
-     * @return void
      */
     protected function resetToken(): void
     {
@@ -338,8 +316,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Tokenize the users.
      *
      * @param AuthenticatedUsers $users The users
-     *
-     * @return string
      */
     abstract protected function tokenizeUsers(AuthenticatedUsers $users): string;
 
@@ -347,8 +323,6 @@ abstract class TokenizedRepository extends Repository implements Contract
      * Un-tokenize users.
      *
      * @param string $token The token
-     *
-     * @return AuthenticatedUsers
      */
     abstract protected function unTokenizeUsers(string $token): AuthenticatedUsers;
 }

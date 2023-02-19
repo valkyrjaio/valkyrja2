@@ -157,8 +157,6 @@ class ORMAdapter extends Adapter implements Contract
      * Get an ORM repository for the user.
      *
      * @param User $user The user
-     *
-     * @return Repository
      */
     protected function getUserRepository(User $user): Repository
     {

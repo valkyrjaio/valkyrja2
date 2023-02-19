@@ -22,8 +22,6 @@ trait UnpackForNewInstance
 {
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     protected static function __getNew(array $properties): static
     {

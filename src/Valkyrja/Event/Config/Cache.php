@@ -24,8 +24,6 @@ class Cache extends Model
 {
     /**
      * The base64 encoded events.
-     *
-     * @var array
      */
     public array $events;
 }

@@ -56,8 +56,6 @@ class AppProvider extends Provider
      *
      * @param Application $app       The application
      * @param Container   $container The container
-     *
-     * @return void
      */
     protected static function bootstrapContainer(Application $app, Container $container): void
     {
@@ -69,8 +67,6 @@ class AppProvider extends Provider
      * @param Application  $app       The application
      * @param Container    $container The container
      * @param Config|array $config    The config
-     *
-     * @return void
      */
     protected static function bootstrapServices(Application $app, Container $container, Config|array $config): void
     {
@@ -88,8 +84,6 @@ class AppProvider extends Provider
      * @param Application  $app       The application
      * @param Container    $container The container
      * @param Config|array $config    The config
-     *
-     * @return void
      */
     protected static function bootstrapExceptionHandler(Application $app, Container $container, Config|array $config): void
     {
@@ -110,8 +104,6 @@ class AppProvider extends Provider
      * Bootstrap the timezone.
      *
      * @param Config|array $config The config
-     *
-     * @return void
      */
     protected static function bootstrapTimezone(Config|array $config): void
     {

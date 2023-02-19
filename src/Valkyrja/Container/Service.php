@@ -25,8 +25,6 @@ interface Service
      *
      * @param Container $container The container
      * @param array     $arguments [optional] The arguments
-     *
-     * @return static
      */
     public static function make(Container $container, array $arguments = []): static;
 }

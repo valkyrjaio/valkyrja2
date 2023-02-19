@@ -48,8 +48,6 @@ REGEX;
 
     /**
      * PathParser constructor.
-     *
-     * @param Config|array $config
      */
     public function __construct(
         protected Config|array $config
@@ -134,8 +132,6 @@ REGEX;
      * @param string $path The path
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function validatePath(string $path): void
     {
@@ -165,8 +161,6 @@ REGEX;
      * Get a path's segments.
      *
      * @param string $path The path
-     *
-     * @return array
      */
     protected function getSegments(string $path): array
     {
@@ -184,8 +178,6 @@ REGEX;
      *
      * @param string $path     The path
      * @param array  $segments The segments
-     *
-     * @return array
      */
     protected function parsePath(string $path, array &$segments): array
     {
@@ -245,8 +237,6 @@ REGEX;
      *
      * @param int   $key    The key
      * @param array $params The params
-     *
-     * @return string
      */
     protected function getParamReplacement(int $key, array $params): string
     {
@@ -259,8 +249,6 @@ REGEX;
      *
      * @param array            $segments    The segments
      * @param non-empty-string $deliminator The deliminator
-     *
-     * @return array
      */
     protected function splitSegments(array $segments, string $deliminator): array
     {
@@ -289,8 +277,6 @@ REGEX;
      * @param array            $segments    The segments
      * @param string           $segment     The segment
      * @param non-empty-string $deliminator The deliminator
-     *
-     * @return void
      */
     protected function splitSegmentsDeliminator(array &$segments, string $segment, string $deliminator): void
     {

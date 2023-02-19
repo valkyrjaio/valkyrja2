@@ -67,50 +67,36 @@ class Config extends Model
 
     /**
      * The flag to enable trailing slashes for all urls.
-     *
-     * @var bool
      */
     public bool $useTrailingSlash;
 
     /**
      * The flag to enable absolute urls.
-     *
-     * @var bool
      */
     public bool $useAbsoluteUrls;
 
     /**
      * The flag to enable annotations.
-     *
-     * @var bool
      */
     public bool $useAnnotations;
 
     /**
      * The cache from a Cacheable::getCacheable().
-     *
-     * @var Cache|null
      */
     public Cache|null $cache = null;
 
     /**
      * The file path.
-     *
-     * @var string
      */
     public string $filePath;
 
     /**
      * The cache file path.
-     *
-     * @var string
      */
     public string $cacheFilePath;
 
     /**
      * The flag to enable cache.
-     *
-     * @var bool
      */
     public bool $useCache;
 
@@ -118,8 +104,6 @@ class Config extends Model
      * Set the cache.
      *
      * @param Cache|array|null $cache The cache
-     *
-     * @return void
      */
     protected function setCache(Cache|array|null $cache): void
     {

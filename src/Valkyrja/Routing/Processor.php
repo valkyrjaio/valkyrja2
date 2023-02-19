@@ -24,8 +24,6 @@ interface Processor
      * Process a route.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     public function route(Route $route): void;
 }

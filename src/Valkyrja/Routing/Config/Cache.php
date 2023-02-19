@@ -24,29 +24,21 @@ class Cache extends Model
 {
     /**
      * The flattened routes.
-     *
-     * @var array
      */
     public array $routes = [];
 
     /**
      * The static routes.
-     *
-     * @var array
      */
     public array $static = [];
 
     /**
      * The dynamic routes.
-     *
-     * @var array
      */
     public array $dynamic = [];
 
     /**
      * The named routes.
-     *
-     * @var array
      */
     public array $named = [];
 }

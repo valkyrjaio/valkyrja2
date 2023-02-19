@@ -24,15 +24,11 @@ interface UserRecoveryCode extends Entity
 {
     /**
      * Get the user id field.
-     *
-     * @return string
      */
     public static function getUserIdField(): string;
 
     /**
      * Get the code field.
-     *
-     * @return string
      */
     public static function getCodeField(): string;
 }

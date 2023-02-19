@@ -36,8 +36,6 @@ abstract class Facade
 
     /**
      * Get the instance.
-     *
-     * @return object
      */
     public static function getInstance(): object
     {
@@ -52,8 +50,6 @@ abstract class Facade
      * Set the instance.
      *
      * @param object|class-string $instance The instance
-     *
-     * @return void
      */
     public static function setInstance(object|string $instance): void
     {
@@ -95,8 +91,6 @@ abstract class Facade
 
     /**
      * Get an array of static methods.
-     *
-     * @return array
      */
     protected static function getStaticMethods(): array
     {
@@ -107,8 +101,6 @@ abstract class Facade
      * Determine if a method is static.
      *
      * @param string $method The method
-     *
-     * @return bool
      */
     protected static function isStaticMethod(string $method): bool
     {

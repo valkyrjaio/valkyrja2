@@ -25,8 +25,6 @@ interface Gate
      *
      * @param string                    $action The action to check if authorized for
      * @param class-string<Policy>|null $policy [optional] The policy
-     *
-     * @return bool|null
      */
     public function before(string &$action, string &$policy = null): ?bool;
 
@@ -36,8 +34,6 @@ interface Gate
      * @param bool                      $isAuthorized Whether the action is authorized per the policy
      * @param string                    $action       The action to check if authorized for
      * @param class-string<Policy>|null $policy       [optional] The policy
-     *
-     * @return bool|null
      */
     public function after(bool $isAuthorized, string $action, string $policy = null): ?bool;
 
@@ -46,8 +42,6 @@ interface Gate
      *
      * @param string                    $action The action to check if authorized for
      * @param class-string<Policy>|null $policy [optional] The policy
-     *
-     * @return bool
      */
     public function isAuthorized(string $action, string $policy = null): bool;
 }

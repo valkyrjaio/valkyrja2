@@ -26,15 +26,11 @@ abstract class Policy implements Contract
 {
     /**
      * The repository.
-     *
-     * @var Repository
      */
     protected Repository $repository;
 
     /**
      * The user.
-     *
-     * @var User
      */
     protected User $user;
 
@@ -84,8 +80,6 @@ abstract class Policy implements Contract
      * Check if the action is authorized.
      *
      * @param string $action The action to check if authorized for
-     *
-     * @return bool
      */
     protected function checkIsAuthorized(string $action): bool
     {

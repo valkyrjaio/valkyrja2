@@ -70,8 +70,6 @@ class ServiceProvider extends Provider
      * Publish the SMS service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishSMS(Container $container): void
     {
@@ -90,8 +88,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -105,8 +101,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -127,8 +121,6 @@ class ServiceProvider extends Provider
      * Publish the log adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -152,8 +144,6 @@ class ServiceProvider extends Provider
      * Publish a nexmo adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishNexmoAdapter(Container $container): void
     {
@@ -174,8 +164,6 @@ class ServiceProvider extends Provider
      * Publish a nexmo service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishNexmo(Container $container): void
     {
@@ -193,8 +181,6 @@ class ServiceProvider extends Provider
      * Publish a message service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMessage(Container $container): void
     {

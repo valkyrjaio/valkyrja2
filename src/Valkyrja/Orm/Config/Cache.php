@@ -47,15 +47,11 @@ class Cache extends Model
      *      ],
      *  ]
      * </code>
-     *
-     * @var array
      */
     public array $entitiesMap = [];
 
     /**
      * The entities with all pertinent information.
-     *
-     * @var array
      */
     public array $entities = [];
 }

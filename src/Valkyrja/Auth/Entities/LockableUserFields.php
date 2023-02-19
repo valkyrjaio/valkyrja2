@@ -22,15 +22,11 @@ trait LockableUserFields
 {
     /**
      * The number of login attempts.
-     *
-     * @var int
      */
     public int $login_attempts = 0;
 
     /**
      * The flag to determine whether a user is locked.
-     *
-     * @var bool
      */
     public bool $locked = false;
 }

@@ -52,8 +52,6 @@ trait ProvidersAwareTrait
 
     /**
      * The default publish method.
-     *
-     * @var string
      */
     protected static string $defaultPublishMethod = 'publish';
 
@@ -132,8 +130,6 @@ trait ProvidersAwareTrait
      * Publish an unpublished provided item.
      *
      * @param string $itemId The item id
-     *
-     * @return void
      */
     protected function publishUnpublishedProvided(string $itemId): void
     {
@@ -149,8 +145,6 @@ trait ProvidersAwareTrait
      *
      * @param string   $provider The provider
      * @param string[] $provides The provided items
-     *
-     * @return void
      */
     protected function registerDeferred(string $provider, string ...$provides): void
     {

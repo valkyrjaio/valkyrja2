@@ -24,43 +24,31 @@ interface NotifiableUser extends MailableUser
 {
     /**
      * Whether this user entity has a name field.
-     *
-     * @return bool
      */
     public static function hasNameField(): bool;
 
     /**
      * Get the name field.
-     *
-     * @return string
      */
     public static function getNameField(): string;
 
     /**
      * Whether this user entity has a phone number field.
-     *
-     * @return bool
      */
     public static function hasPhoneNumberField(): bool;
 
     /**
      * Get the phone number field.
-     *
-     * @return string
      */
     public static function getPhoneNumberField(): string;
 
     /**
      * Whether this user entity has a secret id field.
-     *
-     * @return bool
      */
     public static function hasSecretIdField(): bool;
 
     /**
      * Get the secret id field.
-     *
-     * @return string
      */
     public static function getSecretIdField(): string;
 }

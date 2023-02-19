@@ -24,15 +24,11 @@ abstract class Adapter implements Contract
 {
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 
     /**
      * The key.
-     *
-     * @var string
      */
     protected string $key;
 

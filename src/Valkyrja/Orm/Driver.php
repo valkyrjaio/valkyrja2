@@ -22,36 +22,26 @@ interface Driver
 {
     /**
      * Initiate a transaction.
-     *
-     * @return bool
      */
     public function beginTransaction(): bool;
 
     /**
      * In a transaction.
-     *
-     * @return bool
      */
     public function inTransaction(): bool;
 
     /**
      * Ensure a transaction is in progress.
-     *
-     * @return void
      */
     public function ensureTransaction(): void;
 
     /**
      * Commit all items in the transaction.
-     *
-     * @return bool
      */
     public function commit(): bool;
 
     /**
      * Rollback the previous transaction.
-     *
-     * @return bool
      */
     public function rollback(): bool;
 
@@ -59,8 +49,6 @@ interface Driver
      * Rollback the previous transaction.
      *
      * @param string $query The query
-     *
-     * @return Statement
      */
     public function prepare(string $query): Statement;
 
@@ -69,18 +57,13 @@ interface Driver
      *
      * @param string|null $table   [optional] The table last inserted into
      * @param string|null $idField [optional] The id field of the table last inserted into
-     *
-     * @return string
      */
     public function lastInsertId(string $table = null, string $idField = null): string;
 
     /**
      * Create a new query instance.
      *
-     * @param string|null               $query
      * @param class-string<Entity>|null $entity
-     *
-     * @return Query
      */
     public function createQuery(string $query = null, string $entity = null): Query;
 
@@ -88,23 +71,16 @@ interface Driver
      * Create a new query builder instance.
      *
      * @param class-string<Entity>|null $entity
-     * @param string|null               $alias
-     *
-     * @return QueryBuilder
      */
     public function createQueryBuilder(string $entity = null, string $alias = null): QueryBuilder;
 
     /**
      * Create a new retriever instance.
-     *
-     * @return Retriever
      */
     public function createRetriever(): Retriever;
 
     /**
      * Get the persister.
-     *
-     * @return Persister
      */
     public function getPersister(): Persister;
 }

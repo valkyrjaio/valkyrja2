@@ -22,8 +22,6 @@ interface TokenizedRepository extends Repository
 {
     /**
      * Get the token.
-     *
-     * @return string
      */
     public function getToken(): string;
 
@@ -31,8 +29,6 @@ interface TokenizedRepository extends Repository
      * Authenticate using a given token.
      *
      * @param string $token The token
-     *
-     * @return static
      */
     public function authenticateFromToken(string $token): static;
 }

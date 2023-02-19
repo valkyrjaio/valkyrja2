@@ -31,8 +31,6 @@ class Abort
      *
      * @param array|null    $headers  [optional] The headers
      * @param Response|null $response [optional] The response to send
-     *
-     * @return never
      */
     public static function abort404(array $headers = null, Response $response = null): never
     {
@@ -44,8 +42,6 @@ class Abort
      *
      * @param array|null    $headers  [optional] The headers
      * @param Response|null $response [optional] The response to send
-     *
-     * @return never
      */
     public static function abort405(array $headers = null, Response $response = null): never
     {
@@ -59,8 +55,6 @@ class Abort
      * @param string|null   $message    [optional] The message
      * @param array|null    $headers    [optional] The headers
      * @param Response|null $response   [optional] The response to send
-     *
-     * @return never
      */
     public static function abort(
         int $statusCode = null,
@@ -75,8 +69,6 @@ class Abort
      * Abort with a response.
      *
      * @param Response $response The response
-     *
-     * @return never
      */
     public static function response(Response $response): never
     {
@@ -91,8 +83,6 @@ class Abort
      * @param array|null  $headers    [optional] An array of response headers
      *
      * @throws HttpRedirectException
-     *
-     * @return never
      */
     public static function redirect(string $uri = null, int $statusCode = null, array $headers = null): never
     {

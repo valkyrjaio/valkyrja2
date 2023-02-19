@@ -22,8 +22,6 @@ trait MailableUserFields
 {
     /**
      * The email.
-     *
-     * @var string
      */
     public string $email;
 }

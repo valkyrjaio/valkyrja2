@@ -22,8 +22,6 @@ interface Provides
 {
     /**
      * Whether this provider is deferred.
-     *
-     * @return bool
      */
     public static function deferred(): bool;
 
@@ -46,8 +44,6 @@ interface Provides
 
     /**
      * The items provided by this provider.
-     *
-     * @return array
      */
     public static function provides(): array;
 
@@ -55,8 +51,6 @@ interface Provides
      * Publish the provider.
      *
      * @param object $providerAware The providers aware class
-     *
-     * @return void
      */
     public static function publish(object $providerAware): void;
 }

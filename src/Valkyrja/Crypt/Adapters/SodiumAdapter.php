@@ -138,8 +138,6 @@ class SodiumAdapter extends Adapter
      * @param string $encrypted The encrypted message
      *
      * @throws CryptException
-     *
-     * @return string
      */
     protected function getDecoded(string $encrypted): string
     {
@@ -153,11 +151,7 @@ class SodiumAdapter extends Adapter
     /**
      * Validate a decoded encrypted message.
      *
-     * @param string|false $decoded
-     *
      * @throws CryptException
-     *
-     * @return void
      */
     protected function validateDecoded(string|false $decoded): void
     {
@@ -169,11 +163,7 @@ class SodiumAdapter extends Adapter
     /**
      * Validate a decoded encrypted message type.
      *
-     * @param string|false $decoded
-     *
      * @throws CryptException
-     *
-     * @return void
      */
     protected function validateDecodedType(string|false $decoded): void
     {
@@ -184,10 +174,6 @@ class SodiumAdapter extends Adapter
 
     /**
      * Check if a decoded encrypted message is a valid type.
-     *
-     * @param string|false $decoded
-     *
-     * @return bool
      */
     protected function isValidDecodedType(string|false $decoded): bool
     {
@@ -197,11 +183,7 @@ class SodiumAdapter extends Adapter
     /**
      * Validate a decoded encrypted message string length.
      *
-     * @param string $decoded
-     *
      * @throws CryptException
-     *
-     * @return void
      */
     protected function validateDecodedStrLen(string $decoded): void
     {
@@ -212,10 +194,6 @@ class SodiumAdapter extends Adapter
 
     /**
      * Validate a decoded encrypted message string length.
-     *
-     * @param string $decoded
-     *
-     * @return bool
      */
     protected function isValidDecodedStrLen(string $decoded): bool
     {
@@ -230,8 +208,6 @@ class SodiumAdapter extends Adapter
      *
      * @throws CryptException
      * @throws SodiumException
-     *
-     * @return string
      */
     protected function getDecodedPlain(string $decoded, string $key = null): string
     {
@@ -255,11 +231,7 @@ class SodiumAdapter extends Adapter
     /**
      * Validate a plain text encrypted message.
      *
-     * @param bool|string $plain
-     *
      * @throws CryptException
-     *
-     * @return void
      */
     protected function validatePlainDecoded(bool|string $plain): void
     {
@@ -270,10 +242,6 @@ class SodiumAdapter extends Adapter
 
     /**
      * Validate a plain text encrypted message.
-     *
-     * @param bool|string $plain
-     *
-     * @return bool
      */
     protected function isValidPlainDecoded(bool|string $plain): bool
     {
@@ -284,8 +252,6 @@ class SodiumAdapter extends Adapter
      * Get a key as bytes.
      *
      * @param string|null $key [optional] The key
-     *
-     * @return string
      */
     protected function getKeyAsBytes(string $key = null): string
     {

@@ -38,51 +38,26 @@ class AttributeChild extends Attribute
         parent::__construct($counter);
     }
 
-    /**
-     * @param string $class
-     *
-     * @return void
-     */
     public function setClass(string $class): void
     {
         $this->class = $class;
     }
 
-    /**
-     * @param string $constant
-     *
-     * @return void
-     */
     public function setConstant(string $constant): void
     {
         $this->constant = $constant;
     }
 
-    /**
-     * @param string $property
-     *
-     * @return void
-     */
     public function setProperty(string $property): void
     {
         $this->property = $property;
     }
 
-    /**
-     * @param string $method
-     *
-     * @return void
-     */
     public function setMethod(string $method): void
     {
         $this->method = $method;
     }
 
-    /**
-     * @param bool $static
-     *
-     * @return void
-     */
     public function setStatic(bool $static): void
     {
         $this->static = $static;

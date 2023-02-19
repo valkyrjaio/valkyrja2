@@ -29,11 +29,6 @@ interface BaseQueryBuilder
      *      $queryBuilder
      *          ->table('table', 't');
      * </code>
-     *
-     * @param string      $table
-     * @param string|null $alias
-     *
-     * @return static
      */
     public function table(string $table, string $alias = null): static;
 
@@ -45,23 +40,16 @@ interface BaseQueryBuilder
      * </code>
      *
      * @param class-string<Entity> $entity
-     * @param string|null          $alias
-     *
-     * @return static
      */
     public function entity(string $entity, string $alias = null): static;
 
     /**
      * Get the built query string.
-     *
-     * @return string
      */
     public function getQueryString(): string;
 
     /**
      * Create a new query.
-     *
-     * @return Query
      */
     public function createQuery(): Query;
 }

@@ -100,8 +100,6 @@ trait Exposable
 
     /**
      * Get all properties.
-     *
-     * @return array
      */
     protected function __allProperties(): array
     {
@@ -112,8 +110,6 @@ trait Exposable
      * Remove internal model properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return void
      */
     protected function __removeInternalProperties(array &$properties): void
     {
@@ -127,8 +123,6 @@ trait Exposable
      *
      * @param Closure|string $callable      The callable
      * @param string         ...$properties The properties
-     *
-     * @return array
      */
     protected function __arrayWithExposed(Closure|string $callable, string ...$properties): array
     {

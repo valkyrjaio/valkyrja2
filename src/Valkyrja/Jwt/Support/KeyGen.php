@@ -28,8 +28,6 @@ class KeyGen
      * Get a public/private key pair to use for EdDSA.
      *
      * @throws SodiumException
-     *
-     * @return EdDsaKey
      */
     public static function edDsa(): EdDsaKey
     {
@@ -48,8 +46,6 @@ class KeyGen
      *
      * @param string $privateKeyFile The private key file path
      * @param string $passphrase     The passphrase
-     *
-     * @return OpenSSLAsymmetricKey
      */
     public static function opensslPrivateKey(string $privateKeyFile, string $passphrase): OpenSSLAsymmetricKey
     {
@@ -63,8 +59,6 @@ class KeyGen
      * Get an openssl private key via a file path and passphrase.
      *
      * @param OpenSSLAsymmetricKey $privateKey The private key
-     *
-     * @return OpenSSLAsymmetricKey
      */
     public static function opensslPublicKey(OpenSSLAsymmetricKey $privateKey): OpenSSLAsymmetricKey
     {

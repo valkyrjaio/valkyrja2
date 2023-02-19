@@ -27,15 +27,11 @@ class Json extends Model implements Contract
 {
     /**
      * The message.
-     *
-     * @var string|null
      */
     public ?string $message = null;
 
     /**
      * The data.
-     *
-     * @var array|null
      */
     public ?array $data = null;
 
@@ -55,15 +51,11 @@ class Json extends Model implements Contract
 
     /**
      * The status code.
-     *
-     * @var int
      */
     public int $statusCode = StatusCode::OK;
 
     /**
      * The status.
-     *
-     * @var string
      */
     public string $status = Status::SUCCESS;
 

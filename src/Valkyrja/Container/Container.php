@@ -30,8 +30,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service exists.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     public function has(string $serviceId): bool;
 
@@ -40,8 +38,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string|string   $serviceId The service id
      * @param class-string<Service> $service   The service
-     *
-     * @return static
      */
     public function bind(string $serviceId, string $service): static;
 
@@ -50,8 +46,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param string              $alias     The alias
      * @param class-string|string $serviceId The service id to alias
-     *
-     * @return static
      */
     public function bindAlias(string $alias, string $serviceId): static;
 
@@ -60,8 +54,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string|string   $serviceId The service id
      * @param class-string<Service> $singleton The singleton service
-     *
-     * @return static
      */
     public function bindSingleton(string $serviceId, string $singleton): static;
 
@@ -70,8 +62,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string|string $serviceId The service id
      * @param Closure             $closure   The closure
-     *
-     * @return static
      */
     public function setClosure(string $serviceId, Closure $closure): static;
 
@@ -80,8 +70,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string|string $serviceId The service id
      * @param mixed               $singleton The singleton
-     *
-     * @return static
      */
     public function setSingleton(string $serviceId, mixed $singleton): static;
 
@@ -89,8 +77,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service is an alias.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     public function isAlias(string $serviceId): bool;
 
@@ -98,8 +84,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service is bound to a closure.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     public function isClosure(string $serviceId): bool;
 
@@ -107,8 +91,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service exists.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     public function isService(string $serviceId): bool;
 
@@ -116,8 +98,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service is a singleton.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     public function isSingleton(string $serviceId): bool;
 
@@ -150,8 +130,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string<Service>|string $serviceId The service id
      * @param array                        $arguments [optional] The arguments
-     *
-     * @return Service
      */
     public function getService(string $serviceId, array $arguments = []): Service;
 
@@ -170,8 +148,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Get a service from the container.
      *
      * @param string $offset The service id
-     *
-     * @return mixed
      */
     public function offsetGet($offset): mixed;
 
@@ -180,8 +156,6 @@ interface Container extends ArrayAccess, ProvidersAware
      *
      * @param class-string|string   $offset The service id
      * @param class-string<Service> $value  The service
-     *
-     * @return void
      */
     public function offsetSet($offset, $value): void;
 
@@ -189,8 +163,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Bind a service to the container.
      *
      * @param class-string|string $offset The service id
-     *
-     * @return void
      */
     public function offsetUnset($offset): void;
 
@@ -198,8 +170,6 @@ interface Container extends ArrayAccess, ProvidersAware
      * Check whether a given service exists.
      *
      * @param class-string|string $offset The service id
-     *
-     * @return bool
      */
     public function offsetExists($offset): bool;
 }

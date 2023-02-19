@@ -25,8 +25,6 @@ interface EntityRoutePolicy extends EntityPolicy
      *  For example if the route was defined as `get('/path/{entity1}/entity2')` with an action of
      *  `action(Entity1 $entity1, Entity2 $entity2)` you would set 0 to get the first entity or
      *  1 for the second, etc.
-     *
-     * @return int
      */
     public static function getEntityParamNumber(): int;
 }

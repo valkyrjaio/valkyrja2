@@ -31,8 +31,6 @@ class ExceptionHandler implements Contract
 {
     /**
      * Whether debug is enabled or not.
-     *
-     * @var bool
      */
     public static bool $enabled = false;
 
@@ -41,8 +39,6 @@ class ExceptionHandler implements Contract
      *
      * @param int  $errorReportingLevel [optional] The error reporting level
      * @param bool $displayErrors       [optional] Whether to display errors
-     *
-     * @return void
      */
     public static function enable(int $errorReportingLevel = E_ALL, bool $displayErrors = false): void
     {
@@ -87,8 +83,6 @@ class ExceptionHandler implements Contract
      * Get trace code for a throwable/exception.
      *
      * @param Throwable $exception The exception/throwable
-     *
-     * @return string
      */
     public static function getTraceCode(Throwable $exception): string
     {

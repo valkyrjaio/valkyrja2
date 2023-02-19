@@ -30,15 +30,11 @@ class CookieAdapter extends PHPAdapter
 {
     /**
      * The crypt.
-     *
-     * @var Crypt
      */
     protected Crypt $crypt;
 
     /**
      * The request.
-     *
-     * @var Request
      */
     protected Request $request;
 
@@ -147,8 +143,6 @@ class CookieAdapter extends PHPAdapter
      * Update the cache session.
      *
      * @throws CryptException
-     *
-     * @return void
      */
     protected function updateCookieSession(): void
     {

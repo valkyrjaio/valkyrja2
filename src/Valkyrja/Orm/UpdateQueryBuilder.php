@@ -33,11 +33,6 @@ interface UpdateQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      *          ->table('table')
      *          ->set('column', ':column');
      * </code>
-     *
-     * @param string     $column
-     * @param mixed|null $value
-     *
-     * @return static
      */
     public function set(string $column, mixed $value = null): static;
 
@@ -50,8 +45,6 @@ interface UpdateQueryBuilder extends BaseQueryBuilder, WhereQueryBuilder
      * @param string|null $operator [optional] The operator
      * @param string|null $type     [optional] The type of join
      * @param bool|null   $isWhere  [optional] Whether this is a where join
-     *
-     * @return static
      */
     public function join(
         string $table,

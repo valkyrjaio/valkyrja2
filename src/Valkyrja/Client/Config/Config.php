@@ -38,8 +38,6 @@ class Config extends Model
 
     /**
      * The client connections.
-     *
-     * @var array
      */
     public array $clients;
 }

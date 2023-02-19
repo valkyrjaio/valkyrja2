@@ -32,22 +32,16 @@ trait Where
 {
     /**
      * Where conditions for the query statement.
-     *
-     * @var array
      */
     protected array $where = [];
 
     /**
      * Has a where group been started.
-     *
-     * @var bool
      */
     protected bool $whereGroupStarted = false;
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function where(string $column, string $operator = null, mixed $value = null, bool $setType = true): static
     {
@@ -61,8 +55,6 @@ trait Where
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function startWhereGroup(): static
     {
@@ -73,8 +65,6 @@ trait Where
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function endWhereGroup(): static
     {
@@ -85,8 +75,6 @@ trait Where
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function whereType(WhereType $type = WhereType::AND): static
     {
@@ -97,11 +85,6 @@ trait Where
 
     /**
      * Set a where condition.
-     *
-     * @param string $where
-     * @param string $type
-     *
-     * @return void
      */
     protected function setWhere(string $where, string $type): void
     {
@@ -116,11 +99,7 @@ trait Where
     /**
      * Get a where string.
      *
-     * @param string $column
-     * @param string $operator
-     * @param mixed  $value
-     *
-     * @return string
+     * @param mixed $value
      */
     protected function getWhereString(string $column, string $operator, mixed $value = null): string
     {
@@ -129,11 +108,6 @@ trait Where
 
     /**
      * Get a where value.
-     *
-     * @param string $column
-     * @param mixed  $value
-     *
-     * @return string
      */
     protected function getWhereValue(string $column, mixed $value): string
     {
@@ -152,8 +126,6 @@ trait Where
 
     /**
      * Get the WHERE part of a query statement.
-     *
-     * @return string
      */
     protected function getWhereQuery(): string
     {

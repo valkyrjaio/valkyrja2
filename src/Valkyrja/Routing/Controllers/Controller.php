@@ -28,43 +28,31 @@ abstract class Controller
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     private static Container $container;
 
     /**
      * The request.
-     *
-     * @var Request
      */
     private static Request $request;
 
     /**
      * The response factory.
-     *
-     * @var ResponseFactory
      */
     private static ResponseFactory $responseFactory;
 
     /**
      * The router.
-     *
-     * @var Router
      */
     private static Router $router;
 
     /**
      * The route.
-     *
-     * @var Route
      */
     private static Route $route;
 
     /**
      * Get the container service.
-     *
-     * @return Container
      */
     protected static function getContainer(): Container
     {
@@ -73,8 +61,6 @@ abstract class Controller
 
     /**
      * The request.
-     *
-     * @return Request
      */
     protected static function getRequest(): Request
     {
@@ -83,8 +69,6 @@ abstract class Controller
 
     /**
      * Get the response factory service.
-     *
-     * @return ResponseFactory
      */
     protected static function getResponseFactory(): ResponseFactory
     {
@@ -93,8 +77,6 @@ abstract class Controller
 
     /**
      * Get the router service.
-     *
-     * @return Router
      */
     protected static function getRouter(): Router
     {
@@ -103,8 +85,6 @@ abstract class Controller
 
     /**
      * Get the matched route.
-     *
-     * @return Route
      */
     protected static function getRoute(): Route
     {

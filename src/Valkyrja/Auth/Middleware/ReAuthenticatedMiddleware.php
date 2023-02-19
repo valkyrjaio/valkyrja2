@@ -30,8 +30,6 @@ class ReAuthenticatedMiddleware extends AuthMiddleware
      * Middleware handler for before a request is dispatched.
      *
      * @param Request $request The request
-     *
-     * @return Request|Response
      */
     public static function before(Request $request): Request|Response
     {
@@ -46,8 +44,6 @@ class ReAuthenticatedMiddleware extends AuthMiddleware
      * Get the failed authentication response.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     protected static function getFailedAuthenticationResponse(Request $request): Response
     {

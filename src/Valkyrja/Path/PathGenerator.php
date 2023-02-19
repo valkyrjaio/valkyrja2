@@ -26,8 +26,6 @@ interface PathGenerator
      * @param array      $segments The segments
      * @param array|null $data     [optional] The data
      * @param array|null $params   [optional] The params
-     *
-     * @return string
      */
     public function parse(array $segments, array $data = null, array $params = null): string;
 }

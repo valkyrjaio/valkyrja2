@@ -26,15 +26,11 @@ class HttpExceptionTest extends TestCase
 {
     /**
      * The exception.
-     *
-     * @var HttpException
      */
     protected HttpException $exception;
 
     /**
      * Get the exception.
-     *
-     * @return HttpException
      */
     protected function getException(): HttpException
     {
@@ -43,8 +39,6 @@ class HttpExceptionTest extends TestCase
 
     /**
      * Test the construction of a new HttpException instance.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {
@@ -53,8 +47,6 @@ class HttpExceptionTest extends TestCase
 
     /**
      * Test the getStatusCode method.
-     *
-     * @return void
      */
     public function testGetStatusCode(): void
     {
@@ -63,8 +55,6 @@ class HttpExceptionTest extends TestCase
 
     /**
      * Test the getHeaders method.
-     *
-     * @return void
      */
     public function testGetHeaders(): void
     {

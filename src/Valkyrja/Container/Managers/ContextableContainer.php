@@ -29,22 +29,16 @@ trait ContextableContainer
 
     /**
      * The context id.
-     *
-     * @var string|null
      */
     protected ?string $contextId = null;
 
     /**
      * The context method name.
-     *
-     * @var string|null
      */
     protected ?string $contextMember = null;
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withContext(string $context, string $member = null): static
     {
@@ -59,8 +53,6 @@ trait ContextableContainer
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function withoutContext(): static
     {
@@ -79,8 +71,6 @@ trait ContextableContainer
      * @param class-string|string $serviceId The service id
      * @param string|null         $context   [optional] The context class or function name
      * @param string|null         $member    [optional] The context member name
-     *
-     * @return string
      */
     protected function getServiceId(string $serviceId, string $context = null, string $member = null): string
     {
@@ -95,8 +85,6 @@ trait ContextableContainer
      * Get a service id and ensure that it is published if it is provided.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return string
      */
     protected function getServiceIdAndEnsurePublished(string $serviceId): string
     {
@@ -112,8 +100,6 @@ trait ContextableContainer
      * Get the context service id.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return string
      */
     protected function getServiceIdInternal(string $serviceId): string
     {

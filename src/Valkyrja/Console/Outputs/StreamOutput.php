@@ -62,12 +62,7 @@ class StreamOutput extends Output implements StreamOutputContract
     /**
      * Write a message out to the console.
      *
-     * @param string $message
-     * @param bool   $newLine
-     *
      * @throws RuntimeException
-     *
-     * @return void
      */
     protected function writeOut(string $message, bool $newLine): void
     {

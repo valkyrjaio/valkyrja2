@@ -25,22 +25,16 @@ class ServiceTest extends TestCase
 {
     /**
      * The class to test with.
-     *
-     * @var Service
      */
     protected Service $class;
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -51,8 +45,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the isSingleton method's default value.
-     *
-     * @return void
      */
     public function testIsSingletonDefault(): void
     {
@@ -61,8 +53,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the isSingleton method.
-     *
-     * @return void
      */
     public function testIsSingleton(): void
     {
@@ -73,8 +63,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the setSingleton method.
-     *
-     * @return void
      */
     public function testSetSingleton(): void
     {
@@ -83,8 +71,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the getDefaults method's default value.
-     *
-     * @return void
      */
     public function testGetDefaultsDefault(): void
     {
@@ -93,8 +79,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the getDefaults method.
-     *
-     * @return void
      */
     public function testGetDefaults(): void
     {
@@ -105,8 +89,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the setDefaults method with null value.
-     *
-     * @return void
      */
     public function testSetDefaultsNull(): void
     {
@@ -115,8 +97,6 @@ class ServiceTest extends TestCase
 
     /**
      * Test the setDefaults method.
-     *
-     * @return void
      */
     public function testSetDefaults(): void
     {

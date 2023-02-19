@@ -24,15 +24,11 @@ interface JsonResponse extends Response
      * With callback.
      *
      * @param string $callback The callback
-     *
-     * @return static
      */
     public function withCallback(string $callback): static;
 
     /**
      * Without callback.
-     *
-     * @return static
      */
     public function withoutCallback(): static;
 }

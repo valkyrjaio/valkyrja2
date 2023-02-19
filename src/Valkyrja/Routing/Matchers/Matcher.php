@@ -35,8 +35,6 @@ class Matcher implements Contract
 {
     /**
      * The route collection.
-     *
-     * @var Collection
      */
     protected Collection $collection;
 
@@ -100,8 +98,6 @@ class Matcher implements Contract
      *
      * @throws InvalidRoutePath
      * @throws InvalidRouteParameter
-     *
-     * @return Route|null
      */
     protected function matchDynamicFromArray(array $routes, string $path): ?Route
     {
@@ -124,8 +120,6 @@ class Matcher implements Contract
      *
      * @throws InvalidRoutePath
      * @throws InvalidRouteParameter
-     *
-     * @return Route|null
      */
     protected function matchDynamicFromRouteOrArray(Route|array $route, string $path, string $regex): ?Route
     {
@@ -150,8 +144,6 @@ class Matcher implements Contract
      *
      * @throws InvalidRoutePath
      * @throws InvalidRouteParameter
-     *
-     * @return Route
      */
     protected function applyMatchesToRoute(Route $route, array $matches): Route
     {
@@ -171,8 +163,6 @@ class Matcher implements Contract
      *
      * @throws InvalidRoutePath
      * @throws InvalidRouteParameter
-     *
-     * @return void
      */
     protected function processMatches(Route $route, array &$matches): void
     {
@@ -202,8 +192,6 @@ class Matcher implements Contract
      * @param int   $index      The index for this match
      *
      * @throws InvalidRoutePath
-     *
-     * @return Parameter
      */
     protected function getParameterForMatchIndex(array $parameters, int $index): Parameter
     {
@@ -221,8 +209,6 @@ class Matcher implements Contract
      * @param int       $lastIndex The last index
      *
      * @throws InvalidRouteParameter
-     *
-     * @return void
      */
     protected function updateMatchValueWithDefault(Route $route, Parameter $parameter, array &$matches, int $index, mixed &$match, int $lastIndex): void
     {
@@ -250,8 +236,6 @@ class Matcher implements Contract
      * @param mixed     $match     The match
      *
      * @throws InvalidRouteParameter
-     *
-     * @return void
      */
     protected function updateMatchValueForType(Route $route, Parameter $parameter, array &$matches, int $index, mixed $match): void
     {
@@ -270,8 +254,6 @@ class Matcher implements Contract
      * @param mixed     $match     The match value
      *
      * @throws InvalidRouteParameter
-     *
-     * @return mixed
      */
     protected function getMatchValueForType(Route $route, Parameter $parameter, CastType $castType, int $index, mixed $match): mixed
     {
@@ -292,8 +274,6 @@ class Matcher implements Contract
      * @param mixed     $match     The match value
      *
      * @throws InvalidRouteParameter
-     *
-     * @return BackedEnum
      */
     protected function getEnumMatchValue(Parameter $parameter, mixed $match): BackedEnum
     {

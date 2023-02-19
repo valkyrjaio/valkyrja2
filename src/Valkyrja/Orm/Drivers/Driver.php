@@ -30,15 +30,11 @@ class Driver implements Contract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

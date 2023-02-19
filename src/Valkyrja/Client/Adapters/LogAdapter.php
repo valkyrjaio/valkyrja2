@@ -31,22 +31,16 @@ class LogAdapter implements Contract
 {
     /**
      * The logger.
-     *
-     * @var Logger
      */
     protected Logger $logger;
 
     /**
      * The response factory.
-     *
-     * @var ResponseFactory
      */
     protected ResponseFactory $responseFactory;
 
     /**
      * The client config.
-     *
-     * @var array
      */
     protected array $config;
 

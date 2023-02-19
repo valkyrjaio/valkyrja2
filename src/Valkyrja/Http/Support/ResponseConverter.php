@@ -28,8 +28,6 @@ class ResponseConverter
      * Convert a PSR7 Response to Valkyrja Response.
      *
      * @param ResponseInterface $psr7Response The PSR7 Response
-     *
-     * @return Response
      */
     public static function fromPsr7(ResponseInterface $psr7Response): Response
     {

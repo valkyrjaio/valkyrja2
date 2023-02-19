@@ -27,15 +27,11 @@ interface Manager
      * Use a specific configuration.
      *
      * @param string|null $name The name
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
     /**
      * Get the loader.
-     *
-     * @return Factory
      */
     public function getFactory(): Factory;
 }

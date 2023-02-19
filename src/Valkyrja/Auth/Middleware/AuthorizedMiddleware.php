@@ -48,8 +48,6 @@ abstract class AuthorizedMiddleware extends AuthMiddleware
      *
      * @param Request $request The request
      * @param User    $user    The authenticated user
-     *
-     * @return bool
      */
     abstract protected static function checkAuthorized(Request $request, User $user): bool;
 }

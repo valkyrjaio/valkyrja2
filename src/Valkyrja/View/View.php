@@ -26,8 +26,6 @@ interface View
      * @param string               $name      [optional] The template to set
      * @param array<string, mixed> $variables [optional] The variables to set
      * @param string|null          $engine    [optional] The engine to use
-     *
-     * @return Template
      */
     public function createTemplate(string $name, array $variables = [], string $engine = null): Template;
 
@@ -35,8 +33,6 @@ interface View
      * Get a render engine.
      *
      * @param string|null $name The name of the engine
-     *
-     * @return Engine
      */
     public function getEngine(string $name = null): Engine;
 
@@ -45,8 +41,6 @@ interface View
      *
      * @param string               $name      The name of the template to render
      * @param array<string, mixed> $variables [optional] The variables to set
-     *
-     * @return string
      */
     public function render(string $name, array $variables = []): string;
 }

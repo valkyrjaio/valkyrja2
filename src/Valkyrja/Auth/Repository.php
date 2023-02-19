@@ -27,15 +27,11 @@ interface Repository
 {
     /**
      * Determine if a user is authenticated.
-     *
-     * @return bool
      */
     public function isAuthenticated(): bool;
 
     /**
      * Get the authenticated user.
-     *
-     * @return User
      */
     public function getUser(): User;
 
@@ -43,15 +39,11 @@ interface Repository
      * Set the authenticated user.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function setUser(User $user): static;
 
     /**
      * Get the authenticated users.
-     *
-     * @return AuthenticatedUsers
      */
     public function getUsers(): AuthenticatedUsers;
 
@@ -59,8 +51,6 @@ interface Repository
      * Set the authenticated users.
      *
      * @param AuthenticatedUsers $users The users
-     *
-     * @return static
      */
     public function setUsers(AuthenticatedUsers $users): static;
 
@@ -70,8 +60,6 @@ interface Repository
      * @param User $user The user
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticate(User $user): static;
 
@@ -79,8 +67,6 @@ interface Repository
      * Authenticate a user from an active session.
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticateFromSession(): static;
 
@@ -90,8 +76,6 @@ interface Repository
      * @param Request $request The request
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     public function authenticateFromRequest(Request $request): static;
 
@@ -99,22 +83,16 @@ interface Repository
      * Un-authenticate any active users.
      *
      * @param User|null $user [optional] The user to un-authenticate
-     *
-     * @return static
      */
     public function unAuthenticate(User $user = null): static;
 
     /**
      * Set the authenticated user in the session.
-     *
-     * @return static
      */
     public function setSession(): static;
 
     /**
      * Unset the authenticated user from the session.
-     *
-     * @return static
      */
     public function unsetSession(): static;
 
@@ -124,8 +102,6 @@ interface Repository
      * @param User $user The user
      *
      * @throws InvalidRegistrationException
-     *
-     * @return static
      */
     public function register(User $user): static;
 
@@ -133,8 +109,6 @@ interface Repository
      * Forgot password.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function forgot(User $user): static;
 
@@ -143,8 +117,6 @@ interface Repository
      *
      * @param string $resetToken The reset token
      * @param string $password   The password
-     *
-     * @return static
      */
     public function reset(string $resetToken, string $password): static;
 
@@ -152,8 +124,6 @@ interface Repository
      * Lock a user.
      *
      * @param LockableUser $user The user
-     *
-     * @return static
      */
     public function lock(LockableUser $user): static;
 
@@ -161,8 +131,6 @@ interface Repository
      * Unlock a user.
      *
      * @param LockableUser $user The user
-     *
-     * @return static
      */
     public function unlock(LockableUser $user): static;
 
@@ -172,22 +140,16 @@ interface Repository
      * @param string $password The password
      *
      * @throws InvalidPasswordConfirmationException
-     *
-     * @return static
      */
     public function confirmPassword(string $password): static;
 
     /**
      * Determine if a re-authentication needs to occur.
-     *
-     * @return bool
      */
     public function isReAuthenticationRequired(): bool;
 
     /**
      * Get the adapter.
-     *
-     * @return Adapter
      */
     public function getAdapter(): Adapter;
 }

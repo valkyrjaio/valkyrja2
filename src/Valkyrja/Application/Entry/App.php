@@ -36,8 +36,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return Application
      */
     public static function start(string $dir, string $env, string $config): Application
     {
@@ -54,8 +52,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return void
      */
     public static function http(string $dir, string $env, string $config): void
     {
@@ -70,8 +66,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return never
      */
     public static function console(string $dir, string $env, string $config): never
     {
@@ -88,8 +82,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return void
      */
     protected static function appStart(string $dir, string $env, string $config): void
     {
@@ -104,8 +96,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return void
      */
     protected static function directory(string $dir, string $env, string $config): void
     {
@@ -123,8 +113,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return void
      */
     protected static function env(string $dir, string $env, string $config): void
     {
@@ -139,8 +127,6 @@ abstract class App
      * @param string               $dir    The directory
      * @param class-string<Env>    $env    The env class to use
      * @param class-string<Config> $config The config class to use
-     *
-     * @return Application
      */
     protected static function app(string $dir, string $env, string $config): Application
     {
@@ -149,8 +135,6 @@ abstract class App
 
     /**
      * Get the request.
-     *
-     * @return Request
      */
     protected static function getRequest(): Request
     {
@@ -161,8 +145,6 @@ abstract class App
      * Exit to let the terminal know we're done.
      *
      * @param int $exitCode The exit code
-     *
-     * @return never
      */
     protected static function exitConsole(int $exitCode): never
     {

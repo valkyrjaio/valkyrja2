@@ -51,8 +51,6 @@ class ServiceProvider extends Provider
      * Publish the kernel service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishKernel(Container $container): void
     {

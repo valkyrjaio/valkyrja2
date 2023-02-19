@@ -25,8 +25,6 @@ interface ProvidersAware
      *
      * @param string $provider The provider
      * @param bool   $force    [optional] Whether to force regardless of deferred status
-     *
-     * @return void
      */
     public function register(string $provider, bool $force = false): void;
 
@@ -34,8 +32,6 @@ interface ProvidersAware
      * Check whether a given item is provided by a deferred provider.
      *
      * @param string $itemId The provided item
-     *
-     * @return bool
      */
     public function isProvided(string $itemId): bool;
 
@@ -43,8 +39,6 @@ interface ProvidersAware
      * Check whether a given item is published.
      *
      * @param string $itemId The provided item id
-     *
-     * @return bool
      */
     public function isPublished(string $itemId): bool;
 
@@ -52,8 +46,6 @@ interface ProvidersAware
      * Determine whether a provider has been registered.
      *
      * @param string $provider The provider
-     *
-     * @return bool
      */
     public function isRegistered(string $provider): bool;
 
@@ -61,8 +53,6 @@ interface ProvidersAware
      * Initialize a provided item.
      *
      * @param string $itemId The provided item id
-     *
-     * @return void
      */
     public function publishProvided(string $itemId): void;
 }

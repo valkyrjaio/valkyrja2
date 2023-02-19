@@ -25,8 +25,6 @@ interface Notifier
      *
      * @param string $name The notification name
      * @param array  $data [optional] The data to add to the notification
-     *
-     * @return Notification
      */
     public function createNotification(string $name, array $data = []): Notification;
 
@@ -35,8 +33,6 @@ interface Notifier
      *
      * @param string $email The email
      * @param string $name  [optional] The name
-     *
-     * @return static
      */
     public function addMailRecipient(string $email, string $name = ''): static;
 
@@ -44,8 +40,6 @@ interface Notifier
      * Add an SMS recipient to send a notification to.
      *
      * @param string $phoneNumber The phone number
-     *
-     * @return static
      */
     public function addSmsRecipient(string $phoneNumber): static;
 
@@ -53,17 +47,11 @@ interface Notifier
      * Add a broadcast event to send a notification to.
      *
      * @param string $event The event
-     *
-     * @return static
      */
     public function addBroadcastEvent(string $event): static;
 
     /**
      * Add a User recipient to send a notification to.
-     *
-     * @param NotifiableUser $user
-     *
-     * @return static
      */
     public function addUserRecipient(NotifiableUser $user): static;
 
@@ -71,8 +59,6 @@ interface Notifier
      * Send a notification to recipients.
      *
      * @param Notification $notification The notification to send
-     *
-     * @return void
      */
     public function notify(Notification $notification): void;
 
@@ -81,8 +67,6 @@ interface Notifier
      *
      * @param Notification   $notification The notification to send
      * @param NotifiableUser $user         The user to notify
-     *
-     * @return void
      */
     public function notifyUser(Notification $notification, NotifiableUser $user): void;
 
@@ -91,8 +75,6 @@ interface Notifier
      *
      * @param Notification     $notification The notification to send
      * @param NotifiableUser[] $users        The users to notify
-     *
-     * @return void
      */
     public function notifyUsers(Notification $notification, NotifiableUser ...$users): void;
 }

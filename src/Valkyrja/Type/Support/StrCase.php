@@ -44,8 +44,6 @@ class StrCase
      * Convert a string to title case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toTitleCase(string $subject): string
     {
@@ -56,8 +54,6 @@ class StrCase
      * Convert all strings to title case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToTitleCase(string ...$subjects): array
     {
@@ -68,8 +64,6 @@ class StrCase
      * Convert a string to lower case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toLowerCase(string $subject): string
     {
@@ -80,8 +74,6 @@ class StrCase
      * Convert all strings to lower case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToLowerCase(string ...$subjects): array
     {
@@ -92,8 +84,6 @@ class StrCase
      * Convert a string to upper case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toUpperCase(string $subject): string
     {
@@ -104,8 +94,6 @@ class StrCase
      * Convert all strings to upper case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToUpperCase(string ...$subjects): array
     {
@@ -117,8 +105,6 @@ class StrCase
      *
      * @param string      $subject   The subject
      * @param string|null $delimiter [optional] The delimiter
-     *
-     * @return string
      */
     public static function toCapitalized(string $subject, string $delimiter = null): string
     {
@@ -133,8 +119,6 @@ class StrCase
      * Convert all strings to capitalized.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToCapitalized(string ...$subjects): array
     {
@@ -146,8 +130,6 @@ class StrCase
      *
      * @param string      $subject   The subject
      * @param string|null $delimiter [optional] The delimiter
-     *
-     * @return string
      */
     public static function toCapitalizedWords(string $subject, string $delimiter = null): string
     {
@@ -158,8 +140,6 @@ class StrCase
      * Convert all strings to capitalized.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToCapitalizedWords(string ...$subjects): array
     {
@@ -170,8 +150,6 @@ class StrCase
      * Convert a string to snake case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toSnakeCase(string $subject): string
     {
@@ -194,8 +172,6 @@ class StrCase
      * Convert all string to snake case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToSnakeCase(string ...$subjects): array
     {
@@ -206,8 +182,6 @@ class StrCase
      * Convert a string to slug.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toSlug(string $subject): string
     {
@@ -230,8 +204,6 @@ class StrCase
      * Convert all string to slug.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToSlug(string ...$subjects): array
     {
@@ -242,8 +214,6 @@ class StrCase
      * Convert a string to studly case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function toStudlyCase(string $subject): string
     {
@@ -255,8 +225,6 @@ class StrCase
      * Convert all string to studly case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allToStudlyCase(string ...$subjects): array
     {
@@ -267,8 +235,6 @@ class StrCase
      * Convert a string's first character to upper case.
      *
      * @param string $subject The subject
-     *
-     * @return string
      */
     public static function ucFirstLetter(string $subject): string
     {
@@ -279,8 +245,6 @@ class StrCase
      * Convert all strings' first characters to upper case.
      *
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     public static function allUcFirstLetter(string ...$subjects): array
     {
@@ -292,8 +256,6 @@ class StrCase
      *
      * @param string $method      The method to call for each subject
      * @param string ...$subjects The subjects
-     *
-     * @return array
      */
     protected static function allTo(string $method, string ...$subjects): array
     {

@@ -41,15 +41,11 @@ abstract class Entity extends Model implements Contract
 
     /**
      * The table name.
-     *
-     * @var string
      */
     protected static string $tableName;
 
     /**
      * The id field.
-     *
-     * @var string
      */
     protected static string $idField = 'id';
 
@@ -76,8 +72,6 @@ abstract class Entity extends Model implements Contract
 
     /**
      * The connection to use.
-     *
-     * @var string|null
      */
     protected static ?string $connection = null;
 
@@ -172,8 +166,6 @@ abstract class Entity extends Model implements Contract
 
     /**
      * Get all properties for storage.
-     *
-     * @return array
      */
     protected function __allPropertiesForStorage(): array
     {
@@ -187,8 +179,6 @@ abstract class Entity extends Model implements Contract
      * @param string $property The property name
      *
      * @throws JsonException
-     *
-     * @return mixed
      */
     protected function __getPropertyValueForDataStore(array $castings, string $property): mixed
     {
@@ -212,8 +202,6 @@ abstract class Entity extends Model implements Contract
      * @param mixed          $value    The property value
      *
      * @throws JsonException
-     *
-     * @return mixed
      */
     protected function __getPropertyValueForDataStoreMatch(CastType|array $type, string $property, mixed $value): mixed
     {
@@ -240,8 +228,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return string
      */
     protected function __getStringValueForDataStore(string $property, mixed $value): string
     {
@@ -253,8 +239,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return int
      */
     protected function __getIntValueForDataStore(string $property, mixed $value): int
     {
@@ -266,8 +250,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return float
      */
     protected function __getFloatValueForDataStore(string $property, mixed $value): float
     {
@@ -279,8 +261,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return float
      */
     protected function __getDoubleValueForDataStore(string $property, mixed $value): float
     {
@@ -292,8 +272,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return bool
      */
     protected function __getBoolValueForDataStore(string $property, mixed $value): bool
     {
@@ -346,8 +324,6 @@ abstract class Entity extends Model implements Contract
      * @param mixed  $value    The value
      *
      * @throws JsonException
-     *
-     * @return string
      */
     protected function __getJsonValueForDataStore(string $property, mixed $value): string
     {
@@ -363,8 +339,6 @@ abstract class Entity extends Model implements Contract
      * @param mixed  $value    The value
      *
      * @throws JsonException
-     *
-     * @return string
      */
     protected function __getArrayValueForDataStore(string $property, mixed $value): string
     {
@@ -378,8 +352,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return string
      */
     protected function __getObjectValueForDataStore(string $property, mixed $value): string
     {
@@ -393,8 +365,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return mixed
      */
     protected function __getTypeValueForDataStore(string $property, mixed $value): mixed
     {
@@ -410,8 +380,6 @@ abstract class Entity extends Model implements Contract
      * @param mixed  $value    The value
      *
      * @throws JsonException
-     *
-     * @return string
      */
     protected function __getModelValueForDataStore(string $property, mixed $value): string
     {
@@ -431,8 +399,6 @@ abstract class Entity extends Model implements Contract
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return string|int
      */
     protected function __getEnumValueForDataStore(string $property, mixed $value): string|int
     {
@@ -448,8 +414,6 @@ abstract class Entity extends Model implements Contract
      * Get whether the value is a valid enum value.
      *
      * @param mixed $value The value
-     *
-     * @return bool
      */
     protected function __isValidEnumValue(mixed $value): bool
     {

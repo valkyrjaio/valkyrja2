@@ -36,8 +36,6 @@ class JsonRequest extends Request implements Contract
 {
     /**
      * The parsed json.
-     *
-     * @var array
      */
     protected array $parsedJson = [];
 

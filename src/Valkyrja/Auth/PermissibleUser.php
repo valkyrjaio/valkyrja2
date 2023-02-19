@@ -24,8 +24,6 @@ interface PermissibleUser extends User
      * Get whether the user is allowed.
      *
      * @param string $permission The permission
-     *
-     * @return bool
      */
     public function isAllowed(string $permission): bool;
 
@@ -33,8 +31,6 @@ interface PermissibleUser extends User
      * Get whether the user is denied.
      *
      * @param string $permission The permission
-     *
-     * @return bool
      */
     public function isDenied(string $permission): bool;
 }

@@ -29,15 +29,11 @@ abstract class Adapter implements Contract
 {
     /**
      * The ORM service.
-     *
-     * @var Orm
      */
     protected Orm $orm;
 
     /**
      * The entity persister.
-     *
-     * @var Persister
      */
     protected Persister $persister;
 
@@ -71,8 +67,6 @@ abstract class Adapter implements Contract
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

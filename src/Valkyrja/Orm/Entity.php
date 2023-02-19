@@ -25,15 +25,11 @@ interface Entity extends CastableModel, ExposableModel
 {
     /**
      * Get the table.
-     *
-     * @return string
      */
     public static function getTableName(): string;
 
     /**
      * Get the id field.
-     *
-     * @return string
      */
     public static function getIdField(): string;
 
@@ -46,8 +42,6 @@ interface Entity extends CastableModel, ExposableModel
 
     /**
      * Get the connection to use for this entity.
-     *
-     * @return string|null
      */
     public static function getConnection(): ?string;
 
@@ -77,15 +71,11 @@ interface Entity extends CastableModel, ExposableModel
      * Get the entity as an array for saving to the data store.
      *
      * @param string ...$properties [optional] An array of properties to return
-     *
-     * @return array
      */
     public function asStorableArray(string ...$properties): array;
 
     /**
      * Get the entity as an array for saving to the data store including only changed properties.
-     *
-     * @return array
      */
     public function asStorableChangedArray(): array;
 }

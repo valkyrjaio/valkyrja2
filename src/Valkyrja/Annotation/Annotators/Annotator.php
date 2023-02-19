@@ -43,37 +43,26 @@ class Annotator implements Contract
 
     /**
      * Cached reflection classes.
-     *
-     * @var array
      */
     protected static array $reflections = [];
 
     /**
      * Cached annotations.
-     *
-     * @var array
      */
     protected static array $annotations = [];
 
     /**
      * The parser.
-     *
-     * @var Parser
      */
     protected Parser $parser;
 
     /**
      * The reflector.
-     *
-     * @var Reflector
      */
     protected Reflector $reflector;
 
     /**
      * Annotations constructor.
-     *
-     * @param Parser    $parser
-     * @param Reflector $reflector
      */
     public function __construct(Parser $parser, Reflector $reflector)
     {

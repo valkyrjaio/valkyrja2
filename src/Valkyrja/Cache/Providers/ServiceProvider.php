@@ -67,8 +67,6 @@ class ServiceProvider extends Provider
      * Publish the cache service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCache(Container $container): void
     {
@@ -87,8 +85,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -102,8 +98,6 @@ class ServiceProvider extends Provider
      * Publish the default driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -124,8 +118,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -146,8 +138,6 @@ class ServiceProvider extends Provider
      * Publish a log adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -171,8 +161,6 @@ class ServiceProvider extends Provider
      * Publish a redis adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRedisAdapter(Container $container): void
     {

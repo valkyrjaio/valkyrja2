@@ -24,15 +24,11 @@ trait SoftDeleteFields
 
     /**
      * The deleted flag.
-     *
-     * @var bool
      */
     public bool $is_deleted = false;
 
     /**
      * The date deleted date.
-     *
-     * @var string|null
      */
     public ?string $date_deleted = null;
 }

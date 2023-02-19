@@ -22,29 +22,21 @@ interface SoftDeleteEntity extends Entity
 {
     /**
      * Get the format for the deleted date.
-     *
-     * @return string
      */
     public static function getDeletedDateFormat(): string;
 
     /**
      * Get the formatted current date/time as a save-able string.
-     *
-     * @return string
      */
     public static function getFormattedDeletedDate(): string;
 
     /**
      * Get the deleted flag field.
-     *
-     * @return string
      */
     public static function getIsDeletedField(): string;
 
     /**
      * Get the date deleted field.
-     *
-     * @return string
      */
     public static function getDateDeletedField(): string;
 }

@@ -130,8 +130,6 @@ class OrkaEngine extends PhpEngine
      * Parse okra written content to PHP parseable.
      *
      * @param string $contents The contents to parse
-     *
-     * @return string
      */
     protected function parseContent(string $contents): string
     {
@@ -142,8 +140,6 @@ class OrkaEngine extends PhpEngine
      * Get the cached file path.
      *
      * @param string $name The name
-     *
-     * @return string
      */
     protected function getCachedFilePath(string $name): string
     {

@@ -37,8 +37,6 @@ abstract class UuidV7 extends Uuid
      * Generate a v7 UUID.
      *
      * @throws Exception
-     *
-     * @return string
      */
     abstract public static function generate(): string;
 

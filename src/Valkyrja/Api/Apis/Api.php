@@ -40,9 +40,7 @@ class Api implements Contract
     /**
      * Api constructor.
      *
-     * @param ResponseFactory $responseFactory
-     * @param Config|array    $config
-     * @param bool            $debug           [optional]
+     * @param bool $debug [optional]
      */
     public function __construct(
         protected ResponseFactory $responseFactory,
@@ -198,8 +196,6 @@ class Api implements Contract
      * Get a JSON response from a JSON model.
      *
      * @param Json $json The json model
-     *
-     * @return JsonResponse
      */
     protected function getResponseFromModel(Json $json): JsonResponse
     {
@@ -208,8 +204,6 @@ class Api implements Contract
 
     /**
      * Get JSON model.
-     *
-     * @return Json
      */
     protected function getJsonModel(): Json
     {
@@ -221,8 +215,6 @@ class Api implements Contract
 
     /**
      * Get JSON data model.
-     *
-     * @return JsonData
      */
     protected function getJsonDataModel(): JsonData
     {
@@ -234,11 +226,6 @@ class Api implements Contract
 
     /**
      * Set item keys from object.
-     *
-     * @param object   $object
-     * @param JsonData $jsonData
-     *
-     * @return void
      */
     protected function setItemKeysFromObject(object $object, JsonData $jsonData): void
     {
@@ -250,10 +237,6 @@ class Api implements Contract
 
     /**
      * Get the class name from an object.
-     *
-     * @param object $object
-     *
-     * @return string
      */
     protected function getClassNameFromObject(object $object): string
     {

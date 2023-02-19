@@ -22,8 +22,6 @@ trait Provides
 {
     /**
      * Whether this provider is deferred.
-     *
-     * @return bool
      */
     public static function deferred(): bool
     {
@@ -52,8 +50,6 @@ trait Provides
 
     /**
      * The items provided by this provider.
-     *
-     * @return array
      */
     abstract public static function provides(): array;
 
@@ -61,8 +57,6 @@ trait Provides
      * Publish the provider.
      *
      * @param object $providerAware The providers aware class
-     *
-     * @return void
      */
     abstract public static function publish(object $providerAware): void;
 }

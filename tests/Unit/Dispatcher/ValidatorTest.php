@@ -31,43 +31,31 @@ class ValidatorTest extends TestCase
 {
     /**
      * The class to test with.
-     *
-     * @var Validator
      */
     protected Validator $validator;
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * A valid property.
-     *
-     * @var string
      */
     public string $validProperty = 'test';
 
     /**
      * A valid property with null value.
-     *
-     * @var string|null
      */
     public ?string $validPropertyNull = null;
 
     /**
      * A valid static property.
-     *
-     * @var string
      */
     public static string $validStaticProperty = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -80,8 +68,6 @@ class ValidatorTest extends TestCase
      * A valid method.
      *
      * @param string|null $arg [optional] An argument
-     *
-     * @return string
      */
     public function validMethod(string $arg = null): string
     {
@@ -92,8 +78,6 @@ class ValidatorTest extends TestCase
      * A valid static method.
      *
      * @param string|null $arg [optional] An argument
-     *
-     * @return string
      */
     public static function validStaticMethod(string $arg = null): string
     {
@@ -102,8 +86,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify a valid class/method dispatch.
-     *
-     * @return void
      */
     public function testVerifyClassMethod(): void
     {
@@ -118,8 +100,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify an invalid class/method dispatch.
-     *
-     * @return void
      */
     public function testVerifyClassMethodInvalid(): void
     {
@@ -136,8 +116,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify a valid class/property dispatch.
-     *
-     * @return void
      */
     public function testVerifyClassProperty(): void
     {
@@ -152,8 +130,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify an invalid class/property dispatch.
-     *
-     * @return void
      */
     public function testVerifyClassPropertyInvalid(): void
     {
@@ -170,8 +146,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify a valid function dispatch.
-     *
-     * @return void
      */
     public function testVerifyFunction(): void
     {
@@ -185,8 +159,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify an invalid function dispatch.
-     *
-     * @return void
      */
     public function testVerifyFunctionInvalid(): void
     {
@@ -202,8 +174,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify a valid dispatch.
-     *
-     * @return void
      */
     public function testVerifyDispatch(): void
     {
@@ -220,8 +190,6 @@ class ValidatorTest extends TestCase
 
     /**
      * Verify an invalid dispatch.
-     *
-     * @return void
      */
     public function testVerifyDispatchInvalid(): void
     {

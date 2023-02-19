@@ -53,8 +53,6 @@ class Config extends Model
 
     /**
      * The disks.
-     *
-     * @var array
      */
     public array $disks;
 }

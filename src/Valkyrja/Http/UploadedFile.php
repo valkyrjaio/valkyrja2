@@ -79,8 +79,6 @@ interface UploadedFile
      * @throws RuntimeException         on any error during the move
      *                                  operation, or on the second or
      *                                  subsequent call to the method.
-     *
-     * @return void
      */
     public function moveTo(string $targetPath): void;
 

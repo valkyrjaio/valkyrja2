@@ -26,15 +26,11 @@ interface AuthenticatedUsers extends CastableModel
 {
     /**
      * Determine whether there is a current user in the collection.
-     *
-     * @return bool
      */
     public function hasCurrent(): bool;
 
     /**
      * Get the current user.
-     *
-     * @return User|null
      */
     public function getCurrent(): ?User;
 
@@ -42,8 +38,6 @@ interface AuthenticatedUsers extends CastableModel
      * Set the current user.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function setCurrent(User $user): static;
 
@@ -51,8 +45,6 @@ interface AuthenticatedUsers extends CastableModel
      * Check if a user is authenticated.
      *
      * @param User $user The user to check
-     *
-     * @return bool
      */
     public function isAuthenticated(User $user): bool;
 
@@ -60,8 +52,6 @@ interface AuthenticatedUsers extends CastableModel
      * Add a user to the collection.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function add(User $user): static;
 
@@ -69,8 +59,6 @@ interface AuthenticatedUsers extends CastableModel
      * Remove a user from the collection.
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function remove(User $user): static;
 

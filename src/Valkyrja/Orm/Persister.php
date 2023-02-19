@@ -29,8 +29,6 @@ interface Persister
      *
      * @param Entity $entity The entity to create
      * @param bool   $defer  [optional] Whether to defer the creation
-     *
-     * @return void
      */
     public function create(Entity $entity, bool $defer = true): void;
 
@@ -43,8 +41,6 @@ interface Persister
      *
      * @param Entity $entity The entity to save
      * @param bool   $defer  [optional] Whether to defer the save
-     *
-     * @return void
      */
     public function save(Entity $entity, bool $defer = true): void;
 
@@ -57,8 +53,6 @@ interface Persister
      *
      * @param Entity $entity The entity to delete
      * @param bool   $defer  [optional] Whether to defer the deletion
-     *
-     * @return void
      */
     public function delete(Entity $entity, bool $defer = true): void;
 
@@ -71,8 +65,6 @@ interface Persister
      *
      * @param SoftDeleteEntity $entity The entity to soft delete
      * @param bool             $defer  [optional] Whether to defer the soft deletion
-     *
-     * @return void
      */
     public function softDelete(SoftDeleteEntity $entity, bool $defer = true): void;
 
@@ -84,15 +76,11 @@ interface Persister
      * </code>
      *
      * @param Entity|null $entity [optional] The entity instance to remove.
-     *
-     * @return void
      */
     public function clear(Entity $entity = null): void;
 
     /**
      * Persist all entities.
-     *
-     * @return bool
      */
     public function persist(): bool;
 }

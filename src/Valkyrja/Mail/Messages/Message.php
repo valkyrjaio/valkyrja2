@@ -24,15 +24,11 @@ class Message implements Contract
 {
     /**
      * The from email.
-     *
-     * @var string
      */
     protected string $fromEmail = '';
 
     /**
      * The from name.
-     *
-     * @var string
      */
     protected string $fromName = '';
 
@@ -73,29 +69,21 @@ class Message implements Contract
 
     /**
      * The subject.
-     *
-     * @var string
      */
     protected string $subject = '';
 
     /**
      * The body.
-     *
-     * @var string
      */
     protected string $body = '';
 
     /**
      * Whether the message body is html.
-     *
-     * @var bool
      */
     protected bool $isHtml = false;
 
     /**
      * The plain body.
-     *
-     * @var string|null
      */
     protected ?string $plainBody = null;
 

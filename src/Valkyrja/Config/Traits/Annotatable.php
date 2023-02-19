@@ -22,8 +22,6 @@ trait Annotatable
 {
     /**
      * The flag to enable annotations.
-     *
-     * @var bool
      */
     public bool $useAnnotations;
 }

@@ -51,8 +51,6 @@ abstract class Manager implements Contract
 
     /**
      * The default configuration.
-     *
-     * @var string
      */
     protected string $defaultConfiguration;
 
@@ -101,8 +99,6 @@ abstract class Manager implements Contract
 
     /**
      * Get the loader.
-     *
-     * @return Factory
      */
     public function getFactory(): Factory
     {

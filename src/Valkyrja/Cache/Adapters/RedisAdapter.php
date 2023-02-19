@@ -27,15 +27,11 @@ class RedisAdapter implements Contract
 {
     /**
      * The prefix to use for all keys.
-     *
-     * @var string
      */
     protected string $prefix;
 
     /**
      * The predis client.
-     *
-     * @var Client
      */
     protected Client $predis;
 
@@ -164,10 +160,6 @@ class RedisAdapter implements Contract
 
     /**
      * Get key.
-     *
-     * @param string $key
-     *
-     * @return string
      */
     protected function getKey(string $key): string
     {

@@ -30,22 +30,16 @@ class ContainerFactory implements Factory
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     protected Container $container;
 
     /**
      * The default driver class.
-     *
-     * @var string
      */
     protected static string $defaultDriverClass;
 
     /**
      * The default adapter class.
-     *
-     * @var string
      */
     protected static string $defaultAdapterClass;
 
@@ -93,8 +87,6 @@ class ContainerFactory implements Factory
      * Get the default driver class.
      *
      * @param class-string $name The driver
-     *
-     * @return string
      */
     protected function getDriverDefaultClass(string $name): string
     {
@@ -105,8 +97,6 @@ class ContainerFactory implements Factory
      * Get the default adapter class.
      *
      * @param class-string $name The adapter
-     *
-     * @return string
      */
     protected function getAdapterDefaultClass(string $name): string
     {

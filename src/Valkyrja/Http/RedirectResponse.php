@@ -22,8 +22,6 @@ interface RedirectResponse extends Response
 {
     /**
      * Get the uri.
-     *
-     * @return string
      */
     public function getUri(): string;
 
@@ -31,8 +29,6 @@ interface RedirectResponse extends Response
      * Set the uri.
      *
      * @param string $uri The uri
-     *
-     * @return static
      */
     public function setUri(string $uri): static;
 
@@ -41,8 +37,6 @@ interface RedirectResponse extends Response
      *
      * @param string  $path    The path
      * @param Request $request The request
-     *
-     * @return static
      */
     public function secure(string $path, Request $request): static;
 
@@ -50,8 +44,6 @@ interface RedirectResponse extends Response
      * Redirect back to the referer.
      *
      * @param Request $request The request
-     *
-     * @return static
      */
     public function back(Request $request): static;
 

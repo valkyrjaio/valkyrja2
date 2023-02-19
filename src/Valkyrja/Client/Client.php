@@ -28,8 +28,6 @@ interface Client extends Manager
 {
     /**
      * @inheritDoc
-     *
-     * @return Driver
      */
     public function use(string $name = null): Driver;
 
@@ -37,8 +35,6 @@ interface Client extends Manager
      * Make a request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function request(Request $request): Response;
 
@@ -46,8 +42,6 @@ interface Client extends Manager
      * Make a get request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function get(Request $request): Response;
 
@@ -55,8 +49,6 @@ interface Client extends Manager
      * Make a post request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function post(Request $request): Response;
 
@@ -64,8 +56,6 @@ interface Client extends Manager
      * Make a head request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function head(Request $request): Response;
 
@@ -73,8 +63,6 @@ interface Client extends Manager
      * Make a put request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function put(Request $request): Response;
 
@@ -82,8 +70,6 @@ interface Client extends Manager
      * Make a patch request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function patch(Request $request): Response;
 
@@ -91,8 +77,6 @@ interface Client extends Manager
      * Make a delete request.
      *
      * @param Request $request The request
-     *
-     * @return Response
      */
     public function delete(Request $request): Response;
 }

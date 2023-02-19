@@ -29,15 +29,11 @@ class LogAdapter implements Contract
 {
     /**
      * The prefix to use for all keys.
-     *
-     * @var string
      */
     protected string $prefix;
 
     /**
      * The logger.
-     *
-     * @var Logger
      */
     protected Logger $logger;
 
@@ -173,10 +169,6 @@ class LogAdapter implements Contract
 
     /**
      * Get key.
-     *
-     * @param string $key
-     *
-     * @return string
      */
     protected function getKey(string $key): string
     {

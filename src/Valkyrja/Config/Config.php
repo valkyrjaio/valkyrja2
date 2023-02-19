@@ -110,8 +110,6 @@ abstract class Config extends Model implements ArrayAccess
      * Setup the config.
      *
      * @param array|null $properties [optional] The properties to set
-     *
-     * @return void
      */
     protected function setup(array $properties = null): void
     {
@@ -119,8 +117,6 @@ abstract class Config extends Model implements ArrayAccess
 
     /**
      * Set properties from env.
-     *
-     * @return void
      */
     protected function setPropertiesFromEnv(): void
     {

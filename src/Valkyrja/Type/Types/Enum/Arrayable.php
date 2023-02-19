@@ -24,8 +24,6 @@ trait Arrayable
 {
     /**
      * Get enum case names.
-     *
-     * @return array
      */
     public static function names(): array
     {
@@ -34,8 +32,6 @@ trait Arrayable
 
     /**
      * Get enum case values.
-     *
-     * @return array
      */
     public static function values(): array
     {
@@ -44,8 +40,6 @@ trait Arrayable
 
     /**
      * Get enum as an array with name as index and value as value.
-     *
-     * @return array
      */
     public static function asArray(): array
     {
@@ -54,8 +48,6 @@ trait Arrayable
 
     /**
      * Get enum as an array with value as index and name as value.
-     *
-     * @return array
      */
     public static function asReverseArray(): array
     {

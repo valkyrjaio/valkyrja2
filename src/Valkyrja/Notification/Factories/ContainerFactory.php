@@ -26,8 +26,6 @@ class ContainerFactory implements Factory
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     protected Container $container;
 

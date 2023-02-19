@@ -28,15 +28,11 @@ class Filter implements Contract
 {
     /**
      * The annotations.
-     *
-     * @var Annotator
      */
     protected Annotator $annotator;
 
     /**
      * Filter constructor.
-     *
-     * @param Annotator $annotator
      */
     public function __construct(Annotator $annotator)
     {

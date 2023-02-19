@@ -22,8 +22,6 @@ interface TokenizableUser extends User
 {
     /**
      * Get the session id.
-     *
-     * @return string
      */
     public static function getTokenSessionId(): string;
 
@@ -31,22 +29,16 @@ interface TokenizableUser extends User
      * Set the tokenized user.
      *
      * @param string $token The tokenized user
-     *
-     * @return void
      */
     public static function setTokenized(string $token): void;
 
     /**
      * Get the user as a token.
-     *
-     * @return string|null
      */
     public static function asTokenized(): ?string;
 
     /**
      * Get user as an array for storing as a token.
-     *
-     * @return array
      */
     public function asTokenizableArray(): array;
 }

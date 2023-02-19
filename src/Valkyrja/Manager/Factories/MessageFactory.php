@@ -35,8 +35,6 @@ class MessageFactory extends Factory implements Contract
      * @inheritDoc
      *
      * @param class-string<Message> $name The message
-     *
-     * @return Message
      */
     public function createMessage(string $name, array $config, array $data = []): Message
     {

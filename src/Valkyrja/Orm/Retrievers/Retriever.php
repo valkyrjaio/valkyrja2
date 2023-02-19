@@ -35,29 +35,21 @@ class Retriever implements Contract
 {
     /**
      * The adapter.
-     *
-     * @var Adapter
      */
     protected Adapter $adapter;
 
     /**
      * The query builder.
-     *
-     * @var QueryBuilder
      */
     protected QueryBuilder $queryBuilder;
 
     /**
      * The query.
-     *
-     * @var Query
      */
     protected Query $query;
 
     /**
      * The values to bind.
-     *
-     * @var array
      */
     protected array $values = [];
 
@@ -131,8 +123,6 @@ class Retriever implements Contract
 
     /**
      * Start a where clause in parentheses.
-     *
-     * @return static
      */
     public function startWhereGroup(): static
     {
@@ -143,8 +133,6 @@ class Retriever implements Contract
 
     /**
      * End a where clause in parentheses.
-     *
-     * @return static
      */
     public function endWhereGroup(): static
     {
@@ -157,8 +145,6 @@ class Retriever implements Contract
      * Add a where type.
      *
      * @param WhereType $type The type
-     *
-     * @return static
      */
     public function whereType(WhereType $type = WhereType::AND): static
     {
@@ -291,8 +277,6 @@ class Retriever implements Contract
      *
      * @param class-string<Entity> $entity  The entity
      * @param string[]|null        $columns [optional] The columns
-     *
-     * @return void
      */
     protected function setQueryProperties(string $entity, array $columns = null): void
     {
@@ -307,8 +291,6 @@ class Retriever implements Contract
      *
      * @param string $column The column to bind
      * @param mixed  $value  [optional] The value to bind
-     *
-     * @return void
      */
     protected function setValue(string $column, mixed $value): void
     {
@@ -317,8 +299,6 @@ class Retriever implements Contract
 
     /**
      * Prepare results.
-     *
-     * @return void
      */
     protected function prepareResults(): void
     {
@@ -330,8 +310,6 @@ class Retriever implements Contract
 
     /**
      * Bind values to the query.
-     *
-     * @return void
      */
     protected function bindValues(): void
     {

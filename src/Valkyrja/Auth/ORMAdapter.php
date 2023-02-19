@@ -24,8 +24,6 @@ interface ORMAdapter extends Adapter
 {
     /**
      * Get the ORM service.
-     *
-     * @return Orm
      */
     public function getOrm(): Orm;
 }

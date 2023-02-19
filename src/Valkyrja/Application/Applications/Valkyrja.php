@@ -43,8 +43,6 @@ class Valkyrja implements Application
 {
     /**
      * Get the instance of the application.
-     *
-     * @var Application
      */
     protected static Application $app;
 
@@ -57,22 +55,16 @@ class Valkyrja implements Application
 
     /**
      * Application config.
-     *
-     * @var Config|array
      */
     protected static Config|array $config;
 
     /**
      * Get the instance of the container.
-     *
-     * @var Container
      */
     protected static Container $container;
 
     /**
      * Whether the application was setup.
-     *
-     * @var bool
      */
     protected static bool $setup = false;
 
@@ -320,8 +312,6 @@ class Valkyrja implements Application
      * Bootstrap the config.
      *
      * @param class-string<Config>|null $config [optional] The config class to use
-     *
-     * @return void
      */
     protected function bootstrapConfig(string $config = null): void
     {
@@ -345,8 +335,6 @@ class Valkyrja implements Application
 
     /**
      * Get cache file path.
-     *
-     * @return string
      */
     protected function getCacheFilePath(): string
     {
@@ -357,8 +345,6 @@ class Valkyrja implements Application
      * Setup the application from a cache file.
      *
      * @param string $cacheFilePath The cache file path
-     *
-     * @return void
      */
     protected function setupFromCacheFile(string $cacheFilePath): void
     {
@@ -369,8 +355,6 @@ class Valkyrja implements Application
 
     /**
      * Publish app providers.
-     *
-     * @return void
      */
     protected function publishProviders(): void
     {
@@ -383,8 +367,6 @@ class Valkyrja implements Application
 
     /**
      * Publish config providers.
-     *
-     * @return void
      */
     protected function publishConfigProviders(): void
     {

@@ -28,15 +28,11 @@ class LogAdapter implements Contract
 {
     /**
      * The log driver.
-     *
-     * @var Logger
      */
     protected Logger $log;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

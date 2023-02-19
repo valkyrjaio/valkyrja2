@@ -55,8 +55,6 @@ trait EnhancedEnumSupport
      * Get a property's value for jsonSerialize.
      *
      * @param string $property The property
-     *
-     * @return mixed
      */
     protected function __getJsonPropertyValue(string $property): mixed
     {

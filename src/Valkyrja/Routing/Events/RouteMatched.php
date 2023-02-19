@@ -26,15 +26,11 @@ class RouteMatched implements Event
 {
     /**
      * The route.
-     *
-     * @var Route
      */
     public Route $route;
 
     /**
      * The request.
-     *
-     * @var Request
      */
     public Request $request;
 

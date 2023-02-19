@@ -33,8 +33,6 @@ class Collector implements Contract
 {
     /**
      * The route context.
-     *
-     * @var Route
      */
     protected Route $route;
 
@@ -195,11 +193,6 @@ class Collector implements Contract
 
     /**
      * With a new group instance to set the route method value.
-     *
-     * @param string $method
-     * @param mixed  $value
-     *
-     * @return static
      */
     protected function with(string $method, mixed $value): static
     {
@@ -228,8 +221,6 @@ class Collector implements Contract
      * @param Closure|string $handler         The handler
      * @param string|null    $name            [optional] The name of the route
      * @param bool           $setDependencies [optional] Whether to dynamically set dependencies
-     *
-     * @return Route
      */
     protected function makeRoute(
         array $methods,
@@ -263,8 +254,6 @@ class Collector implements Contract
      * @param Closure|string $handler The handler
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function setRouteHandler(Route $route, Closure|string $handler): void
     {
@@ -282,8 +271,6 @@ class Collector implements Contract
      *
      * @param Route  $route   The route
      * @param string $handler The handler
-     *
-     * @return void
      */
     protected function setRouteHandlerFromString(Route $route, string $handler): void
     {
@@ -309,8 +296,6 @@ class Collector implements Contract
      *
      * @param Route  $route   The route
      * @param string $handler The handler
-     *
-     * @return void
      */
     protected function setRouteInstanceHandler(Route $route, string $handler): void
     {
@@ -322,8 +307,6 @@ class Collector implements Contract
      *
      * @param Route  $route   The route
      * @param string $handler The handler
-     *
-     * @return void
      */
     protected function setRouteStaticHandler(Route $route, string $handler): void
     {
@@ -336,8 +319,6 @@ class Collector implements Contract
      * @param Route            $route     The route
      * @param string           $handler   The handler
      * @param non-empty-string $delimiter The delimiter
-     *
-     * @return void
      */
     protected function setRouteHandlerSplit(Route $route, string $handler, string $delimiter): void
     {
@@ -360,8 +341,6 @@ class Collector implements Contract
      *
      * @param Route            $route  The route
      * @param non-empty-string $member The member
-     *
-     * @return void
      */
     protected function setRouteMember(Route $route, string $member): void
     {
@@ -384,8 +363,6 @@ class Collector implements Contract
      * Set a route's dependencies.
      *
      * @param Route $route The route
-     *
-     * @return void
      */
     protected function setDependencies(Route $route): void
     {
@@ -400,8 +377,6 @@ class Collector implements Contract
      * Get a route's dependencies.
      *
      * @param Route $route The route
-     *
-     * @return array
      */
     protected function getDependencies(Route $route): array
     {

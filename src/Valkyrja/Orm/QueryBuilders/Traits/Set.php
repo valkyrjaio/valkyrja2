@@ -26,15 +26,11 @@ trait Set
 {
     /**
      * Values to use for update/insert statements.
-     *
-     * @var array
      */
     protected array $values = [];
 
     /**
      * @inheritDoc
-     *
-     * @return static
      */
     public function set(string $column, mixed $value = null): static
     {
@@ -45,8 +41,6 @@ trait Set
 
     /**
      * Get the SET part of an INSERT query.
-     *
-     * @return string
      */
     protected function getSetQuery(): string
     {

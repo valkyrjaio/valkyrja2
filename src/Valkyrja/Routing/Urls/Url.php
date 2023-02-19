@@ -114,8 +114,6 @@ class Url implements Contract
      * Get a route's host.
      *
      * @param Route $route The route
-     *
-     * @return string
      */
     protected function routeHost(Route $route): string
     {
@@ -129,8 +127,6 @@ class Url implements Contract
      * Validate the route url.
      *
      * @param string $path The path
-     *
-     * @return string
      */
     protected function validateRouteUrl(string $path): string
     {

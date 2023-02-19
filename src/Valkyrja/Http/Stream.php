@@ -34,15 +34,11 @@ interface Stream
      * string casting operations.
      *
      * @see http://php.net/manual/en/language.oop5.magic.php#object.tostring
-     *
-     * @return string
      */
     public function __toString(): string;
 
     /**
      * Closes the stream and any underlying resources.
-     *
-     * @return void
      */
     public function close(): void;
 
@@ -59,8 +55,6 @@ interface Stream
      *
      * @param string      $stream The stream
      * @param string|null $mode   [optional] The mode
-     *
-     * @return void
      */
     public function attach(string $stream, string $mode = null): void;
 
@@ -82,15 +76,11 @@ interface Stream
 
     /**
      * Returns true if the stream is at the end of the stream.
-     *
-     * @return bool
      */
     public function eof(): bool;
 
     /**
      * Returns whether or not the stream is seekable.
-     *
-     * @return bool
      */
     public function isSeekable(): bool;
 
@@ -109,8 +99,6 @@ interface Stream
      *                    offset.
      *
      * @throws RuntimeException on failure.
-     *
-     * @return void
      */
     public function seek(int $offset, int $whence = SEEK_SET): void;
 
@@ -123,16 +111,12 @@ interface Stream
      *
      * @throws RuntimeException on failure.
      *
-     * @return void
-     *
      * @see  seek()
      */
     public function rewind(): void;
 
     /**
      * Returns whether or not the stream is writable.
-     *
-     * @return bool
      */
     public function isWritable(): bool;
 
@@ -149,8 +133,6 @@ interface Stream
 
     /**
      * Returns whether or not the stream is readable.
-     *
-     * @return bool
      */
     public function isReadable(): bool;
 
@@ -173,8 +155,6 @@ interface Stream
      *
      * @throws RuntimeException if unable to read or an error occurs while
      *                          reading.
-     *
-     * @return string
      */
     public function getContents(): string;
 

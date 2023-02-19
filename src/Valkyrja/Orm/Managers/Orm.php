@@ -54,15 +54,11 @@ class Orm implements Contract
 
     /**
      * The connections.
-     *
-     * @var array
      */
     protected array $connections;
 
     /**
      * The default connection.
-     *
-     * @var string
      */
     protected string $defaultConnection;
 

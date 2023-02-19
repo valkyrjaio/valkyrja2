@@ -25,15 +25,11 @@ class NotFoundHttpExceptionTest extends TestCase
 {
     /**
      * The exception.
-     *
-     * @var NotFoundHttpException
      */
     protected NotFoundHttpException $exception;
 
     /**
      * Get the exception.
-     *
-     * @return NotFoundHttpException
      */
     protected function getException(): NotFoundHttpException
     {
@@ -42,8 +38,6 @@ class NotFoundHttpExceptionTest extends TestCase
 
     /**
      * Test the construction of a new NotFoundHttpException instance.
-     *
-     * @return void
      */
     public function testConstruct(): void
     {

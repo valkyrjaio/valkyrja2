@@ -125,12 +125,8 @@ class Attributes implements Contract
     /**
      * Set the route properties from arguments.
      *
-     * @param Route $route
-     *
      * @throws InvalidRoutePath
      * @throws ReflectionException
-     *
-     * @return void
      */
     protected function setRouteProperties(Route $route): void
     {
@@ -155,8 +151,6 @@ class Attributes implements Contract
      *
      * @param Route $controllerAttribute The controller route attribute
      * @param Route $memberAttribute     The member route attribute
-     *
-     * @return Route
      */
     protected function getControllerBuiltRoute(Route $controllerAttribute, Route $memberAttribute): Route
     {
@@ -222,8 +216,6 @@ class Attributes implements Contract
      * Validate a path.
      *
      * @param string $path The path
-     *
-     * @return string
      */
     protected function getFilteredPath(string $path): string
     {

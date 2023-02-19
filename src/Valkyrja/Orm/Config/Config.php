@@ -44,64 +44,46 @@ class Config extends Model
 
     /**
      * The default connection.
-     *
-     * @var string
      */
     public string $default;
 
     /**
      * The default adapter.
-     *
-     * @var string
      */
     public string $adapter;
 
     /**
      * The default driver.
-     *
-     * @var string
      */
     public string $driver;
 
     /**
      * The default query.
-     *
-     * @var string
      */
     public string $query;
 
     /**
      * The default query builder.
-     *
-     * @var string
      */
     public string $queryBuilder;
 
     /**
      * The default persister.
-     *
-     * @var string
      */
     public string $persister;
 
     /**
      * The default retriever.
-     *
-     * @var string
      */
     public string $retriever;
 
     /**
      * The default repository to use for all entities.
-     *
-     * @var string
      */
     public string $repository;
 
     /**
      * The connections.
-     *
-     * @var array
      */
     public array $connections;
 

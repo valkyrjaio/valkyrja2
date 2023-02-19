@@ -26,8 +26,6 @@ trait ProtectedExposable
 
     /**
      * Get all properties.
-     *
-     * @return array
      */
     protected function __allProperties(): array
     {

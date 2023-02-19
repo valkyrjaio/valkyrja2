@@ -25,8 +25,6 @@ interface Dispatch extends Model
 {
     /**
      * Get the id.
-     *
-     * @return string|null
      */
     public function getId(): ?string;
 
@@ -34,15 +32,11 @@ interface Dispatch extends Model
      * Set the id.
      *
      * @param string|null $id The id
-     *
-     * @return static
      */
     public function setId(string $id = null): static;
 
     /**
      * Get the name.
-     *
-     * @return string|null
      */
     public function getName(): ?string;
 
@@ -50,8 +44,6 @@ interface Dispatch extends Model
      * Set the name.
      *
      * @param string|null $name The name
-     *
-     * @return static
      */
     public function setName(string $name = null): static;
 
@@ -66,15 +58,11 @@ interface Dispatch extends Model
      * Set the class.
      *
      * @param class-string|null $class The class
-     *
-     * @return static
      */
     public function setClass(string $class = null): static;
 
     /**
      * Check whether this is a class dispatch.
-     *
-     * @return bool
      */
     public function isClass(): bool;
 
@@ -89,15 +77,11 @@ interface Dispatch extends Model
      * Set the property.
      *
      * @param non-empty-string|null $property The property
-     *
-     * @return static
      */
     public function setProperty(string $property = null): static;
 
     /**
      * Check whether this is a class/property dispatch.
-     *
-     * @return bool
      */
     public function isProperty(): bool;
 
@@ -112,22 +96,16 @@ interface Dispatch extends Model
      * Set the method.
      *
      * @param non-empty-string|null $method The method
-     *
-     * @return static
      */
     public function setMethod(string $method = null): static;
 
     /**
      * Check whether this is a class/method dispatch.
-     *
-     * @return bool
      */
     public function isMethod(): bool;
 
     /**
      * Get whether the member is static.
-     *
-     * @return bool
      */
     public function isStatic(): bool;
 
@@ -135,8 +113,6 @@ interface Dispatch extends Model
      * Set whether the member is static.
      *
      * @param bool $static Whether the member is static
-     *
-     * @return static
      */
     public function setStatic(bool $static = true): static;
 
@@ -149,22 +125,16 @@ interface Dispatch extends Model
      * Set the function.
      *
      * @param callable-string|null $function The function
-     *
-     * @return static
      */
     public function setFunction(string $function = null): static;
 
     /**
      * Check whether this is a function dispatch.
-     *
-     * @return bool
      */
     public function isFunction(): bool;
 
     /**
      * Get the closure.
-     *
-     * @return Closure|null
      */
     public function getClosure(): ?Closure;
 
@@ -172,22 +142,16 @@ interface Dispatch extends Model
      * Set the closure.
      *
      * @param Closure|null $closure The closure
-     *
-     * @return static
      */
     public function setClosure(Closure $closure = null): static;
 
     /**
      * Check whether this is a closure dispatch.
-     *
-     * @return bool
      */
     public function isClosure(): bool;
 
     /**
      * Get the matches.
-     *
-     * @return array|null
      */
     public function getMatches(): ?array;
 
@@ -195,15 +159,11 @@ interface Dispatch extends Model
      * Set the matches.
      *
      * @param array|null $matches The matches
-     *
-     * @return static
      */
     public function setMatches(array $matches = null): static;
 
     /**
      * Get the arguments.
-     *
-     * @return array|null
      */
     public function getArguments(): ?array;
 
@@ -211,15 +171,11 @@ interface Dispatch extends Model
      * Set the arguments.
      *
      * @param array|null $arguments The arguments
-     *
-     * @return static
      */
     public function setArguments(array $arguments = null): static;
 
     /**
      * Get the dependencies.
-     *
-     * @return array|null
      */
     public function getDependencies(): ?array;
 
@@ -227,8 +183,6 @@ interface Dispatch extends Model
      * Set the dependencies.
      *
      * @param array|null $dependencies The dependencies
-     *
-     * @return static
      */
     public function setDependencies(array $dependencies = null): static;
 }

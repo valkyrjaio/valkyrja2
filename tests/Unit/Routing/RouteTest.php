@@ -30,22 +30,16 @@ class RouteTest extends TestCase
 {
     /**
      * The route model.
-     *
-     * @var Route
      */
     protected Route $route;
 
     /**
      * The string value to test with.
-     *
-     * @var string
      */
     protected string $stringValue = 'test';
 
     /**
      * Get the route model to test with.
-     *
-     * @return Route
      */
     protected function getRoute(): Route
     {
@@ -54,8 +48,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getPath getter method.
-     *
-     * @return void
      */
     public function testPath(): void
     {
@@ -66,8 +58,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getRequestMethods getter method default value.
-     *
-     * @return void
      */
     public function testGetRequestMethodsDefault(): void
     {
@@ -82,8 +72,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setRequestMethods setter method.
-     *
-     * @return void
      */
     public function testSetRequestMethods(): void
     {
@@ -94,8 +82,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setRequestMethods setter method with invalid data.
-     *
-     * @return void
      */
     public function testSetRequestMethodsInvalid(): void
     {
@@ -108,8 +94,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getRequestMethods getter method.
-     *
-     * @return void
      */
     public function testGetRequestMethods(): void
     {
@@ -121,8 +105,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getRegex getter method default value.
-     *
-     * @return void
      */
     public function testGetRegexDefault(): void
     {
@@ -131,8 +113,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setRegex setter method.
-     *
-     * @return void
      */
     public function testSetRegex(): void
     {
@@ -143,8 +123,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setRegex setter method using null.
-     *
-     * @return void
      */
     public function testSetRegexNull(): void
     {
@@ -155,8 +133,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getRegex getter method.
-     *
-     * @return void
      */
     public function testGetRegex(): void
     {
@@ -167,8 +143,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getMiddleware getter method default value.
-     *
-     * @return void
      */
     public function testGetMiddlewareDefault(): void
     {
@@ -177,8 +151,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setMiddleware setter method.
-     *
-     * @return void
      */
     public function testSetMiddleware(): void
     {
@@ -189,8 +161,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setMiddleware setter method using null.
-     *
-     * @return void
      */
     public function testSetMiddlewareNull(): void
     {
@@ -201,8 +171,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getMiddleware getter method.
-     *
-     * @return void
      */
     public function testGetMiddleware(): void
     {
@@ -213,8 +181,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getDynamic getter method default value.
-     *
-     * @return void
      */
     public function testGetDynamicDefault(): void
     {
@@ -223,8 +189,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setDynamic setter method.
-     *
-     * @return void
      */
     public function testSetDynamic(): void
     {
@@ -235,8 +199,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getDynamic getter method.
-     *
-     * @return void
      */
     public function testGetDynamic(): void
     {
@@ -247,8 +209,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getSecure getter method default value.
-     *
-     * @return void
      */
     public function testGetSecureDefault(): void
     {
@@ -257,8 +217,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the setSecure setter method.
-     *
-     * @return void
      */
     public function testSetSecure(): void
     {
@@ -269,8 +227,6 @@ class RouteTest extends TestCase
 
     /**
      * Test the getSecure getter method.
-     *
-     * @return void
      */
     public function testGetSecure(): void
     {

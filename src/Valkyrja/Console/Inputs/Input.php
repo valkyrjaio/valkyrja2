@@ -30,29 +30,21 @@ class Input implements Contract
 {
     /**
      * The request arguments.
-     *
-     * @var array
      */
     protected array $inputArguments = [];
 
     /**
      * The arguments.
-     *
-     * @var array
      */
     protected array $arguments = [];
 
     /**
      * The short options.
-     *
-     * @var array
      */
     protected array $shortOptions = [];
 
     /**
      * The long options.
-     *
-     * @var array
      */
     protected array $longOptions = [];
 
@@ -218,8 +210,6 @@ class Input implements Contract
 
     /**
      * Parse request arguments to split by options and arguments.
-     *
-     * @return void
      */
     protected function parseRequestArguments(): void
     {

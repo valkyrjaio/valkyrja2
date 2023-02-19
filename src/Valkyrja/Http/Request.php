@@ -55,8 +55,6 @@ interface Request extends SimpleRequest
      * Retrieves data related to the incoming request environment,
      * typically derived from PHP's $_SERVER superglobal. The data IS NOT
      * REQUIRED to originate from $_SERVER.
-     *
-     * @return array
      */
     public function getServerParams(): array;
 
@@ -66,8 +64,6 @@ interface Request extends SimpleRequest
      *
      * @param string     $name    The server name to retrieve
      * @param mixed|null $default [optional] Default value to return if the param does not exist
-     *
-     * @return mixed
      */
     public function getServerParam(string $name, mixed $default = null): mixed;
 
@@ -75,8 +71,6 @@ interface Request extends SimpleRequest
      * Determine if a specific server exists.
      *
      * @param string $name The server name to check for
-     *
-     * @return bool
      */
     public function hasServerParam(string $name): bool;
 
@@ -85,8 +79,6 @@ interface Request extends SimpleRequest
      * Retrieves cookies sent by the client to the server.
      * The data MUST be compatible with the structure of the $_COOKIE
      * superglobal.
-     *
-     * @return array
      */
     public function getCookieParams(): array;
 
@@ -101,9 +93,7 @@ interface Request extends SimpleRequest
      * immutability of the message, and MUST return an instance that has the
      * updated cookie values.
      *
-     * @param array $cookies Array of key/value pairs representing cookies.
-     *
-     * @return static
+     * @param array $cookies array of key/value pairs representing cookies
      */
     public function withCookieParams(array $cookies): static;
 
@@ -113,8 +103,6 @@ interface Request extends SimpleRequest
      *
      * @param string      $name    The cookie name to retrieve
      * @param string|null $default [optional] Default value to return if the param does not exist
-     *
-     * @return string|null
      */
     public function getCookieParam(string $name, string $default = null): ?string;
 
@@ -122,8 +110,6 @@ interface Request extends SimpleRequest
      * Determine if a specific cookie exists.
      *
      * @param string $name The cookie name to check for
-     *
-     * @return bool
      */
     public function hasCookieParam(string $name): bool;
 
@@ -134,8 +120,6 @@ interface Request extends SimpleRequest
      * params. If you need to ensure you are only getting the original
      * values, you may need to parse the query string from
      * `getUri()->getQuery()` or from the `QUERY_STRING` server param.
-     *
-     * @return array
      */
     public function getQueryParams(): array;
 
@@ -143,8 +127,6 @@ interface Request extends SimpleRequest
      * Retrieve only the specified query string arguments.
      *
      * @param string[] $names The param names to retrieve
-     *
-     * @return array
      */
     public function onlyQueryParams(array $names): array;
 
@@ -152,8 +134,6 @@ interface Request extends SimpleRequest
      * Retrieve all query string arguments except the ones specified.
      *
      * @param string[] $names The param names to not retrieve
-     *
-     * @return array
      */
     public function exceptQueryParams(array $names): array;
 
@@ -172,10 +152,8 @@ interface Request extends SimpleRequest
      * immutability of the message, and MUST return an instance that has the
      * updated query string arguments.
      *
-     * @param array $query Array of query string arguments, typically from
-     *                     $_GET.
-     *
-     * @return static
+     * @param array $query array of query string arguments, typically from
+     *                     $_GET
      */
     public function withQueryParams(array $query): static;
 
@@ -185,8 +163,6 @@ interface Request extends SimpleRequest
      *
      * @param string     $name    The query param name to retrieve
      * @param mixed|null $default [optional] Default value to return if the param does not exist
-     *
-     * @return mixed
      */
     public function getQueryParam(string $name, mixed $default = null): mixed;
 
@@ -194,8 +170,6 @@ interface Request extends SimpleRequest
      * Determine if a specific query param exists.
      *
      * @param string $name The query param name to check for
-     *
-     * @return bool
      */
     public function hasQueryParam(string $name): bool;
 
@@ -206,8 +180,8 @@ interface Request extends SimpleRequest
      * These values MAY be prepared from $_FILES or the message body during
      * instantiation, or MAY be injected via withUploadedFiles().
      *
-     * @return UploadedFile[] An array tree of UploadedFileInterface instances; an empty
-     *                        array MUST be returned if no data is present.
+     * @return UploadedFile[] an array tree of UploadedFileInterface instances; an empty
+     *                        array MUST be returned if no data is present
      */
     public function getUploadedFiles(): array;
 
@@ -220,9 +194,7 @@ interface Request extends SimpleRequest
      * @param UploadedFile ...$uploadedFiles An array tree of UploadedFileInterface
      *                                       instances.
      *
-     * @throws InvalidArgumentException if an invalid structure is provided.
-     *
-     * @return static
+     * @throws InvalidArgumentException if an invalid structure is provided
      */
     public function withUploadedFiles(UploadedFile ...$uploadedFiles): static;
 
@@ -245,8 +217,6 @@ interface Request extends SimpleRequest
      * Retrieve only the specified request body params.
      *
      * @param string[] $names The param names to retrieve
-     *
-     * @return array
      */
     public function onlyParsedBody(array $names): array;
 
@@ -254,8 +224,6 @@ interface Request extends SimpleRequest
      * Retrieve all request body params except the ones specified.
      *
      * @param string[] $names The param names to not retrieve
-     *
-     * @return array
      */
     public function exceptParsedBody(array $names): array;
 
@@ -279,9 +247,7 @@ interface Request extends SimpleRequest
      * @param array $data The deserialized body data. This will
      *                    typically be in an array or object.
      *
-     * @throws InvalidArgumentException if an unsupported argument type is provided.
-     *
-     * @return static
+     * @throws InvalidArgumentException if an unsupported argument type is provided
      */
     public function withParsedBody(array $data): static;
 
@@ -291,8 +257,6 @@ interface Request extends SimpleRequest
      *
      * @param string     $name    The body param name to retrieve
      * @param mixed|null $default [optional] Default value to return if the param does not exist
-     *
-     * @return mixed
      */
     public function getParsedBodyParam(string $name, mixed $default = null): mixed;
 
@@ -300,8 +264,6 @@ interface Request extends SimpleRequest
      * Determine if a specific body param exists.
      *
      * @param string $name The body param name to check for
-     *
-     * @return bool
      */
     public function hasParsedBodyParam(string $name): bool;
 
@@ -313,7 +275,7 @@ interface Request extends SimpleRequest
      * deserializing non-form-encoded message bodies; etc. Attributes
      * will be application and request specific, and CAN be mutable.
      *
-     * @return array Attributes derived from the request.
+     * @return array attributes derived from the request
      */
     public function getAttributes(): array;
 
@@ -321,8 +283,6 @@ interface Request extends SimpleRequest
      * Retrieve only the specified attributes.
      *
      * @param string[] $names The attribute names to retrieve
-     *
-     * @return array
      */
     public function onlyAttributes(array $names): array;
 
@@ -330,8 +290,6 @@ interface Request extends SimpleRequest
      * Retrieve all attributes except the ones specified.
      *
      * @param string[] $names The attribute names to not retrieve
-     *
-     * @return array
      */
     public function exceptAttributes(array $names): array;
 
@@ -343,10 +301,8 @@ interface Request extends SimpleRequest
      * This method obviates the need for a hasAttribute() method, as it allows
      * specifying a default value to return if the attribute is not found.
      *
-     * @param string     $name    The attribute name.
-     * @param mixed|null $default Default value to return if the attribute does not exist.
-     *
-     * @return mixed
+     * @param string     $name    the attribute name
+     * @param mixed|null $default default value to return if the attribute does not exist
      *
      * @see getAttributes()
      */
@@ -360,10 +316,8 @@ interface Request extends SimpleRequest
      * immutability of the message, and MUST return an instance that has the
      * updated attribute.
      *
-     * @param string $name  The attribute name.
-     * @param mixed  $value The value of the attribute.
-     *
-     * @return static
+     * @param string $name  the attribute name
+     * @param mixed  $value the value of the attribute
      *
      * @see getAttributes()
      */
@@ -377,9 +331,7 @@ interface Request extends SimpleRequest
      * immutability of the message, and MUST return an instance that removes
      * the attribute.
      *
-     * @param string $name The attribute name.
-     *
-     * @return static
+     * @param string $name the attribute name
      *
      * @see getAttributes()
      */
@@ -387,8 +339,6 @@ interface Request extends SimpleRequest
 
     /**
      * Is this an AJAX request?
-     *
-     * @return bool
      */
     public function isXmlHttpRequest(): bool;
 }

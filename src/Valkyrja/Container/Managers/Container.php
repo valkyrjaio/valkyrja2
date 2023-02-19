@@ -75,16 +75,11 @@ class Container implements Contract
 
     /**
      * The context id.
-     *
-     * @var string|null
      */
     protected ?string $contextId = null;
 
     /**
      * Container constructor.
-     *
-     * @param Config|array $config
-     * @param bool         $debug
      */
     public function __construct(
         protected Config|array $config,
@@ -306,8 +301,6 @@ class Container implements Contract
      * Get an aliased service id if it exists.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return string
      */
     protected function getAliasedServiceId(string $serviceId): string
     {
@@ -318,8 +311,6 @@ class Container implements Contract
      * Get a service id and ensure that it is published if it is provided.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return string
      */
     protected function getServiceIdAndEnsurePublished(string $serviceId): string
     {
@@ -335,8 +326,6 @@ class Container implements Contract
      * Get the context service id.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return string
      */
     protected function getServiceIdInternal(string $serviceId): string
     {
@@ -355,8 +344,6 @@ class Container implements Contract
      * Check whether a given service is an alias.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     protected function isAliasInternal(string $serviceId): bool
     {
@@ -367,8 +354,6 @@ class Container implements Contract
      * Check whether a given service is bound to a closure.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     protected function isClosureInternal(string $serviceId): bool
     {
@@ -379,8 +364,6 @@ class Container implements Contract
      * Check whether a given service is a singleton.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     protected function isSingletonInternal(string $serviceId): bool
     {
@@ -391,8 +374,6 @@ class Container implements Contract
      * Check whether a given service exists.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return bool
      */
     protected function isServiceInternal(string $serviceId): bool
     {
@@ -404,8 +385,6 @@ class Container implements Contract
      *
      * @param class-string|string $serviceId The service id
      * @param array               $arguments [optional] The arguments
-     *
-     * @return mixed
      */
     protected function getClosureWithoutChecks(string $serviceId, array $arguments = []): mixed
     {
@@ -418,8 +397,6 @@ class Container implements Contract
      * Get a singleton from the container without trying to get an alias or ensuring published.
      *
      * @param class-string|string $serviceId The service id
-     *
-     * @return mixed
      */
     protected function getSingletonWithoutChecks(string $serviceId): mixed
     {
@@ -434,8 +411,6 @@ class Container implements Contract
      *
      * @param class-string<Service>|string $serviceId The service id
      * @param array                        $arguments [optional] The arguments
-     *
-     * @return Service
      */
     protected function getServiceWithoutChecks(string $serviceId, array $arguments = []): Service
     {

@@ -39,8 +39,6 @@ class Repository implements Contract
 {
     /**
      * The session.
-     *
-     * @var Session
      */
     protected Session $session;
 
@@ -60,22 +58,16 @@ class Repository implements Contract
 
     /**
      * The current authenticated user.
-     *
-     * @var User|null
      */
     protected ?User $user = null;
 
     /**
      * The current authenticated users.
-     *
-     * @var AuthenticatedUsers
      */
     protected AuthenticatedUsers $users;
 
     /**
      * Determine if a user is authenticated.
-     *
-     * @var bool
      */
     protected bool $isAuthenticated = false;
 
@@ -349,8 +341,6 @@ class Repository implements Contract
      * Get the user stored in session.
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return User
      */
     protected function getUserFromSession(): User
     {
@@ -394,8 +384,6 @@ class Repository implements Contract
      * @param User $user The user
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     protected function authenticateWithUser(User $user): static
     {
@@ -418,8 +406,6 @@ class Repository implements Contract
      * Set the authenticated user.
      *
      * @param User $user The user
-     *
-     * @return void
      */
     protected function setAuthenticatedUser(User $user): void
     {
@@ -433,8 +419,6 @@ class Repository implements Contract
      * Reset properties and session after un-authentication.
      *
      * @param User|null $user [optional] The user to un-authenticate
-     *
-     * @return void
      */
     protected function resetAfterUnAuthentication(User $user = null): void
     {
@@ -456,11 +440,6 @@ class Repository implements Contract
 
     /**
      * Lock or unlock a user.
-     *
-     * @param LockableUser $user
-     * @param bool         $lock
-     *
-     * @return void
      */
     protected function lockUnlock(LockableUser $user, bool $lock): void
     {
@@ -475,8 +454,6 @@ class Repository implements Contract
      * @param User $user The tokenized user
      *
      * @throws InvalidAuthenticationException
-     *
-     * @return static
      */
     protected function ensureUserValidity(User $user): static
     {

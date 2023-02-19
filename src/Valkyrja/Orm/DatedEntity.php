@@ -22,29 +22,21 @@ interface DatedEntity extends Entity
 {
     /**
      * Get the format for the created and modified date.
-     *
-     * @return string
      */
     public static function getDateFormat(): string;
 
     /**
      * Get the formatted current date/time as a save-able string.
-     *
-     * @return string
      */
     public static function getFormattedDate(): string;
 
     /**
      * Get the date created field.
-     *
-     * @return string
      */
     public static function getDateCreatedField(): string;
 
     /**
      * Get the date modified field.
-     *
-     * @return string
      */
     public static function getDateModifiedField(): string;
 }

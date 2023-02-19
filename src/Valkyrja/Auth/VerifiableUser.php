@@ -22,8 +22,6 @@ interface VerifiableUser extends MailableUser
 {
     /**
      * Get the verified flag field.
-     *
-     * @return string
      */
     public static function getIsVerifiedField(): string;
 }

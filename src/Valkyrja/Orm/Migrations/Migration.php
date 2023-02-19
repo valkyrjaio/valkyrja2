@@ -25,8 +25,6 @@ abstract class Migration implements Contract
 {
     /**
      * The ORM service.
-     *
-     * @var Orm
      */
     protected Orm $orm;
 

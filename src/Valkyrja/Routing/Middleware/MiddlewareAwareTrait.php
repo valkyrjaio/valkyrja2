@@ -41,8 +41,6 @@ trait MiddlewareAwareTrait
      * Determine if a middleware is a group of middleware.
      *
      * @param string $middleware The middleware to check
-     *
-     * @return bool
      */
     public function isMiddlewareGroup(string $middleware): bool
     {
@@ -66,8 +64,6 @@ trait MiddlewareAwareTrait
      *
      * @param Request    $request    The request
      * @param array|null $middleware [optional] The middleware to dispatch
-     *
-     * @return Request|Response
      */
     public function requestMiddleware(Request $request, array $middleware = null): Response|Request
     {
@@ -102,8 +98,6 @@ trait MiddlewareAwareTrait
      * @param Request    $request    The request
      * @param Response   $response   The response
      * @param array|null $middleware [optional] The middleware to dispatch
-     *
-     * @return Response
      */
     public function responseMiddleware(Request $request, Response $response, array $middleware = null): Response
     {
@@ -133,8 +127,6 @@ trait MiddlewareAwareTrait
      * @param Request    $request    The request
      * @param Response   $response   The response
      * @param array|null $middleware [optional] The middleware to dispatch
-     *
-     * @return void
      */
     public function terminableMiddleware(Request $request, Response $response, array $middleware = null): void
     {

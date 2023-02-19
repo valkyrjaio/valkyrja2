@@ -26,8 +26,6 @@ interface Adapter extends Contract
      * Send a message.
      *
      * @param Message $message The message to send
-     *
-     * @return void
      */
     public function send(Message $message): void;
 }

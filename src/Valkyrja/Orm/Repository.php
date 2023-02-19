@@ -27,8 +27,6 @@ interface Repository
 {
     /**
      * Find by given criteria.
-     *
-     * @return static
      */
     public function find(): static;
 
@@ -36,15 +34,11 @@ interface Repository
      * Find a single entity given its id.
      *
      * @param int|string $id The id
-     *
-     * @return static
      */
     public function findOne(int|string $id): static;
 
     /**
      * Count all the results of given criteria.
-     *
-     * @return static
      */
     public function count(): static;
 
@@ -52,8 +46,6 @@ interface Repository
      * Set columns.
      *
      * @param array $columns The columns
-     *
-     * @return static
      */
     public function columns(array $columns): static;
 
@@ -65,22 +57,16 @@ interface Repository
      * @param string|null $operator [optional]
      * @param mixed|null  $value    [optional]
      * @param bool        $setType  [optional]
-     *
-     * @return static
      */
     public function where(string $column, string $operator = null, mixed $value = null, bool $setType = true): static;
 
     /**
      * Start a where clause in parentheses.
-     *
-     * @return static
      */
     public function startWhereGroup(): static;
 
     /**
      * End a where clause in parentheses.
-     *
-     * @return static
      */
     public function endWhereGroup(): static;
 
@@ -88,8 +74,6 @@ interface Repository
      * Add a where type.
      *
      * @param WhereType $type The type
-     *
-     * @return static
      */
     public function whereType(WhereType $type = WhereType::AND): static;
 
@@ -102,8 +86,6 @@ interface Repository
      * @param string|null $operator [optional] The operator
      * @param string|null $type     [optional] The type of join
      * @param bool|null   $isWhere  [optional] Whether this is a where join
-     *
-     * @return static
      */
     public function join(
         string $table,
@@ -119,8 +101,6 @@ interface Repository
      *
      * @param string      $column    The column
      * @param string|null $direction [optional] The order direction
-     *
-     * @return static
      */
     public function orderBy(string $column, string $direction = null): static;
 
@@ -128,8 +108,6 @@ interface Repository
      * Set limit.
      *
      * @param int $limit The limit
-     *
-     * @return static
      */
     public function limit(int $limit): static;
 
@@ -137,8 +115,6 @@ interface Repository
      * Set offset.
      *
      * @param int $offset The offset
-     *
-     * @return static
      */
     public function offset(int $offset): static;
 
@@ -151,8 +127,6 @@ interface Repository
 
     /**
      * Get one or null.
-     *
-     * @return Entity|null
      */
     public function getOneOrNull(): ?Entity;
 
@@ -160,15 +134,11 @@ interface Repository
      * Get one or fail.
      *
      * @throws EntityNotFoundException
-     *
-     * @return Entity
      */
     public function getOneOrFail(): Entity;
 
     /**
      * Get count results.
-     *
-     * @return int
      */
     public function getCount(): int;
 
@@ -181,8 +151,6 @@ interface Repository
      *
      * @param Entity $entity The entity
      * @param bool   $defer  [optional] Whether to defer creation or create immediately
-     *
-     * @return void
      */
     public function create(Entity $entity, bool $defer = true): void;
 
@@ -195,8 +163,6 @@ interface Repository
      *
      * @param Entity $entity The entity
      * @param bool   $defer  [optional] Whether to defer save or save immediately
-     *
-     * @return void
      */
     public function save(Entity $entity, bool $defer = true): void;
 
@@ -209,8 +175,6 @@ interface Repository
      *
      * @param Entity $entity The entity
      * @param bool   $defer  [optional] Whether to deletion creation or delete immediately
-     *
-     * @return void
      */
     public function delete(Entity $entity, bool $defer = true): void;
 
@@ -223,8 +187,6 @@ interface Repository
      *
      * @param SoftDeleteEntity $entity The entity
      * @param bool             $defer  [optional] Whether to defer deletion or delete immediately
-     *
-     * @return void
      */
     public function softDelete(SoftDeleteEntity $entity, bool $defer = true): void;
 
@@ -236,15 +198,11 @@ interface Repository
      * </code>
      *
      * @param Entity|null $entity The entity instance to remove.
-     *
-     * @return void
      */
     public function clear(Entity $entity = null): void;
 
     /**
      * Persist all entities.
-     *
-     * @return bool
      */
     public function persist(): bool;
 
@@ -252,8 +210,6 @@ interface Repository
      * Get a new query builder instance.
      *
      * @param string|null $alias The alias to use
-     *
-     * @return QueryBuilder
      */
     public function createQueryBuilder(string $alias = null): QueryBuilder;
 
@@ -261,22 +217,16 @@ interface Repository
      * Create a new query.
      *
      * @param string $query The query string
-     *
-     * @return Query
      */
     public function createQuery(string $query): Query;
 
     /**
      * Get the retriever.
-     *
-     * @return Retriever
      */
     public function getRetriever(): Retriever;
 
     /**
      * Get the persister.
-     *
-     * @return Persister
      */
     public function getPersister(): Persister;
 }

@@ -31,8 +31,6 @@ abstract class FileFactory
      * Transforms each value into an UploadedFileInterface instance, and ensures
      * that nested arrays are normalized.
      *
-     * @param array $files
-     *
      * @throws InvalidArgumentException for unrecognized values
      *
      * @return UploadedFile[]
@@ -94,8 +92,6 @@ abstract class FileFactory
      * Normalize an array of file specifications.
      * Loops through all nested files and returns a normalized array of
      * UploadedFileInterface instances.
-     *
-     * @param array $files
      *
      * @throws InvalidArgumentException
      *

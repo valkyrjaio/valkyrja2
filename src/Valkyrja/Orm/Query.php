@@ -25,10 +25,6 @@ interface Query
 {
     /**
      * Set the table to query on.
-     *
-     * @param string $table
-     *
-     * @return static
      */
     public function table(string $table): static;
 
@@ -36,34 +32,21 @@ interface Query
      * Set the entity to query with.
      *
      * @param class-string<Entity> $entity
-     *
-     * @return static
      */
     public function entity(string $entity): static;
 
     /**
      * Prepare the query.
-     *
-     * @param string $query
-     *
-     * @return static
      */
     public function prepare(string $query): static;
 
     /**
      * Bind a value.
-     *
-     * @param string $property
-     * @param mixed  $value
-     *
-     * @return static
      */
     public function bindValue(string $property, mixed $value): static;
 
     /**
      * Execute the query.
-     *
-     * @return bool
      */
     public function execute(): bool;
 
@@ -76,8 +59,6 @@ interface Query
 
     /**
      * Get one or null.
-     *
-     * @return Entity|stdClass|null
      */
     public function getOneOrNull(): Entity|stdClass|null;
 
@@ -92,15 +73,11 @@ interface Query
 
     /**
      * Get count results.
-     *
-     * @return int
      */
     public function getCount(): int;
 
     /**
      * Get the error if one occurred.
-     *
-     * @return string
      */
     public function getError(): string;
 }

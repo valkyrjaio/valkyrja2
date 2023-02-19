@@ -22,8 +22,6 @@ interface EntityPolicy extends Policy
 {
     /**
      * Get the entity class name that's associated with this policy.
-     *
-     * @return string
      */
     public static function getEntityClassName(): string;
 }

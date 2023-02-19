@@ -29,8 +29,6 @@ abstract class ApiController extends Controller
 {
     /**
      * The Api service.
-     *
-     * @var Api
      */
     private static Api $api;
 
@@ -43,8 +41,6 @@ abstract class ApiController extends Controller
      * @param int|null      $statusCode [optional] The status code
      * @param string[]|null $errors     [optional] The errors
      * @param string[]|null $warnings   [optional] The warnings
-     *
-     * @return JsonResponse
      */
     public static function createApiJsonResponse(
         array $data = [],
@@ -74,8 +70,6 @@ abstract class ApiController extends Controller
      * @param int|null      $statusCode [optional] The status code
      * @param string[]|null $errors     [optional] The errors
      * @param string[]|null $warnings   [optional] The warnings
-     *
-     * @return JsonResponse
      */
     public static function getExceptionResponse(
         Throwable $exception,
@@ -106,8 +100,6 @@ abstract class ApiController extends Controller
 
     /**
      * Get the Api service.
-     *
-     * @return Api
      */
     protected static function getApi(): Api
     {
@@ -118,8 +110,6 @@ abstract class ApiController extends Controller
      * Get exception trace code.
      *
      * @param Throwable $exception The exception
-     *
-     * @return string
      */
     protected static function getExceptionTraceCode(Throwable $exception): string
     {

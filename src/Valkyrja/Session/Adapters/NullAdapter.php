@@ -34,29 +34,21 @@ class NullAdapter implements Contract
 {
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 
     /**
      * The session id.
-     *
-     * @var string
      */
     protected string $id;
 
     /**
      * The session name.
-     *
-     * @var string
      */
     protected string $name;
 
     /**
      * The session data.
-     *
-     * @var array
      */
     protected array $data = [];
 

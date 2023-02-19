@@ -25,15 +25,11 @@ abstract class ValidationAction
 {
     /**
      * The request.
-     *
-     * @var Request
      */
     protected Request $request;
 
     /**
      * The validator.
-     *
-     * @var Validator
      */
     protected Validator $validator;
 
@@ -51,8 +47,6 @@ abstract class ValidationAction
 
     /**
      * Validate against a set of rules.
-     *
-     * @return bool
      */
     protected function validate(): bool
     {
@@ -89,8 +83,6 @@ abstract class ValidationAction
      *          ],
      *      ]
      * </code>
-     *
-     * @return array
      */
     abstract protected function getRules(): array;
 }

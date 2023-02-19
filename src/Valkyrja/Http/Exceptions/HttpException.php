@@ -25,22 +25,16 @@ class HttpException extends RuntimeException
 {
     /**
      * The status code for this exception.
-     *
-     * @var int
      */
     protected int $statusCode = StatusCode::INTERNAL_SERVER_ERROR;
 
     /**
      * The headers for this exception.
-     *
-     * @var array
      */
     protected array $headers = [];
 
     /**
      * The response to send for this exception.
-     *
-     * @var Response|null
      */
     protected ?Response $response = null;
 
@@ -69,8 +63,6 @@ class HttpException extends RuntimeException
 
     /**
      * Get the status code for this exception.
-     *
-     * @return int
      */
     public function getStatusCode(): int
     {
@@ -79,8 +71,6 @@ class HttpException extends RuntimeException
 
     /**
      * Get the headers set for this exception.
-     *
-     * @return array
      */
     public function getHeaders(): array
     {
@@ -89,8 +79,6 @@ class HttpException extends RuntimeException
 
     /**
      * Get the response for this exception.
-     *
-     * @return Response|null
      */
     public function getResponse(): ?Response
     {

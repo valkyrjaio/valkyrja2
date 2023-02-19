@@ -80,8 +80,6 @@ class ServiceProvider extends Provider
      * Publish the mail service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMail(Container $container): void
     {
@@ -100,8 +98,6 @@ class ServiceProvider extends Provider
      * Publish the factory service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -115,8 +111,6 @@ class ServiceProvider extends Provider
      * Publish the default driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -137,8 +131,6 @@ class ServiceProvider extends Provider
      * Publish an adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -159,8 +151,6 @@ class ServiceProvider extends Provider
      * Publish the log adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishLogAdapter(Container $container): void
     {
@@ -184,8 +174,6 @@ class ServiceProvider extends Provider
      * Publish the PHP Mailer adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPHPMailerAdapter(Container $container): void
     {
@@ -206,8 +194,6 @@ class ServiceProvider extends Provider
      * Publish the PHP Mailer service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPHPMailer(Container $container): void
     {
@@ -246,8 +232,6 @@ class ServiceProvider extends Provider
      * Publish the Mailgun adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMailgunAdapter(Container $container): void
     {
@@ -269,8 +253,6 @@ class ServiceProvider extends Provider
      * Publish the Mailgun service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMailgun(Container $container): void
     {
@@ -292,8 +274,6 @@ class ServiceProvider extends Provider
      * Publish the message service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMessage(Container $container): void
     {

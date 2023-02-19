@@ -25,8 +25,6 @@ interface Events
      *
      * @param string   $event    The event
      * @param Listener $listener The event listener
-     *
-     * @return void
      */
     public function listen(string $event, Listener $listener): void;
 
@@ -35,8 +33,6 @@ interface Events
      *
      * @param Listener                   $listener  The listener
      * @param class-string<Event>|string ...$events The events
-     *
-     * @return void
      */
     public function listenMany(Listener $listener, string ...$events): void;
 
@@ -45,8 +41,6 @@ interface Events
      *
      * @param class-string<Event>|string $event      The event
      * @param string                     $listenerId The event listener
-     *
-     * @return bool
      */
     public function hasListener(string $event, string $listenerId): bool;
 
@@ -55,8 +49,6 @@ interface Events
      *
      * @param class-string<Event>|string $event      The event
      * @param string                     $listenerId The event listener
-     *
-     * @return void
      */
     public function removeListener(string $event, string $listenerId): void;
 
@@ -73,8 +65,6 @@ interface Events
      * Determine whether an event has listeners.
      *
      * @param class-string<Event>|string $event The event
-     *
-     * @return bool
      */
     public function hasListeners(string $event): bool;
 
@@ -82,8 +72,6 @@ interface Events
      * Add a new event.
      *
      * @param class-string<Event>|string $event The event
-     *
-     * @return void
      */
     public function add(string $event): void;
 
@@ -91,8 +79,6 @@ interface Events
      * Determine whether an event exists.
      *
      * @param class-string<Event>|string $event The event
-     *
-     * @return bool
      */
     public function has(string $event): bool;
 
@@ -100,8 +86,6 @@ interface Events
      * Remove an event.
      *
      * @param class-string<Event>|string $event The event
-     *
-     * @return void
      */
     public function remove(string $event): void;
 
@@ -110,8 +94,6 @@ interface Events
      *
      * @param class-string<Event>|string $event     The event
      * @param array|null                 $arguments [optional] The arguments
-     *
-     * @return array
      */
     public function trigger(string $event, array $arguments = null): array;
 
@@ -119,8 +101,6 @@ interface Events
      * Trigger an event.
      *
      * @param Event $event The event
-     *
-     * @return array
      */
     public function event(Event $event): array;
 
@@ -135,8 +115,6 @@ interface Events
      * Set the events.
      *
      * @param Listener[][] $events The events
-     *
-     * @return void
      */
     public function setEvents(array $events): void;
 }

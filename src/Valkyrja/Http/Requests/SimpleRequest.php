@@ -43,8 +43,6 @@ class SimpleRequest implements SimpleRequestContract
 
     /**
      * The request target.
-     *
-     * @var string|null
      */
     protected ?string $requestTarget = null;
 
@@ -175,8 +173,6 @@ class SimpleRequest implements SimpleRequestContract
      * @param string $requestTarget The request target
      *
      * @throws InvalidRequestTarget
-     *
-     * @return void
      */
     protected function validateRequestTarget(string $requestTarget): void
     {
@@ -191,8 +187,6 @@ class SimpleRequest implements SimpleRequestContract
      * @param string $method The method
      *
      * @throws InvalidMethod
-     *
-     * @return void
      */
     protected function validateMethod(string $method): void
     {

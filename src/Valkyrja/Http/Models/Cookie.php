@@ -35,64 +35,46 @@ class Cookie extends Model implements Contract
 
     /**
      * The cookie name.
-     *
-     * @var string
      */
     public string $name;
 
     /**
      * The cookie value.
-     *
-     * @var string|null
      */
     public ?string $value = null;
 
     /**
      * The cookie expire time.
-     *
-     * @var int
      */
     public int $expire;
 
     /**
      * The cookie path.
-     *
-     * @var string
      */
     public string $path;
 
     /**
      * The cookie domain.
-     *
-     * @var string|null
      */
     public ?string $domain = null;
 
     /**
      * Whether the cookie is secure.
-     *
-     * @var bool
      */
     public bool $secure;
 
     /**
      * Whether the cookie is http only.
-     *
-     * @var bool
      */
     public bool $httpOnly;
 
     /**
      * Whether the cookie is raw.
-     *
-     * @var bool
      */
     public bool $raw;
 
     /**
      * Whether the cookie will be available for cross-site requests.
-     *
-     * @var string|null
      */
     public ?string $sameSite = null;
 

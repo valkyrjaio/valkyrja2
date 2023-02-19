@@ -26,8 +26,6 @@ abstract class Provider
      * Publish the provider.
      *
      * @param Config $config The config
-     *
-     * @return void
      */
     abstract public static function publish(Config $config): void;
 }

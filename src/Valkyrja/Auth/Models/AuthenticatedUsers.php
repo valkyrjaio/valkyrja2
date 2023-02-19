@@ -38,8 +38,6 @@ class AuthenticatedUsers extends CastableModel implements Contract
 
     /**
      * The current user's id.
-     *
-     * @var string|null
      */
     protected ?string $currentId = null;
 
@@ -102,8 +100,6 @@ class AuthenticatedUsers extends CastableModel implements Contract
      * @inheritDoc
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function add(User $user): static
     {
@@ -116,8 +112,6 @@ class AuthenticatedUsers extends CastableModel implements Contract
      * @inheritDoc
      *
      * @param User $user The user
-     *
-     * @return static
      */
     public function remove(User $user): static
     {

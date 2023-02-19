@@ -28,15 +28,11 @@ class CryptPusherAdapter extends PusherAdapter
 {
     /**
      * The crypt driver.
-     *
-     * @var CryptDriver
      */
     protected CryptDriver $crypt;
 
     /**
      * The config.
-     *
-     * @var array
      */
     protected array $config;
 

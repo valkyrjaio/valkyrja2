@@ -92,8 +92,6 @@ class Validator implements Contract
      * Determine if a dispatch's class/method combination is invalid.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return bool
      */
     protected function isInvalidClassMethod(Dispatch $dispatch): bool
     {
@@ -107,8 +105,6 @@ class Validator implements Contract
      * Determine if a dispatch's class/property combination is invalid.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return bool
      */
     protected function isInvalidClassProperty(Dispatch $dispatch): bool
     {
@@ -122,8 +118,6 @@ class Validator implements Contract
      * Determine if a dispatch's function is invalid.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return bool
      */
     protected function isInvalidFunction(Dispatch $dispatch): bool
     {
@@ -136,8 +130,6 @@ class Validator implements Contract
      * @param Dispatch $dispatch The dispatch
      *
      * @throws InvalidDispatchCapabilityException
-     *
-     * @return void
      */
     protected function validateNotEmpty(Dispatch $dispatch): void
     {
@@ -155,8 +147,6 @@ class Validator implements Contract
      * Check if a dispatch is empty.
      *
      * @param Dispatch $dispatch The dispatch
-     *
-     * @return bool
      */
     protected function isEmptyDispatch(Dispatch $dispatch): bool
     {

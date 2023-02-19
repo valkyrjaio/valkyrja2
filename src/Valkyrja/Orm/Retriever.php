@@ -32,8 +32,6 @@ interface Retriever extends WhereQueryBuilder
      * </code>
      *
      * @param class-string<Entity> $entity
-     *
-     * @return static
      */
     public function find(string $entity): static;
 
@@ -45,9 +43,6 @@ interface Retriever extends WhereQueryBuilder
      * </code>
      *
      * @param class-string<Entity> $entity
-     * @param int|string           $id
-     *
-     * @return static
      */
     public function findOne(string $entity, int|string $id): static;
 
@@ -59,17 +54,11 @@ interface Retriever extends WhereQueryBuilder
      * </code>
      *
      * @param class-string<Entity> $entity
-     *
-     * @return static
      */
     public function count(string $entity): static;
 
     /**
      * Set columns.
-     *
-     * @param array $columns
-     *
-     * @return static
      */
     public function columns(array $columns): static;
 
@@ -82,8 +71,6 @@ interface Retriever extends WhereQueryBuilder
      * @param string|null $operator [optional] The operator
      * @param string|null $type     [optional] The type of join
      * @param bool|null   $isWhere  [optional] Whether this is a where join
-     *
-     * @return static
      */
     public function join(
         string $table,
@@ -96,38 +83,21 @@ interface Retriever extends WhereQueryBuilder
 
     /**
      * Set group by.
-     *
-     * @param string $column
-     *
-     * @return static
      */
     public function groupBy(string $column): static;
 
     /**
      * Set an order by.
-     *
-     * @param string      $column
-     * @param string|null $type
-     *
-     * @return static
      */
     public function orderBy(string $column, string $type = null): static;
 
     /**
      * Set limit.
-     *
-     * @param int $limit
-     *
-     * @return static
      */
     public function limit(int $limit): static;
 
     /**
      * Set offset.
-     *
-     * @param int $offset
-     *
-     * @return static
      */
     public function offset(int $offset): static;
 
@@ -140,8 +110,6 @@ interface Retriever extends WhereQueryBuilder
 
     /**
      * Get one or null.
-     *
-     * @return Entity|null
      */
     public function getOneOrNull(): ?Entity;
 
@@ -149,29 +117,21 @@ interface Retriever extends WhereQueryBuilder
      * Get one or fail.
      *
      * @throws EntityNotFoundException
-     *
-     * @return Entity
      */
     public function getOneOrFail(): Entity;
 
     /**
      * Get count results.
-     *
-     * @return int
      */
     public function getCount(): int;
 
     /**
      * Get the query builder.
-     *
-     * @return QueryBuilder
      */
     public function getQueryBuilder(): QueryBuilder;
 
     /**
      * Get the query.
-     *
-     * @return Query
      */
     public function getQuery(): Query;
 }

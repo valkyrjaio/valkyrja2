@@ -24,23 +24,16 @@ class ConsoleKernelHandled
 {
     /**
      * The input request.
-     *
-     * @var Input
      */
     public Input $input;
 
     /**
      * The exit code.
-     *
-     * @var int
      */
     public int $exitCode;
 
     /**
      * ConsoleKernelHandled constructor.
-     *
-     * @param Input $input
-     * @param int   $exitCode
      */
     public function __construct(Input $input, int $exitCode)
     {

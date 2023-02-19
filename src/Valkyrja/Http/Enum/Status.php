@@ -90,8 +90,6 @@ enum Status implements JsonSerializable
 
     /**
      * Get the code representation of the status.
-     *
-     * @return int
      */
     public function code(): int
     {
@@ -163,8 +161,6 @@ enum Status implements JsonSerializable
 
     /**
      * Get the text representation of the status.
-     *
-     * @return string
      */
     public function text(): string
     {

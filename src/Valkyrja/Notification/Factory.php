@@ -25,8 +25,6 @@ interface Factory
      *
      * @param string $name The notification name
      * @param array  $data [optional] The data to add to the notification
-     *
-     * @return Notification
      */
     public function createNotification(string $name, array $data = []): Notification;
 }

@@ -108,8 +108,6 @@ trait Castable
      * @param array $properties The properties to set
      *
      * @throws JsonException
-     *
-     * @return void
      */
     protected function __setProperties(array $properties): void
     {
@@ -138,8 +136,6 @@ trait Castable
      * @param mixed  $value    The property value
      *
      * @throws JsonException
-     *
-     * @return mixed
      */
     protected function __getPropertyValueByType(array $castings, string $property, mixed $value): mixed
     {
@@ -161,8 +157,6 @@ trait Castable
      * @param mixed          $value    The property value
      *
      * @throws JsonException
-     *
-     * @return mixed
      */
     protected function __getPropertyValueByTypeMatch(CastType|array $type, string $property, mixed $value): mixed
     {
@@ -188,8 +182,6 @@ trait Castable
      * Get the type to check. Could be an array for models or enums since the second index will be the enum/model name.
      *
      * @param CastType|array $type The type
-     *
-     * @return CastType
      */
     protected function __getTypeToCheck(CastType|array $type): CastType
     {
@@ -203,8 +195,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return string
      */
     protected function __getStringFromValueType(string $property, mixed $value): string
     {
@@ -216,8 +206,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return int
      */
     protected function __getIntFromValueType(string $property, mixed $value): int
     {
@@ -229,8 +217,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return float
      */
     protected function __getFloatFromValueType(string $property, mixed $value): float
     {
@@ -242,8 +228,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return float
      */
     protected function __getDoubleFromValueType(string $property, mixed $value): float
     {
@@ -255,8 +239,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return bool
      */
     protected function __getBoolFromValueType(string $property, mixed $value): bool
     {
@@ -309,8 +291,6 @@ trait Castable
      * @param mixed  $value    The value
      *
      * @throws JsonException
-     *
-     * @return object
      */
     protected function __getJsonFromValueType(string $property, mixed $value): object
     {
@@ -326,8 +306,6 @@ trait Castable
      * @param mixed  $value    The value
      *
      * @throws JsonException
-     *
-     * @return array
      */
     protected function __getArrayFromValueType(string $property, mixed $value): array
     {
@@ -341,8 +319,6 @@ trait Castable
      *
      * @param string $property The property name
      * @param mixed  $value    The value
-     *
-     * @return object
      */
     protected function __getObjectFromValueType(string $property, mixed $value): object
     {
@@ -362,8 +338,6 @@ trait Castable
      * @param string             $property The property name
      * @param class-string<Type> $type     The type of the property
      * @param mixed              $value    The value
-     *
-     * @return Type|null
      */
     protected function __getTypeFromValueType(string $property, string $type, mixed $value): Type|null
     {
@@ -408,8 +382,6 @@ trait Castable
      * @param mixed               $value    The value
      *
      * @throws JsonException
-     *
-     * @return Model
      */
     protected function __getModelFromValue(string $property, string $type, mixed $value): Model
     {
@@ -461,8 +433,6 @@ trait Castable
      * @param string $property The property name
      * @param string $type     The type of the property
      * @param mixed  $value    The value
-     *
-     * @return UnitEnum
      */
     protected function __getEnumFromValue(string $property, string $type, mixed $value): UnitEnum
     {

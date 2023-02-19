@@ -22,8 +22,6 @@ interface MailableUser extends User
 {
     /**
      * Get the email field.
-     *
-     * @return string
      */
     public static function getEmailField(): string;
 }

@@ -22,15 +22,11 @@ class MessageConfig extends Config
 {
     /**
      * The default message.
-     *
-     * @var string
      */
     public string $defaultMessage;
 
     /**
      * The default message class.
-     *
-     * @var string
      */
     public string $message;
 

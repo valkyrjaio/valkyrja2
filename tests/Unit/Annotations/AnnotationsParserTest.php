@@ -43,8 +43,6 @@ class AnnotationsParserTest extends TestCase
 {
     /**
      * A static property to test with.
-     *
-     * @var string
      */
     public static string $property = 'test';
 
@@ -57,22 +55,16 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * The class to test with.
-     *
-     * @var Parser
      */
     protected Parser $class;
 
     /**
      * The value to test with.
-     *
-     * @var string
      */
     protected string $value = 'test';
 
     /**
      * Setup the test.
-     *
-     * @return void
      */
     public function setUp(): void
     {
@@ -83,8 +75,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * A static method to test with.
-     *
-     * @return string
      */
     public static function staticMethod(): string
     {
@@ -95,8 +85,6 @@ class AnnotationsParserTest extends TestCase
      * Test the getAnnotations method.
      *
      * @throws ReflectionException
-     *
-     * @return void
      */
     public function testGetAnnotations(): void
     {
@@ -107,8 +95,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getArguments method.
-     *
-     * @return void
      */
     public function testGetArguments(): void
     {
@@ -126,8 +112,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getArguments method.
-     *
-     * @return void
      */
     public function testGetArgumentsNull(): void
     {
@@ -136,8 +120,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getRegex method.
-     *
-     * @return void
      */
     public function testGetRegex(): void
     {
@@ -146,8 +128,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationsMap method.
-     *
-     * @return void
      */
     public function testGetAnnotationsMap(): void
     {
@@ -156,8 +136,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method.
-     *
-     * @return void
      */
     public function testGetAnnotationFromMap(): void
     {
@@ -166,8 +144,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a Command.
-     *
-     * @return void
      */
     public function testGetCommandAnnotationFromMap(): void
     {
@@ -176,8 +152,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a Listener.
-     *
-     * @return void
      */
     public function testGetListenerAnnotationFromMap(): void
     {
@@ -186,8 +160,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a Route.
-     *
-     * @return void
      */
     public function testGetRouteAnnotationFromMap(): void
     {
@@ -196,8 +168,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a Service.
-     *
-     * @return void
      */
     public function testGetServiceAnnotationFromMap(): void
     {
@@ -206,8 +176,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a ServiceAlias.
-     *
-     * @return void
      */
     public function testGetServiceAliasAnnotationFromMap(): void
     {
@@ -219,8 +187,6 @@ class AnnotationsParserTest extends TestCase
 
     /**
      * Test the getAnnotationFromMap method with a ServiceContext.
-     *
-     * @return void
      */
     public function testGetServiceContextAnnotationFromMap(): void
     {

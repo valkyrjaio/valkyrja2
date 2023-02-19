@@ -29,8 +29,6 @@ interface IndexedModel extends Model
      *      'otherPropertyName' => 1,
      *  ]
      * </code>
-     *
-     * @return array
      */
     public static function getIndexes(): array;
 
@@ -38,8 +36,6 @@ interface IndexedModel extends Model
      * Get a mapped array from a given indexed array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return array
      */
     public static function getMappedArrayFromIndexedArray(array $properties = []): array;
 
@@ -47,8 +43,6 @@ interface IndexedModel extends Model
      * Get an indexed array from a given mapped array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return array
      */
     public static function getIndexedArrayFromMappedArray(array $properties = []): array;
 
@@ -56,8 +50,6 @@ interface IndexedModel extends Model
      * Set properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return static
      */
     public static function fromIndexedArray(array $properties): static;
 
@@ -65,8 +57,6 @@ interface IndexedModel extends Model
      * Set properties from an array of properties.
      *
      * @param array $properties The properties
-     *
-     * @return void
      */
     public function updateIndexedProperties(array $properties): void;
 
@@ -74,8 +64,6 @@ interface IndexedModel extends Model
      * Get a new model with new properties.
      *
      * @param array $properties The properties to modify
-     *
-     * @return static
      */
     public function withIndexedProperties(array $properties): static;
 
@@ -83,22 +71,16 @@ interface IndexedModel extends Model
      * Get model as an array.
      *
      * @param string ...$properties [optional] An array of properties to return
-     *
-     * @return array
      */
     public function asIndexedArray(string ...$properties): array;
 
     /**
      * Get model as an array including only changed properties.
-     *
-     * @return array
      */
     public function asChangedIndexedArray(): array;
 
     /**
      * Get all original properties.
-     *
-     * @return array
      */
     public function asOriginalIndexedArray(): array;
 }

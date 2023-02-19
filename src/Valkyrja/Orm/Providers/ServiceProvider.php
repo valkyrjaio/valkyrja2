@@ -105,8 +105,6 @@ class ServiceProvider extends Provider
      * Publish the ORM service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishORM(Container $container): void
     {
@@ -125,8 +123,6 @@ class ServiceProvider extends Provider
      * Publish the factory.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishFactory(Container $container): void
     {
@@ -140,8 +136,6 @@ class ServiceProvider extends Provider
      * Publish a driver service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDriver(Container $container): void
     {
@@ -163,8 +157,6 @@ class ServiceProvider extends Provider
      * Publish a adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishAdapter(Container $container): void
     {
@@ -188,8 +180,6 @@ class ServiceProvider extends Provider
      * Publish a PDO adapter service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPdoAdapter(Container $container): void
     {
@@ -223,8 +213,6 @@ class ServiceProvider extends Provider
      * Publish a PDO service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPDO(Container $container): void
     {
@@ -253,8 +241,6 @@ class ServiceProvider extends Provider
      * Publish a repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRepository(Container $container): void
     {
@@ -279,8 +265,6 @@ class ServiceProvider extends Provider
      * Publish a cache repository service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishCacheRepository(Container $container): void
     {
@@ -307,8 +291,6 @@ class ServiceProvider extends Provider
      * Publish a persister service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishPersister(Container $container): void
     {
@@ -329,8 +311,6 @@ class ServiceProvider extends Provider
      * Publish a retriever service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishRetriever(Container $container): void
     {
@@ -351,8 +331,6 @@ class ServiceProvider extends Provider
      * Publish a query service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishQuery(Container $container): void
     {
@@ -373,8 +351,6 @@ class ServiceProvider extends Provider
      * Publish a query builder service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishQueryBuilder(Container $container): void
     {
@@ -395,8 +371,6 @@ class ServiceProvider extends Provider
      * Publish a delete query builder service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishDeleteQueryBuilder(Container $container): void
     {
@@ -417,8 +391,6 @@ class ServiceProvider extends Provider
      * Publish a insert query builder service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishInsertQueryBuilder(Container $container): void
     {
@@ -439,8 +411,6 @@ class ServiceProvider extends Provider
      * Publish a select query builder service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishSelectQueryBuilder(Container $container): void
     {
@@ -461,8 +431,6 @@ class ServiceProvider extends Provider
      * Publish a update query builder service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishUpdateQueryBuilder(Container $container): void
     {
@@ -483,8 +451,6 @@ class ServiceProvider extends Provider
      * Publish a statement service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishStatement(Container $container): void
     {
@@ -503,8 +469,6 @@ class ServiceProvider extends Provider
      * Publish a migration service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMigration(Container $container): void
     {

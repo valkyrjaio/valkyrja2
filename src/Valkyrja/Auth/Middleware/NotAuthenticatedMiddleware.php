@@ -29,8 +29,6 @@ class NotAuthenticatedMiddleware extends AuthMiddleware
 {
     /**
      * The error message to use.
-     *
-     * @var string
      */
     protected static string $errorMessage = 'Must not be logged in.';
 

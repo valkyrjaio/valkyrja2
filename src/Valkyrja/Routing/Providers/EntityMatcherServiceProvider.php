@@ -50,8 +50,6 @@ class EntityMatcherServiceProvider extends Provider
      * Publish the matcher service.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function publishMatcher(Container $container): void
     {

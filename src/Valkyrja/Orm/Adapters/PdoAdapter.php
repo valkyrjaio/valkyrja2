@@ -31,8 +31,6 @@ class PdoAdapter extends Adapter implements Contract
 {
     /**
      * The pdo service.
-     *
-     * @var PDO
      */
     protected PDO $pdo;
 

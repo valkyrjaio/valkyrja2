@@ -123,8 +123,6 @@ class RoutesList extends Commander
      * @param array $lengths The longest string lengths
      *
      * @throws InvalidArgumentException
-     *
-     * @return void
      */
     protected function setRoute(Route $route, array &$routes, array &$lengths): void
     {
@@ -167,8 +165,6 @@ class RoutesList extends Commander
      * Get the separation line.
      *
      * @param array $lengths The longest lengths
-     *
-     * @return string
      */
     protected function getSepLine(array $lengths): string
     {
@@ -182,10 +178,6 @@ class RoutesList extends Commander
 
     /**
      * Format odd rows.
-     *
-     * @param bool $odd
-     *
-     * @return string
      */
     protected function oddFormat(bool $odd): string
     {
@@ -199,8 +191,6 @@ class RoutesList extends Commander
      *
      * @param array $headerTexts The header texts
      * @param array $lengths     The longest lengths
-     *
-     * @return void
      */
     protected function headerMessage(array $headerTexts, array $lengths): void
     {

@@ -27,15 +27,11 @@ class Gate implements Contract
 {
     /**
      * The auth service.
-     *
-     * @var Auth
      */
     protected Auth $auth;
 
     /**
      * The repository.
-     *
-     * @var Repository
      */
     protected Repository $repository;
 
@@ -87,8 +83,6 @@ class Gate implements Contract
      *
      * @param string                    $action The action to check if authorized for
      * @param class-string<Policy>|null $policy [optional] The policy
-     *
-     * @return bool
      */
     protected function checkIsAuthorized(string $action, string $policy = null): bool
     {

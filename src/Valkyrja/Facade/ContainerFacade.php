@@ -26,15 +26,11 @@ abstract class ContainerFacade extends Facade
 {
     /**
      * The container.
-     *
-     * @var Container
      */
     private static Container $container;
 
     /**
      * Get the container.
-     *
-     * @return Container
      */
     public static function getContainer(): Container
     {
@@ -45,8 +41,6 @@ abstract class ContainerFacade extends Facade
      * Set the container.
      *
      * @param Container $container The container
-     *
-     * @return void
      */
     public static function setContainer(Container $container): void
     {
